@@ -18,17 +18,13 @@ Caterina Strambio De Castillia,
 Steven Wang.
 
 
-Contents:
-
-.. toctree::
-   :hidden:
-
-   self
-
+Contents
++++++++++
 
 .. toctree::
    :maxdepth: 4
 
+   self
    introduction
    overview
    core_spot_trace
