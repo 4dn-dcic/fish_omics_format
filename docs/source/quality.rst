@@ -47,10 +47,10 @@ Example: Spot fit quality
   # a - spots were fit to a 3D Gaussian parameterized by amplitude a, background b, widths sigma_xy, sigma_z. Sigma_xy were pre-calibrated for the system based imaging of 100 nm beads.
   # b - spots were fit to a 3D Gaussian parameterized by amplitude a, background b, widths sigma_xy, sigma_z. Sigma_xy were pre-calibrated for the system based imaging of 100 nm beads.
 
-Specifications
-~~~~~~~~~~~~~~
+File Header
+~~~~~~~~~~~
 
-.. list-table:: File Header
+.. list-table::
   :header-rows: 1
 
   * - Name
@@ -202,7 +202,10 @@ Specifications
     - (Spot_ID, X, Y, Z)
     -
 
-.. list-table:: Data Columns
+Data Columns
+~~~~~~~~~~~~
+
+.. list-table::
   :header-rows: 1
 
   * - Name

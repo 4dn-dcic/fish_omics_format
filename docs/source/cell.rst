@@ -35,10 +35,10 @@ Example
   3, 2, 10, 33, 101.5, 12354.24, S, 10010
   4, 3, 0, 44, 201.1, 32234.24, M, 25340
 
-Specifications
-~~~~~~~~~~~~~~
+File Header
+~~~~~~~~~~~
 
-.. list-table:: File Header
+.. list-table::
   :header-rows: 1
 
   * - Name
@@ -134,7 +134,10 @@ Specifications
     - (Spot_ID, X, Y, Z)
     -
 
-.. list-table:: Data Columns
+Data Columns
+~~~~~~~~~~~~
+
+.. list-table::
   :header-rows: 1
 
   * - Name

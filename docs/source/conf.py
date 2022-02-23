@@ -60,3 +60,6 @@ html_theme_options = {
     'navigation_depth': 2
 }
 
+
+def setup(app):
+    app.add_css_file("custom.css")
