@@ -62,10 +62,10 @@ Example
   4, 2, 20.43, 50.43, 1.23, chr1, 0002, 2000, 1
   5, 2, 21.83, 60.83, 1.83, chr1, 1002, 3000, 1
 
-Specifications
-~~~~~~~~~~~~~~
+File Header
+~~~~~~~~~~~
 
-.. list-table:: File Header
+.. list-table::
   :header-rows: 1
 
   * - Name
@@ -137,7 +137,10 @@ Specifications
     - (Spot_ID, X, Y, Z)
     -
 
-.. list-table:: Data Columns
+Data Columns
+~~~~~~~~~~~~
+
+.. list-table::
   :header-rows: 1
 
   * - Name

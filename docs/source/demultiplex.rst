@@ -42,10 +42,10 @@ Example: DNA spots detected with multiplexed barcodes
   6 NA 4345 432 100 4 cy3 2324 .95
   7 2 3345 5432 654 4 cy3 2324 .95
 
-Specifications
-~~~~~~~~~~~~~~
+File Header
+~~~~~~~~~~~
 
-.. list-table:: File Header
+.. list-table::
   :header-rows: 1
 
   * - Name
@@ -125,7 +125,10 @@ Specifications
     - (Spot_ID, X, Y, Z)
     -
 
-.. list-table:: Data Columns
+Data Columns
+~~~~~~~~~~~~
+
+.. list-table::
   :header-rows: 1
 
   * - Name
