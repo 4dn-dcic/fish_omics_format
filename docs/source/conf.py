@@ -51,12 +51,6 @@ html_theme = 'sphinx_rtd_theme'
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
 
-html_context = {
-    'css_files': [
-        '_static/custom.css',  # overrides for wide tables in RTD theme
-        ],
-    }
-
 # can add a logo on sidebar with:
 # html_logo = docs/source/img/...
 
@@ -66,3 +60,6 @@ html_theme_options = {
     'navigation_depth': 2
 }
 
+
+def setup(app):
+    app.add_css_file("custom.css")
