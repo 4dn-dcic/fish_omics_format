@@ -17,7 +17,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'Fish Omics File'
+project = 'FISH Omics Format'
 copyright = '2022, 4DN-DCIC'
 author = '4DN-DCIC'
 master_doc = 'index'
