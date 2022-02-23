@@ -6,5 +6,6 @@
 }
 
 .wy-table-responsive {
+    max-width: 90%;
     overflow: visible !important;
 }
