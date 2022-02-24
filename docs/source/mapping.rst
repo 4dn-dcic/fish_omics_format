@@ -1,6 +1,8 @@
 Cell/ROI Mapping table (optional)
 =================================
 
+.. contents::
+
 Summary
 -------
 

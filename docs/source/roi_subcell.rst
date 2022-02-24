@@ -1,8 +1,11 @@
 Sub_Cell ROI Data table (optional)
 ==================================
 
+.. contents::
+
 Summary
 -------
+
 This table is used to document properties that are globally associated
 with individual sub-cellular ROIs that typically correspond to
 sub-nuclear features such as Nucleoli, Nuclear Lamina, Chromosome

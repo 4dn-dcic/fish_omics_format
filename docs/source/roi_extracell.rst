@@ -1,8 +1,11 @@
 Extra_Cell ROI Data table (optional)
 ====================================
 
+.. contents::
+
 Summary
 -------
+
 This table is used to document properties (i.e., volume, mean
 fluorescence intensity) that are globally associated with individual
 extracellular structures (e.g., Tissue, Organoid, etc.,) Region of

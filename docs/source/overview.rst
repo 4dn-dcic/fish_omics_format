@@ -1,6 +1,8 @@
 Format description: overview
 ============================
 
+.. contents::
+
 General Info
 ------------
 

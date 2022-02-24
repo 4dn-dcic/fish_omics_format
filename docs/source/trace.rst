@@ -1,8 +1,11 @@
 Trace Data table (optional)
 ===========================
 
+.. contents::
+
 Summary
 -------
+
 This table is used to document properties that are globally associated
 with individual Traces rather than individual bright Spots (e.g.,
 Physical coordinates, RNA transcription, or Allele). These are

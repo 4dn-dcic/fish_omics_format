@@ -1,8 +1,11 @@
 Spot Quality table (recommended)
 ================================
 
+.. contents::
+
 Summary
 -------
+
 *(each line corresponds to an individual DNA or RNA bright Spot)*
 
 This table is highly recommended and it is designed to provide quality

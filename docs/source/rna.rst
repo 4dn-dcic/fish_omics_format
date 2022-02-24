@@ -1,8 +1,11 @@
 RNA-Spot Data table (optional)
 ==============================
 
+.. contents::
+
 Summary
 -------
+
 *(each line corresponds to an individual RNA bright Spot)*
 
 This is an optional table used to store and share the results of RNA

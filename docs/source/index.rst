@@ -32,8 +32,7 @@ Chromatin Tracing (FOF-CT)
 
 .. toctree::
     :caption: FOF-CT
-    :numbered:
-    :maxdepth: 2
+    :maxdepth: 1
 
     intro_ct
     overview
@@ -55,8 +54,7 @@ Genomic Single Molecule Localization (FOF-GSML)
 
 .. toctree::
     :caption: FOF-GSML
-    :numbered:
-    :maxdepth: 2
+    :maxdepth: 1
 
     intro_gsml
     core_dna_spot

@@ -1,6 +1,8 @@
 DNA-Spot Data core table (required)
 ===================================
 
+.. contents::
+
 Summary
 -------
 

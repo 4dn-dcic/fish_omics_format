@@ -1,6 +1,8 @@
 Miscellaneous
 =============
 
+.. contents::
+
 4DN Experimental and Microscopy Metadata
 ----------------------------------------
 
