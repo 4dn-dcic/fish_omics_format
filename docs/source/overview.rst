@@ -1,7 +1,7 @@
 Format description: overview
 ============================
 
-.. contents:: Table of Contents
+.. contents::
 
 General Info
 ------------

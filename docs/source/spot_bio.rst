@@ -1,7 +1,7 @@
 Spot Biological Data table (recommended)
 ========================================
 
-.. contents:: Table of Contents
+.. contents::
 
 Summary
 -------

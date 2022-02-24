@@ -1,7 +1,7 @@
 DNA-Spot/Trace Data core table (required)
 =========================================
 
-.. contents:: Table of Contents
+.. contents::
 
 Summary
 -------

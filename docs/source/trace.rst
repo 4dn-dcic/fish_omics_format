@@ -1,7 +1,7 @@
 Trace Data table (optional)
 ===========================
 
-.. contents:: Table of Contents
+.. contents::
 
 Summary
 -------

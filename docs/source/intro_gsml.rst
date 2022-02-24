@@ -1,8 +1,8 @@
 Introduction
 ============
 
-This document describes the 4DN FISH Omics Format - Genomic Single Molecule
-Localization (FOF-GSML), a community data format designed for capturing and
+This document describes the **4DN FISH Omics Format - Genomic Single Molecule
+Localization (FOF-GSML)**, a community data format designed for capturing and
 exchanging the results of chromosome imaging experiments produced within the
 context of the 4D Nucleome project. FOF-GSML is directly compatible with
 single-molecule localization methods for volumetric imaging, such as OligoSTORM

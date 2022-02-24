@@ -1,7 +1,7 @@
 Spot Quality table (recommended)
 ================================
 
-.. contents:: Table of Contents
+.. contents::
 
 Summary
 -------

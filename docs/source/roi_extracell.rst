@@ -1,7 +1,7 @@
 Extra_Cell ROI Data table (optional)
 ====================================
 
-.. contents:: Table of Contents
+.. contents::
 
 Summary
 -------
