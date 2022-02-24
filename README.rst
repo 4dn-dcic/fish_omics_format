@@ -1,5 +1,6 @@
 ###########################
-4DN FISH omics Format (FOF)
+4DN FISH Omics Format (FOF)
 ###########################
 
-High level info on the repository goes here.
+Check out the documentation of 4DN Fish Omics Format at
+https://fish-omics-format.readthedocs.io/.
