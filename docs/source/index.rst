@@ -27,11 +27,8 @@ experiments produced within the context of the 4D Nucleome project.
 
 According to the specific experiment sub-type, we
 
-Chromatin Tracing (FOF-CT)
-==========================
-
 .. toctree::
-    :caption: FOF-CT
+    :caption: Chromatin Tracing (FOF-CT)
     :maxdepth: 1
 
     intro_ct
@@ -49,11 +46,8 @@ Chromatin Tracing (FOF-CT)
     revisions
     misc
 
-Genomic Single Molecule Localization (FOF-GSML)
-===============================================
-
 .. toctree::
-    :caption: FOF-GSML
+    :caption: Genomic Single Molecule Localization (FOF-GSML)
     :maxdepth: 1
 
     intro_gsml

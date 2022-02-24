@@ -1,7 +1,7 @@
 Spot Demultiplexing table (optional)
 ====================================
 
-.. contents::
+.. contents:: Table of Contents
 
 Summary
 -------

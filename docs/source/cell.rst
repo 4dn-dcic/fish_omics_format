@@ -1,7 +1,7 @@
 Cell Data table (optional)
 ==========================
 
-.. contents::
+.. contents:: Table of Contents
 
 Summary
 -------
