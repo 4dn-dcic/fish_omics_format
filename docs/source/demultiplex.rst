@@ -1,8 +1,8 @@
 Spot Demultiplexing table (optional)
-------------------------------------
+====================================
 
 Summary
-~~~~~~~
+-------
 
 This table is optional and is designed to provide additional Spot
 properties that are not recorded in the mandatory DNA Spot/Trace Data
@@ -18,8 +18,9 @@ examples below.
 
 This table can be indexed by Localization_ID.
 
-Example: DNA spots detected with multiplexed barcodes
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Example
+-------
+DNA spots detected with multiplexed barcodes
 
 .. code::
 
@@ -43,7 +44,7 @@ Example: DNA spots detected with multiplexed barcodes
   7 2 3345 5432 654 4 cy3 2324 .95
 
 File Header
-~~~~~~~~~~~
+-----------
 
 .. list-table::
   :header-rows: 1
@@ -126,7 +127,7 @@ File Header
     -
 
 Data Columns
-~~~~~~~~~~~~
+------------
 
 .. list-table::
   :header-rows: 1

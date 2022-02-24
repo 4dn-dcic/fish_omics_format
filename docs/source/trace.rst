@@ -1,9 +1,8 @@
 Trace Data table (optional)
----------------------------
+===========================
 
 Summary
-~~~~~~~
-
+-------
 This table is used to document properties that are globally associated
 with individual Traces rather than individual bright Spots (e.g.,
 Physical coordinates, RNA transcription, or Allele). These are
@@ -14,7 +13,7 @@ table with data stored in one of the other tables (i.e.,
 DNA_Spot/Trace_Data, Global_Cell_Data, etc.,).
 
 Example
-~~~~~~~
+-------
 
 .. code::
 
@@ -32,7 +31,7 @@ Example
   4, CAST, 1500, 0.633
 
 File Header
-~~~~~~~~~~~
+-----------
 
 .. list-table::
   :header-rows: 1
@@ -127,7 +126,7 @@ File Header
     -
 
 Data Columns
-~~~~~~~~~~~~
+------------
 
 .. list-table::
   :header-rows: 1

@@ -1,23 +1,16 @@
-DNA-Spot/Trace Data core table (required)
-=========================================
+DNA-Spot Data core table (required)
+===================================
 
 Summary
 -------
 
-*(each line corresponds to an individual DNA bright Spot along a
-polymeric Trace)*
+*(each line corresponds to an individual DNA bright Spot)*
 
 The column properties are as follows:
 
 **Spot_ID** -- a unique identifier associated with a given spot (each
 row). Recommended practice rather than relying on row index implicitly
 for identity.
-
-**Trace_ID** -- unique identifier common to all spots that are part of a
-common trace (i.e. part of the same chromosome). Used to link individual
-spots into a polymer. Also used to connect these data with any
-measurement that is associated with individual Traces (i.e., nascent RNA
-expression) and is recorded in the corresponding Trace Data Table.
 
 **x, y, z** -- 3 columns, recording the 3D position of the spot, after
 all analysis (i.e. after drift correction, chromatic correction etc).
@@ -42,7 +35,7 @@ Example
 
 .. code::
 
-  ##FOF-CT_version=v0.1
+  ##FOF-GSML_version=v0.0
   ##genome_assembly=GRCh38
   ##XYZ_unit=micron
   #Software_Title: ChrTracer3
@@ -150,10 +143,6 @@ Data Columns
   * - **Spot_ID**
     - A unique identifier for this bright Spot.
     -
-    -
-  * - **Trace_ID**
-    - In case multiple DNA Spots are connected to form 3D polymer traces of chromatin fibers (suh as in ORCA; https://doi.org/10.1038/s41596-020-00478-x), this fields reports a unique identifier for the DNA trace the Spot belongs to. Note: this is used to connect Spots that are part of the same polymeric Trace. It is also used to connect data in this table with any Trace specific measurements such as nascent RNA expression, recorded in the corresponding Trace_Dat table.
-    - 1
     -
   * - **X**
     - The sub-pixel X coordinate of this bright Spot. NOTE: the reported X position is understood to be the one resulting from any performed post-processing correction procedures (i.e. drift correction, chromatic correction etc).

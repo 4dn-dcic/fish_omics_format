@@ -1,9 +1,8 @@
 Extra_Cell ROI Data table (optional)
-------------------------------------
+====================================
 
 Summary
-~~~~~~~
-
+-------
 This table is used to document properties (i.e., volume, mean
 fluorescence intensity) that are globally associated with individual
 extracellular structures (e.g., Tissue, Organoid, etc.,) Region of
@@ -16,7 +15,7 @@ links the data reported in this table with data stored in one of the
 other tables (i.e., DNA_Spot/Trace_Data, Trace_Data, etc.,).
 
 Example
-~~~~~~~
+-------
 
 .. code::
 
@@ -34,7 +33,7 @@ Example
   4, 44, 0, 25340
 
 File Header
-~~~~~~~~~~~
+-----------
 
 .. list-table::
   :header-rows: 1
@@ -133,7 +132,7 @@ File Header
     -
 
 Data Columns
-~~~~~~~~~~~~
+------------
 
 .. list-table::
   :header-rows: 1

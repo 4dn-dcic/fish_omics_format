@@ -1,8 +1,8 @@
 Cell Data table (optional)
---------------------------
+==========================
 
 Summary
-~~~~~~~
+-------
 
 *(scalar data only; each row is a cell)*
 
@@ -17,7 +17,7 @@ DNA_Spot/Trace_Data, Global_Trace_Data, etc.,). The header should note
 the coordinate system used for the cell x/y/z centroid.
 
 Example
-~~~~~~~
+-------
 
 .. code::
 
@@ -36,7 +36,7 @@ Example
   4, 3, 0, 44, 201.1, 32234.24, M, 25340
 
 File Header
-~~~~~~~~~~~
+-----------
 
 .. list-table::
   :header-rows: 1
@@ -135,7 +135,7 @@ File Header
     -
 
 Data Columns
-~~~~~~~~~~~~
+------------
 
 .. list-table::
   :header-rows: 1

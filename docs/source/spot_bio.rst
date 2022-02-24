@@ -1,9 +1,8 @@
 Spot Biological Data table (recommended)
-----------------------------------------
+========================================
 
 Summary
-~~~~~~~
-
+-------
 *(each line corresponds either to an individual DNA or RNA bright Spot)*
 
 This table is highly recommended and it is designed to store and share
@@ -19,7 +18,7 @@ interpretation and reproducibility.
 This table is mandatorily indexed by Spot_ID.
 
 Example
-~~~~~~~
+-------
 
 .. code::
 
@@ -34,7 +33,7 @@ Example
   3, 1.005, 0.150
 
 File Header
-~~~~~~~~~~~
+-----------
 
 .. list-table::
   :header-rows: 1
@@ -129,7 +128,7 @@ File Header
     -
 
 Data Columns
-~~~~~~~~~~~~
+------------
 
 .. list-table::
   :header-rows: 1

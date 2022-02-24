@@ -1,9 +1,8 @@
 RNA-Spot Data table (optional)
-------------------------------
+==============================
 
 Summary
-~~~~~~~
-
+-------
 *(each line corresponds to an individual RNA bright Spot)*
 
 This is an optional table used to store and share the results of RNA
@@ -29,7 +28,7 @@ the underlying raw data can be recorded in corresponding RNA Spot
 quality tables as described below.
 
 Example
-~~~~~~~
+-------
 
 .. code::
 
@@ -53,7 +52,7 @@ Example
   3, 15.83, 42.83, 1.33, MB, ENSG00000198125, ENST00000397326.7, 1
 
 File Header
-~~~~~~~~~~~
+-----------
 
 .. list-table::
   :header-rows: 1
@@ -136,7 +135,7 @@ File Header
     -
 
 Data Columns
-~~~~~~~~~~~~
+------------
 
 .. list-table::
   :header-rows: 1

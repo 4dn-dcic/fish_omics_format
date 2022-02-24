@@ -1,5 +1,8 @@
+Miscellaneous
+=============
+
 4DN Experimental and Microscopy Metadata
-========================================
+----------------------------------------
 
 -  Project =
 -  Center =
@@ -20,15 +23,15 @@
 -  Probe sequences, (fasta file, see example)
 
 Useful information
-==================
+------------------
 
 OME-NGFF and OME-Zarr
----------------------
+^^^^^^^^^^^^^^^^^^^^^
 -  https://www.biorxiv.org/content/10.1101/2021.03.31.437929v4
 -  https://zarr.readthedocs.io/en/stable/
 
-Browsable probe map, example bed file:
---------------------------------------
+Browsable probe map, example bed file
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code::
 
@@ -39,8 +42,8 @@ Browsable probe map, example bed file:
   chr12 113190003 113220003 IgH_004 1 + 113190003 113220003 255,42,0
   ...
 
-Probe sequence, example fasta file:
------------------------------------
+Probe sequence, example fasta file
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code::
 
@@ -51,7 +54,7 @@ Probe sequence, example fasta file:
   ...
 
 Example published / available data sets
----------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 - Wang...Zhuang 2016, *Science* (IMR90)
 - Bintu,Mateo...Boettiger,Zhuang, 2018, *Science* (IMR90, K562, A549, HCT116)
 - Mateo...Boettiger 2019, *Nature* (mESC + D. mel)
@@ -63,7 +66,7 @@ Example published / available data sets
 - Wiggins...Boettiger,Crabtree. 2021 *NSMB*, (mESC)
 
 Example Tables
---------------
+^^^^^^^^^^^^^^
 
 [Other publications with potentially accessible and similar data to
 aggregate]
@@ -77,7 +80,7 @@ aggregate]
 - Nollman lab data
 
 Miscellaneous
--------------
+^^^^^^^^^^^^^
 
 On multiplexed data
 

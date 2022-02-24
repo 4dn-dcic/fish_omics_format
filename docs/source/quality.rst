@@ -1,9 +1,8 @@
 Spot Quality table (recommended)
---------------------------------
+================================
 
 Summary
-~~~~~~~
-
+-------
 *(each line corresponds to an individual DNA or RNA bright Spot)*
 
 This table is highly recommended and it is designed to provide quality
@@ -21,8 +20,9 @@ The table is indexed by Spot_ID and each row corresponds to a DNA or RNA
 bright Spot. The order of not required columns and of the rows are at
 the user's discretion.
 
-Example: Spot fit quality
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+Example
+-------
+Spot fit quality
 
 .. code::
 
@@ -48,7 +48,7 @@ Example: Spot fit quality
   # b - spots were fit to a 3D Gaussian parameterized by amplitude a, background b, widths sigma_xy, sigma_z. Sigma_xy were pre-calibrated for the system based imaging of 100 nm beads.
 
 File Header
-~~~~~~~~~~~
+-----------
 
 .. list-table::
   :header-rows: 1
@@ -203,7 +203,7 @@ File Header
     -
 
 Data Columns
-~~~~~~~~~~~~
+------------
 
 .. list-table::
   :header-rows: 1

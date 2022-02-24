@@ -1,18 +1,6 @@
 Introduction
 ============
 
-A key output of the 4DN project is the open publication of datasets
-related to the structure of the human cell nucleus and the genome,
-within. Recent years have seen a rapid expansion of FISH-omics methods,
-which quantify the spatial organization of DNA, RNA and protein in the
-cell and provide expanded understanding of how higher-order chromosome
-structure relates to transcriptional activity and cell development.
-Despite this progress, FISH-based image-data are not yet routinely made
-publicly available upon publication because of the lack of common
-specifications for data exchange. This challenge is experienced across
-the bioimaging community, as a result a solution built, tested and
-proven in 4DN can have a wide impact all over the world.
-
 This document describes the **4DN FISH Omics Format - Chromatin
 Tracing (FOF-CT)**, a community data format designed for capturing and
 exchanging the results of chromosome imaging experiments produced within

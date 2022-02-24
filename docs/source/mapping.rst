@@ -1,5 +1,8 @@
 Cell/ROI Mapping table (optional)
----------------------------------
+=================================
+
+Summary
+-------
 
 This table is used to provide the boundaries of Cells and other ROIs
 identified as part of this experiment.
@@ -35,7 +38,7 @@ properties such as:
 -  Lists of channels
 
 Example
-~~~~~~~
+-------
 
 .. code::
 
@@ -54,7 +57,7 @@ Example
   4, 3, (0,0 9,2 9,5)
 
 File Header
-~~~~~~~~~~~
+-----------
 
 .. list-table::
   :header-rows: 1
@@ -161,7 +164,7 @@ File Header
     -
 
 Data Columns
-~~~~~~~~~~~~
+------------
 
 .. list-table::
   :header-rows: 1
