@@ -29,8 +29,8 @@ experiments produced within the context of the 4D Nucleome project.
 According to the experiment sub-type, this data format is composed
 of a specific sub-set of tables. Future extensions will be added here.
 
-- `Chromatin Tracing (FOF-CT)`_
-- `Genomic Single Molecule Localization (FOF-GSML)`_
+- :ref:`fof_ct`
+- :ref:`fof_gsml`
 
 Notes
 =====
