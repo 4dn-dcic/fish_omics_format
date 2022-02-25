@@ -1,4 +1,4 @@
-.. _fof_gslm:
+.. _fof_gsml:
 
 ###############################################
 Genomic Single Molecule Localization (FOF-GSML)
