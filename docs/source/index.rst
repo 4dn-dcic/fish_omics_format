@@ -1,9 +1,10 @@
 .. toctree::
-    :caption: Overview
     :hidden:
     :maxdepth: 2
 
     self
+    index_ct
+    index_gsml
 
 ###########################
 4DN FISH Omics Format (FOF)
@@ -28,37 +29,8 @@ experiments produced within the context of the 4D Nucleome project.
 According to the experiment sub-type, this data format is composed
 of a specific sub-set of tables. Future extensions will be added here.
 
-.. toctree::
-    :caption: Chromatin Tracing (FOF-CT)
-    :maxdepth: 1
-
-    intro_ct
-    overview
-    core_spot_trace
-    rna
-    quality
-    spot_bio
-    demultiplex
-    trace
-    cell
-    roi_subcell
-    roi_extracell
-    mapping
-    revisions
-    misc
-
-.. toctree::
-    :caption: Genomic Single Molecule Localization (FOF-GSML)
-    :maxdepth: 1
-
-    intro_gsml
-    core_dna_spot
-    rna
-    quality
-    spot_bio
-    cell
-    roi_subcell
-    mapping
+- `Chromatin Tracing (FOF-CT) <index_ct.rst>`_
+- `Genomic Single Molecule Localization (FOF-GSML) <index_gsml.rst>`_
 
 Notes
 =====
