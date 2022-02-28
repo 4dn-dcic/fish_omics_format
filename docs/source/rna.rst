@@ -8,8 +8,6 @@ RNA-Spot Data table (conditionally required)
 Summary
 -------
 
-*(each line corresponds to an individual RNA bright Spot)*
-
 This table is used to store and share the results of RNA FISH-omics experiments
 and it is required in the case RNA data was collected as part of this
 experiment. Each row represents a detected RNA bright Spot

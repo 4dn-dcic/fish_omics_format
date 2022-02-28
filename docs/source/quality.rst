@@ -8,8 +8,6 @@ Spot Quality table (recommended)
 Summary
 -------
 
-*(each line corresponds to an individual DNA or RNA bright Spot)*
-
 This table is highly recommended and it is designed to provide quality
 metrics for the Spot localization, information about the optical Channel
 that was used to image the Spot, and various aberration corrections that

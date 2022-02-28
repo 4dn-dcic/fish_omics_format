@@ -8,9 +8,6 @@ DNA-Spot/Trace Data core table (required)
 Summary
 -------
 
-*(each line corresponds to an individual DNA bright Spot along a
-polymeric Trace)*
-
 This is the mandatory core table of the 4DN FISH-omics Format for Chromatin
 Tracing. This table is used to record and exchange the primary results of
 Chromatin Tracing experiments. The Table is organized around individual DNA

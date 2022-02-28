@@ -8,8 +8,6 @@ Spot Biological Data table (recommended)
 Summary
 -------
 
-*(each line corresponds either to an individual DNA or RNA bright Spot)*
-
 This table is highly recommended and it is designed to store and share
 biological properties associated with individual Spots (e.g., distance
 from the nuclear lamina (NL) or the nuclear pore complex (NPC), etc.; Su
