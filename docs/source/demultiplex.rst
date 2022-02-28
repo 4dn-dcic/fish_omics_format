@@ -20,6 +20,20 @@ examples below.
 
 This table can be indexed by Localization_ID.
 
+
+This table is optional and is designed to be used in the case of multiplexed
+FISH experiments (i.e., MERFISH) in which the final localization of a bright
+DNA or RNA Spot of interest results from the combination of multiple
+individual localization events (e.g., by combining particles detected and
+localized in separate images).
+In such a case the final Spot localization data is recorded in the core
+DNA Spot/Trace Data table, while the underlying primary localization data
+can be recorded by using this table, as shown for RNA Spots in the
+example below.
+
+This table is indexed by Loc_ID and it has a mandatory Spot_ID column that
+is used to link individual localization events to the resulting Spot.
+
 Example
 -------
 DNA spots detected with multiplexed barcodes
@@ -122,7 +136,7 @@ The header should include a detailed description of each optional columns used.
 Data Columns
 ------------
 
-Each row corresponds to data associated with an individual Spot or Trace.
+Each row corresponds to data associated with an individual Localization event.
 
 The first column of this table is always Loc_ID.
 The second column has to mandatorily be Spot_ID.
@@ -136,8 +150,12 @@ The order of the rows is at user's discretion.
     - Description
     - Example
     - Conditional requirement conditions
+  * - *Loc_ID*
+    - A unique identifier for this individual Localization event.
+    - 1
+    -
   * - *Spot_ID*
-    - A unique identifier for this bright Spot.
+    - A unique identifier for the bright DNA or RNA Spot with which this individual localization event is associated.
     - 1
     -
   * - #^optional_column_1:
