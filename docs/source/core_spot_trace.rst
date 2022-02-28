@@ -1,3 +1,5 @@
+.. _core_spot_trace:
+
 DNA-Spot/Trace Data core table (required)
 =========================================
 

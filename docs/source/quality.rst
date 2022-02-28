@@ -1,3 +1,5 @@
+.. _quality:
+
 Spot Quality table (recommended)
 ================================
 

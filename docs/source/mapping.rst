@@ -1,3 +1,5 @@
+.. _mapping:
+
 Cell/ROI Mapping table (optional)
 =================================
 

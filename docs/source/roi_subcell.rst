@@ -1,3 +1,5 @@
+.. _roi_subcell:
+
 Sub_Cell ROI Data table (optional)
 ==================================
 
@@ -131,7 +133,7 @@ Data Columns
 Each row corresponds to data associated with an individual Sub_Cell_ROI.
 
 The first column of this table is always Sub_Cell_ROI_ID.
-The content and order of all other columns is at user's discretion. 
+The content and order of all other columns is at user's discretion.
 The order of the rows is at user's discretion.
 
 .. list-table::

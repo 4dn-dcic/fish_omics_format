@@ -1,3 +1,5 @@
+.. _rna:
+
 RNA-Spot Data table (optional)
 ==============================
 

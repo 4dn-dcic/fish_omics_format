@@ -1,3 +1,5 @@
+.. _demultiplex:
+
 Spot Demultiplexing table (optional)
 ====================================
 

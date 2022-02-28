@@ -1,3 +1,5 @@
+.. _spot_bio:
+
 Spot Biological Data table (recommended)
 ========================================
 

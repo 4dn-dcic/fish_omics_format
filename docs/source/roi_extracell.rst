@@ -1,3 +1,5 @@
+.. _roi_extracell:
+
 Extra_Cell ROI Data table (optional)
 ====================================
 

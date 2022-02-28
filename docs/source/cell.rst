@@ -1,3 +1,5 @@
+.. _cell:
+
 Cell Data table (optional)
 ==========================
 
