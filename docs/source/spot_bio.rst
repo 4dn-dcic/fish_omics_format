@@ -29,6 +29,17 @@ Example
 File Header
 -----------
 
+The first line in the header is always "##FOF-CT_version=vX.X"
+
+This Table can be indexed mandatorily by Spot_ID.
+
+The header MUST to contain a mandatory set of fields that describe any
+algorithm that was used to produce/process data in this table.
+In case more than on algorithm were used, please use the same set of fields
+for each of them.
+
+The header should include a detailed description of each optional columns used.
+
 .. list-table::
   :header-rows: 1
 
@@ -109,7 +120,7 @@ File Header
     - micron
     -
   * - *##time_unit=*
-    - If relevant, the unit used to represent a time interval. Note: use “sec” for seconds, “msec” for milliseconds, “min” for minutes, and “hr” for hours.
+    - If relevant, the unit used to represent a time interval. Note: use "sec" for seconds, "msec" for milliseconds, "min" for minutes, and "hr" for hours.
     - sec
     - Conditional requirement: this MUST be reported if any time metrics are reported.
   * - *##intensity_unit=*
@@ -123,6 +134,13 @@ File Header
 
 Data Columns
 ------------
+
+Each row corresponds to data associated with an individual Spot or Trace.
+
+The first columns are always: Spot_ID, X, Y, Z coordinates, RNA_name,
+Gene_ID(, Transcript_ID).
+The order of the other columns is at user's discretion.
+The order of the rows is at user's discretion.
 
 .. list-table::
   :header-rows: 1

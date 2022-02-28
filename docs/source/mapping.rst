@@ -9,6 +9,9 @@ Summary
 This table is used to provide the boundaries of Cells and other ROIs
 identified as part of this experiment.
 
+This table is mandatory in case a Sub_Cell_ROI _Data, Cell_Data,
+and/or Extra_Cell_ROI_Data tables are deposited with this submission.
+
 The table is organized on a Cell/ROI basis via a Cell/ROI ID and
 provides the Cell/ROI boundaries in global coordinates as specified by
 the OME ROI data model
@@ -47,6 +50,10 @@ Example
 
 File Header
 -----------
+
+The first line in the header is always “##FOF-CT_version=vX.X”
+
+The header should include a detailed description of each optional columns used.
 
 .. list-table::
   :header-rows: 1
@@ -128,7 +135,7 @@ File Header
     - micron
     -
   * - *##time_unit=*
-    - If relevant, the unit used to represent a time interval. Note: use “sec” for seconds, “msec” for milliseconds, “min” for minutes, and “hr” for hours.
+    - If relevant, the unit used to represent a time interval. Note: use "sec" for seconds, "msec" for milliseconds, "min" for minutes, and "hr" for hours.
     - sec
     - Conditional requirement: this MUST be reported if any time metrics are reported.
   * - *##intensity_unit=*
@@ -154,6 +161,15 @@ File Header
 
 Data Columns
 ------------
+
+Each row corresponds to data associated with an individual Cell, Sub-Cell_ROI
+or Extra_Cell_ROI.
+
+The first column of this table is always the relevant ID.
+The content and order of all other columns is at user's discretion.
+The order of the rows is at user's discretion.
+
+It is mandatory to choose one of the three types of ID.
 
 .. list-table::
   :header-rows: 1

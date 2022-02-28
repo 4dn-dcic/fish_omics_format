@@ -39,6 +39,15 @@ Example
 File Header
 -----------
 
+The first line in the header is always "##FOF-CT_version=vX.X"
+
+The header MUST to contain a mandatory set of fields that describe the
+algorithm(s) that were used to identify and localize bright Spots.
+In case more than on algorithm were used, please use the same set of fields
+for each of them.
+
+The header should include a detailed description of each optional columns used.
+
 .. list-table::
   :header-rows: 1
 
@@ -121,6 +130,14 @@ File Header
 
 Data Columns
 ------------
+
+As with all other Spot Data tables in this format, each row corresponds to
+data associated with an individual Spot.
+
+The first columns are always: Spot_ID, X, Y, Z coordinates, RNA_name,
+Gene_ID(, Transcript_ID).
+The order of the other columns is at user's discretion.
+The order of the rows is at user's discretion.
 
 .. list-table::
   :header-rows: 1

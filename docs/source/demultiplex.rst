@@ -30,6 +30,15 @@ DNA spots detected with multiplexed barcodes
 File Header
 -----------
 
+The first line in the header is always "##FOF-CT_version=vX.X"
+
+The header MUST to contain a mandatory set of fields that describe any
+algorithm that was used to produce/process data in this table.
+In case more than on algorithm were used, please use the same set of fields
+for each of them.
+
+The header should include a detailed description of each optional columns used.
+
 .. list-table::
   :header-rows: 1
 
@@ -98,7 +107,7 @@ File Header
     - micron
     - Conditional requirement: this MUST be reported if any locations metrics are reported.
   * - *##time_unit=*
-    - If relevant, the unit used to represent a time interval. Note: use “sec” for seconds, “msec” for milliseconds, “min” for minutes, and “hr” for hours.
+    - If relevant, the unit used to represent a time interval. Note: use "sec" for seconds, "msec" for milliseconds, "min" for minutes, and "hr" for hours.
     - sec
     - Conditional requirement: this MUST be reported if any time metrics are reported.
   * - *##intensity_unit=*
@@ -112,6 +121,13 @@ File Header
 
 Data Columns
 ------------
+
+Each row corresponds to data associated with an individual Spot or Trace.
+
+The first column of this table is always Loc_ID.
+The second column has to mandatorily be Spot_ID.
+The content and order of all other columns is at user's discretion.
+The order of the rows is at user's discretion.
 
 .. list-table::
   :header-rows: 1
