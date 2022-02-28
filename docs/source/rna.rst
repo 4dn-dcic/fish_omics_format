@@ -1,7 +1,7 @@
 .. _rna:
 
-RNA-Spot Data table (optional)
-==============================
+RNA-Spot Data table (conditionally required)
+============================================
 
 .. contents::
 
@@ -10,8 +10,9 @@ Summary
 
 *(each line corresponds to an individual RNA bright Spot)*
 
-This is an optional table used to store and share the results of RNA
-FISH-omics experiments. Each row represents a detected RNA bright Spot
+This table is used to store and share the results of RNA FISH-omics experiments
+and it is required in the case RNA data was collected as part of this
+experiment. Each row represents a detected RNA bright Spot
 and corresponds to the localization of a specific RNA transcript. At a
 minimum, one needs to know the Spot_ID, the X, Y, Z coordinates of each
 localization, the Gene_ID and an additional ID used to link this data

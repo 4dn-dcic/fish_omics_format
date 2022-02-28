@@ -1,21 +1,23 @@
 .. _roi_extracell:
 
-Extra_Cell ROI Data table (optional)
-====================================
+Extra_Cell ROI Data table (conditionally required)
+==================================================
 
 .. contents::
 
 Summary
 -------
 
-This table is used to document properties (i.e., volume, mean
-fluorescence intensity) that are globally associated with individual
-extracellular structures (e.g., Tissue, Organoid, etc.,) Region of
-Interest (ROI) Cells. These are properties that are shared by all
-bright Spots, Traces and Cells that belong to an individual
-extracellular structure identified as part of this study. Each row in
-the table corresponds to a different extracellular structure studied in
-the experiment and is identified by a unique Extra_Cell_ROI_ID that
+This table is used to document properties (i.e., volume, mean fluorescence
+intensity) that are globally associated with individual extracellular
+structures (e.g., Tissue, Organoid, etc.,) Regions of Interest (ROI),
+and it is required in the case extracellular ROI segmentation data was
+collected as part of this experiment.
+These are properties that are shared by all bright Spots, Traces and Cells
+that belong to an individual extracellular structure identified as part of
+this study.
+Each row in the table corresponds to a different extracellular structure
+studied in the experiment and is identified by a unique Extra_Cell_ROI_ID that
 links the data reported in this table with data stored in one of the
 other tables (i.e., DNA_Spot/Trace_Data, Trace_Data, etc.,).
 

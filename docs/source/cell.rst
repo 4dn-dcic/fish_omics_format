@@ -10,9 +10,10 @@ Summary
 
 *(scalar data only; each row is a cell)*
 
-This table is a complementary table used to document properties that are
-globally associated with individual Cells (e.g., cell size, cell volume,
-cell type). These are properties that are shared by all bright Spots and
+This table is used to document properties that are globally associated with
+individual Cells (e.g., cell size, cell volume, cell type) and it is required 
+in the case Cell segmentation data was collected as part of this experiment.
+These are properties that are shared by all bright Spots and
 Traces that belong to an individual Cell. Each row in the table
 corresponds to a different Cell studied in the experiment and is
 identified by a unique Cell_ID that links the data reported in this

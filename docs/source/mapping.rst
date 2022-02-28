@@ -1,15 +1,15 @@
 .. _mapping:
 
-Cell/ROI Mapping table (optional)
-=================================
+Cell/ROI Mapping table (conditionally required)
+===============================================
 
 .. contents::
 
 Summary
 -------
-
 This table is used to provide the boundaries of Cells and other ROIs
-identified as part of this experiment.
+identified as part of this experiment, and it is required in case Cell and
+other ROI segmentation data were collected as part of this experiment.
 
 This table is mandatory in case a Sub_Cell_ROI _Data, Cell_Data,
 and/or Extra_Cell_ROI_Data tables are deposited with this submission.
