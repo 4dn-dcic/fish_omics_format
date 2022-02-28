@@ -23,17 +23,8 @@ This table is mandatorily indexed by Spot_ID.
 Example
 -------
 
-.. code::
-
-  ##FOF-CT_version=v0.1
-  ##XYZ_unit=micron
-  #^NL_distance:
-  #^H4K27me3_distance:
-  #additional_tables: RNA_Spot_Data.csv, Cell_Data.csv
-  ##columns=(Spot_ID, NL_distance, H4K27me3_distance)
-  1, 1.345, 0.445
-  2, 1.245, 0.005
-  3, 1.005, 0.150
+.. include:: examples/spot_bio
+  :code:
 
 File Header
 -----------

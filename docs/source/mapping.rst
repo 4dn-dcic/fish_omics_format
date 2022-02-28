@@ -42,21 +42,8 @@ properties such as:
 Example
 -------
 
-.. code::
-
-  ##FOF-CT_version=v0.1
-  ##XYZ_unit=micron
-  ##intensity_unit=a.u.
-  ##Sub_Cell_ROI_type=PML_body
-  ##ROI_boundaries_format=(X1,Y1, X2,Y2 Xn,Yn)
-  #^ROI_volume: the volume of this ROI expressed in micron^3.
-  #^ROI_intensity: the integrated average signal intensity measured within the boundaries of this ROI, of the marker used to identify this nuclear feature.
-  #additional_tables: DNA_Spot/Trace_Data.csv, RNA_Spot_Data.csv, Global_Trace_Data.csv
-  #columns=(Sub_Cell_ROI_ID, Cell_ID, ROI_boundaries, ROI_volume, ROI_intensity)
-  1, 1, (0,0 1,2 3,5)
-  2, 1, (0,0 2,3 4,6)
-  3, 2, (0,0 3,2 7,5)
-  4, 3, (0,0 9,2 9,5)
+.. include:: examples/mapping
+  :code:
 
 File Header
 -----------

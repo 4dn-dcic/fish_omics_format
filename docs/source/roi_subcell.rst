@@ -19,20 +19,8 @@ reported in this table with data stored in one of the other tables
 Example
 -------
 
-.. code::
-
-  ##FOF-CT_version=v0.1
-  ##XYZ_unit=micron
-  ##intensity_unit=a.u.
-  ##Sub_Cell_ROI_type=Nucleolus
-  #^ROI_volume: the volume of this ROI expressed in micron^3.
-  #^ROI_intensity: the integrated average signal intensity of the marker of interest as measured within the boundaries of this ROI.
-  #additional_tables: DNA_Spot/Trace_Data.csv, RNA_Spot_Data.csv, Global_Trace_Data.csv
-  #columns=(Sub_Cell_ROI_ID, Cell_ID, ROI_volume, ROI_intensity)
-  1, 1, 1345, 3500
-  2, 1, 3554, 1500
-  3, 2, 1001, 2500
-  4, 3, 2534, 3498
+.. include:: examples/roi_subcell
+  :code:
 
 File Header
 -----------

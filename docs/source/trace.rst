@@ -18,20 +18,8 @@ DNA_Spot/Trace_Data, Global_Cell_Data, etc.,).
 Example
 -------
 
-.. code::
-
-  ##FOF-CT_version=v0.1
-  ##XYZ_unit=micron
-  ##intensity_unit=a.u.
-  #^allele: This field records the Allele to which this Trace was mapped. This can be one of the following values: BL6, CAST.
-  #^RNA_A_intensity: This records the intensity of the nascent RNA A expression signal associated with this Trace.
-  #^NL_distance: This field records the distance of this Trace to the Nuclear Lamina.
-  #additional_tables: DNA_Spot_Data.csv, Cell_Data.csv
-  #columns=(Trace_ID, allele, RNA_A_int, NL_distance)
-  1, BL6, 43253, 0.235
-  2, CAST, 40001, 0.563
-  3, BL6, 1000, 0.135
-  4, CAST, 1500, 0.633
+.. include:: examples/trace
+  :code:
 
 File Header
 -----------
