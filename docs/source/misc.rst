@@ -4,6 +4,17 @@ Miscellaneous
 .. contents::
 
 
+Contributors
+------------
+Contributors, listed alphabetically:
+Sarah Aufmkolk,
+Bogdan Bintu,
+Alistair Boettiger,
+Andrea Cosolo,
+Adam Jussila,
+Caterina Strambio De Castillia,
+Steven Wang.
+
 Older revision history
 ----------------------
 
@@ -121,16 +132,3 @@ aggregate]
 - Wu lab FISSEQ Nat. Methods chr tracing paper,
 - Joyce lab (mostly STORM so far?)
 - Nollman lab data
-
-Miscellaneous
-^^^^^^^^^^^^^
-
-On multiplexed data
-
-Barcode - made of several readouts
-
-Barcode 1 : **readout** - 0, 5 and 12
-
-Readout table -
-
-Readout X Y Z
