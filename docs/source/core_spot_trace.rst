@@ -9,35 +9,29 @@ Summary
 *(each line corresponds to an individual DNA bright Spot along a
 polymeric Trace)*
 
-The column properties are as follows:
+This is the mandatory core table of the 4DN FISH-omics Format for Chromatin
+Tracing. This table is used to record and exchange the primary results of
+Chromatin Tracing experiments. The Table is organized around individual DNA
+bright Spots that are spatially linked together in a three-dimensional (3D)
+polymeric Trace using a 3D polymeric tracing algorithm. As a result, all Spots
+that share the same Trace_ID, by definition belong to the same Trace.
 
-**Spot_ID** -- a unique identifier associated with a given spot (each
-row). Recommended practice rather than relying on row index implicitly
-for identity.
+Each row reports the x, y, z localization, and the Trace assignment
+(i.e., Trace_ID) of a FISH-omics bright Spot and corresponds to a specific
+genomic DNA target sequence identified by Chromosome ID, and by Start and End
+chromosome coordinates.
 
-**Trace_ID** -- unique identifier common to all spots that are part of a
-common trace (i.e. part of the same chromosome). Used to link individual
-spots into a polymer. Also used to connect these data with any
-measurement that is associated with individual Traces (i.e., nascent RNA
-expression) and is recorded in the corresponding Trace Data Table.
+At a minimum the Table has to have 8 columns in the following order: Spot_ID,
+Trace_ID, X, Y, Z coordinates, Chromosome ID, Chromosome Start, Chromosome End.
+These are required.
+Additionally in case sub-cellular structures, cells or Extra Cellular
+Structures (e.g., Tissue) are identified as part of this experiment,
+this table has to mandatorily include the ID of the Sub_Cellular, Cell or
+Extra Cellular Structure (e.g., Tissue) Region of Interest (ROI)
+each Spot/Trace is associated with. The order of these columns is optional.
 
-**x, y, z** -- 3 columns, recording the 3D position of the spot, after
-all analysis (i.e. after drift correction, chromatic correction etc).
-The units remind the user of the approved convention.
-
-**Chrom, Chrom_Start, Chrom_End**: 3 columns, in Bed format, to
-interface easily with genome browser
-
-Cell_ID -- unique identifier common to all spots that are part of a
-common cell (diploid cells will generally have 2 traceIDs per cellID).
-Also used to link these data with any cell specific data, such as mRNA
-levels or cell volume, recorded in the Cell Table. If cell segmentation
-was not performed, this column may be left with NA.
-
-Sub_Cell_ROI_ID, Extra_Cell_ROI_ID -- Additional identifiers used to
-link these data to other tables may be appended as additional columns if
-needed. All other spot properties should be kept in the optional
-additional table DNA Spot Properties, indexed by Spot_ID.
+All other spot properties should be kept in the optional
+additional Spot Biological Data table, indexed by Spot_ID.
 
 Example
 -------
@@ -47,6 +41,16 @@ Example
 
 File Header
 -----------
+
+The first line in the header is always “##FOF-CT_version=vX.X”
+
+The header MUST to contain a mandatory set of fields that describe the
+algorithm(s) that were used to identify and localize bright Spots and to
+connect them to form Traces. In case more than one algorithm were used,
+please use the same set of fields for each of the algorithm used.
+
+The columns for this table are mandatory and do not need to be described
+in the header.
 
 .. list-table::
   :header-rows: 1
@@ -123,6 +127,14 @@ File Header
 Data Columns
 ------------
 
+As with all other Spot Data tables in this format, each row corresponds to
+data associated with an individual Spot.
+
+The first columns are always: Spot_ID, Trace_ID, X, Y, Z, Chrom, Chrom_Start,
+Chrom_End.
+The order of the other columns is at user's discretion.
+The order of the rows is at user's discretion.
+
 .. list-table::
   :header-rows: 1
 
@@ -135,7 +147,7 @@ Data Columns
     -
     -
   * - **Trace_ID**
-    - In case multiple DNA Spots are connected to form 3D polymer traces of chromatin fibers (suh as in ORCA; https://doi.org/10.1038/s41596-020-00478-x), this fields reports a unique identifier for the DNA trace the Spot belongs to. Note: this is used to connect Spots that are part of the same polymeric Trace. It is also used to connect data in this table with any Trace specific measurements such as nascent RNA expression, recorded in the corresponding Trace_Dat table.
+    - In case multiple DNA Spots are connected to form 3D polymer traces of chromatin fibers (such as in ORCA; https://doi.org/10.1038/s41596-020-00478-x), this fields reports a unique identifier for the DNA trace the Spot belongs to. Note: this is used to connect Spots that are part of the same polymeric Trace. It is also used to connect data in this table with any Trace specific measurements such as nascent RNA expression, recorded in the corresponding Trace_Data table.
     - 1
     -
   * - **X**
@@ -159,18 +171,18 @@ Data Columns
     - 0
     -
   * - **Chrom_End**
-    - Stop coordinate on the Chromosome for the sequence associated with this bright Spot. This position is non-inclusive, unlike chromStart. Because BED (Browser Extensible Data) is the de facto exchange bioinformatics format for genomic data, the BED terminology was used here.
+    - Stop coordinate on the Chromosome for the sequence associated with this bright Spot. This position is non-inclusive, unlike Chrom_Start. Because BED (Browser Extensible Data) is the de facto exchange bioinformatics format for genomic data, the BED terminology was used here.
     - 1000
     -
   * - *Sub_Cell_ROI_ID*
-    - If known, this fields reports the unique identifier for a Region of Interest (ROI) that represents the boundaries of a sub-cellular structure a given Spot/Trace is associated with. Note: this is used to connect individual Spot/Traces that are part of the same ROI. It is also used to connect data in this table with any ROI specific measurements such as boundaries, intensities or volume, recorded in the corresponding ROI_Data_Table.
+    - If known, this field reports the unique identifier for a Region of Interest (ROI) that represents the boundaries of a sub-cellular structure a given Spot/Trace is associated with. Note: this is used to connect individual Spot/Traces that are part of the same ROI. It is also used to connect data in this table with any ROI specific measurements such as boundaries, intensities or volume, recorded in the corresponding ROI_Data_Table.
     - 1
     - Conditional requirement: this column is mandatory if data in this table can be associated with a Sub_Cell_ROI identified as part of this experiment.
   * - *Cell_ID*
-    - If known, this fields reports the unique identifier for the Cell a given Spot/Trace is associated with. Note: this is used to connect individual Spot/Traces that are part of the same Cell. It is also used to connect data in this table with any Cell specific measurements such as boundaries, intensities and volume, recorded in the corresponding Cell_Data_Table.
+    - If known, this field reports the unique identifier for the Cell a given Spot/Trace is associated with. Note: this is used to connect individual Spot/Traces that are part of the same Cell. It is also used to connect data in this table with any Cell specific measurements such as boundaries, intensities and volume, recorded in the corresponding Cell_Data_Table.
     - 1
     - Conditional requirement: this column is mandatory if data in this table can be associated with a Cell identified as part of this experiment.
   * - *Extra_Cell_ROI_ID*
-    - If known, this fields reports the unique identifier for a Region of Interest (ROI) that represents the boundaries of a extracellular structure (e.g., Tissue) a given Spot/Trace is associated with. Note: this is used to connect individual Spot/Traces that are part of the same ROI. It is also used to connect data in this table with any ROI specific measurements such as boundaries, intensities and volume, recorded in the corresponding ROI_Data_Table.
+    - If known, this field reports the unique identifier for a Region of Interest (ROI) that represents the boundaries of a extracellular structure (e.g., Tissue) a given Spot/Trace is associated with. Note: this is used to connect individual Spot/Traces that are part of the same ROI. It is also used to connect data in this table with any ROI specific measurements such as boundaries, intensities and volume, recorded in the corresponding ROI_Data_Table.
     - 1
     - Conditional requirement: this column is mandatory if data in this table can be associated with a extracellular structure ROI (e.g., Tissue) identified as part of this experiment.
