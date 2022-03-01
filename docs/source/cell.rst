@@ -34,7 +34,7 @@ The header should include a detailed description of each optional columns used.
 
 .. csv-table::
   :file: tables/cell_header.csv
-  :widths: 20 40 20 20
+  :widths: 20, 40, 20, 20
   :header-rows: 1
 
 Data Columns
