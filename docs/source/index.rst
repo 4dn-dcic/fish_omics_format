@@ -4,7 +4,7 @@
 
 .. toctree::
     :caption: FOF-CT: Chromatin Tracing
-    :maxdepth: 2
+    :maxdepth: 1
 
     intro
     format_overview
