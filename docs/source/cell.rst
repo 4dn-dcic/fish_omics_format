@@ -22,7 +22,7 @@ the coordinate system used for the cell x/y/z centroid.
 Example
 -------
 
-.. include:: examples/cells
+.. include:: examples/cell
   :code:
 
 File Header
