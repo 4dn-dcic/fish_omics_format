@@ -1,8 +1,18 @@
-Cell/ROI Mapping table (optional)
----------------------------------
+.. _mapping:
 
+Cell/ROI Mapping table (conditionally required)
+===============================================
+
+.. contents::
+
+Summary
+-------
 This table is used to provide the boundaries of Cells and other ROIs
-identified as part of this experiment.
+identified as part of this experiment, and it is required in case Cell and
+other ROI segmentation data were collected as part of this experiment.
+
+This table is mandatory in case a Sub_Cell_ROI _Data, Cell_Data,
+and/or Extra_Cell_ROI_Data tables are deposited with this submission.
 
 The table is organized on a Cell/ROI basis via a Cell/ROI ID and
 provides the Cell/ROI boundaries in global coordinates as specified by
@@ -35,26 +45,17 @@ properties such as:
 -  Lists of channels
 
 Example
-~~~~~~~
+-------
 
-.. code::
-
-  ##FOF-CT_version=v0.1
-  ##XYZ_unit=micron
-  ##intensity_unit=a.u.
-  ##Sub_Cell_ROI_type=PML_body
-  ##ROI_boundaries_format=(X1,Y1, X2,Y2 Xn,Yn)
-  #^ROI_volume: the volume of this ROI expressed in micron^3.
-  #^ROI_intensity: the integrated average signal intensity measured within the boundaries of this ROI, of the marker used to identify this nuclear feature.
-  #additional_tables: DNA_Spot/Trace_Data.csv, RNA_Spot_Data.csv, Global_Trace_Data.csv
-  #columns=(Sub_Cell_ROI_ID, Cell_ID, ROI_boundaries, ROI_volume, ROI_intensity)
-  1, 1, (0,0 1,2 3,5)
-  2, 1, (0,0 2,3 4,6)
-  3, 2, (0,0 3,2 7,5)
-  4, 3, (0,0 9,2 9,5)
+.. include:: examples/mapping
+  :code:
 
 File Header
-~~~~~~~~~~~
+-----------
+
+The first line in the header is always “##FOF-CT_version=vX.X”
+
+The header should include a detailed description of each optional columns used.
 
 .. list-table::
   :header-rows: 1
@@ -136,7 +137,7 @@ File Header
     - micron
     -
   * - *##time_unit=*
-    - If relevant, the unit used to represent a time interval. Note: use “sec” for seconds, “msec” for milliseconds, “min” for minutes, and “hr” for hours.
+    - If relevant, the unit used to represent a time interval. Note: use "sec" for seconds, "msec" for milliseconds, "min" for minutes, and "hr" for hours.
     - sec
     - Conditional requirement: this MUST be reported if any time metrics are reported.
   * - *##intensity_unit=*
@@ -161,7 +162,16 @@ File Header
     -
 
 Data Columns
-~~~~~~~~~~~~
+------------
+
+Each row corresponds to data associated with an individual Cell, Sub-Cell_ROI
+or Extra_Cell_ROI.
+
+The first column of this table is always the relevant ID.
+The content and order of all other columns is at user's discretion.
+The order of the rows is at user's discretion.
+
+It is mandatory to choose one of the three types of ID.
 
 .. list-table::
   :header-rows: 1

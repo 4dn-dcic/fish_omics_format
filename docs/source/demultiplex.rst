@@ -1,8 +1,12 @@
+.. _demultiplex:
+
 Spot Demultiplexing table (optional)
-------------------------------------
+====================================
+
+.. contents::
 
 Summary
-~~~~~~~
+-------
 
 This table is optional and is designed to provide additional Spot
 properties that are not recorded in the mandatory DNA Spot/Trace Data
@@ -18,32 +22,38 @@ examples below.
 
 This table can be indexed by Localization_ID.
 
-Example: DNA spots detected with multiplexed barcodes
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. code::
+This table is optional and is designed to be used in the case of multiplexed
+FISH experiments (i.e., MERFISH) in which the final localization of a bright
+DNA or RNA Spot of interest results from the combination of multiple
+individual localization events (e.g., by combining particles detected and
+localized in separate images).
+In such a case the final Spot localization data is recorded in the core
+DNA Spot/Trace Data table, while the underlying primary localization data
+can be recorded by using this table, as shown for RNA Spots in the
+example below.
 
-  # loc_ID - unique ID for the individual localization
-  # Spot_ID - index from DNA spot table. Localizations not assigned to a spot are denoted NA.
-  # x - fitted x position of the the individual localization event / readout
-  # y - fitted y position of the individual localization event
-  # z - fitted z position of the individual localization event
-  # hyb - the labeling round in which this localization occurred
-  # fluor - the fluorescent channel in which this localization was detected
-  # brightness - the photon count for this localization event
-  # fit_quality - the quality of fit for this localization, on a relative scale of 0-1.
-  #
-  loc_ID Spot_ID x y z hyb fluor brightness fit_quality
-  1 1 2342 2354 545 2 cy3 1003 .83
-  2 1 2342 2354 545 2 cy5 2000 .93
-  3 1 2342 2354 545 3 cy5 1233 .85
-  4 2 3345 5432 654 3 cy3 2324 .95
-  5 2 3345 5432 654 3 cy5 2324 .95
-  6 NA 4345 432 100 4 cy3 2324 .95
-  7 2 3345 5432 654 4 cy3 2324 .95
+This table is indexed by Loc_ID and it has a mandatory Spot_ID column that
+is used to link individual localization events to the resulting Spot.
+
+Example
+-------
+DNA spots detected with multiplexed barcodes
+
+.. include:: examples/demultiplex
+  :code:
 
 File Header
-~~~~~~~~~~~
+-----------
+
+The first line in the header is always "##FOF-CT_version=vX.X"
+
+The header MUST to contain a mandatory set of fields that describe any
+algorithm that was used to produce/process data in this table.
+In case more than on algorithm were used, please use the same set of fields
+for each of them.
+
+The header should include a detailed description of each optional columns used.
 
 .. list-table::
   :header-rows: 1
@@ -113,7 +123,7 @@ File Header
     - micron
     - Conditional requirement: this MUST be reported if any locations metrics are reported.
   * - *##time_unit=*
-    - If relevant, the unit used to represent a time interval. Note: use “sec” for seconds, “msec” for milliseconds, “min” for minutes, and “hr” for hours.
+    - If relevant, the unit used to represent a time interval. Note: use "sec" for seconds, "msec" for milliseconds, "min" for minutes, and "hr" for hours.
     - sec
     - Conditional requirement: this MUST be reported if any time metrics are reported.
   * - *##intensity_unit=*
@@ -126,7 +136,14 @@ File Header
     -
 
 Data Columns
-~~~~~~~~~~~~
+------------
+
+Each row corresponds to data associated with an individual Localization event.
+
+The first column of this table is always Loc_ID.
+The second column has to mandatorily be Spot_ID.
+The content and order of all other columns is at user's discretion.
+The order of the rows is at user's discretion.
 
 .. list-table::
   :header-rows: 1
@@ -135,8 +152,12 @@ Data Columns
     - Description
     - Example
     - Conditional requirement conditions
+  * - *Loc_ID*
+    - A unique identifier for this individual Localization event.
+    - 1
+    -
   * - *Spot_ID*
-    - A unique identifier for this bright Spot.
+    - A unique identifier for the bright DNA or RNA Spot with which this individual localization event is associated.
     - 1
     -
   * - #^optional_column_1:

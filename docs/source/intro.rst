@@ -1,8 +1,8 @@
 Introduction
 ============
 
-A key output of the 4DN project is the open publication of datasets
-related to the structure of the human cell nucleus and the genome,
+A key output of the 4D Nucleome (4DN) project is the open publication of
+datasets related to the structure of the human cell nucleus and the genome,
 within. Recent years have seen a rapid expansion of FISH-omics methods,
 which quantify the spatial organization of DNA, RNA and protein in the
 cell and provide expanded understanding of how higher-order chromosome
@@ -51,3 +51,17 @@ localization of the Trace with respect to cellular or nuclear
 landmarks), Cell (e.g., boundaries and volume), sub-cellular Region of
 Interest (ROI; e.g., Nuclear feature or Nucleolus), or extracellular ROI
 (e.g., Tissue) level.
+
+Tables
+======
+
+#. :ref:`core_spot_trace`
+#. :ref:`rna`
+#. :ref:`quality`
+#. :ref:`spot_bio`
+#. :ref:`demultiplex`
+#. :ref:`trace`
+#. :ref:`cell`
+#. :ref:`roi_subcell`
+#. :ref:`roi_extracell`
+#. :ref:`mapping`

@@ -1,14 +1,17 @@
+.. _cell:
+
 Cell Data table (optional)
---------------------------
+==========================
+
+.. contents::
 
 Summary
-~~~~~~~
+-------
 
-*(scalar data only; each row is a cell)*
-
-This table is a complementary table used to document properties that are
-globally associated with individual Cells (e.g., cell size, cell volume,
-cell type). These are properties that are shared by all bright Spots and
+This table is used to document properties that are globally associated with
+individual Cells (e.g., cell size, cell volume, cell type) and it is required
+in the case Cell segmentation data was collected as part of this experiment.
+These are properties that are shared by all bright Spots and
 Traces that belong to an individual Cell. Each row in the table
 corresponds to a different Cell studied in the experiment and is
 identified by a unique Cell_ID that links the data reported in this
@@ -17,26 +20,17 @@ DNA_Spot/Trace_Data, Global_Trace_Data, etc.,). The header should note
 the coordinate system used for the cell x/y/z centroid.
 
 Example
-~~~~~~~
+-------
 
-.. code::
-
-  ##FOF-CT_version=v0.1
-  ##XYZ_unit=micron
-  ##Extra_Cell_ROI_type=Organoid
-  #^RNA_A_nr: the number of detected bright Spots corresponding to RNA transcript A detected in this Cell, see also RNA Spot Data table
-  #^RNA_B_nr: the number of detected bright Spots corresponding to RNA transcript B detected in this Cell, see also RNA Spot Data table
-  #^cell_cycle_state: the Cell Cycle state in which this Cell is found as measured with the Fucci system. This column can contain one of the following values: G1, S, G2 or M.
-  #^cell_volume: the volume of this Cell expressed in micron^3.
-  #additional_tables: DNA_Spot/Trace_Data.csv, RNA_Spot_Data.csv, Global_Trace_Data.csv
-  #columns=(Cell_ID, Extra_Cell_ROI_ID, RNA_A_nr, RNA_B_nr, cell_cycle_state, cell_volume)
-  1, 1, 10, 22, 1041.5, 12354.24, G1, 13453
-  2, 1, 0, 11, 2041.3, 32234.24, G2, 35545
-  3, 2, 10, 33, 101.5, 12354.24, S, 10010
-  4, 3, 0, 44, 201.1, 32234.24, M, 25340
+.. include:: examples/cells
+  :code:
 
 File Header
-~~~~~~~~~~~
+-----------
+
+The first line in the header is always “##FOF-CT_version=vX.X”
+
+The header should include a detailed description of each optional columns used.
 
 .. list-table::
   :header-rows: 1
@@ -122,7 +116,7 @@ File Header
     - micron
     - Conditional requirement: this MUST be reported if any locations metrics are reported.
   * - *##time_unit=*
-    - If relevant, the unit used to represent a time interval. Note: use “sec” for seconds, “msec” for milliseconds, “min” for minutes, and “hr” for hours.
+    - If relevant, the unit used to represent a time interval. Note: use "sec" for seconds, "msec" for milliseconds, "min" for minutes, and "hr" for hours.
     - sec
     - Conditional requirement: this MUST be reported if any time metrics are reported.
   * - *##intensity_unit=*
@@ -135,7 +129,13 @@ File Header
     -
 
 Data Columns
-~~~~~~~~~~~~
+------------
+
+Each row corresponds to data associated with an individual Cell.
+
+The first column of this table is always Cell_ID.
+The content and order of all other columns is at user's discretion.
+The order of the rows is at user's discretion.
 
 .. list-table::
   :header-rows: 1

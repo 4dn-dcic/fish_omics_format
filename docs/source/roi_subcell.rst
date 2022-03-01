@@ -1,39 +1,37 @@
-Sub_Cell ROI Data table (optional)
-----------------------------------
+.. _roi_subcell:
+
+Sub_Cell ROI Data table (conditionally required)
+================================================
+
+.. contents::
 
 Summary
-~~~~~~~
+-------
 
-This table is used to document properties that are globally associated
-with individual sub-cellular ROIs that typically correspond to
-sub-nuclear features such as Nucleoli, Nuclear Lamina, Chromosome
-Domains, PML bodies, etc. These are properties that are shared by all
-bright Spots and Traces that are associated with individual ROIs. Each
-row in the table corresponds to a different ROI studied in the
+This table is used to document properties that are globally associated with
+individual sub-cellular ROIs that typically correspond to sub-nuclear features
+(e.g., Nucleoli, Nuclear Lamina, Chromosome Domains, PML bodies, etc.)
+and it is required in the case sub-cellular ROI segmentation data was collected
+as part of this experiment.
+These are properties that are shared by all bright Spots and Traces that are
+associated with individual ROIs. 
+Each row in the table corresponds to a different ROI studied in the
 experiment and is identified by a unique ROI_ID that links the data
 reported in this table with data stored in one of the other tables
 (i.e., DNA_Spot/Trace_Data, Global_Cell_Data, Global_Trace_Data etc.,).
 
 Example
-~~~~~~~
+-------
 
-.. code::
-
-  ##FOF-CT_version=v0.1
-  ##XYZ_unit=micron
-  ##intensity_unit=a.u.
-  ##Sub_Cell_ROI_type=Nucleolus
-  #^ROI_volume: the volume of this ROI expressed in micron^3.
-  #^ROI_intensity: the integrated average signal intensity of the marker of interest as measured within the boundaries of this ROI.
-  #additional_tables: DNA_Spot/Trace_Data.csv, RNA_Spot_Data.csv, Global_Trace_Data.csv
-  #columns=(Sub_Cell_ROI_ID, Cell_ID, ROI_volume, ROI_intensity)
-  1, 1, 1345, 3500
-  2, 1, 3554, 1500
-  3, 2, 1001, 2500
-  4, 3, 2534, 3498
+.. include:: examples/roi_subcell
+  :code:
 
 File Header
-~~~~~~~~~~~
+-----------
+
+The first line in the header is always “##FOF-CT_version=vX.X”
+
+The header should include a detailed description of each optional columns used.
 
 .. list-table::
   :header-rows: 1
@@ -119,7 +117,7 @@ File Header
     - micron
     - Conditional requirement: this MUST be reported if any locations metrics are reported.
   * - *##time_unit=*
-    - If relevant, the unit used to represent a time interval. Note: use “sec” for seconds, “msec” for milliseconds, “min” for minutes, and “hr” for hours.
+    - If relevant, the unit used to represent a time interval. Note: use "sec" for seconds, "msec" for milliseconds, "min" for minutes, and "hr" for hours.
     - sec
     - Conditional requirement: this MUST be reported if any time metrics are reported.
   * - *##intensity_unit=*
@@ -132,7 +130,13 @@ File Header
     -
 
 Data Columns
-~~~~~~~~~~~~
+------------
+
+Each row corresponds to data associated with an individual Sub_Cell_ROI.
+
+The first column of this table is always Sub_Cell_ROI_ID.
+The content and order of all other columns is at user's discretion.
+The order of the rows is at user's discretion.
 
 .. list-table::
   :header-rows: 1

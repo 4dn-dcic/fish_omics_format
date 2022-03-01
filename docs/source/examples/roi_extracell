@@ -1,0 +1,12 @@
+##FOF-CT_version=v0.1
+##XYZ_unit=micron
+##Extra_Cell_ROI_type=Organoid
+#^Cell_A_nr: the number of identified Cells of type A identified to belong to this extracellular ROI.
+#^Cell_B_nr: the number of identified Cells of type B identified to belong to this extracellular ROI.
+#^ROI_volume: the volume of this extracellular ROI expressed in micron^3.
+#additional_tables: DNA_Spot/Trace_Data.csv, RNA_Spot_Data.csv, Global_Trace_Data.csv
+#columns=(Extra_Cell_ROI, Cell_A_nr, Cell_B_nr, ROI_volume)
+1, 10, 22, 13453
+2, 0, 11, 35545
+3, 10, 33, 10010
+4, 44, 0, 25340

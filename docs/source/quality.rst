@@ -1,10 +1,12 @@
+.. _quality:
+
 Spot Quality table (recommended)
---------------------------------
+================================
+
+.. contents::
 
 Summary
-~~~~~~~
-
-*(each line corresponds to an individual DNA or RNA bright Spot)*
+-------
 
 This table is highly recommended and it is designed to provide quality
 metrics for the Spot localization, information about the optical Channel
@@ -21,34 +23,24 @@ The table is indexed by Spot_ID and each row corresponds to a DNA or RNA
 bright Spot. The order of not required columns and of the rows are at
 the user's discretion.
 
-Example: Spot fit quality
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+Example
+-------
+Spot fit quality
 
-.. code::
-
-  # Spot_ID - identifier from DNA spot table
-  # fluor - fluorophore imaged to detect the spot. One of the following: cy3, cy5 or Alexa750
-  # brightness - peak height in photons
-  # x_FOV - the original fit x-position relative to the camera and objective, (prior to drift correction, chromatic correction, or conversion to stage coordinates). This is the appropriate coordinate system for correcting optical aberrations.
-  # y_FOV - the original fit y-position relative to the camera and objective, (prior to drift correction, chromatic correction, or conversion to stage coordinates). This is the appropriate coordinate system for correcting optical aberrations.
-  # z_FOV - the original fit z-position relative to the camera and objective, (prior to drift correction, chromatic correction, or conversion to stage coordinates). This is the appropriate coordinate system for correcting optical aberrations.
-  # drift_correct_x - the distance in nm the spot was moved in x based on fiducial tracking
-  # drift_correct_y - the distance in nm the spot was moved in y based on fiducial tracking
-  # drift_correct_z - the distance in nm the spot was moved in z based on fiducial tracking
-  # chrom_correct_x - the distance in nm the spot was moved in x based on chromatic correction map
-  # chrom_correct_y - the distance in nm the spot was moved in y based on chromatic correction map
-  # chrom_correct_z - the distance in nm the spot was moved in z based on chromatic correction map
-  # x_lower - lower bound of 95% confidence interval on X-position after fit
-  # x_upper - upper bound of 95% confidence interval on X-position after fit
-  # y_lower - lower bound of 95% confidence interval on Y-position after fit
-  # y_upper - upper bound of 95% confidence interval on Y-position after fit
-  # z_lower - lower bound of 95% confidence interval on Z-position after fit
-  # z_upper - upper bound of 95% confidence interval on Z-position after fit
-  # a - spots were fit to a 3D Gaussian parameterized by amplitude a, background b, widths sigma_xy, sigma_z. Sigma_xy were pre-calibrated for the system based imaging of 100 nm beads.
-  # b - spots were fit to a 3D Gaussian parameterized by amplitude a, background b, widths sigma_xy, sigma_z. Sigma_xy were pre-calibrated for the system based imaging of 100 nm beads.
+.. include:: examples/quality
+  :code:
 
 File Header
-~~~~~~~~~~~
+-----------
+
+The first line in the header is always "##FOF-CT_version=vX.X"
+
+The header MUST to contain a mandatory set of fields that describe any
+algorithm that was used to produce/process data in this table.
+In case more than on algorithm were used, please use the same set of fields
+for each of them.
+
+The header should include a detailed description of each optional columns used.
 
 .. list-table::
   :header-rows: 1
@@ -190,7 +182,7 @@ File Header
     - micron
     -
   * - *##time_unit=*
-    - If relevant, the unit used to represent a time interval. Note: use “sec” for seconds, “msec” for milliseconds, “min” for minutes, and “hr” for hours.
+    - If relevant, the unit used to represent a time interval. Note: use "sec" for seconds, "msec" for milliseconds, "min" for minutes, and "hr" for hours.
     - sec
     - Conditional requirement: this MUST be reported if any time metrics are reported.
   * - *##intensity_unit=*
@@ -203,7 +195,14 @@ File Header
     -
 
 Data Columns
-~~~~~~~~~~~~
+------------
+
+As with all other Spot Data tables in this format, each row corresponds to
+data associated with an individual Spot.
+
+The first column of this table is always Spot_ID.
+The content and order of all other columns is at user's discretion.
+The order of the rows is at user's discretion.
 
 .. list-table::
   :header-rows: 1

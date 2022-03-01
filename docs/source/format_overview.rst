@@ -1,6 +1,8 @@
 Format description: overview
 ============================
 
+.. contents::
+
 General Info
 ------------
 
@@ -43,7 +45,7 @@ File Header
 - All tables have to contain a mandatory header section.
 
 Mandatory header lines (all tables)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **##FOF-CT_version=** Data format version number. E.g. v0.2
 
@@ -68,7 +70,7 @@ sufficient details to ensure interpretation and reproducibility.
 **##columns=**\ (C1, C2, C3, Cn)
 
 Additional mandatory header lines (DNA spot/trace core and RNA tables)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 In addition to all of the above,
 

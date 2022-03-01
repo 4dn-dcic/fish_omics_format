@@ -1,40 +1,38 @@
-Extra_Cell ROI Data table (optional)
-------------------------------------
+.. _roi_extracell:
+
+Extra_Cell ROI Data table (conditionally required)
+==================================================
+
+.. contents::
 
 Summary
-~~~~~~~
+-------
 
-This table is used to document properties (i.e., volume, mean
-fluorescence intensity) that are globally associated with individual
-extracellular structures (e.g., Tissue, Organoid, etc.,) Region of
-Interest (ROI) Cells. These are properties that are shared by all
-bright Spots, Traces and Cells that belong to an individual
-extracellular structure identified as part of this study. Each row in
-the table corresponds to a different extracellular structure studied in
-the experiment and is identified by a unique Extra_Cell_ROI_ID that
+This table is used to document properties (i.e., volume, mean fluorescence
+intensity) that are globally associated with individual extracellular
+structures (e.g., Tissue, Organoid, etc.,) Regions of Interest (ROI),
+and it is required in the case extracellular ROI segmentation data was
+collected as part of this experiment.
+These are properties that are shared by all bright Spots, Traces and Cells
+that belong to an individual extracellular structure identified as part of
+this study.
+Each row in the table corresponds to a different extracellular structure
+studied in the experiment and is identified by a unique Extra_Cell_ROI_ID that
 links the data reported in this table with data stored in one of the
 other tables (i.e., DNA_Spot/Trace_Data, Trace_Data, etc.,).
 
 Example
-~~~~~~~
+-------
 
-.. code::
-
-  ##FOF-CT_version=v0.1
-  ##XYZ_unit=micron
-  ##Extra_Cell_ROI_type=Organoid
-  #^Cell_A_nr: the number of identified Cells of type A identified to belong to this extracellular ROI.
-  #^Cell_B_nr: the number of identified Cells of type B identified to belong to this extracellular ROI.
-  #^ROI_volume: the volume of this extracellular ROI expressed in micron^3.
-  #additional_tables: DNA_Spot/Trace_Data.csv, RNA_Spot_Data.csv, Global_Trace_Data.csv
-  #columns=(Extra_Cell_ROI, Cell_A_nr, Cell_B_nr, ROI_volume)
-  1, 10, 22, 13453
-  2, 0, 11, 35545
-  3, 10, 33, 10010
-  4, 44, 0, 25340
+.. include:: examples/roi_extracell
+  :code:
 
 File Header
-~~~~~~~~~~~
+-----------
+
+The first line in the header is always “##FOF-CT_version=vX.X”
+
+The header should include a detailed description of each optional columns used.
 
 .. list-table::
   :header-rows: 1
@@ -120,7 +118,7 @@ File Header
     - micron
     - Conditional requirement: this MUST be reported if any locations metrics are reported.
   * - *##time_unit=*
-    - If relevant, the unit used to represent a time interval. Note: use “sec” for seconds, “msec” for milliseconds, “min” for minutes, and “hr” for hours.
+    - If relevant, the unit used to represent a time interval. Note: use "sec" for seconds, "msec" for milliseconds, "min" for minutes, and "hr" for hours.
     - sec
     - Conditional requirement: this MUST be reported if any time metrics are reported.
   * - *##intensity_unit=*
@@ -133,7 +131,13 @@ File Header
     -
 
 Data Columns
-~~~~~~~~~~~~
+------------
+
+Each row corresponds to data associated with an individual Cell.
+
+The first column of this table is always Cell_ID.
+The content and order of all other columns is at user's discretion.
+The order of the rows is at user's discretion.
 
 .. list-table::
   :header-rows: 1

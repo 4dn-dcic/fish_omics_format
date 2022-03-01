@@ -1,13 +1,16 @@
-RNA-Spot Data table (optional)
-------------------------------
+.. _rna:
+
+RNA-Spot Data table (conditionally required)
+============================================
+
+.. contents::
 
 Summary
-~~~~~~~
+-------
 
-*(each line corresponds to an individual RNA bright Spot)*
-
-This is an optional table used to store and share the results of RNA
-FISH-omics experiments. Each row represents a detected RNA bright Spot
+This table is used to store and share the results of RNA FISH-omics experiments
+and it is required in the case RNA data was collected as part of this
+experiment. Each row represents a detected RNA bright Spot
 and corresponds to the localization of a specific RNA transcript. At a
 minimum, one needs to know the Spot_ID, the X, Y, Z coordinates of each
 localization, the Gene_ID and an additional ID used to link this data
@@ -29,31 +32,22 @@ the underlying raw data can be recorded in corresponding RNA Spot
 quality tables as described below.
 
 Example
-~~~~~~~
+-------
 
-.. code::
-
-  ##FOF-CT_version=v0.1
-  ##genome_assembly=GRCh38
-  ##XYZ_unit=micron
-  ##Gene_ID_type=Ensemble_V38
-  #Software_Title: Xyz
-  #Software_Type: SpotLoc
-  #Software_Authors: Janet Doette
-  #Software_Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sagittis est mollis, pulvinar tortor mattis, dignissim nisi. Nunc tincidunt volutpat lacus vitae bibendum.
-  #Software_Repository: https://xyz.com
-  #Software_PreferredCitationID: https://doi.org/xyz
-  #lab_name: Nobel
-  #experimenter_name: John Doe
-  #experimenter_contact: john.doe@email.com
-  #additional_tables: DNA_Spot/Trace_Data, RNA_Spot_Quality.csv, Cell_Data.csv
-  ##columns=(Spot_ID, X, Y, Z, RNA_name, Gene_ID, Transcript_ID, Cell_ID)
-  1, 14.43, 41.43, 1.23, ACTB, ENSG00000075624, ENST00000646664.1, 1
-  2, 14.83, 41.83, 1.83, GAPDH, ENSG00000111640, ENST00000229239.10, 1
-  3, 15.83, 42.83, 1.33, MB, ENSG00000198125, ENST00000397326.7, 1
+.. include:: examples/rna
+  :code:
 
 File Header
-~~~~~~~~~~~
+-----------
+
+The first line in the header is always "##FOF-CT_version=vX.X"
+
+The header MUST to contain a mandatory set of fields that describe the
+algorithm(s) that were used to identify and localize bright Spots.
+In case more than on algorithm were used, please use the same set of fields
+for each of them.
+
+The header should include a detailed description of each optional columns used.
 
 .. list-table::
   :header-rows: 1
@@ -136,7 +130,15 @@ File Header
     -
 
 Data Columns
-~~~~~~~~~~~~
+------------
+
+As with all other Spot Data tables in this format, each row corresponds to
+data associated with an individual Spot.
+
+The first columns are always: Spot_ID, X, Y, Z coordinates, RNA_name,
+Gene_ID(, Transcript_ID).
+The order of the other columns is at user's discretion.
+The order of the rows is at user's discretion.
 
 .. list-table::
   :header-rows: 1
