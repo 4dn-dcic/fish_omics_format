@@ -2,7 +2,7 @@
 4DN FISH Omics Format (FOF) - Chromatin Tracing
 ###############################################
 
-.. include:: intro
+.. include:: intro.rst
 
 .. toctree::
     :caption: FOF-CT: Chromatin Tracing
