@@ -19,7 +19,7 @@ this study.
 Each row in the table corresponds to a different extracellular structure
 studied in the experiment and is identified by a unique Extra_Cell_ROI_ID that
 links the data reported in this table with data stored in one of the
-other tables (i.e., DNA_Spot/Trace_Data, Trace_Data, etc.,).
+other tables (i.e., :ref:`core_spot_trace`, :ref:`trace`, etc.).
 
 Example
 -------

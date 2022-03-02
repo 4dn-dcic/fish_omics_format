@@ -11,8 +11,8 @@ This table is used to provide the boundaries of Cells and other ROIs
 identified as part of this experiment, and it is required in case Cell and
 other ROI segmentation data were collected as part of this experiment.
 
-This table is mandatory in case a Sub_Cell_ROI _Data, Cell_Data,
-and/or Extra_Cell_ROI_Data tables are deposited with this submission.
+This table is mandatory in case a :ref:`roi_subcell`, :ref:`cell`,
+and/or :ref:`roi_extracell` tables are deposited with this submission.
 
 The table is organized on a Cell/ROI basis via a Cell/ROI ID and
 provides the Cell/ROI boundaries in global coordinates as specified by

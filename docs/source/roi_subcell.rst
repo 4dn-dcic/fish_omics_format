@@ -18,7 +18,7 @@ associated with individual ROIs.
 Each row in the table corresponds to a different ROI studied in the
 experiment and is identified by a unique ROI_ID that links the data
 reported in this table with data stored in one of the other tables
-(i.e., DNA_Spot/Trace_Data, Global_Cell_Data, Global_Trace_Data etc.,).
+(i.e., :ref:`core_spot_trace`, :ref:`cell`, :ref:`trace`, etc.).
 
 Example
 -------
