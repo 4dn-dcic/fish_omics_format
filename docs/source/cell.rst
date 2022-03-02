@@ -1,7 +1,9 @@
 .. _cell:
 
-Cell Data table (optional)
-==========================
+Cell Data table
+===============
+
+Requirement level: optional
 
 Summary
 -------

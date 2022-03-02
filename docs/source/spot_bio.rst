@@ -1,7 +1,9 @@
 .. _spot_bio:
 
-Spot Biological Data table (recommended)
-========================================
+Spot Biological Data table
+==========================
+
+Requirement level: recommended
 
 Summary
 -------

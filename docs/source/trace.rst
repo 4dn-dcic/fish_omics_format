@@ -1,7 +1,9 @@
 .. _trace:
 
-Trace Data table (optional)
-===========================
+Trace Data table
+================
+
+Requirement level: optional
 
 Summary
 -------

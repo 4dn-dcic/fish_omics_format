@@ -1,7 +1,9 @@
 .. _roi_extracell:
 
-Extra_Cell ROI Data table (conditionally required)
-==================================================
+Extra_Cell ROI Data table
+=========================
+
+Requirement level: conditionally required
 
 Summary
 -------

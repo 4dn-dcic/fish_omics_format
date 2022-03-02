@@ -1,7 +1,9 @@
 .. _roi_subcell:
 
-Sub_Cell ROI Data table (conditionally required)
-================================================
+Sub_Cell ROI Data table
+=======================
+
+Requirement level: conditionally required
 
 Summary
 -------

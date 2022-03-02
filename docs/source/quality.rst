@@ -1,7 +1,9 @@
 .. _quality:
 
-Spot Quality table (recommended)
-================================
+Spot Quality table
+==================
+
+Requirement level: recommended
 
 Summary
 -------

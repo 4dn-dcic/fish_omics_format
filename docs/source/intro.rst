@@ -55,13 +55,50 @@ Interest (ROI; e.g., Nuclear feature or Nucleolus), or extracellular ROI
 Tables
 ======
 
-#. :ref:`core_spot_trace`
-#. :ref:`rna`
-#. :ref:`quality`
-#. :ref:`spot_bio`
-#. :ref:`demultiplex`
-#. :ref:`trace`
-#. :ref:`cell`
-#. :ref:`roi_subcell`
-#. :ref:`roi_extracell`
-#. :ref:`mapping`
+.. list-table::
+  :header-rows: 1
+
+  * - Number
+    - Extended Name
+    - Short Name
+    - Requirement Level
+  * - 1
+    - :ref:`core_spot_trace`
+    - core
+    - required
+  * - 2
+    - :ref:`rna`
+    - rna
+    - conditionally required
+  * - 3
+    - :ref:`quality`
+    - quality
+    - recommended
+  * - 4
+    - :ref:`spot_bio`
+    - bio
+    - recommended
+  * - 5
+    - :ref:`demultiplex`
+    - demultiplexing
+    - optional
+  * - 6
+    - :ref:`trace`
+    - trace
+    - optional
+  * - 7
+    - :ref:`cell`
+    - cell
+    - conditionally required
+  * - 8
+    - :ref:`roi_subcell`
+    - subcell
+    - conditionally required
+  * - 9
+    - :ref:`roi_extracell`
+    - extracell
+    - conditionally required
+  * - 10
+    - :ref:`mapping`
+    - mapping
+    - conditionally required

@@ -1,7 +1,9 @@
 .. _core_spot_trace:
 
-DNA-Spot/Trace Data core table (required)
-=========================================
+DNA-Spot/Trace Data core table
+==============================
+
+Requirement level: required
 
 Summary
 -------
