@@ -3,8 +3,6 @@
 RNA-Spot Data table (conditionally required)
 ============================================
 
-.. contents::
-
 Summary
 -------
 

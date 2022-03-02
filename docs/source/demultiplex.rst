@@ -3,8 +3,6 @@
 Spot Demultiplexing table (optional)
 ====================================
 
-.. contents::
-
 Summary
 -------
 

@@ -3,8 +3,6 @@
 Cell/ROI Mapping table (conditionally required)
 ===============================================
 
-.. contents::
-
 Summary
 -------
 This table is used to provide the boundaries of Cells and other ROIs

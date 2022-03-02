@@ -3,8 +3,6 @@
 Sub_Cell ROI Data table (conditionally required)
 ================================================
 
-.. contents::
-
 Summary
 -------
 
@@ -14,7 +12,7 @@ individual sub-cellular ROIs that typically correspond to sub-nuclear features
 and it is required in the case sub-cellular ROI segmentation data was collected
 as part of this experiment.
 These are properties that are shared by all bright Spots and Traces that are
-associated with individual ROIs. 
+associated with individual ROIs.
 Each row in the table corresponds to a different ROI studied in the
 experiment and is identified by a unique ROI_ID that links the data
 reported in this table with data stored in one of the other tables

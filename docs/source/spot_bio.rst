@@ -3,8 +3,6 @@
 Spot Biological Data table (recommended)
 ========================================
 
-.. contents::
-
 Summary
 -------
 

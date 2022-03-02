@@ -3,8 +3,6 @@
 Trace Data table (optional)
 ===========================
 
-.. contents::
-
 Summary
 -------
 

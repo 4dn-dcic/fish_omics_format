@@ -3,8 +3,6 @@
 Extra_Cell ROI Data table (conditionally required)
 ==================================================
 
-.. contents::
-
 Summary
 -------
 

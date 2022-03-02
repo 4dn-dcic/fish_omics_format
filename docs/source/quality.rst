@@ -3,8 +3,6 @@
 Spot Quality table (recommended)
 ================================
 
-.. contents::
-
 Summary
 -------
 

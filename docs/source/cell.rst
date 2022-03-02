@@ -3,8 +3,6 @@
 Cell Data table (optional)
 ==========================
 
-.. contents::
-
 Summary
 -------
 
