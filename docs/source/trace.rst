@@ -15,7 +15,7 @@ properties that are shared by all bright Spots that constitute a Trace.
 Each row in the table corresponds to an individual Trace and is
 identified by a unique Trace_ID that links the data reported in this
 table with data stored in one of the other tables (i.e.,
-:ref:`core_spot_trace`, :ref:`cell`, etc.).
+:ref:`core`, :ref:`cell`, etc.).
 
 Example
 -------

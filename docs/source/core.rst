@@ -1,4 +1,4 @@
-.. _core_spot_trace:
+.. _core:
 
 DNA-Spot/Trace Data core table
 ==============================
@@ -35,7 +35,7 @@ additional Spot Biological Data table, indexed by Spot_ID.
 Example
 -------
 
-.. include:: examples/core_spot_trace
+.. include:: examples/core
   :code:
 
 File Header

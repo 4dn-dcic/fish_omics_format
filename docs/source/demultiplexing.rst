@@ -1,37 +1,52 @@
-.. _spot_bio:
+.. _demultiplexing:
 
-Spot Biological Data table
-==========================
+Spot Demultiplexing Data table
+==============================
 
-Requirement level: recommended
+Requirement level: optional
 
 Summary
 -------
 
-This table is highly recommended and it is designed to store and share
-biological properties associated with individual Spots (e.g., distance
-from the nuclear lamina (NL) or the nuclear pore complex (NPC), etc.; Su
-et al 2020 Cell and Takei et al 2021 Nature) identified as part of this
-experiment. In the absence of a consensus regarding biological
-properties to be recorded in association with individual bright Spots or
-Traces, the specific columns in this table remain at the user’s
-discretion and should be described with sufficient details to ensure
-interpretation and reproducibility.
+This table is optional and is designed to provide additional Spot
+properties that are not recorded in the mandatory DNA Spot/Trace Data
+table, the main RNA Spot Data table or the other recommended tables. In
+the absence of a consensus, the specific columns in this table remain at
+the user’s discretion and should be described with sufficient details to
+ensure interpretation and reproducibility. In the case of multiplexed
+FISH experiments (i.e., MERFISH) in which the final localization of RNA
+molecule results from combining multiple detection events (e.g., by
+combining Spots detected in separate images), the underlying raw data
+can be recorded in corresponding RNA Spot quality tables as shown in the
+examples below.
 
-This table is mandatorily indexed by Spot_ID.
+This table can be indexed by Localization_ID.
+
+
+This table is optional and is designed to be used in the case of multiplexed
+FISH experiments (i.e., MERFISH) in which the final localization of a bright
+DNA or RNA Spot of interest results from the combination of multiple
+individual localization events (e.g., by combining particles detected and
+localized in separate images).
+In such a case the final Spot localization data is recorded in the core
+DNA Spot/Trace Data table, while the underlying primary localization data
+can be recorded by using this table, as shown for RNA Spots in the
+example below.
+
+This table is indexed by Loc_ID and it has a mandatory Spot_ID column that
+is used to link individual localization events to the resulting Spot.
 
 Example
 -------
+DNA spots detected with multiplexed barcodes
 
-.. include:: examples/spot_bio
+.. include:: examples/demultiplexing
   :code:
 
 File Header
 -----------
 
 The first line in the header is always "##FOF-CT_version=vX.X"
-
-This Table can be indexed mandatorily by Spot_ID.
 
 The header MUST to contain a mandatory set of fields that describe any
 algorithm that was used to produce/process data in this table.
@@ -52,7 +67,7 @@ The header should include a detailed description of each optional columns used.
     - v0.1
     -
   * - **##Table_namespace=**
-    - 4dn_FOF-CT_bio
+    - 4dn_FOF-CT_demultiplexing
     -
     -
   * - #lab_name:
@@ -91,34 +106,22 @@ The header should include a detailed description of each optional columns used.
     - The URL of any repository or archive where the Software executable release can be obtained.
     - https://github.com/BoettigerLab/ORCA-public
     - Conditional requirement: this MUST be reported any time a software is used to produce data associated with this table.
-  * - **#Software_PreferredCitationID:**
+  * - *#Software_PreferredCitationID:*
     - The Unique Identifier for the preferred/primary publication describing this Software. Examples include, Digital Object Identifier (DOI), PubMed Central Identifier (PMCID), ArXiv.org ID etc,.
     - https://doi.org/10.1038/s41596-020-00478-x
     - Conditional requirement: this MUST be reported any time a software is used to produce data associated with this table.
   * - **#additional_tables:**
     - list of the additional tables being submitted. Note: use a comma to separate each table name from the next.
-    - DNA_Spot/Trace_Data.csv, RNA_Spot_Data.csv, Spot_Quality_Data.csv, Gobal_Trace_Data.csv, Global_Cell_Data.csv
+    - DNA_Spot/Trace_Data.csv, RNA_Spot_Data.csv, Spot_Biological_Data.csv, Gobal_Trace_Data.csv, Global_Cell_Data.csv
     -
   * - *#Intensity_measurement_method*
     - If relevant, the method that was used to performed intensity measurements. In particular, sufficient information should be provided to document how digital intensity signals were converted in Photon conunts.
     - Spot centroid intensity.
     - Conditional requirement: this MUST be reported if any intensity metrics are reported.
-  * - #^optional_column_1:
-    -
-    -
-    -
-  * - #^optional_column_2:
-    -
-    -
-    -
-  * - #^optional_column_3:
-    -
-    -
-    -
-  * - **##XYZ_unit=**
+  * - *##XYZ_unit=*
     - The unit used to represent XYZ locations or distances in this table. Note: use micron (instead of µm) to avoid problem with special, Greek symbols. Other allowed values are: nm, mm etc.
     - micron
-    -
+    - Conditional requirement: this MUST be reported if any locations metrics are reported.
   * - *##time_unit=*
     - If relevant, the unit used to represent a time interval. Note: use "sec" for seconds, "msec" for milliseconds, "min" for minutes, and "hr" for hours.
     - sec
@@ -135,11 +138,11 @@ The header should include a detailed description of each optional columns used.
 Data Columns
 ------------
 
-Each row corresponds to data associated with an individual Spot or Trace.
+Each row corresponds to data associated with an individual Localization event.
 
-The first columns are always: Spot_ID, X, Y, Z coordinates, RNA_name,
-Gene_ID(, Transcript_ID).
-The order of the other columns is at user's discretion.
+The first column of this table is always Loc_ID.
+The second column has to mandatorily be Spot_ID.
+The content and order of all other columns is at user's discretion.
 The order of the rows is at user's discretion.
 
 .. list-table::
@@ -149,19 +152,23 @@ The order of the rows is at user's discretion.
     - Description
     - Example
     - Conditional requirement conditions
-  * - *Spot_ID*
-    - A unique identifier for this bright Spot.
+  * - *Loc_ID*
+    - A unique identifier for this individual Localization event.
     - 1
     -
-  * - optional_column_1:
+  * - *Spot_ID*
+    - A unique identifier for the bright DNA or RNA Spot with which this individual localization event is associated.
+    - 1
+    -
+  * - #^optional_column_1:
     -
     -
     -
-  * - optional_column_2:
+  * - #^optional_column_2:
     -
     -
     -
-  * - optional_column_3:
+  * - #^optional_column_3:
     -
     -
     -

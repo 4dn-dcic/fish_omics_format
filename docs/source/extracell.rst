@@ -1,6 +1,6 @@
-.. _roi_extracell:
+.. _extracell:
 
-Extra_Cell ROI Data table
+Extra-Cell ROI Data table
 =========================
 
 Requirement level: conditionally required
@@ -19,12 +19,12 @@ this study.
 Each row in the table corresponds to a different extracellular structure
 studied in the experiment and is identified by a unique Extra_Cell_ROI_ID that
 links the data reported in this table with data stored in one of the
-other tables (i.e., :ref:`core_spot_trace`, :ref:`trace`, etc.).
+other tables (i.e., :ref:`core`, :ref:`trace`, etc.).
 
 Example
 -------
 
-.. include:: examples/roi_extracell
+.. include:: examples/extracell
   :code:
 
 File Header

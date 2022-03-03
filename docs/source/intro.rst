@@ -63,7 +63,7 @@ Tables
     - Short Name
     - Requirement Level
   * - 1
-    - :ref:`core_spot_trace`
+    - :ref:`core`
     - core
     - required
   * - 2
@@ -75,11 +75,11 @@ Tables
     - quality
     - recommended
   * - 4
-    - :ref:`spot_bio`
+    - :ref:`bio`
     - bio
     - recommended
   * - 5
-    - :ref:`demultiplex`
+    - :ref:`demultiplexing`
     - demultiplexing
     - optional
   * - 6
@@ -91,11 +91,11 @@ Tables
     - cell
     - conditionally required
   * - 8
-    - :ref:`roi_subcell`
+    - :ref:`subcell`
     - subcell
     - conditionally required
   * - 9
-    - :ref:`roi_extracell`
+    - :ref:`extracell`
     - extracell
     - conditionally required
   * - 10

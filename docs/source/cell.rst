@@ -16,7 +16,7 @@ Traces that belong to an individual Cell. Each row in the table
 corresponds to a different Cell studied in the experiment and is
 identified by a unique Cell_ID that links the data reported in this
 table with data stored in one of the other tables (i.e.,
-:ref:`core_spot_trace`, :ref:`trace`, etc.,). The header should note
+:ref:`core`, :ref:`trace`, etc.,). The header should note
 the coordinate system used for the cell x/y/z centroid.
 
 Example

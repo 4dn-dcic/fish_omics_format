@@ -1,6 +1,6 @@
-.. _roi_subcell:
+.. _subcell:
 
-Sub_Cell ROI Data table
+Sub-Cell ROI Data table
 =======================
 
 Requirement level: conditionally required
@@ -18,12 +18,12 @@ associated with individual ROIs.
 Each row in the table corresponds to a different ROI studied in the
 experiment and is identified by a unique ROI_ID that links the data
 reported in this table with data stored in one of the other tables
-(i.e., :ref:`core_spot_trace`, :ref:`cell`, :ref:`trace`, etc.).
+(i.e., :ref:`core`, :ref:`cell`, :ref:`trace`, etc.).
 
 Example
 -------
 
-.. include:: examples/roi_subcell
+.. include:: examples/subcell
   :code:
 
 File Header

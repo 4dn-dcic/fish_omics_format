@@ -1,6 +1,6 @@
-###############################################
-4DN FISH Omics Format (FOF) - Chromatin Tracing
-###############################################
+##################################################
+4DN FISH Omics Format - Chromatin Tracing (FOF-CT)
+##################################################
 
 .. include:: intro.rst
 
@@ -11,14 +11,14 @@
 
     intro
     format_overview
-    core_spot_trace
+    core
     rna
     quality
-    spot_bio
-    demultiplex
+    bio
+    demultiplexing
     trace
     cell
-    roi_subcell
-    roi_extracell
+    subcell
+    extracell
     mapping
     misc
