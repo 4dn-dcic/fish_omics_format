@@ -8,29 +8,14 @@ Requirement level: optional
 Summary
 -------
 
-This table is optional and is designed to provide additional Spot
-properties that are not recorded in the mandatory DNA Spot/Trace Data
-table, the main RNA Spot Data table or the other recommended tables. In
-the absence of a consensus, the specific columns in this table remain at
-the user’s discretion and should be described with sufficient details to
-ensure interpretation and reproducibility. In the case of multiplexed
-FISH experiments (i.e., MERFISH) in which the final localization of RNA
-molecule results from combining multiple detection events (e.g., by
-combining Spots detected in separate images), the underlying raw data
-can be recorded in corresponding RNA Spot quality tables as shown in the
-examples below.
-
-This table can be indexed by Localization_ID.
-
-
 This table is optional and is designed to be used in the case of multiplexed
 FISH experiments (i.e., MERFISH) in which the final localization of a bright
-DNA or RNA Spot of interest results from the combination of multiple
+DNA or RNA Spot results from the combination of multiple
 individual localization events (e.g., by combining particles detected and
 localized in separate images).
-In such a case the final Spot localization data is recorded in the core
-DNA Spot/Trace Data table, while the underlying primary localization data
-can be recorded by using this table, as shown for RNA Spots in the
+In such a case the final Spot localization data is recorded in the
+:ref:`core`, while the underlying primary localization data
+can be recorded by using this table, as shown for DNA Spots in the
 example below.
 
 This table is indexed by Loc_ID and it has a mandatory Spot_ID column that
