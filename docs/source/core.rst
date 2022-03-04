@@ -53,7 +53,7 @@ The columns for this table are mandatory and do not need to be described
 in the header.
 
 .. csv-table::
-  :file: tables/core_spot_trace_header.csv
+  :file: tables/core_header.csv
   :header-rows: 1
 
 Data Columns
@@ -68,5 +68,5 @@ The order of the other columns is at user's discretion.
 The order of the rows is at user's discretion.
 
 .. csv-table::
-  :file: tables/core_spot_trace_columns.csv
+  :file: tables/core_columns.csv
   :header-rows: 1

@@ -56,7 +56,7 @@ for each of them.
 The header should include a detailed description of each optional columns used.
 
 .. csv-table::
-  :file: tables/demultiplex_header.csv
+  :file: tables/demultiplexing_header.csv
   :header-rows: 1
 
 Data Columns
@@ -70,5 +70,5 @@ The content and order of all other columns is at user's discretion.
 The order of the rows is at user's discretion.
 
 .. csv-table::
-  :file: tables/demultiplex_columns.csv
+  :file: tables/demultiplexing_columns.csv
   :header-rows: 1

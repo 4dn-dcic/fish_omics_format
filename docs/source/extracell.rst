@@ -35,7 +35,7 @@ The first line in the header is always “##FOF-CT_version=vX.X”
 The header should include a detailed description of each optional columns used.
 
 .. csv-table::
-  :file: tables/roi_extracell_header.csv
+  :file: tables/extracell_header.csv
   :header-rows: 1
 
 Data Columns
@@ -48,5 +48,5 @@ The content and order of all other columns is at user's discretion.
 The order of the rows is at user's discretion.
 
 .. csv-table::
-  :file: tables/roi_extracell_columns.csv
+  :file: tables/extracell_columns.csv
   :header-rows: 1

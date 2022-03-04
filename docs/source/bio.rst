@@ -41,7 +41,7 @@ for each of them.
 The header should include a detailed description of each optional columns used.
 
 .. csv-table::
-  :file: tables/spot_bio_header.csv
+  :file: tables/bio_header.csv
   :header-rows: 1
 
 Data Columns
@@ -55,5 +55,5 @@ The order of the other columns is at user's discretion.
 The order of the rows is at user's discretion.
 
 .. csv-table::
-  :file: tables/spot_bio_columns.csv
+  :file: tables/bio_columns.csv
   :header-rows: 1
