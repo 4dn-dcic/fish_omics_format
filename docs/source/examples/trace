@@ -4,7 +4,7 @@
 #^allele: This field records the Allele to which this Trace was mapped. This can be one of the following values: BL6, CAST.
 #^RNA_A_intensity: This records the intensity of the nascent RNA A expression signal associated with this Trace.
 #^NL_distance: This field records the distance of this Trace to the Nuclear Lamina.
-#additional_tables: DNA_Spot_Data.csv, Cell_Data.csv
+#additional_tables: 4dn_FOF-CT_core, 4dn_FOF-CT_cell
 #columns=(Trace_ID, allele, RNA_A_int, NL_distance)
 1, BL6, 43253, 0.235
 2, CAST, 40001, 0.563
