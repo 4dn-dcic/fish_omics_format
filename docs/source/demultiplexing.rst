@@ -49,8 +49,7 @@ Data Columns
 
 Each row corresponds to data associated with an individual Localization event.
 
-The first column of this table is always Loc_ID.
-The second column has to mandatorily be Spot_ID.
+The first columns are always: Loc_ID, Spot_ID, X, Y, Z.
 The content and order of all other columns is at user's discretion.
 The order of the rows is at user's discretion.
 
