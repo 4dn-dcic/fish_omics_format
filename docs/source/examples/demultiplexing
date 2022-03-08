@@ -1,3 +1,5 @@
+##FOF-CT_version=v0.1
+##Table_namespace=4dn_FOF-CT_demultiplexing
 # loc_ID - unique ID for the individual localization
 # Spot_ID - index from DNA spot table. Localizations not assigned to a spot are denoted NA.
 # x - fitted x position of the the individual localization event / readout

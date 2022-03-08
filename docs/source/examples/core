@@ -1,4 +1,5 @@
 ##FOF-CT_version=v0.1
+##Table_namespace=4dn_FOF-CT_core
 ##genome_assembly=GRCh38
 ##XYZ_unit=micron
 #Software_Title: ChrTracer3

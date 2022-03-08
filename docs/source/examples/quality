@@ -1,3 +1,5 @@
+##FOF-CT_version=v0.1
+##Table_namespace=4dn_FOF-CT_quality
 # Spot_ID - identifier from DNA spot table
 # fluor - fluorophore imaged to detect the spot. One of the following: cy3, cy5 or Alexa750
 # brightness - peak height in photons

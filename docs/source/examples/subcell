@@ -1,4 +1,5 @@
 ##FOF-CT_version=v0.1
+##Table_namespace=4dn_FOF-CT_subcell
 ##XYZ_unit=micron
 ##intensity_unit=a.u.
 ##Sub_Cell_ROI_type=Nucleolus

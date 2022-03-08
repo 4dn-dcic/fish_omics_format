@@ -1,4 +1,5 @@
 ##FOF-CT_version=v0.1
+##Table_namespace=4dn_FOF-CT_trace
 ##XYZ_unit=micron
 ##intensity_unit=a.u.
 #^allele: This field records the Allele to which this Trace was mapped. This can be one of the following values: BL6, CAST.

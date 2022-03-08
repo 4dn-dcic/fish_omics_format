@@ -1,4 +1,5 @@
 ##FOF-CT_version=v0.1
+##Table_namespace=4dn_FOF-CT_extracell
 ##XYZ_unit=micron
 ##Extra_Cell_ROI_type=Organoid
 #^Cell_A_nr: the number of identified Cells of type A identified to belong to this extracellular ROI.
