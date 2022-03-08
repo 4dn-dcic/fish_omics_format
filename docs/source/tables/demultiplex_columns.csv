@@ -1,6 +1,0 @@
-Name,Description,Example,Conditional requirement conditions
-*Loc_ID*,"A unique identifier for this individual Localization event.","1",""
-*Spot_ID*,"A unique identifier for the bright DNA or RNA Spot with which this individual localization event is associated.","1",""
-#^optional_column_1:,"","",""
-#^optional_column_2:,"","",""
-#^optional_column_3:,"","",""
