@@ -21,8 +21,7 @@ genomic DNA target sequence identified by Chromosome ID, and by Start and End
 chromosome coordinates.
 
 At a minimum the Table has to have 8 columns in the following order: Spot_ID,
-Trace_ID, X, Y, Z coordinates, Chromosome ID, Chromosome Start, Chromosome End.
-These are required.
+Trace_ID, X, Y, Z, Chrom, Chrom_Start, Chrom_End. These are required.
 Additionally in case sub-cellular structures, cells or Extra Cellular
 Structures (e.g., Tissue) are identified as part of this experiment,
 this table has to mandatorily include the ID of the Sub_Cellular, Cell or
@@ -30,7 +29,7 @@ Extra Cellular Structure (e.g., Tissue) Region of Interest (ROI)
 each Spot/Trace is associated with. The order of these columns is optional.
 
 All other spot properties should be kept in the optional
-additional Spot Biological Data table, indexed by Spot_ID.
+additional :ref:`bio`, indexed by Spot_ID.
 
 Example
 -------
