@@ -1,7 +1,9 @@
-.. _roi_extracell:
+.. _extracell:
 
-Extra_Cell ROI Data table (conditionally required)
-==================================================
+Extra-Cell ROI Data table
+=========================
+
+Requirement level: conditionally required
 
 Summary
 -------
@@ -17,12 +19,12 @@ this study.
 Each row in the table corresponds to a different extracellular structure
 studied in the experiment and is identified by a unique Extra_Cell_ROI_ID that
 links the data reported in this table with data stored in one of the
-other tables (i.e., DNA_Spot/Trace_Data, Trace_Data, etc.,).
+other tables (i.e., :ref:`core`, :ref:`trace`, etc.).
 
 Example
 -------
 
-.. include:: examples/roi_extracell
+.. include:: examples/extracell
   :code:
 
 File Header
@@ -33,18 +35,18 @@ The first line in the header is always “##FOF-CT_version=vX.X”
 The header should include a detailed description of each optional columns used.
 
 .. csv-table::
-  :file: tables/roi_extracell_header.csv
+  :file: tables/extracell_header.csv
   :header-rows: 1
 
 Data Columns
 ------------
 
-Each row corresponds to data associated with an individual Cell.
+Each row corresponds to data associated with an individual extracellular ROI.
 
-The first column of this table is always Cell_ID.
+The first column of this table is always Extra_Cell_ROI_ID.
 The content and order of all other columns is at user's discretion.
 The order of the rows is at user's discretion.
 
 .. csv-table::
-  :file: tables/roi_extracell_columns.csv
+  :file: tables/extracell_columns.csv
   :header-rows: 1

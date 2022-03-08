@@ -2,7 +2,7 @@
 ##XYZ_unit=micron
 #^NL_distance:
 #^H4K27me3_distance:
-#additional_tables: RNA_Spot_Data.csv, Cell_Data.csv
+#additional_tables: 4dn_FOF-CT_rna, 4dn_FOF-CT_cell
 ##columns=(Spot_ID, NL_distance, H4K27me3_distance)
 1, 1.345, 0.445
 2, 1.245, 0.005

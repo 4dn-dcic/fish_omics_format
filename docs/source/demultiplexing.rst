@@ -1,7 +1,9 @@
-.. _demultiplex:
+.. _demultiplexing:
 
-Spot Demultiplexing table (optional)
-====================================
+Spot Demultiplexing Data table
+==============================
+
+Requirement level: optional
 
 Summary
 -------
@@ -23,7 +25,7 @@ Example
 -------
 DNA spots detected with multiplexed barcodes
 
-.. include:: examples/demultiplex
+.. include:: examples/demultiplexing
   :code:
 
 File Header
@@ -31,7 +33,7 @@ File Header
 
 The first line in the header is always "##FOF-CT_version=vX.X"
 
-The header MUST to contain a mandatory set of fields that describe any
+The header MUST contain a mandatory set of fields that describe any
 algorithm that was used to produce/process data in this table.
 In case more than on algorithm were used, please use the same set of fields
 for each of them.
@@ -39,7 +41,7 @@ for each of them.
 The header should include a detailed description of each optional columns used.
 
 .. csv-table::
-  :file: tables/demultiplex_header.csv
+  :file: tables/demultiplexing_header.csv
   :header-rows: 1
 
 Data Columns
@@ -47,11 +49,10 @@ Data Columns
 
 Each row corresponds to data associated with an individual Localization event.
 
-The first column of this table is always Loc_ID.
-The second column has to mandatorily be Spot_ID.
+The first columns are always: Loc_ID, Spot_ID, X, Y, Z.
 The content and order of all other columns is at user's discretion.
 The order of the rows is at user's discretion.
 
 .. csv-table::
-  :file: tables/demultiplex_columns.csv
+  :file: tables/demultiplexing_columns.csv
   :header-rows: 1

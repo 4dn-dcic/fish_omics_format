@@ -11,7 +11,7 @@
 #lab_name: Nobel
 #experimenter_name: John Doe
 #experimenter_contact: john.doe@email.com
-#additional_tables: DNA_Spot/Trace_Data, RNA_Spot_Quality.csv, Cell_Data.csv
+#additional_tables: 4dn_FOF-CT_core, 4dn_FOF-CT_quality, 4dn_FOF-CT_cell
 ##columns=(Spot_ID, X, Y, Z, RNA_name, Gene_ID, Transcript_ID, Cell_ID)
 1, 14.43, 41.43, 1.23, ACTB, ENSG00000075624, ENST00000646664.1, 1
 2, 14.83, 41.83, 1.83, GAPDH, ENSG00000111640, ENST00000229239.10, 1

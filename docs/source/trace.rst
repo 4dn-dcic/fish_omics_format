@@ -1,7 +1,9 @@
 .. _trace:
 
-Trace Data table (optional)
-===========================
+Trace Data table
+================
+
+Requirement level: optional
 
 Summary
 -------
@@ -13,7 +15,7 @@ properties that are shared by all bright Spots that constitute a Trace.
 Each row in the table corresponds to an individual Trace and is
 identified by a unique Trace_ID that links the data reported in this
 table with data stored in one of the other tables (i.e.,
-DNA_Spot/Trace_Data, Global_Cell_Data, etc.,).
+:ref:`core`, :ref:`cell`, etc.).
 
 Example
 -------

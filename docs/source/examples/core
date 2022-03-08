@@ -10,7 +10,7 @@
 #lab_name: Nobel
 #experimenter_name: John Doe
 #experimenter_contact: john.doe@email.com
-#additional_tables: DNA_Spot_Quality.csv, RNA_Spot.csv, RNA_Spot_Qualtiy.csv, Trace_Data.csv, Cell_Data.csv
+#additional_tables: 4dn_FOF-CT_quality, 4dn_FOF-CT_rna, 4dn_FOF-CT_trace, 4dn_FOF-CT_cell
 ##columns=(Spot_ID, Trace_ID, x, y, z, Chrom, Chrom_Start, Chrom_End, Cell_ID)
 1, 1, 14.43, 41.43, 1.23, chr1, 0001, 1000, 1
 2, 1, 14.83, 41.83, 1.83, chr1, 1001, 2000, 1
