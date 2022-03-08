@@ -41,9 +41,9 @@ The header should include a detailed description of each optional columns used.
 Data Columns
 ------------
 
-Each row corresponds to data associated with an individual Cell.
+Each row corresponds to data associated with an individual extracellular ROI.
 
-The first column of this table is always Cell_ID.
+The first column of this table is always Extra_Cell_ROI_ID.
 The content and order of all other columns is at user's discretion.
 The order of the rows is at user's discretion.
 

@@ -40,7 +40,7 @@ This table might be organized in one of the following manner:
 In addition, this table might be used to report additional vectorial
 properties such as:
 
--  Lists of RNA Spot x/y/z in global coordinates,
+-  Lists of RNA Spot x/y/z in global coordinates
 -  Lists of barcode sequence ID
 -  Lists of channels
 

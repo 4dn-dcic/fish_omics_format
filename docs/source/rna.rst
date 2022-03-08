@@ -28,8 +28,8 @@ correspond to the final localization of the RNA molecule under study.
 In the case of multiplexed FISH experiments (i.e., MERFISH) in which the
 final localization of RNA molecule results from combining multiple
 detection events (e.g., by combining Spots detected in separate images),
-the underlying raw data can be recorded in corresponding RNA Spot
-quality tables as described below.
+the underlying raw data can be recorded in the corresponding
+:ref:`demultiplexing` as described below.
 
 Example
 -------
@@ -42,7 +42,7 @@ File Header
 
 The first line in the header is always "##FOF-CT_version=vX.X"
 
-The header MUST to contain a mandatory set of fields that describe the
+The header MUST contain a mandatory set of fields that describe the
 algorithm(s) that were used to identify and localize bright Spots.
 In case more than on algorithm were used, please use the same set of fields
 for each of them.

@@ -40,7 +40,7 @@ The header should include a detailed description of each optional columns used.
 Data Columns
 ------------
 
-Each row corresponds to data associated with an individual Sub_Cell_ROI.
+Each row corresponds to data associated with an individual subcellular ROI.
 
 The first column of this table is always Sub_Cell_ROI_ID.
 The content and order of all other columns is at user's discretion.

@@ -17,8 +17,8 @@ that share the same Trace_ID, by definition belong to the same Trace.
 
 Each row reports the x, y, z localization, and the Trace assignment
 (i.e., Trace_ID) of a FISH-omics bright Spot and corresponds to a specific
-genomic DNA target sequence identified by Chromosome ID, and by Start and End
-chromosome coordinates.
+genomic DNA target sequence identified by chromosome ID (Chrom), and by start
+(Chrom_Start) and end (Chrom_End) chromosome coordinates.
 
 At a minimum the Table has to have 8 columns in the following order: Spot_ID,
 Trace_ID, X, Y, Z, Chrom, Chrom_Start, Chrom_End. These are required.
@@ -42,7 +42,7 @@ File Header
 
 The first line in the header is always "##FOF-CT_version=vX.X"
 
-The header MUST to contain a mandatory set of fields that describe the
+The header MUST contain a mandatory set of fields that describe the
 algorithm(s) that were used to identify and localize bright Spots and to
 connect them to form Traces.
 In case more than one algorithm were used, please use the same set of fields
