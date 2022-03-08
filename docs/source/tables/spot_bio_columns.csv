@@ -1,0 +1,5 @@
+Name,Description,Example,Conditional requirement conditions
+*Spot_ID*,"A unique identifier for this bright Spot.","1",""
+optional_column_1:,"","",""
+optional_column_2:,"","",""
+optional_column_3:,"","",""
