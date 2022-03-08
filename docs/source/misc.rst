@@ -21,6 +21,7 @@ Older revision history
 .. note::
     Older versions of this document are available in the following Google Doc:
     https://docs.google.com/document/d/1z7rIYsQnbeS7y_SMuwoa8qsWKBD_BpV88vR79WiH_XI/edit?usp=sharing
+    and Google Sheet: https://docs.google.com/spreadsheets/d/1GvqokS5w8Yw2tAngsqDC8YcLdRha5cGr/edit?usp=sharing&ouid=103316056144222958298&rtpof=true&sd=true
 
 Feb 1, 2021 Alistair Boettiger
 
