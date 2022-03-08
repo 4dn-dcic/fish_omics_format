@@ -12,6 +12,6 @@ Name,Description,Example,Conditional requirement conditions
 **#Software_Repository:**,"The URL of any repository or archive where the Software executable release can be obtained.","https://github.com/BoettigerLab/ORCA-public",""
 **#Software_PreferredCitationID:**,"The Unique Identifier for the preferred/primary publication describing this Software. Examples include, Digital Object Identifier (DOI), PubMed Central Identifier (PMCID), ArXiv.org ID etc,.","https://doi.org/10.1038/s41596-020-00478-x",""
 **#additional_tables:**,"list of the additional tables being submitted. Note: use a comma to separate each table name from the next.","4dn_FOF-CT_rna, 4dn_FOF-CT_quality, 4dn_FOF-CT_bio, 4dn_FOF-CT_trace, 4dn_FOF-CT_cell",""
-**##genome_assembly=**,"Genome build. Note: the 4DN Data Portal only accepts GRCh38 for human and GRCm38 for mouse.","GRCch38",""
+**##genome_assembly=**,"Genome build. Note: the 4DN Data Portal only accepts GRCh38 for human and GRCm38 for mouse.","GRCh38",""
 **##XYZ_unit=**,"The unit used to represent the XYZ location of bright Spots in this table. Note: use micron (instead of µm) to avoid problems with special, Greek symbols. Other allowed values are: nm, mm etc.","micron",""
 **##columns=**,"list of the data column headers used in the table. Note: enclose the column headers and use a comma to separate each header name from the next.","(Spot_ID, X, Y, Z)",""
