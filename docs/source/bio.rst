@@ -28,8 +28,8 @@ Example
 
 File Header
 -----------
-
-The first line in the header is always "##FOF-CT_version=vX.X"
+- The first line in the header is always "##FOF-CT_version=vX.X"
+- The second line in the header is always "##Table_namespace=4dn_FOF-CT_bio"
 
 This Table can be indexed mandatorily by Spot_ID.
 
@@ -48,9 +48,6 @@ Data Columns
 ------------
 
 Each row corresponds to data associated with an individual Spot.
-
-The first columns are always: Spot_ID, X, Y, Z coordinates, RNA_name,
-Gene_ID(, Transcript_ID).
 The order of the other columns is at user's discretion.
 The order of the rows is at user's discretion.
 
