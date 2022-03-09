@@ -7,7 +7,6 @@ Requirement level: conditionally required
 
 Summary
 -------
-
 This table is used to document properties that are globally associated with
 individual sub-cellular ROIs that typically correspond to sub-nuclear features
 (e.g., Nucleoli, Nuclear Lamina, Chromosome Domains, PML bodies, etc.)
@@ -22,14 +21,13 @@ reported in this table with data stored in one of the other tables
 
 Example
 -------
-
 .. include:: examples/subcell
   :code:
 
 File Header
 -----------
-
-The first line in the header is always “##FOF-CT_version=vX.X”
+- The first line in the header is always "##FOF-CT_version=vX.X"
+- The second line in the header is always "##Table_namespace=4dn_FOF-CT_subcell"
 
 The header should include a detailed description of each optional columns used.
 
@@ -39,10 +37,9 @@ The header should include a detailed description of each optional columns used.
 
 Data Columns
 ------------
-
 Each row corresponds to data associated with an individual subcellular ROI.
 
-The first column of this table is always Sub_Cell_ROI_ID.
+The first column of this table is always **Sub_Cell_ROI_ID**.
 The content and order of all other columns is at user's discretion.
 The order of the rows is at user's discretion.
 
