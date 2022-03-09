@@ -15,19 +15,15 @@ bright Spots that are spatially linked together in a three-dimensional (3D)
 polymeric Trace using a 3D polymeric tracing algorithm. As a result, all Spots
 that share the same Trace_ID, by definition belong to the same Trace.
 
-Each row reports the x, y, z localization, and the Trace assignment
+Each row reports the X, Y, Z localization, and the Trace assignment
 (i.e., Trace_ID) of a FISH-omics bright Spot and corresponds to a specific
 genomic DNA target sequence identified by chromosome ID (Chrom), and by start
-(Chrom_Start) and end (Chrom_End) chromosome coordinates.
-
-In this table the reported X, Y and Z coordinates are assumed to result
+(Chrom_Start) and end (Chrom_End) chromosome coordinates. In this table the reported X, Y and Z coordinates are assumed to result
 from post-processing and quality control procedures and therefore
 correspond to the final localization of the DNA target under study.
 
 At a minimum the Table has to have 8 columns in the following order: Spot_ID,
-Trace_ID, X, Y, Z, Chrom, Chrom_Start, Chrom_End. These are required.
-
-Additionally in case sub-cellular structures, cells or extra cellular
+Trace_ID, X, Y, Z, Chrom, Chrom_Start, Chrom_End. These are required. Additionally in case sub-cellular structures, cells or extra cellular
 structures (e.g., Tissue) are identified as part of this experiment,
 this table has to mandatorily include the ID of the Sub_Cellular, Cell or
 Extra Cellular Structure Region of Interest (ROI) each Spot/Trace is associated with.
