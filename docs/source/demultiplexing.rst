@@ -10,16 +10,13 @@ Summary
 
 This table is optional and is designed to be used in the case of multiplexed
 FISH experiments (i.e., MERFISH) in which the final localization of a bright
-DNA or RNA Spot results from the combination of multiple
-individual localization events (e.g., by combining particles detected and
-localized in separate images).
+DNA or RNA Spot results from the combination of multiple individual localization events (e.g., by combining particles detected and localized in separate images).
 In such a case the final Spot localization data is recorded in the
-:ref:`core`, while the underlying primary localization data
-can be recorded by using this table, as shown for DNA Spots in the
-example below.
+:ref:`core`, while the underlying primary localization data can be recorded by using this table, as shown for DNA Spots in the example below.
 
-This table is indexed by Loc_ID, mandatorily reports the X, Y, Z coordinates of the Localization event, and it has a mandatory Spot_ID column that
-is used to link individual localization events to the resulting Spot.
+This table is indexed by **Loc_ID**, mandatorily reports the **X**, **Y**, **Z** coordinates of the Localization event, and it has a mandatory **Spot_ID** column that is used to link individual localization events to the resulting Spot.
+
+Other columns are at user's discretion. 
 
 Example
 -------
