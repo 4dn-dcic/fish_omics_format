@@ -16,8 +16,7 @@ and/or :ref:`extracell` tables are deposited with this submission.
 
 The table is organized on a Cell/ROI basis via a Cell/ROI ID and
 provides the Cell/ROI boundaries in global coordinates as specified by
-the OME ROI data model
-(https://docs.openmicroscopy.org/ome-model/5.6.3/developers/roi.html).
+the `OME ROI data model <https://docs.openmicroscopy.org/ome-model/5.6.3/developers/roi.html>`_.
 
 This table might be organized in one of the following manner:
 
