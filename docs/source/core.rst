@@ -20,16 +20,25 @@ Each row reports the x, y, z localization, and the Trace assignment
 genomic DNA target sequence identified by chromosome ID (Chrom), and by start
 (Chrom_Start) and end (Chrom_End) chromosome coordinates.
 
+In this table the reported X, Y and Z coordinates are assumed to result
+from post-processing and quality control procedures and therefore
+correspond to the final localization of the DNA target under study.
+
 At a minimum the Table has to have 8 columns in the following order: Spot_ID,
 Trace_ID, X, Y, Z, Chrom, Chrom_Start, Chrom_End. These are required.
-Additionally in case sub-cellular structures, cells or Extra Cellular
-Structures (e.g., Tissue) are identified as part of this experiment,
-this table has to mandatorily include the ID of the Sub_Cellular, Cell or
-Extra Cellular Structure (e.g., Tissue) Region of Interest (ROI)
-each Spot/Trace is associated with. The order of these columns is optional.
 
-All other spot properties should be kept in the optional
-additional :ref:`bio`, indexed by Spot_ID.
+Additionally in case sub-cellular structures, cells or extra cellular
+structures (e.g., Tissue) are identified as part of this experiment,
+this table has to mandatorily include the ID of the Sub_Cellular, Cell or
+Extra Cellular Structure Region of Interest (ROI) each Spot/Trace is associated with.
+
+All other spot properties must be kept in the two additional tables :ref:`quality` amd :ref:`bio`, indexed by Spot_ID and as described in the instructions for those tables.
+
+Finally, in the case in which the final localization of DNA target results from combining multiple
+detection events (e.g., by combining localization events from different focal planes or times),
+the underlying raw data can be recorded in the corresponding
+:ref:`demultiplexing` table as described in the instructions of that table.
+
 
 Example
 -------
@@ -41,6 +50,7 @@ File Header
 -----------
 
 The first line in the header is always "##FOF-CT_version=vX.X"
+The second line in the header is always "##Table_namespace=4dn_FOC-CT_core"
 
 The header MUST contain a mandatory set of fields that describe the
 algorithm(s) that were used to identify and localize bright Spots and to
