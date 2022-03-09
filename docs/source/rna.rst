@@ -9,11 +9,11 @@ Summary
 -------
 
 This table is used to store and share the results of RNA FISH-omics experiments
-and it is required in the case RNA data was collected as part of this
+and it is **conditionally required** in the case RNA data was collected as part of this
 experiment. Each row represents a detected RNA bright Spot
-and corresponds to the localization of a specific RNA transcript. At a
+and corresponds to the location of a specific RNA transcript. At a
 minimum, one needs to know the Spot_ID, the X, Y, Z coordinates of each
-localization, the Gene_ID and an additional ID used to link this data
+spot, the Gene_ID and an additional ID used to link this data
 with other tables in this format (i.e., Trace_ID, ROI_ID and/or
 Cell_ID). In addition, in case multiple transcripts are associated with
 the same Gene_ID and the FISH probes are capable of distinguishing them,
@@ -22,14 +22,14 @@ be 6 (or 7) data columns. These are required. All other data columns are
 optional.
 
 In this table the reported X, Y and Z coordinates are assumed to result
-from post-processing and quality control procedures and therefore
-correspond to the final localization of the RNA molecule under study.
+from post-processing and quality control procedures performed on primary localization events and therefore
+correspond to what is considered the best-bet location of the RNA molecule under study.
 
-In the case of multiplexed FISH experiments (i.e., MERFISH) in which the
-final localization of RNA molecule results from combining multiple
-detection events (e.g., by combining Spots detected in separate images),
+In the case of multiplexed FISH experiments (i.e., `MERFISH <https://doi.org/10.1073/pnas.1912459116>`_) in which the
+final location of RNA molecule results from combining multiple
+detection events (e.g., by combining individual Localization events detected in separate planes or images),
 the underlying raw data can be recorded in the corresponding
-:ref:`demultiplexing` as described below.
+:ref:`demultiplexing` as described in the instructions of that table.
 
 Example
 -------
@@ -39,8 +39,8 @@ Example
 
 File Header
 -----------
-
-The first line in the header is always "##FOF-CT_version=vX.X"
+- The first line in the header is always "##FOF-CT_version=vX.X"
+- The second line in the header is always "##Table_namespace=4dn_FOF-CT_rna"
 
 The header MUST contain a mandatory set of fields that describe the
 algorithm(s) that were used to identify and localize bright Spots.
@@ -55,11 +55,9 @@ The header should include a detailed description of each optional columns used.
 
 Data Columns
 ------------
+As with all other Spot Data tables in this format, each row corresponds to data associated with an individual Spot.
 
-As with all other Spot Data tables in this format, each row corresponds to
-data associated with an individual Spot.
-
-The first columns are always: Spot_ID, X, Y, Z coordinates, RNA_name,
+The first columns are always: Spot_ID, X, Y, Z, RNA_name,
 Gene_ID(, Transcript_ID).
 The order of the other columns is at user's discretion.
 The order of the rows is at user's discretion.
