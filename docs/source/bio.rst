@@ -33,10 +33,7 @@ File Header
 
 This Table can be indexed mandatorily by Spot_ID.
 
-The header MUST contain a mandatory set of fields that describe any
-algorithm that was used to produce/process data in this table.
-In case more than on algorithm were used, please use the same set of fields
-for each of them.
+The header MUST contain a mandatory set of fields that describe any algorithm that was used to produce/process data in this table. In case more than on algorithm were used, please use the same set of fields for each of them.
 
 The header should include a detailed description of each optional columns used.
 
