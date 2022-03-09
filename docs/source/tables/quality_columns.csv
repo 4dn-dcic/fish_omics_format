@@ -1,5 +1,8 @@
 Name,Description,Example,Conditional requirement conditions
 **Spot_ID**,"A unique identifier for this bright Spot.","1",""
+conditionally_required_column_1:,"one of the conditionally required columns desribed in the header","",""
+conditionally_required_column_2:,"one of the conditionally required columns desribed in the header","",""
+conditionally_required_column_3:,"one of the conditionally required columns desribed in the header","",""
 optional_column_1:,"","",""
 optional_column_2:,"","",""
 optional_column_3:,"","",""
