@@ -1,11 +1,13 @@
 Format description: overview
 ============================
 
+.. contents::
+
 General Info
 ------------
 
 - The format is organized in multiple individual tables.
-- The only mandatory table is the "DNA_Spot/Trace_Data_Table".
+- The only mandatory table is the :ref:`core`.
 - All other tables are either recommended for all experiment types, or optional
   depending on the experiment design and type.
 - Each file must contain a single table.
@@ -43,7 +45,7 @@ File Header
 - All tables have to contain a mandatory header section.
 
 Mandatory header lines (all tables)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **##FOF-CT_version=** Data format version number. E.g. v0.2
 
@@ -68,7 +70,7 @@ sufficient details to ensure interpretation and reproducibility.
 **##columns=**\ (C1, C2, C3, Cn)
 
 Additional mandatory header lines (DNA spot/trace core and RNA tables)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 In addition to all of the above,
 
@@ -108,7 +110,7 @@ Data Columns
   involves the identification of Cell boundaries).
 - Column names should use the underscore as a word separator (e.g., Spot_ID).
 - The first column is always either Spot_ID or another relevant ID (i.e.,
-  Trace_ID, Cell_ID, etc.,). In the DNA_Spot/Trace_Data_Table, there are eight
+  Trace_ID, Cell_ID, etc.,). In the :ref:`core`, there are eight
   mandatory columns. All other columns are ordered at user's discretion.
 - The order of the rows is at user's discretion.
 - If an optional column does not contain any data (i.e., it is not used), it

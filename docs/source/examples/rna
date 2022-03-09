@@ -1,0 +1,19 @@
+##FOF-CT_version=v0.1
+##Table_namespace=4dn_FOF-CT_rna
+##genome_assembly=GRCh38
+##XYZ_unit=micron
+##Gene_ID_type=Ensemble_V38
+#Software_Title: Xyz
+#Software_Type: SpotLoc
+#Software_Authors: Janet Doette
+#Software_Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sagittis est mollis, pulvinar tortor mattis, dignissim nisi. Nunc tincidunt volutpat lacus vitae bibendum.
+#Software_Repository: https://xyz.com
+#Software_PreferredCitationID: https://doi.org/xyz
+#lab_name: Nobel
+#experimenter_name: John Doe
+#experimenter_contact: john.doe@email.com
+#additional_tables: 4dn_FOF-CT_core, 4dn_FOF-CT_quality, 4dn_FOF-CT_cell
+##columns=(Spot_ID, X, Y, Z, RNA_name, Gene_ID, Transcript_ID, Cell_ID)
+1, 14.43, 41.43, 1.23, ACTB, ENSG00000075624, ENST00000646664.1, 1
+2, 14.83, 41.83, 1.83, GAPDH, ENSG00000111640, ENST00000229239.10, 1
+3, 15.83, 42.83, 1.33, MB, ENSG00000198125, ENST00000397326.7, 1

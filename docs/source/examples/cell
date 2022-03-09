@@ -1,0 +1,14 @@
+##FOF-CT_version=v0.1
+##Table_namespace=4dn_FOF-CT_cell
+##XYZ_unit=micron
+##Extra_Cell_ROI_type=Organoid
+#^RNA_A_nr: the number of detected bright Spots corresponding to RNA transcript A detected in this Cell, see also RNA Spot Data table
+#^RNA_B_nr: the number of detected bright Spots corresponding to RNA transcript B detected in this Cell, see also RNA Spot Data table
+#^cell_cycle_state: the Cell Cycle state in which this Cell is found as measured with the Fucci system. This column can contain one of the following values: G1, S, G2 or M.
+#^cell_volume: the volume of this Cell expressed in micron^3.
+#additional_tables: 4dn_FOF-CT_core, 4dn_FOF-CT_rna, 4dn_FOF-CT_trace
+#columns=(Cell_ID, Extra_Cell_ROI_ID, RNA_A_nr, RNA_B_nr, cell_cycle_state, cell_volume)
+1, 1, 10, 22, 1041.5, 12354.24, G1, 13453
+2, 1, 0, 11, 2041.3, 32234.24, G2, 35545
+3, 2, 10, 33, 101.5, 12354.24, S, 10010
+4, 3, 0, 44, 201.1, 32234.24, M, 25340

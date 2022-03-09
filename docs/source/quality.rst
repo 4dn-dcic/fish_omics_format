@@ -1,10 +1,12 @@
-Spot Quality table (recommended)
---------------------------------
+.. _quality:
+
+Spot Quality Data table
+=======================
+
+Requirement level: recommended
 
 Summary
-~~~~~~~
-
-*(each line corresponds to an individual DNA or RNA bright Spot)*
+-------
 
 This table is highly recommended and it is designed to provide quality
 metrics for the Spot localization, information about the optical Channel
@@ -21,210 +23,39 @@ The table is indexed by Spot_ID and each row corresponds to a DNA or RNA
 bright Spot. The order of not required columns and of the rows are at
 the user's discretion.
 
-Example: Spot fit quality
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+Example
+-------
+Spot fit quality
 
-.. code::
-
-  # Spot_ID - identifier from DNA spot table
-  # fluor - fluorophore imaged to detect the spot. One of the following: cy3, cy5 or Alexa750
-  # brightness - peak height in photons
-  # x_FOV - the original fit x-position relative to the camera and objective, (prior to drift correction, chromatic correction, or conversion to stage coordinates). This is the appropriate coordinate system for correcting optical aberrations.
-  # y_FOV - the original fit y-position relative to the camera and objective, (prior to drift correction, chromatic correction, or conversion to stage coordinates). This is the appropriate coordinate system for correcting optical aberrations.
-  # z_FOV - the original fit z-position relative to the camera and objective, (prior to drift correction, chromatic correction, or conversion to stage coordinates). This is the appropriate coordinate system for correcting optical aberrations.
-  # drift_correct_x - the distance in nm the spot was moved in x based on fiducial tracking
-  # drift_correct_y - the distance in nm the spot was moved in y based on fiducial tracking
-  # drift_correct_z - the distance in nm the spot was moved in z based on fiducial tracking
-  # chrom_correct_x - the distance in nm the spot was moved in x based on chromatic correction map
-  # chrom_correct_y - the distance in nm the spot was moved in y based on chromatic correction map
-  # chrom_correct_z - the distance in nm the spot was moved in z based on chromatic correction map
-  # x_lower - lower bound of 95% confidence interval on X-position after fit
-  # x_upper - upper bound of 95% confidence interval on X-position after fit
-  # y_lower - lower bound of 95% confidence interval on Y-position after fit
-  # y_upper - upper bound of 95% confidence interval on Y-position after fit
-  # z_lower - lower bound of 95% confidence interval on Z-position after fit
-  # z_upper - upper bound of 95% confidence interval on Z-position after fit
-  # a - spots were fit to a 3D Gaussian parameterized by amplitude a, background b, widths sigma_xy, sigma_z. Sigma_xy were pre-calibrated for the system based imaging of 100 nm beads.
-  # b - spots were fit to a 3D Gaussian parameterized by amplitude a, background b, widths sigma_xy, sigma_z. Sigma_xy were pre-calibrated for the system based imaging of 100 nm beads.
+.. include:: examples/quality
+  :code:
 
 File Header
-~~~~~~~~~~~
+-----------
 
-.. list-table::
+The first line in the header is always "##FOF-CT_version=vX.X"
+
+The header MUST contain a mandatory set of fields that describe any
+algorithm that was used to produce/process data in this table.
+In case more than on algorithm were used, please use the same set of fields
+for each of them.
+
+The header should include a detailed description of each optional columns used.
+
+.. csv-table::
+  :file: tables/quality_header.csv
   :header-rows: 1
-
-  * - Name
-    - Description
-    - Example
-    - Conditional requirement conditions
-  * - **##FOF-CT_version=**
-    - Version of the FOF format used in this case.
-    - v0.1
-    -
-  * - **##Table_namespace=**
-    - 4dn_FOF-CT_quality
-    -
-    -
-  * - #lab_name:
-    - name of the lab where the experiment was performed.
-    - Nobel
-    -
-  * - #experimenter_name:
-    - name of the person performing the experiment.
-    - John Doe
-    -
-  * - **#experimenter_contact:**
-    - email address of the person performing the experiment.
-    - john.doe@email.com
-    -
-  * - **#description:**
-    - A free-text, description of the experiment and of the data recorded in this table. This description should provide a clear understanding of the process utilized to produce the data and contain sufficient details to ensure interpretation and reproducibility.
-    -
-    -
-  * - **#Software_Title:**
-    - The name of the Software(s) that were used in this case for localizing individual FISH-omics bright Spots and/or to produce three-dimensional (3D) polymeric chromatin Traces.
-    - ChrTracer3
-    -
-  * - **#Software_Type:**
-    - The type of this Software. Allowed values: SpotLoc, Tracing, SpotLoc+Tracing, Segmentation, QC, Other
-    - SpotLoc+Tracing
-    -
-  * - **#Software_Authors:**
-    - The Name(s) of the individual Author(s) of this Software. In case there are more than one Authors, individual names should be listed as follows, Doe, John; Smith, Jane; etc,.
-    - Mateo, LJ; Sinnott-Armstrong, N; Boettiger, AN
-    -
-  * - **#Software_Description:**
-    - A free-text, description of this Software. This description should provide a detailed understanding of the algortithm and of the analysis parameters that were used, in order to guarantee interpretation and reproducibility.
-    - ChrTracer3 software was developed for analysis of raw DNA labeled images. As an input, it takes an.xlsx table containing information and folder names of the DNA experiment. As an output, it returns tab delimited.txt ﬁles with drift-corrected x, y, z positions for all labeled barcodes. These can be used directly to calculate the nm scale distances between all pairs of labeled loci. The current version of the software as of this writing is ChrTracer3.
-    -
-  * - **#Software_Repository:**
-    - The URL of any repository or archive where the Software executable release can be obtained.
-    - https://github.com/BoettigerLab/ORCA-public
-    -
-  * - **#Software_PreferredCitationID:**
-    - The Unique Identifier for the preferred/primary publication describing this Software. Examples include, Digital Object Identifier (DOI), PubMed Central Identifier (PMCID), ArXiv.org ID etc,.
-    - https://doi.org/10.1038/s41596-020-00478-x
-    -
-  * - **#additional_tables:**
-    - list of the additional tables being submitted. Note: use a comma to separate each table name from the next.
-    - DNA_Spot/Trace_Data.csv, RNA_Spot_Data.csv, Spot_Biological_Data.csv, Gobal_Trace_Data.csv, Global_Cell_Data.csv
-    -
-  * - *#Intensity_Measurement_Method*
-    - If relevant, the method that was used to performed intensity measurements. In particular, sufficient information should be provided to document how digital intensity signals were converted in Photon conunts.
-    - Spot centroid intensity.
-    - Conditional requirement: this MUST be reported if any intensity metrics are reported.
-  * - **#^Channel_ID**
-    - A unique identifier that refers to the Channel that was used to image this Spot.
-    -
-    -
-  * - **#^Fluorophore_ID**
-    - A unique identifier that refers to the Fluorophore whose Emission is utilized to detect this Spot.
-    -
-    -
-  * - *#^Centroid_Intensity:*
-    - The signal intensity of the pixel occupying the center-of-mass within a bright Spot (i.e. centroid).
-    -
-    - Conditional requirement: this column name should be used if this metric is reported.
-  * - *#^Peak_Intensity:*
-    - The signal intensity of the brightest pixel within a bright Spot (i.e. local maximum).
-    -
-    - Conditional requirement: this column name should be used if this metric is reported.
-  * - *#^Raw_X:*
-    - The Raw sub-pixel X coordinate of this bright Spot relative to the optical system (i.e., Objective and Detector), as determined before any performed post-processing correction procedures (i.e. drift correction, chromatic correction etc). This is the appropriate coordinate system for correcting optical aberrations.
-    -
-    - Conditional requirement: this column name should be used if this metric is reported.
-  * - *#^Raw_Y:*
-    - The Raw sub-pixel Y coordinate of this bright Spot relative to the optical system (i.e., Objective and Detector), as determined before any performed post-processing correction procedures (i.e. drift correction, chromatic correction etc). This is the appropriate coordinate system for correcting optical aberrations.
-    -
-    - Conditional requirement: this column name should be used if this metric is reported.
-  * - *#^Raw_Z:*
-    - The Raw sub-pixel Z coordinate of this bright Spot relative to the optical system (i.e., Objective and Detector), as determined before any performed post-processing correction procedures (i.e. drift correction, chromatic correction etc). This is the appropriate coordinate system for correcting optical aberrations.
-    -
-    - Conditional requirement: this column name should be used if this metric is reported.
-  * - *#^X_Drift:*
-    - This field captures the offset in the observed X-coordinate of the Intensity maxima or the Intensity centre of gravity of the bright Spot when comparing the Observed vs. Expected (i.e., based on a fiducial reference) positions. This shall be calculates as: √(Xe - Xo)^2, and reported in physical distance using the unit indicated in the header.
-    -
-    - Conditional requirement: this column name should be used if this metric is reported.
-  * - *#^Y_Drift:*
-    - This field captures the offset in the observed Y-coordinate of the Intensity maxima or the Intensity centre of gravity of the bright Spot when comparing the Observed vs. Expected (i.e., based on a fiducial reference) positions. This shall be calculates as: √(Ye - Yo)^2, and reported in physical distance using the unit indicated in the header.
-    -
-    - Conditional requirement: this column name should be used if this metric is reported.
-  * - *#^Z_Drift:*
-    - This field captures the offset in the observed Z-coordinate of the Intensity maxima or the Intensity centre of gravity of the bright Spot when comparing the Observed vs. Expected (i.e., based on a fiducial reference) positions. This shall be calculates as: √(Ze - Zo)^2, and reported in physical distance using the unit indicated in the header.
-    -
-    - Conditional requirement: this column name should be used if this metric is reported.
-  * - *#^X_Chromatic_Shift*
-    - This field captures the offset in the observed Y-coordinate of the Intensity maxima or the Intensity centre of gravity of the bright Spot when comparing the Reference (_R) vs. the Test (_T) wavelengths. This shall be calculates as: √(Y_T - Y_R)^2. This offset could be reported either in number of Pixels or in physical Distance, when a sub-Pixel offset needs to be calculated.
-    -
-    - Conditional requirement: this column name should be used if this metric is reported.
-  * - *#^Y_Chromatic_Shift*
-    - This field captures the offset in the observed Y-coordinate of the Intensity maxima or the Intensity centre of gravity of the bright Spot when comparing the Test (_T) vs. the Reference (_R) wavelengths. This shall be calculates as: √(Y_R - Y_T)^2. This offset could be reported either in number of Pixels or in physical Distance, when a sub-Pixel offset needs to be calculated.
-    -
-    - Conditional requirement: this column name should be used if this metric is reported.
-  * - *#^Z_Chromatic_Shift*
-    - This field captures the offset in the observed Z-coordinate of the Intensity maxima or the Intensity centre of gravity of the bright Spot when comparing the Test (_T) vs. the Reference (_R) wavelengths. This shall be calculates as: √(Z_T - Z_R)^2. This offset could be reported either in number of Pixels or in physical Distance, when a sub-Pixel offset needs to be calculated.
-    -
-    - Conditional requirement: this column name should be used if this metric is reported.
-  * - *#^X_Loc_Error:*
-    - Empirically calculated error (i.e., uncertainty) associated with the estimation of the X-axis localization of this bright Spot. A description of how this uncertainty was computed, must be provided in the header. Such description must contain enough details to allow interpretation and reproducibility.
-    -
-    - Conditional requirement: this column name should be used if this metric is reported.
-  * - *#^Y_Loc_Error:*
-    - Empirically calculated error (i.e., uncertainty) associated with the estimation of the X-axis localization of this bright Spot. A description of how this uncertainty was computed, must be provided in the header. Such description must contain enough details to allow interpretation and reproducibility.
-    -
-    - Conditional requirement: this column name should be used if this metric is reported.
-  * - #^optional_column_1:
-    -
-    -
-    -
-  * - #^optional_column_2:
-    -
-    -
-    -
-  * - #^optional_column_3:
-    -
-    -
-    -
-  * - **##XYZ_unit=**
-    - The unit used to represent XYZ locations or distances in this table. Note: use micron (instead of µm) to avoid problem with special, Greek symbols. Other allowed values are: nm, mm etc.
-    - micron
-    -
-  * - *##time_unit=*
-    - If relevant, the unit used to represent a time interval. Note: use “sec” for seconds, “msec” for milliseconds, “min” for minutes, and “hr” for hours.
-    - sec
-    - Conditional requirement: this MUST be reported if any time metrics are reported.
-  * - *##intensity_unit=*
-    - If relevant, the unit used to represent intensity measurements.
-    - a.u.
-    - Conditional requirement: this MUST be reported if any intensity metrics are reported.
-  * - **##columns=**
-    - list of the data column headers used in the table. Note: enclose the column headers and use a comma to separate each header name from the next.
-    - (Spot_ID, X, Y, Z)
-    -
 
 Data Columns
-~~~~~~~~~~~~
+------------
 
-.. list-table::
+As with all other Spot Data tables in this format, each row corresponds to
+data associated with an individual Spot.
+
+The first column of this table is always Spot_ID.
+The content and order of all other columns is at user's discretion.
+The order of the rows is at user's discretion.
+
+.. csv-table::
+  :file: tables/quality_columns.csv
   :header-rows: 1
-
-  * - Name
-    - Description
-    - Example
-    - Conditional requirement conditions
-  * - **Spot_ID**
-    - A unique identifier for this bright Spot.
-    - 1
-    -
-  * - optional_column_1:
-    -
-    -
-    -
-  * - optional_column_2:
-    -
-    -
-    -
-  * - optional_column_3:
-    -
-    -
-    -

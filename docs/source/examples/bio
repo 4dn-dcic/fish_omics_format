@@ -1,0 +1,10 @@
+##FOF-CT_version=v0.1
+##Table_namespace=4dn_FOF-CT_bio
+##XYZ_unit=micron
+#^NL_distance:
+#^H4K27me3_distance:
+#additional_tables: 4dn_FOF-CT_rna, 4dn_FOF-CT_cell
+##columns=(Spot_ID, NL_distance, H4K27me3_distance)
+1, 1.345, 0.445
+2, 1.245, 0.005
+3, 1.005, 0.150
