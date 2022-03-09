@@ -26,9 +26,7 @@ At a minimum the Table has to have 8 columns in the following order: Spot_ID,
 Trace_ID, X, Y, Z, Chrom, Chrom_Start, Chrom_End. These are required. Additionally in case sub-cellular structures, cells or extra cellular
 structures (e.g., Tissue) are identified as part of this experiment,
 this table has to mandatorily include the ID of the Sub_Cellular, Cell or
-Extra Cellular Structure Region of Interest (ROI) each Spot/Trace is associated with.
-
-All other spot properties must be kept in the two additional tables :ref:`quality` amd :ref:`bio`, indexed by Spot_ID and as described in the instructions for those tables.
+Extra Cellular Structure Region of Interest (ROI) each Spot/Trace is associated with. All other spot properties must be kept in the two additional tables :ref:`quality` amd :ref:`bio`, indexed by Spot_ID and as described in the instructions for those tables.
 
 Finally, in the case in which the final localization of DNA target results from combining multiple
 detection events (e.g., by combining localization events from different focal planes or times),
