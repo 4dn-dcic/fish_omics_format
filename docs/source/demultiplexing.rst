@@ -18,7 +18,7 @@ In such a case the final Spot localization data is recorded in the
 can be recorded by using this table, as shown for DNA Spots in the
 example below.
 
-This table is indexed by Loc_ID and it has a mandatory Spot_ID column that
+This table is indexed by Loc_ID, mandatorily reports the X, Y, Z coordinates of the Localization event, and it has a mandatory Spot_ID column that
 is used to link individual localization events to the resulting Spot.
 
 Example
@@ -30,8 +30,8 @@ DNA spots detected with multiplexed barcodes
 
 File Header
 -----------
-
-The first line in the header is always "##FOF-CT_version=vX.X"
+- The first line in the header is always "##FOF-CT_version=vX.X"
+- The second line in the header is always "##Table_namespace=4dn_FOF-CT_demultiplexing"
 
 The header MUST contain a mandatory set of fields that describe any
 algorithm that was used to produce/process data in this table.
@@ -46,10 +46,9 @@ The header should include a detailed description of each optional columns used.
 
 Data Columns
 ------------
+This table is indexed by Localization ID and therefore each row corresponds to data associated with an individual Localization event.
 
-Each row corresponds to data associated with an individual Localization event.
-
-The first columns are always: Loc_ID, Spot_ID, X, Y, Z.
+The first columns are always: **Loc_ID**, **Spot_ID**, **X**, **Y**, **Z**.
 The content and order of all other columns is at user's discretion.
 The order of the rows is at user's discretion.
 
