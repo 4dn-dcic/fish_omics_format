@@ -52,6 +52,13 @@ landmarks), Cell (e.g., boundaries and volume), sub-cellular Region of
 Interest (ROI; e.g., Nuclear feature or Nucleolus), or extracellular ROI
 (e.g., Tissue) level.
 
+.. figure:: https://github.com/4dn-dcic/fish_omics_format/blob/main/images/FOF-CT_graphical%20representation.png
+  :class: shadow-image
+  :width: 90%
+  :align: center
+
+  Figure 1: Schematic representation of 10 tables composing the Fish Omics Format for Chromatin Tracing.
+
 Tables
 ======
 
