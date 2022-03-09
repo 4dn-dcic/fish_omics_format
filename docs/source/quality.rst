@@ -15,7 +15,7 @@ have been applied prior to localization (e.g., drift correction,
 chromatic correction, etc.,).
 
 Because the quantification of Spot quality and uncertainty is not
-trivial and lacking consensus, the specific columns in this table remain
+trivial and lacking consensus, the specific columns in this table remain largely
 at the user’s discretion and should be described with sufficient details
 to ensure interpretation and reproducibility.
 
@@ -32,8 +32,8 @@ Spot fit quality
 
 File Header
 -----------
-
-The first line in the header is always "##FOF-CT_version=vX.X"
+- The first line in the header is always "##FOF-CT_version=vX.X"
+- The second line in the header is always "##Table_namespace=4dn_FOF-CT_quality"
 
 The header MUST contain a mandatory set of fields that describe any
 algorithm that was used to produce/process data in this table.
@@ -48,7 +48,6 @@ The header should include a detailed description of each optional columns used.
 
 Data Columns
 ------------
-
 As with all other Spot Data tables in this format, each row corresponds to
 data associated with an individual Spot.
 
