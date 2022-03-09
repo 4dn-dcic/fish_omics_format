@@ -2,6 +2,8 @@
 4DN FISH Omics Format (FOF)
 ###########################
 
+<img align="right" src="https://github.com/4dn-dcic/fish_omics_format/blob/main/images/FOF-CT_graphical%20representation.png">
+
 Check out the documentation of 4DN FISH Omics Format at
 https://fish-omics-format.readthedocs.io/.
 
