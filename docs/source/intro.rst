@@ -52,7 +52,7 @@ landmarks), Cell (e.g., boundaries and volume), sub-cellular Region of
 Interest (ROI; e.g., Nuclear feature or Nucleolus), or extracellular ROI
 (e.g., Tissue) level.
 
-.. figure:: images/FOF-CT_graphical%20representation.png
+.. figure:: https://github.com/4dn-dcic/fish_omics_format/blob/main/images/FOF-CT_graphical%20representation.png
   :class: shadow-image
   :width: 90%
   :align: center
