@@ -7,5 +7,5 @@ The full list of tables and instructions on how to use them can be found at: htt
 
 The image below gives a schematic view of the tables and their **required** (*black*), **conditionally required** (*purple*), **recommended** (*blue*), or **optional** (*orange*) content.
 
-<img align="right" src="https://github.com/4dn-dcic/fish_omics_format/blob/main/images/FOF-CT_graphical%20representation.png">
+<img align="right" src="https://github.com/4dn-dcic/fish_omics_format/blob/3-9-2022_Changes/docs/images/FOF-CT_graph.png">
 
