@@ -43,8 +43,7 @@ ensembles of individual DNA-FISH bright Spot localizations.
 
 Additional tables support the integration of this core with additional
 properties such as quality metrics, physical coordinates placing the
-Spot/Trace in the context of cellular space, multiplexed RNA-FISH
-results (https://doi.org/10.1073/pnas.1912459116) and with additional
+Spot/Trace in the context of cellular space, multiplexed `RNA-FISH results <https://doi.org/10.1073/pnas.1912459116>`_ and with additional
 data that is better captured at the global Trace (e.g., expression level
 of nascent RNA transcripts associated with a given Trace or overall
 localization of the Trace with respect to cellular or nuclear
