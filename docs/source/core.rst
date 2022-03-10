@@ -21,7 +21,16 @@ genomic DNA target sequence identified by chromosome ID (Chrom), and by start
 from post-processing and quality control procedures and therefore
 correspond to the final localization of the DNA target under study.
 
-At a minimum the Table has to have 8 columns in the following order: **Spot_ID**, **Trace_ID**, **X**, **Y**, **Z**, **Chrom**, **Chrom_Start**, **Chrom_End**. These are required. Additionally in case sub-cellular structures, cells or extra cellular structures (e.g., Tissue) are identified as part of this experiment, this table has to mandatorily include the ID of the Sub_Cellular, Cell or Extra Cellular Structure Region of Interest (ROI) each Spot/Trace is associated with. All other spot properties must be kept in the two additional tables :ref:`quality` and :ref:`bio`, indexed by Spot_ID and as described in the instructions for those tables.
+At a minimum the Table has to have 8 columns in the following order:
+**Spot_ID**, **Trace_ID**, **X**, **Y**, **Z**, **Chrom**, **Chrom_Start**,
+**Chrom_End**. These are required. Additionally in case sub-cellular
+structures, cells or extra cellular structures (e.g., Tissue) are identified
+as part of this experiment, this table has to mandatorily include the ID of
+the Sub_Cellular, Cell or Extra Cellular Structure Region of Interest (ROI)
+each Spot/Trace is associated with.
+All other spot properties must be kept in the two additional tables
+:ref:`quality` and :ref:`bio`, indexed by Spot_ID and as described in the
+instructions for those tables.
 
 Finally, in the case in which the final localization of DNA target results from combining multiple
 detection events (e.g., by combining localization events from different focal planes or times),
@@ -41,8 +50,8 @@ File Header
 
 The header MUST contain a mandatory set of fields that describe the
 algorithm(s) that were used to identify and localize bright Spots and to
-connect them to form Traces. In case more than one algorithm were used, please use the same set of fields
-for each of the algorithm used.
+connect them to form Traces. In case more than one algorithm were used,
+please use the same set of fields for each of the algorithm used.
 
 The columns for this table are mandatory and do not need to be described
 in the header.
@@ -53,11 +62,14 @@ in the header.
 
 Data Columns
 ------------
-
 As with all other Spot Data tables in this format, each row corresponds to
 data associated with an individual Spot.
 
-The first columns are always: **Spot_ID**, **Trace_ID**, **X**, **Y**, **Z**, **Chrom**, **Chrom_Start**, **Chrom_End**. Additionally in case sub-cellular structures, cells or extra cellular structures are identified as part of this experiment, the subsequent columns must mandatorily be *Sub_Cell_ROI_ID*, *Cell_ID* or *Extra_Cell_ROI_ID*, respectively. 
+The first columns are always: **Spot_ID**, **Trace_ID**, **X**, **Y**, **Z**,
+**Chrom**, **Chrom_Start**, **Chrom_End**. Additionally in case sub-cellular
+structures, cells or extra cellular structures are identified as part of this
+experiment, the subsequent columns must mandatorily be *Sub_Cell_ROI_ID*,
+*Cell_ID* or *Extra_Cell_ROI_ID*, respectively. 
 
 The order of the rows is at user's discretion.
 

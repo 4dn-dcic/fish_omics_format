@@ -1,7 +1,7 @@
 .. _mapping:
 
-Cell/ROI Mapping Data table
-===========================
+Cell/ROI Mapping table
+======================
 
 Requirement level: conditionally required
 
@@ -44,7 +44,6 @@ properties such as:
 
 Example
 -------
-
 .. include:: examples/mapping
   :code:
 
@@ -61,8 +60,8 @@ The header should include a detailed description of each optional columns used.
 
 Data Columns
 ------------
-Each row corresponds to data associated with an individual *Cell_ID*, *Sub-Cell_ROI_ID*,
-or *Extra_Cell_ROI_ID*.
+Each row corresponds to data associated with an individual **Cell_ID**, **Sub_Cell_ROI_ID**,
+or **Extra_Cell_ROI_ID**.
 
 The first column of this table is always the relevant ID.
 The content and order of all other columns is at user's discretion.

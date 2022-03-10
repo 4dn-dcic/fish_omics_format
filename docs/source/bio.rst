@@ -7,7 +7,6 @@ Requirement level: recommended
 
 Summary
 -------
-
 This table is highly recommended and it is designed to store and share
 biological properties associated with individual Spots (e.g., distance
 from the nuclear lamina (NL) or the nuclear pore complex (NPC), etc.; Su
@@ -22,7 +21,6 @@ This table is mandatorily indexed by Spot_ID.
 
 Example
 -------
-
 .. include:: examples/bio
   :code:
 
@@ -33,7 +31,7 @@ File Header
 
 This Table can be indexed mandatorily by Spot_ID.
 
-The header MUST contain a mandatory set of fields that describe any algorithm that was used to produce/process data in this table. In case more than on algorithm were used, please use the same set of fields for each of them.
+The header MUST contain a mandatory set of fields that describe any algorithm that was used to produce/process data in this table. In case more than one algorithm were used, please use the same set of fields for each of them.
 
 The header should include a detailed description of each optional columns used.
 
@@ -43,8 +41,8 @@ The header should include a detailed description of each optional columns used.
 
 Data Columns
 ------------
-
 Each row corresponds to data associated with an individual Spot.
+The first column is always **Spot_ID**.
 The order of the other columns is at user's discretion.
 The order of the rows is at user's discretion.
 

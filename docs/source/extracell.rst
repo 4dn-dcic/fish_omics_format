@@ -7,7 +7,6 @@ Requirement level: conditionally required
 
 Summary
 -------
-
 This table is used to document properties (i.e., volume, mean fluorescence
 intensity) that are globally associated with individual extracellular
 structures (e.g., Tissue, Organoid, etc.,) Regions of Interest (ROI),
@@ -39,7 +38,6 @@ The header should include a detailed description of each optional columns used.
 
 Data Columns
 ------------
-
 Each row corresponds to data associated with an individual extracellular ROI.
 
 The first column of this table is always **Extra_Cell_ROI_ID**.
