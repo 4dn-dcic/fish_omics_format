@@ -12,7 +12,7 @@ This table is highly recommended and it is designed to provide quality
 metrics for the Spot localization, information about the optical Channel
 that was used to image the Spot, and various aberration corrections that
 have been applied prior to localization (e.g., drift correction,
-chromatic correction, etc.,).
+chromatic correction, etc.).
 
 Because the metrics used to quantify Spot detection accuracy and precision are not
 trivial and lacking a widely shared consensus, the specific columns in this table remain largely
@@ -37,7 +37,7 @@ File Header
 
 The header MUST contain a mandatory set of fields that describe any
 algorithm that was used to produce/process data in this table.
-In case more than on algorithm were used, please use the same set of fields
+In case more than one algorithm were used, please use the same set of fields
 for each of them.
 
 The header should include a detailed description of each optional columns used.

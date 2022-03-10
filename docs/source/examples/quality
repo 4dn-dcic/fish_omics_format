@@ -25,7 +25,7 @@
 #^X_Loc_Error: lower and upper bound of 95% confidence interval on X-position after fit
 #^Y_Loc_Error: lower and upper bound of 95% confidence interval on Y-position after fit
 #^Z_Loc_Error: lower and upper bound of 95% confidence interval on Z-position after fit
-#additional_tables: core.csv, rna.cvs, trace.csv, cell.csv
+#additional_tables: 4dn_FOF-CT_core, 4dn_FOF-CT_rna, 4dn_FOF-CT_trace, 4dn_FOF-CT_cell
 ##columns=(Spot_ID, Channel_ID, Peak_Intensity, Raw_X, Raw_Y, Raw_Z, X_Drift, Y_Drift, Z_Drift, X_Chromatic_Shift, Y_Chromatic_Shift, Z_Chromatic_Shift, X_Loc_Error, Y_Loc_Error, Z_Loc_Error)
 1 1 100 1.1 1.05, 1.2 0.1 0.05, 0.2 0.2 0.2 0.2 0.01, 0.01, 0.01
 2 1 200 1.11, 1.055 1.22, 0.11, 0.055 0.22, 0.22, 0.22, 0.22, 0.012 0.012 0.012

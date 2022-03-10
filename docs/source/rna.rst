@@ -44,7 +44,7 @@ File Header
 
 The header MUST contain a mandatory set of fields that describe the
 algorithm(s) that were used to identify and localize bright Spots.
-In case more than on algorithm were used, please use the same set of fields
+In case more than one algorithm were used, please use the same set of fields
 for each of them.
 
 The header should include a detailed description of each optional columns used.
