@@ -9,7 +9,7 @@ Summary
 -------
 This table is used to document properties that are globally associated with individual Traces rather than individual bright Spots (e.g., Physical coordinates, RNA transcription, or Allele). These are properties that are shared by all bright Spots that constitute a Trace.
 
-Each row in the table corresponds to an individual Trace and is indexed by a unique **Trace_ID** that links the data reported in this table with data stored in one of the other tables (i.e., :ref:`core`, :ref:`cell`, etc.). 
+Each row in the table corresponds to an individual Trace and is indexed by a unique **Trace_ID** that links the data reported in this table with data stored in one of the other tables (i.e., :ref:`core`, :ref:`rna`, etc.). 
 
 Example
 -------
