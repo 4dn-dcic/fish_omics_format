@@ -56,44 +56,55 @@ Tables
   * - Number
     - Extended Name
     - Short Name
+    - Namespace
     - Requirement Level
   * - 1
     - :ref:`core`
     - core
+    - 4dn_FOF-CT_core
     - required
   * - 2
     - :ref:`rna`
     - rna
+    - 4dn_FOF-CT_rna
     - conditionally required
   * - 3
     - :ref:`quality`
     - quality
+    - 4dn_FOF-CT_quality
     - recommended
   * - 4
     - :ref:`bio`
     - bio
+    - 4dn_FOF-CT_bio
     - recommended
   * - 5
     - :ref:`demultiplexing`
     - demultiplexing
+    - 4dn_FOF-CT_demultiplexing
     - optional
   * - 6
     - :ref:`trace`
     - trace
+    - 4dn_FOF-CT_trace
     - optional
   * - 7
     - :ref:`cell`
     - cell
+    - 4dn_FOF-CT_cell
     - conditionally required
   * - 8
     - :ref:`subcell`
     - subcell
+    - 4dn_FOF-CT_subcell
     - conditionally required
   * - 9
     - :ref:`extracell`
     - extracell
+    - 4dn_FOF-CT_extracell
     - conditionally required
   * - 10
     - :ref:`mapping`
     - mapping
+    - 4dn_FOF-CT_mapping
     - conditionally required
