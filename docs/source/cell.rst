@@ -7,7 +7,6 @@ Requirement level: optional
 
 Summary
 -------
-
 This table is used to document properties that are globally associated with
 individual Cells (e.g., cell size, cell volume, cell type) and it is required
 in the case Cell segmentation data was collected as part of this experiment.
@@ -21,7 +20,6 @@ the coordinate system used for the cell x/y/z centroid.
 
 Example
 -------
-
 .. include:: examples/cell
   :code:
 

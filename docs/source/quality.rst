@@ -7,7 +7,6 @@ Requirement level: recommended
 
 Summary
 -------
-
 This table is highly recommended and it is designed to provide quality
 metrics for the Spot localization, information about the optical Channel
 that was used to image the Spot, and various aberration corrections that

@@ -7,7 +7,6 @@ Requirement level: recommended
 
 Summary
 -------
-
 This table is highly recommended and it is designed to store and share
 biological properties associated with individual Spots (e.g., distance
 from the nuclear lamina (NL) or the nuclear pore complex (NPC), etc.; Su
@@ -22,7 +21,6 @@ This table is mandatorily indexed by Spot_ID.
 
 Example
 -------
-
 .. include:: examples/bio
   :code:
 
@@ -43,7 +41,6 @@ The header should include a detailed description of each optional columns used.
 
 Data Columns
 ------------
-
 Each row corresponds to data associated with an individual Spot.
 The first column is always **Spot_ID**.
 The order of the other columns is at user's discretion.

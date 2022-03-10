@@ -44,7 +44,6 @@ properties such as:
 
 Example
 -------
-
 .. include:: examples/mapping
   :code:
 

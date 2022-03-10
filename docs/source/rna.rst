@@ -7,11 +7,10 @@ Requirement level: conditionally required
 
 Summary
 -------
-
 This table is used to store and share the results of RNA FISH-omics experiments
 and it is **conditionally required** in the case RNA data was collected as part of this
 experiment. Each row represents a detected RNA bright Spot
-and corresponds to the location of a specific RNA transcript. 
+and corresponds to the location of a specific RNA transcript.
 
 At a minimum, one needs to know the **Spot_ID**, the **X**, **Y**, **Z** coordinates of each
 spot, the **Gene_ID** and an additional ID used to link this data
@@ -33,7 +32,6 @@ the underlying raw data can be recorded in the corresponding
 
 Example
 -------
-
 .. include:: examples/rna
   :code:
 
@@ -58,7 +56,7 @@ Data Columns
 As with all other Spot Data tables in this format, each row corresponds to data associated with an individual Spot.
 
 The first columns are always: **Spot_ID**, **X**, **Y**, **Z**, **RNA_name**,
-**Gene_ID**, followed by *Transcript_ID* if applicable, and by **one or more** of the following *Trace_ID*, *Sub-Cell_ROI_ID*, 
+**Gene_ID**, followed by *Transcript_ID* if applicable, and by **one or more** of the following *Trace_ID*, *Sub-Cell_ROI_ID*,
 *Cell_ID* and/or *Extra_Cell_ROI_ID*.
 The order of the other columns is at user's discretion.
 The order of the rows is at user's discretion.
