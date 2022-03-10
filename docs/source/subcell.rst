@@ -17,7 +17,7 @@ associated with individual ROIs.
 Each row in the table corresponds to a different Subcell ROI studied in the
 experiment and is identified by a unique **Sub_Cell_ROI_ID** that links the data
 reported in this table with data stored in one of the other tables
-(i.e., :ref:`core`, :ref:`cell`, :ref:`trace`, etc.).
+(i.e., :ref:`core`, :ref:`cell`, etc.).
 
 Example
 -------
