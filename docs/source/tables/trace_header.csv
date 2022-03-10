@@ -1,6 +1,5 @@
 Name,Description,Example,Conditional requirement conditions
 ##FOF-CT_version=,"Version of the FOF format used in this case.","v0.1",""
-##Table_namespace=,"4dn_FOF-CT_trace","",""
 #lab_name:,"name of the lab where the experiment was performed.","Nobel",""
 #experimenter_name:,"name of the person performing the experiment.","John Doe",""
 #experimenter_contact:,"email address of the person performing the experiment.","john.doe@email.com",""
@@ -20,3 +19,4 @@ Name,Description,Example,Conditional requirement conditions
 ##time_unit=,"If relevant, the unit used to represent a time interval. Note: use 'sec' for seconds, 'msec' for milliseconds, 'min' for minutes, and 'hr' for hours.","sec","Conditional requirement: this MUST be reported if any time metrics are reported."
 ##intensity_unit=,"If relevant, the unit used to represent intensity measurements.","a.u.","Conditional requirement: this MUST be reported if any intensity metrics are reported."
 ##columns=,"list of the data column headers used in the table. Note: enclose the column headers and use a comma to separate each header name from the next.","(Spot_ID, X, Y, Z)",""
+**##Table_namespace=**,"Identifier for this type of table. Value must be as in the example.","4dn_FOF-CT_trace",""
