@@ -14,7 +14,9 @@ and corresponds to the location of a specific RNA transcript.
 
 At a minimum, one needs to know the **Spot_ID**, the **X**, **Y**, **Z** coordinates of each
 spot, the **Gene_ID** and an additional ID used to link this data
-with other tables in this format (i.e., *Trace_ID*, *Sub_Cell_ROI_ID*, *Cell_ID* and/or *Extra_Cell_ROI_ID*). In addition, in case multiple transcripts are associated with
+with other tables in this format (i.e., *Trace_ID*, *Sub_Cell_ROI_ID*,
+*Cell_ID* and/or *Extra_Cell_ROI_ID*).
+In addition, in case multiple transcripts are associated with
 the same Gene_ID and the FISH probes are capable of distinguishing them,
 *Transcript_ID* MUST also be reported. Thus, at a minimum there needs to
 be 6 (or 7) data columns. These are required. All other data columns are
@@ -53,11 +55,12 @@ The header should include a detailed description of each optional columns used.
 
 Data Columns
 ------------
-As with all other Spot Data tables in this format, each row corresponds to data associated with an individual Spot.
+As with all other Spot Data tables in this format, each row corresponds to data
+associated with an individual Spot.
 
 The first columns are always: **Spot_ID**, **X**, **Y**, **Z**, **RNA_name**,
-**Gene_ID**, followed by *Transcript_ID* if applicable, and by **one or more** of the following *Trace_ID*, *Sub-Cell_ROI_ID*,
-*Cell_ID* and/or *Extra_Cell_ROI_ID*.
+**Gene_ID**, followed by *Transcript_ID* if applicable, and by **one or more**
+of the following *Trace_ID*, *Sub-Cell_ROI_ID*, *Cell_ID* and/or *Extra_Cell_ROI_ID*.
 The order of the other columns is at user's discretion.
 The order of the rows is at user's discretion.
 
