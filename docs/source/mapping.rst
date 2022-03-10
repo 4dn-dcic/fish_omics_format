@@ -1,7 +1,7 @@
 .. _mapping:
 
-Cell/ROI Mapping Data table
-===========================
+Cell/ROI Mapping table
+======================
 
 Requirement level: conditionally required
 

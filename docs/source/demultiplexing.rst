@@ -1,7 +1,7 @@
 .. _demultiplexing:
 
-Spot Demultiplexing Data table
-==============================
+Spot Demultiplexing table
+=========================
 
 Requirement level: optional
 

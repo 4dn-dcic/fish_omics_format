@@ -1,7 +1,7 @@
 .. _quality:
 
-Spot Quality Data table
-=======================
+Spot Quality table
+==================
 
 Requirement level: recommended
 
