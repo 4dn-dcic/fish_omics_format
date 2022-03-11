@@ -9,7 +9,7 @@ Summary
 -------
 This table is used to document properties (i.e., volume, mean fluorescence
 intensity) that are globally associated with individual extracellular
-structures (e.g., Tissue, Organoid, etc.,) Regions of Interest (ROI),
+structures (e.g., Tissue, Organoid, etc.) Regions of Interest (ROI),
 and it is required in the case extracellular ROI segmentation data was
 collected as part of this experiment.
 These are properties that are shared by all bright Spots, Traces and Cells

@@ -24,7 +24,7 @@ This table might be organized in one of the following manner:
    list of comma separated x,y coordinates separated by spaces like
    "x1,y1 x2,y2 x3,y3" e.g. "0,0 1,2 3,5").
 -  **Sub_Cell_ROI_ID** → Sub-cellular ROI (e.g., Nuclear feature, Nucleolus,
-   etc.,) boundaries x/y/z in global coordinates (following the OME Data
+   etc.) boundaries x/y/z in global coordinates (following the OME Data
    Model for Polygon - Sub_Cell ROI, boundaries are defined as a list of
    comma separated x,y coordinates separated by spaces like "x1,y1 x2,y2
    x3,y3" e.g. "0,0 1,2 3,5"). This table might also report the feature
