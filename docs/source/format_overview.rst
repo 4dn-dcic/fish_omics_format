@@ -110,7 +110,7 @@ Data Columns
   involves the identification of Cell boundaries).
 - Column names should use the underscore as a word separator (e.g., Spot_ID).
 - The first column is always either Spot_ID or another relevant ID (i.e.,
-  Trace_ID, Cell_ID, etc.,). In the :ref:`core`, there are eight
+  Trace_ID, Cell_ID, etc.). In the :ref:`core`, there are eight
   mandatory columns. All other columns are ordered at user's discretion.
 - The order of the rows is at user's discretion.
 - If an optional column does not contain any data (i.e., it is not used), it

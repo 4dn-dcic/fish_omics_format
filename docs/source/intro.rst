@@ -18,19 +18,8 @@ Tracing (FOF-CT)**, a community data format designed for capturing and
 exchanging the results of chromosome imaging experiments produced within
 the context of the 4D Nucleome project. FOF-CT is directly compatible
 with several FISH omics techniques including, but not limited to,
-Optical Reconstruction of Chromatin Architecture (ORCA;
-https://doi.org/10.1038/s41596-020-00478-x), Multiplexed Imaging of
-Nucleome Architectures (MINA;
-https://doi.org/10.1038/s41596-021-00518-0), Hi-M
-(https://doi.org/10.1016/j.molcel.2019.01.011), DNA Sequential
-Fluorescence In Situ Hybridization (seqFISH+;
-https://doi.org/10.1038/s41586-019-1049-y), Oligonucleotide Fluorescent
-In Situ Sequencing (OligoFISSEQ;
-https://doi.org/10.1038/s41592-020-0890-0), DNA Multiplexed error-robust
-fluorescence *in situ* hybridization (DNA-MERFISH;
-https://doi.org/10.1016/j.cell.2020.07.032), and *In-situ* Genomic
-Sequencing (IGS; https://doi.org/10.1126/science.aay3446).
-In addition, the format is designed to be consistent with planned future
+Optical Reconstruction of Chromatin Architecture (`ORCA <https://doi.org/10.1038/s41596-020-00478-x>`_), Multiplexed Imaging of
+Nucleome Architectures (`MINA <https://doi.org/10.1038/s41596-021-00518-0>`_), `Hi-M <https://doi.org/10.1016/j.molcel.2019.01.011>`_, DNA Sequential Fluorescence In Situ Hybridization (`seqFISH+ <https://doi.org/10.1038/s41586-019-1049-y>`_), Oligonucleotide Fluorescent In Situ Sequencing (`OligoFISSEQ <https://doi.org/10.1038/s41592-020-0890-0>`_), DNA Multiplexed error-robust fluorescence *in situ* hybridization (`DNA-MERFISH <https://doi.org/10.1016/j.cell.2020.07.032>`_), and *In-situ* Genomic Sequencing (`IGS <https://doi.org/10.1126/science.aay3446>`_). In addition, the format is designed to be consistent with planned future
 extensions that will encompass single-molecule localization methods for
 volumetric imaging, such as OligoSTORM and OligoDNA-PAINT.
 
@@ -43,8 +32,7 @@ ensembles of individual DNA-FISH bright Spot localizations.
 
 Additional tables support the integration of this core with additional
 properties such as quality metrics, physical coordinates placing the
-Spot/Trace in the context of cellular space, multiplexed RNA-FISH
-results (https://doi.org/10.1073/pnas.1912459116) and with additional
+Spot/Trace in the context of cellular space, multiplexed `RNA-FISH results <https://doi.org/10.1073/pnas.1912459116>`_ and with additional
 data that is better captured at the global Trace (e.g., expression level
 of nascent RNA transcripts associated with a given Trace or overall
 localization of the Trace with respect to cellular or nuclear
@@ -52,9 +40,9 @@ landmarks), Cell (e.g., boundaries and volume), sub-cellular Region of
 Interest (ROI; e.g., Nuclear feature or Nucleolus), or extracellular ROI
 (e.g., Tissue) level.
 
-.. figure:: https://github.com/4dn-dcic/fish_omics_format/blob/main/images/FOF-CT_graph.png
+.. figure:: images/FOF-CT_graph.png
   :class: shadow-image
-  :width: 90%
+  :width: 100%
   :align: center
 
   Figure 1: Schematic representation of 10 tables composing the Fish Omics Format for Chromatin Tracing.
@@ -68,44 +56,55 @@ Tables
   * - Number
     - Extended Name
     - Short Name
+    - Namespace
     - Requirement Level
   * - 1
     - :ref:`core`
     - core
+    - 4dn_FOF-CT_core
     - required
   * - 2
     - :ref:`rna`
     - rna
+    - 4dn_FOF-CT_rna
     - conditionally required
   * - 3
     - :ref:`quality`
     - quality
+    - 4dn_FOF-CT_quality
     - recommended
   * - 4
     - :ref:`bio`
     - bio
+    - 4dn_FOF-CT_bio
     - recommended
   * - 5
     - :ref:`demultiplexing`
     - demultiplexing
+    - 4dn_FOF-CT_demultiplexing
     - optional
   * - 6
     - :ref:`trace`
     - trace
+    - 4dn_FOF-CT_trace
     - optional
   * - 7
     - :ref:`cell`
     - cell
+    - 4dn_FOF-CT_cell
     - conditionally required
   * - 8
     - :ref:`subcell`
     - subcell
+    - 4dn_FOF-CT_subcell
     - conditionally required
   * - 9
     - :ref:`extracell`
     - extracell
+    - 4dn_FOF-CT_extracell
     - conditionally required
   * - 10
     - :ref:`mapping`
     - mapping
+    - 4dn_FOF-CT_mapping
     - conditionally required
