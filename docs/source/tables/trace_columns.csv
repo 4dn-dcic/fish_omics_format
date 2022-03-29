@@ -1,5 +1,5 @@
 Name,Description,Example,Conditional requirement conditions
-Trace_ID,"This field reports the unique identifier for a DNA Trace identified as part of this experiment. Note: this is used to connect data in this table with a given Trace as recorded in the corresponding DNA-Spot/Trace Data core table.","1",""
-optional_column_1,"","",""
-optional_column_2,"","",""
-optional_column_3,"","",""
+Trace_ID,This field reports the unique identifier for a DNA Trace identified as part of this experiment. Note: this is used to connect data in this table with a given Trace as recorded in the corresponding DNA-Spot/Trace Data core table.,1,
+optional_column_1,,,
+optional_column_2,,,
+optional_column_3,,,
