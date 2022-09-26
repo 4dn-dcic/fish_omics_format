@@ -11,16 +11,15 @@
 #experimenter_name: John Doe
 #experimenter_contact: john.doe@email.com
 #additional_tables: 4dn_FOF-CT_core, 4dn_FOF-CT_quality
-#^hyb: the labeling round in which this localization occurred
-#^fluor: the fluorescent channel in which this localization was detected
-#^brightness: the photon count for this localization event
-#^fit_quality: the quality of fit for this localization, on a relative scale of 0-1
-##columns=(Spot_ID, Trace_ID, X, Y, Z, Chrom, Chrom_Start, Chrom_End, Cell_ID)
-loc_ID Spot_ID X Y Z hyb fluor brightness fit_quality
-1 1 2342 2354 545 2 cy3 1003 .83
-2 1 2342 2354 545 2 cy5 2000 .93
-3 1 2342 2354 545 3 cy5 1233 .85
-4 2 3345 5432 654 3 cy3 2324 .95
-5 2 3345 5432 654 3 cy5 2324 .95
-6 NA 4345 432 100 4 cy3 2324 .95
-7 2 3345 5432 654 4 cy3 2324 .95
+#^Hyb: the labeling round in which this localization occurred
+#^Fluor: the fluorescent channel in which this localization was detected
+#^Brightness: the photon count for this localization event
+#^Fit_Quality: the quality of fit for this localization, on a relative scale of 0-1
+##columns=(Loc_ID, Spot_ID, X, Y, Z, Hyb, Fluor, Brightness, Fit_Quality)
+1, 1, 2342, 2354, 545, 2, cy3, 1003, 0.83
+2, 1, 2342, 2354, 545, 2, cy5, 2000, 0.93
+3, 1, 2342, 2354, 545, 3, cy5, 1233, 0.85
+4, 2, 3345, 5432, 654, 3, cy3, 2324, 0.95
+5, 2, 3345, 5432, 654, 3, cy5, 2324, 0.95
+6, NA, 4345, 432, 100, 4, cy3, 2324, 0.95
+7, 2, 3345, 5432, 654, 4, cy3, 2324, 0.95
