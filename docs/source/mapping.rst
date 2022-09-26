@@ -11,7 +11,8 @@ This table is used to provide the boundaries of Cells and other ROIs
 identified as part of this experiment, and it is required in case Cell and
 other ROI segmentation data were collected as part of this experiment.
 
-This table is mandatory in case a :ref:`subcell`, :ref:`cell`, and/or :ref:`extracell` tables are deposited with this submission.
+This table is mandatory in case a :ref:`subcell`, :ref:`cell`, and/or
+:ref:`extracell` tables are deposited with this submission.
 
 The table is organized on a Cell or ROI basis via a Cell or ROI ID and
 provides the Cell or ROI boundaries in global coordinates as specified by
@@ -49,8 +50,8 @@ Example
 
 File Header
 -----------
-- The first line in the header is always "##FOF-CT_version=vX.X"
-- The second line in the header is always "##Table_namespace=4dn_FOF-CT_mapping"
+- The first line in the header is always "##FOF-CT_Version=vX.X"
+- The second line in the header is always "##Table_Namespace=4dn_FOF-CT_mapping"
 
 The header should include a detailed description of each optional columns used.
 

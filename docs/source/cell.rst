@@ -24,8 +24,8 @@ Example
 
 File Header
 -----------
-- The first line in the header is always "##FOF-CT_version=vX.X"
-- The second line in the header is always "##Table_namespace=4dn_FOF-CT_cell"
+- The first line in the header is always "##FOF-CT_Version=vX.X"
+- The second line in the header is always "##Table_Namespace=4dn_FOF-CT_cell"
 
 The header should include a detailed description of each optional columns used.
 

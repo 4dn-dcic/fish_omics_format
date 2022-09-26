@@ -1,20 +1,11 @@
-##FOF-CT_version=v0.1
-##Table_namespace=4dn_FOF-CT_demultiplexing
-##XYZ_unit=micron
+##FOF-CT_Version=v0.1
+##Table_Namespace=4dn_FOF-CT_demultiplexing
+##XYZ_Unit=micron
 #Software_Title: ExampleLocalizationSoftware
 #Software_Type: SpotLoc
 #Software_Authors: Doe, J.
 #Software_Description: A pretty clear description
 #Software_Repository: https://github.com/repo_name_goes_here
-#Software_PreferredCitationID: https://doi.org/doi_goes_here
-#lab_name: Nobel
-#experimenter_name: John Doe
-#experimenter_contact: john.doe@email.com
-#additional_tables: 4dn_FOF-CT_core, 4dn_FOF-CT_quality
-#^hyb: the labeling round in which this localization occurred
-#^fluor: the fluorescent channel in which this localization was detected
-#^brightness: the photon count for this localization event
-#^fit_quality: the quality of fit for this localization, on a relative scale of 0-1
 ##columns=(Spot_ID, Trace_ID, X, Y, Z, Chrom, Chrom_Start, Chrom_End, Cell_ID)
 loc_ID Spot_ID X Y Z hyb fluor brightness fit_quality
 1 1 2342 2354 545 2 cy3 1003 .83
@@ -24,3 +15,12 @@ loc_ID Spot_ID X Y Z hyb fluor brightness fit_quality
 5 2 3345 5432 654 3 cy5 2324 .95
 6 NA 4345 432 100 4 cy3 2324 .95
 7 2 3345 5432 654 4 cy3 2324 .95
+#Software_Preferred_Citation_ID: https://doi.org/doi_goes_here
+#Lab_Name: Nobel
+#Experimenter_Name: John Doe
+#Experimenter_Contact: john.doe@email.com
+#Additional_Tables: 4dn_FOF-CT_core, 4dn_FOF-CT_quality
+#^Hyb: the labeling round in which this localization occurred
+#^Fluor: the fluorescent channel in which this localization was detected
+#^Brightness: the photon count for this localization event
+#^Fit_Quality: the quality of fit for this localization, on a relative scale of 0-1
