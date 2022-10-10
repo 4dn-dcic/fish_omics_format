@@ -38,7 +38,7 @@ File Header
 
 - Header names must use the underscore as a word separator (e.g., RNA_A_intensity).
 - The file header contains **required**, *conditionally-required*, and optional
-  fileds.
+  fields.
 - Conditionally-required fields are fields that are required when certains
   conditions are met (e.g., *##intensity_unit=* is required any time an
   intensity metric is reported).
