@@ -10,8 +10,11 @@ Changelog
 0.1.1
 -----
 
-* Add this ``CHANGELOG.rst``
+`PR 36 <https://github.com/4dn-dcic/fish_omics_format/pull/36>`_
+`PR 29 <https://github.com/4dn-dcic/fish_omics_format/pull/29>`_
 
+* Add this ``CHANGELOG.rst``
+* Fix various errors in some examples.
 
 0.1.0
 -----
