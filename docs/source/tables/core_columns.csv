@@ -1,4 +1,4 @@
-Extra-Cell ROI Data tableName,Description,Example,Conditional requirement conditions
+Name,Description,Example,Conditional requirement conditions
 **Spot_ID**,A unique identifier for this bright Spot.,,
 **Trace_ID**,"In case multiple DNA Spots are connected to form 3D polymer traces of chromatin fibers (such as in ORCA; https://doi.org/10.1038/s41596-020-00478-x), this fields reports a unique identifier for the DNA trace the Spot belongs to. Note: this is used to connect Spots that are part of the same polymeric Trace. It is also used to connect data in this table with any Trace specific measurements such as nascent RNA expression, recorded in the corresponding Trace Data table.",1,
 **X**,"The sub-pixel X coordinate of this bright Spot. NOTE: the reported X position is understood to be the one resulting from any performed post-processing correction procedures (i.e. drift correction, chromatic correction etc).",,
