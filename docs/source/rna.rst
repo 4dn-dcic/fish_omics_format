@@ -32,6 +32,15 @@ detection events (e.g., by combining individual Localization events detected in 
 the underlying raw data can be recorded in the corresponding
 :ref:`demultiplexing` as described in the instructions of that table.
 
+``Spot_ID`` identifiers are unique across the entire dataset, thus
+allowing to identify unambiguously a Spot in the :ref:`quality`, :ref:`bio` and
+:ref:`demultiplexing`.
+
+NOTE: Also DNA Spots have a ```Spot_ID`` (in the :ref:`core`). Thus, when
+assigning an identifier to each Spot, make sure that this is unique not only
+within the :ref:`rna`, but also in the :ref:`core`.
+
+
 Example
 -------
 .. include:: examples/rna

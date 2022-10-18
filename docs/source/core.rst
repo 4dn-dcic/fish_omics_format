@@ -28,14 +28,23 @@ structures, cells or extra cellular structures (e.g., Tissue) are identified
 as part of this experiment, this table has to mandatorily include the ID of
 the Sub_Cellular, Cell or Extra Cellular Structure Region of Interest (ROI)
 each Spot/Trace is associated with.
+
 All other spot properties must be kept in the two additional tables
 :ref:`quality` and :ref:`bio`, indexed by Spot_ID and as described in the
 instructions for those tables.
+Additionally, in the case in which the final localization of DNA target results
+from combining multiple detection events (e.g., by combining localization events
+from different focal planes or times), the underlying raw data can be recorded
+in the corresponding :ref:`demultiplexing` table as described in the
+instructions of that table.
 
-Finally, in the case in which the final localization of DNA target results from combining multiple
-detection events (e.g., by combining localization events from different focal planes or times),
-the underlying raw data can be recorded in the corresponding
-:ref:`demultiplexing` table as described in the instructions of that table.
+Finally, ``Spot_ID`` identifiers are unique across the entire dataset, thus
+allowing to identify unambiguously a Spot in the :ref:`quality`, :ref:`bio` and
+:ref:`demultiplexing`.
+
+NOTE: Also RNA Spots have a ```Spot_ID`` (in the :ref:`rna`). Thus, when
+assigning an identifier to each Spot, make sure that this is unique not only
+within the :ref:`core`, but also in the :ref:`rna` if present.
 
 
 Example
@@ -69,7 +78,7 @@ The first columns are always: **Spot_ID**, **Trace_ID**, **X**, **Y**, **Z**,
 **Chrom**, **Chrom_Start**, **Chrom_End**. Additionally in case sub-cellular
 structures, cells or extra cellular structures are identified as part of this
 experiment, the subsequent columns must mandatorily be *Sub_Cell_ROI_ID*,
-*Cell_ID* or *Extra_Cell_ROI_ID*, respectively. 
+*Cell_ID* or *Extra_Cell_ROI_ID*, respectively.
 
 The order of the rows is at user's discretion.
 
