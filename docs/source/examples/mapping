@@ -1,13 +1,13 @@
-##FOF-CT_version=v0.1
-##Table_namespace=4dn_FOF-CT_mapping
-##XYZ_unit=micron
-##intensity_unit=a.u.
-##Sub_Cell_ROI_type=PML_body
-##ROI_boundaries_format=(X1,Y1 X2,Y2 Xn,Yn)
-#^ROI_volume: the volume of this ROI expressed in micron^3.
-#^ROI_intensity: the integrated average signal intensity measured within the boundaries of this ROI, of the marker used to identify this nuclear feature.
-#additional_tables: 4dn_FOF-CT_core, 4dn_FOF-CT_rna, 4dn_FOF-CT_trace
-##columns=(Sub_Cell_ROI_ID, ROI_boundaries, ROI_volume, ROI_intensity)
+##FOF-CT_Version=v0.1
+##Table_Namespace=4dn_FOF-CT_mapping
+##XYZ_Unit=micron
+##Intensity_Unit=a.u.
+##Sub_Cell_ROI_Type=PML_body
+##ROI_Boundaries_Format=(X1,Y1 X2,Y2 Xn,Yn)
+#^ROI_Volume: the volume of this ROI expressed in micron^3.
+#^ROI_Intensity: the integrated average signal intensity measured within the boundaries of this ROI, of the marker used to identify this nuclear feature.
+#Additional_Tables: 4dn_FOF-CT_core, 4dn_FOF-CT_rna, 4dn_FOF-CT_trace
+##Columns=(Sub_Cell_ROI_ID, ROI_Boundaries, ROI_Volume, ROI_Intensity)
 1, (0,0 1,2 3,5), 100, 1.00
 2, (0,0 2,3 4,6), 48, 0.90
 3, (0,0 3,2 7,5), 63, 0.67

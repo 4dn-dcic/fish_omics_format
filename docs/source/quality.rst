@@ -31,8 +31,8 @@ Spot fit quality
 
 File Header
 -----------
-- The first line in the header is always "##FOF-CT_version=vX.X"
-- The second line in the header is always "##Table_namespace=4dn_FOF-CT_quality"
+- The first line in the header is always "##FOF-CT_Version=vX.X"
+- The second line in the header is always "##Table_Namespace=4dn_FOF-CT_quality"
 
 The header MUST contain a mandatory set of fields that describe any
 algorithm that was used to produce/process data in this table.
