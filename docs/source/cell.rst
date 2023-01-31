@@ -27,7 +27,7 @@ File Header
 - The first line in the header is always "##FOF-CT_Version=vX.X"
 - The second line in the header is always "##Table_Namespace=4dn_FOF-CT_cell"
 
-The header should include a detailed description of each optional columns used.
+The header MUST include a detailed description of each optional columns used.
 
 .. csv-table::
   :file: tables/cell_header.csv

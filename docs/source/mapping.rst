@@ -53,7 +53,7 @@ File Header
 - The first line in the header is always "##FOF-CT_Version=vX.X"
 - The second line in the header is always "##Table_Namespace=4dn_FOF-CT_mapping"
 
-The header should include a detailed description of each optional columns used.
+The header MUST include a detailed description of each optional columns used.
 
 .. csv-table::
   :file: tables/mapping_header.csv
