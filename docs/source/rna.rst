@@ -23,14 +23,25 @@ be 6 (or 7) data columns. These are required. All other data columns are
 optional.
 
 In this table the reported X, Y and Z coordinates are assumed to result
-from post-processing and quality control procedures performed on primary localization events and therefore
-correspond to what is considered the best-bet location of the RNA molecule under study.
+from post-processing and quality control procedures performed on primary
+localization events and therefore correspond to what is considered the best-bet
+location of the RNA molecule under study.
 
-In the case of multiplexed FISH experiments (i.e., `MERFISH <https://doi.org/10.1073/pnas.1912459116>`_) in which the
+In the case of multiplexed FISH experiments (i.e.,
+`MERFISH <https://doi.org/10.1073/pnas.1912459116>`_) in which the
 final location of RNA molecule results from combining multiple
-detection events (e.g., by combining individual Localization events detected in separate planes or images),
-the underlying raw data can be recorded in the corresponding
-:ref:`demultiplexing` as described in the instructions of that table.
+detection events (e.g., by combining individual Localization events detected in
+separate planes or images), the underlying raw data can be recorded in the
+corresponding :ref:`demultiplexing` as described in the instructions of that table.
+
+``Spot_ID`` identifiers are unique across the entire dataset, thus
+allowing to identify unambiguously a Spot in the :ref:`quality`, :ref:`bio` and
+:ref:`demultiplexing`.
+
+NOTE: Also DNA Spots have a ```Spot_ID`` (in the :ref:`core`). Thus, when
+assigning an identifier to each Spot, make sure that this is unique not only
+within the :ref:`rna`, but also in the :ref:`core`.
+
 
 Example
 -------
@@ -47,7 +58,7 @@ algorithm(s) that were used to identify and localize bright Spots.
 In case more than one algorithm were used, please use the same set of fields
 for each of them.
 
-The header should include a detailed description of each optional columns used.
+The header MUST include a detailed description of each optional columns used.
 
 .. csv-table::
   :file: tables/rna_header.csv
