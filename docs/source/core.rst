@@ -12,12 +12,13 @@ Tracing. This table is used to record and exchange the primary results of
 Chromatin Tracing experiments. The Table is organized around individual DNA
 bright Spots that are spatially linked together in a three-dimensional (3D)
 polymeric Trace using a 3D polymeric tracing algorithm. As a result, all Spots
-that share the same Trace_ID, by definition belong to the same Trace.
+that share the same ``Trace_ID``, by definition belong to the same Trace.
 
-Each row reports the X, Y, Z localization, and the Trace assignment
-(i.e., Trace_ID) of a FISH-omics bright Spot and corresponds to a specific
-genomic DNA target sequence identified by chromosome ID (Chrom), and by start
-(Chrom_Start) and end (Chrom_End) chromosome coordinates. In this table the reported X, Y and Z coordinates are assumed to result
+Each row reports the ``X``, ``Y``, ``Z`` localization, and the Trace assignment
+(i.e., ``Trace_ID``) of a FISH-omics bright Spot and corresponds to a specific
+genomic DNA target sequence identified by chromosome ID (``Chrom``), and by start
+(``Chrom_Start``) and end (``Chrom_End``) chromosome coordinates.
+In this table the reported ``X``, ``Y``, ``Z`` coordinates are assumed to result
 from post-processing and quality control procedures and therefore
 correspond to the final localization of the DNA target under study.
 
@@ -42,7 +43,7 @@ Finally, ``Spot_ID`` identifiers are unique across the entire dataset, thus
 allowing to identify unambiguously a Spot in the :ref:`quality`, :ref:`bio` and
 :ref:`demultiplexing`.
 
-NOTE: Also RNA Spots have a ```Spot_ID`` (in the :ref:`rna`). Thus, when
+NOTE: Also RNA Spots have a ``Spot_ID`` (in the :ref:`rna`). Thus, when
 assigning an identifier to each Spot, make sure that this is unique not only
 within the :ref:`core`, but also in the :ref:`rna` if present.
 

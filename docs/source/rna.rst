@@ -23,14 +23,16 @@ be 6 (or 7) data columns. These are required. All other data columns are
 optional.
 
 In this table the reported X, Y and Z coordinates are assumed to result
-from post-processing and quality control procedures performed on primary localization events and therefore
-correspond to what is considered the best-bet location of the RNA molecule under study.
+from post-processing and quality control procedures performed on primary
+localization events and therefore correspond to what is considered the best-bet
+location of the RNA molecule under study.
 
-In the case of multiplexed FISH experiments (i.e., `MERFISH <https://doi.org/10.1073/pnas.1912459116>`_) in which the
+In the case of multiplexed FISH experiments (i.e.,
+`MERFISH <https://doi.org/10.1073/pnas.1912459116>`_) in which the
 final location of RNA molecule results from combining multiple
-detection events (e.g., by combining individual Localization events detected in separate planes or images),
-the underlying raw data can be recorded in the corresponding
-:ref:`demultiplexing` as described in the instructions of that table.
+detection events (e.g., by combining individual Localization events detected in
+separate planes or images), the underlying raw data can be recorded in the
+corresponding :ref:`demultiplexing` as described in the instructions of that table.
 
 ``Spot_ID`` identifiers are unique across the entire dataset, thus
 allowing to identify unambiguously a Spot in the :ref:`quality`, :ref:`bio` and
