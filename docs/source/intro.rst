@@ -38,7 +38,7 @@ of nascent RNA transcripts associated with a given Trace or overall
 localization of the Trace with respect to cellular or nuclear
 landmarks), Cell (e.g., boundaries and volume), sub-cellular Region of
 Interest (ROI; e.g., Nuclear feature or Nucleolus), or extracellular ROI
-(e.g., Tissue) level.
+(e.g., Tissue) level
 
 .. figure:: images/FOF-CT_graph.png
   :class: shadow-image
