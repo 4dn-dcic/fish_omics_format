@@ -12,11 +12,13 @@
     intro
     format_overview
     core
-    rna
-    quality
-    bio
     demultiplexing
     trace
+    quality
+    bio
+    rna
+    rna_quality
+    rna_bio
     cell
     subcell
     extracell

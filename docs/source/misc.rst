@@ -12,6 +12,7 @@ Bogdan Bintu,
 Alistair Boettiger,
 Andrea Cosolo,
 Adam Jussila,
+Rahi Navelkar,
 Caterina Strambio De Castillia,
 Steven Wang.
 
@@ -107,6 +108,19 @@ Probe sequence, example fasta file
   >FwdPrimer01__BarcodeName__SecondBarcodeName__probeTargetName_p002__RevPrimer01
   GCGGGACGTAAGGGCAACCGcatcaacgccacgatcagctGCTATCGTTCGTTCGAGGCCagactttggaagccaccctcattgattgctcgtgctccatCCGTTCTGAGGGTTGCCGTG
   ...
+
+The Variant Call Format (VCF)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+The Variant Call Format (VCF) is a standard tab-delimited text file format used in bioinformatics for storing gene sequence variations. The format was developed in 2010 for the 1000 Genomes Project and has since been used by other large-scale genotyping and DNA sequencing projects.
+
+VCF is unambiguous, scalable and flexible, allowing extra information to be added to the info field. 
+
+.. figure:: images/VCF_IN_example.png
+  :class: shadow-image
+  :width: 100%
+  :align: center
+
+  Figure 2: Schematic representation of the use of VCF to represent a genome variant containing an Inserted DNA fragement.
 
 Example published / available data sets
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

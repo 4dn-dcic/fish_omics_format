@@ -23,6 +23,9 @@ Nucleome Architectures (`MINA <https://doi.org/10.1038/s41596-021-00518-0>`_), `
 extensions that will encompass single-molecule localization methods for
 volumetric imaging, such as OligoSTORM and OligoDNA-PAINT.
 
+
+.. note:: FOF-CT is designed to work both in the case in which the genome under study is un-modified and in the case in which it contains INSERTIONS or DELETIONS.
+
 In chromatin tracing experiments, polymer tracing algorithms are used to
 string together the localization of individual DNA bright Spots to
 reconstruct the three-dimensional (3D) path of chromatin fibers. Thus,
@@ -40,12 +43,12 @@ landmarks), Cell (e.g., boundaries and volume), sub-cellular Region of
 Interest (ROI; e.g., Nuclear feature or Nucleolus), or extracellular ROI
 (e.g., Tissue) level.
 
-.. figure:: images/FOF-CT_graph.png
+.. figure:: images/FOFbasCT_figure.png
   :class: shadow-image
   :width: 100%
   :align: center
 
-  Figure 1: Schematic representation of 10 tables composing the Fish Omics Format for Chromatin Tracing.
+  Figure 1: Schematic representation of 12 tables composing the Fish Omics Format for Chromatin Tracing.
 
 Tables
 ======
@@ -64,46 +67,56 @@ Tables
     - 4dn_FOF-CT_core
     - required
   * - 2
-    - :ref:`rna`
-    - rna
-    - 4dn_FOF-CT_rna
-    - conditionally required
-  * - 3
-    - :ref:`quality`
-    - quality
-    - 4dn_FOF-CT_quality
-    - recommended
-  * - 4
-    - :ref:`bio`
-    - bio
-    - 4dn_FOF-CT_bio
-    - recommended
-  * - 5
     - :ref:`demultiplexing`
     - demultiplexing
     - 4dn_FOF-CT_demultiplexing
     - optional
-  * - 6
+  * - 3
     - :ref:`trace`
     - trace
     - 4dn_FOF-CT_trace
     - optional
+  * - 4
+    - :ref:`quality`
+    - quality
+    - 4dn_FOF-CT_quality
+    - recommended
+  * - 5
+    - :ref:`bio`
+    - bio
+    - 4dn_FOF-CT_bio
+    - recommended
+  * - 6
+    - :ref:`rna`
+    - rna
+    - 4dn_FOF-CT_rna
+    - conditionally required
   * - 7
+    - :ref:`rna_quality`
+    - rna_quality
+    - 4dn_FOF-CT_rna_quality
+    - recommended
+  * - 8
+    - :ref:`rna_bio`
+    - rna_bio
+    - 4dn_FOF-CT_rna_bio
+    - recommended
+  * - 9
     - :ref:`cell`
     - cell
     - 4dn_FOF-CT_cell
     - conditionally required
-  * - 8
+  * - 10
     - :ref:`subcell`
     - subcell
     - 4dn_FOF-CT_subcell
     - conditionally required
-  * - 9
+  * - 11
     - :ref:`extracell`
     - extracell
     - 4dn_FOF-CT_extracell
     - conditionally required
-  * - 10
+  * - 12
     - :ref:`mapping`
     - mapping
     - 4dn_FOF-CT_mapping

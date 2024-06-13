@@ -1,8 +1,8 @@
 ##FOF-CT_version=v0.1
 ##Table_namespace=4dn_FOF-CT_bio
 ##XYZ_unit=micron
-#^NL_distance:
-#^H4K27me3_distance:
+#^NL_distance: the Euclidean 3D distance between the centroid of the indicated DNA Spot and the Nuclear Lamina identified using the convex hull surrounding all detected chromatin loci, as described in Doe et al., 20221.
+#^H4K27me3_distance: the Euclidean 3D distance between the centroids of the indicated DNA Spot and the closest H4K27me3 signal, respectively. H4K27me3 enriched chromatin was detected using the XYZ antibody as described in Doe et al, 2021.
 #additional_tables: 4dn_FOF-CT_rna, 4dn_FOF-CT_cell
 ##columns=(Spot_ID, NL_distance, H4K27me3_distance)
 1, 1.345, 0.445
