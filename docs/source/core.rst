@@ -25,10 +25,7 @@ correspond to the final localization of the DNA target under study.
 At a minimum the Table has to have 8 columns in the following order:
 **Spot_ID**, **Trace_ID**, **X**, **Y**, **Z**, **Chrom**, **Chrom_Start**,
 **Chrom_End**. These are required. Additionally in case sub-cellular
-structures, cells or extra cellular structures (e.g., Tissue) are identified
-as part of this experiment, this table has to mandatorily include the ID of
-the Sub_Cellular, Cell or Extra Cellular Structure Region of Interest (ROI)
-each Spot/Trace is associated with.
+structures, cells or extra cellular structures (e.g., Tissue) are identified as part of this experiment, this table has to mandatorily include the ID of the Sub_Cellular, Cell or Extra Cellular Structure Region of Interest (ROI) each Spot/Trace is associated with.
 
 All other spot properties must be kept in the two additional tables
 :ref:`quality` and :ref:`bio`, indexed by Spot_ID and as described in the
@@ -39,19 +36,36 @@ from different focal planes or times), the underlying raw data can be recorded
 in the corresponding :ref:`demultiplexing` table as described in the
 instructions of that table.
 
-Finally, ``Spot_ID`` identifiers are unique across the entire dataset, thus
-allowing to identify unambiguously a Spot in the :ref:`quality`, :ref:`bio` and
-:ref:`demultiplexing`.
+.. tip::
 
-NOTE: Also RNA Spots have a ``Spot_ID`` (in the :ref:`rna`). Thus, when
-assigning an identifier to each Spot, make sure that this is unique not only
-within the :ref:`core`, but also in the :ref:`rna` if present.
+  ``Spot_ID`` identifiers are unique across the entire dataset, thus allowing to identify unambiguously a Spot in the :ref:`quality`, :ref:`bio` and :ref:`demultiplexing`.
+  
+.. note::
 
+  Also RNA Spots have a ``Spot_ID`` (in the :ref:`rna`). Thus, when assigning an identifier to each Spot, make sure that this is unique not only within the :ref:`core`, but also in the :ref:`rna` if present.
 
-Example
+.. Important::
+
+   What to do in case the genome under study contains an INSERTION or a DELETION.
+   - Add the **custom-build** prefix to the genome build name and introduce a descriptive name detailing the nature of the genome modification.
+   - Insert the following additional fields in the File header
+     - ##modification to indicate the nature and location of the modification
+     - ##VCF_File_name to indicate the name of the mandatory VCF file to be included with the FOF-CT dataset to report the nature and location of the genome modification.
+     - ##VCF_version to indicate the VCF version used for the VCF file describing the nature and location of the genome modification.
+   - Attach a separate VCF file with your FOF-CT dataset to describe the nature and location of the genome modification.
+   - In the ``Chrom`` column insert the name of the Insertion or Deletion
+   - In the ``ChromStart`` and ``ChromEnd`` columns insert the Start and End coordinates with respect to the INSERTION or DELETION for the sequence associated with the associated bright Spot.
+
+Example without genome modification
 -------
 .. include:: examples/core
   :code:
+
+Example with genome modification
+-------
+.. include:: examples/core_IN-DEL
+  :code:
+
 
 File Header
 -----------
