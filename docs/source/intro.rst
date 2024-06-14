@@ -23,8 +23,7 @@ Nucleome Architectures (`MINA <https://doi.org/10.1038/s41596-021-00518-0>`_), `
 extensions that will encompass single-molecule localization methods for
 volumetric imaging, such as OligoSTORM and OligoDNA-PAINT.
 
-
-.. note:: FOF-CT is designed to work both in the case in which the genome under study is un-modified and in the case in which it contains INSERTIONS or DELETIONS.
+.. note:: FOF-CT is designed to work both in the case in which the genome under study is un-modified and in the case in which it contains INSERTIONS or DELETIONS. To capture genomic variants in FOF-CT please see the instructions in :ref:`core` and include a description of the custom-build using the Variant Call Format (VCF) as indicated in :ref:`_VCF_reference:`
 
 In chromatin tracing experiments, polymer tracing algorithms are used to
 string together the localization of individual DNA bright Spots to
