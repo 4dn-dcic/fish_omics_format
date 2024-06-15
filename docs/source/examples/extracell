@@ -1,7 +1,17 @@
-##FOF-CT_version=v0.1
+##FOF-CT_version=v1.0
 ##Table_namespace=4dn_FOF-CT_extracell
-##XYZ_unit=micron
 ##Extra_Cell_ROI_type=Organoid
+##XYZ_unit=micron
+#lab_name: Nobel
+#experimenter_name: John Doe
+#experimenter_contact: john.doe@email.com
+#description: In this experiment organoids were identified by segmentation using the indicated algorithm on the basis of bright field signal.
+#Software_Title: AlgorithmXYZ
+#Software_Type: Segmentation
+#Software_Authors: John Doe
+#Software_Description: A pretty clear description
+#Software_Repository: https://github.com/repo_name_goes_here
+#Software_PreferredCitationID: https://doi.org/doi_goes_here
 #^Cell_A_nr: the number of identified Cells of type A identified to belong to this extracellular ROI.
 #^Cell_B_nr: the number of identified Cells of type B identified to belong to this extracellular ROI.
 #^ROI_volume: the volume of this extracellular ROI expressed in micron^3.

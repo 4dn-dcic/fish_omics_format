@@ -17,7 +17,7 @@ In this table, each row reports the ``X``, ``Y``, ``Z`` localization, and the Tr
 In this table the reported ``X``, ``Y``, ``Z`` coordinates are assumed to result from post-processing and quality control procedures and therefore
 correspond to the final localization of the DNA target under study.
 
-.. tip:: The 4DN Data Portal only accepts GRCh38 for human and GRCm38 for mouse.
+.. tip:: The 4DN Data Portal only accepts GRCh38 for human and GRCm38 for mouse. Genome build. For other species follow these `instructions. <https://data.4dnucleome.org/search/?type=Organism>`_ In case the genome under study contains an iNSERTION or a DELETION follow the instructions below.
 
 At a minimum the Table has to have 8 columns in the following order:
 **Spot_ID**, **Trace_ID**, **X**, **Y**, **Z**, **Chrom**, **Chrom_Start**,
@@ -32,10 +32,7 @@ Additionally, in the case in which the final localization of DNA target results 
 .. tip::
 
   ``Spot_ID`` identifiers are unique across the entire dataset, thus allowing to identify unambiguously a Spot in the :ref:`quality`, :ref:`bio` and :ref:`demultiplexing`.
-  
-.. note::
-
-  Also RNA Spots have a ``Spot_ID`` (in the :ref:`rna`). Thus, when assigning an identifier to each Spot, make sure that this is unique not only within the :ref:`core`, but also in the :ref:`rna` if present.
+Also RNA Spots have a ``Spot_ID`` (in the :ref:`rna`). Thus, when assigning an identifier to each Spot, make sure that this is unique not only within the :ref:`core`, but also in the :ref:`rna` if present.
 
 .. Important::
 

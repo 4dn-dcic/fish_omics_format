@@ -1,5 +1,5 @@
 Name,Description,Example,Conditional requirement conditions
-**RNA_Spot_ID**,A unique identifier for this bright Spot.,1,
+**RNA_Spot_ID**,A unique identifier for this bright Spot.,001,
 **X**,"The sub-pixel X coordinate of this bright Spot. NOTE: the reported X position is understood to be the one resulting from any performed post-processing procedures (i.e. drift correction, chromatic correction etc).",14.43,
 **Y**,"The sub-pixel Y coordinate of this bright Spot. NOTE: the reported Y position is understood to be the one resulting from any performed post-processing procedures (i.e. drift correction, chromatic correction etc).",14.43,
 **Z**,"The sub-pixel Z coordinate of this bright Spot. NOTE: the reported Z position is understood to be the one resulting from any performed post-processing procedures (i.e. drift correction, chromatic correction etc).",1.23,

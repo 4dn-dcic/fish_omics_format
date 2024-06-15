@@ -1,0 +1,21 @@
+##FOF-CT_version=v1.0
+##Table_namespace=4dn_FOF-CT_core
+##genome_assembly=GRCh38 [default value; change if species is not H. sapiens. 4DN accepts CRCm38 for M. musculus. For other species follow these `instructions. <https://data.4dnucleome.org/search/?type=Organism>`_ If the genome under study contains INSERTIONS or DELETIONS, describe the custom-assembly by using the ``custom-assembly`` prefix, use a descriptive name and use the core_IN-DEL template]
+##XYZ_unit=micron [default value; change if different]
+#lab_name:
+#experimenter_name:
+#experimenter_contact:
+#description:
+#Software_Title:
+#Software_Type:
+#Software_Authors:
+#Software_Description:
+#Software_Repository:
+#Software_PreferredCitationID:
+#additional_tables:
+##columns=(Spot_ID, Trace_ID, X, Y, Z, Chrom, Chrom_Start, Chrom_End, Cell_ID, Sub_Cell_ROI_ID, Extra_Cell_ROI_ID)
+001, 001, XX.XX, YY.YY, ZZ.ZZ, chrX, XYZ, XYZ, 001, 001, 001
+002,
+003,
+004,
+0005,

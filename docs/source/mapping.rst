@@ -28,8 +28,7 @@ This table might be organized in one of the following manner:
    etc.) boundaries x/y/z in global coordinates (following the OME Data
    Model for Polygon - Sub_Cell ROI, boundaries are defined as a list of
    comma separated x,y coordinates separated by spaces like "x1,y1 x2,y2
-   x3,y3" e.g. "0,0 1,2 3,5"). This table might also report the feature
-   brightness.
+   x3,y3" e.g. "0,0 1,2 3,5"). 
 -  **Extra_Cell_ROI_ID** → Extracellular ROI boundaries (e.g., Tissue) in
    global coordinates (following the OME Data Model for Polygon - ROI,
    Super-Cell ROI boundaries are defined as a list of comma separated

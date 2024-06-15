@@ -1,19 +1,19 @@
-##FOF-CT_version=v0.1
+##FOF-CT_version=v1.0
 ##Table_namespace=4dn_FOF-CT_core
 ##genome_assembly=custom-build:GRCm38+pJT039(insertion) 
 ##modification=pJT039:chr3(insertion 2001-3000)
 ##VCF_File_name=pJT039:chr3.vcf
 ##VCF_version=v4.2
 ##XYZ_unit=micron
+#lab_name: Nobel
+#experimenter_name: John Doe
+#experimenter_contact: john.doe@email.com
 #Software_Title: ChrTracer3
 #Software_Type: SpotLoc+Tracing
 #Software_Authors: Mateo, LJ; Sinnott-Armstrong, N; Boettiger, AN
 #Software_Description: ChrTracer3 software was developed for analysis of raw DNA labeled images. As an input, it takes an.xlsx table containing information and folder names of the DNA experiment. As an output, it returns tab delimited.txt ﬁles with drift-corrected x, y, z positions for all labeled barcodes. These can be used directly to calculate the nm scale distances between all pairs of labeled loci. The current version of the software as of this writing is ChrTracer3.
 #Software_Repository: https://github.com/BoettigerLab/ORCA-public
 #Software_PreferredCitationID: https://doi.org/10.1038/s41596-020-00478-x
-#lab_name: Nobel
-#experimenter_name: John Doe
-#experimenter_contact: john.doe@email.com
 #additional_tables: 4dn_FOF-CT_quality, 4dn_FOF-CT_rna, 4dn_FOF-CT_trace, 4dn_FOF-CT_cell
 ##columns=(Spot_ID, Trace_ID, X, Y, Z, Chrom, Chrom_Start, Chrom_End, Cell_ID)
 1, 1, 14.43, 41.43, 1.23, chr3, 0001, 1000, 1

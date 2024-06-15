@@ -1,6 +1,6 @@
 .. _quality:
 
-Spot Quality table
+RNA Spot Quality table
 ==================
 
 Requirement level: recommended
@@ -23,7 +23,7 @@ The table is indexed by RNA_Spot_ID and each row corresponds to a RNA bright Spo
 
 Example
 -------
-Spot fit quality
+RNA Spot fit quality
 
 .. include:: examples/rna_quality
   :code:
@@ -35,8 +35,7 @@ File Header
 
 The header MUST contain a mandatory set of fields that describe any
 algorithm that was used to produce/process data in this table.
-In case more than one algorithm were used, please use the same set of fields
-for each of them.
+In case more than one algorithm were used, please use the same set of fields for each of them.
 
 The header MUST include a detailed description of each optional columns used.
 
@@ -46,8 +45,7 @@ The header MUST include a detailed description of each optional columns used.
 
 Data Columns
 ------------
-As with all other RNA Spot Data tables in this format, each row corresponds to
-data associated with an individual RNA Spot.
+As with all other RNA Spot Data tables in this format, each row corresponds to data associated with an individual RNA Spot.
 
 The first column of this table is always RNA_Spot_ID.
 The content and order of all other columns is largely at user's discretion.

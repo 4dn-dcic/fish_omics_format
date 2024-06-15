@@ -1,20 +1,22 @@
-##FOF-CT_version=v0.1
+##FOF-CT_version=v1.0
 ##Table_namespace=4dn_FOF-CT_demultiplexing
 ##XYZ_unit=micron
-#Software_Title: ExampleLocalizationSoftware
-#Software_Type: SpotLoc
+#lab_name: Nobel
+#experimenter_name: John Doe
+#experimenter_contact: john.doe@email.com
+#description: This table reports the localization events that were associated with each identified birght DNA Spot
+#Software_Title: BestLocalizationSoftware
+#Software_Type: Loc
 #Software_Authors: Doe, J.
 #Software_Description: A pretty clear description
 #Software_Repository: https://github.com/repo_name_goes_here
 #Software_PreferredCitationID: https://doi.org/doi_goes_here
-#lab_name: Nobel
-#experimenter_name: John Doe
-#experimenter_contact: john.doe@email.com
-#additional_tables: 4dn_FOF-CT_core, 4dn_FOF-CT_quality
+#Intensity_measurement_method: Localization centroid intensity
 #^Hyb: the labeling round in which this localization occurred
 #^Fluor: the fluorescent channel in which this localization was detected
 #^Brightness: the photon count for this localization event
 #^Fit_Quality: the quality of fit for this localization, on a relative scale of 0-1
+#additional_tables: 4dn_FOF-CT_core, 4dn_FOF-CT_quality
 ##columns=(Loc_ID, Spot_ID, X, Y, Z, Hyb, Fluor, Brightness, Fit_Quality)
 1, 1, 2342, 2354, 545, 2, cy3, 1003, 0.83
 2, 1, 2342, 2354, 545, 2, cy5, 2000, 0.93

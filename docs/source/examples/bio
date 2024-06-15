@@ -1,6 +1,16 @@
-##FOF-CT_version=v0.1
+##FOF-CT_version=v1.0
 ##Table_namespace=4dn_FOF-CT_bio
 ##XYZ_unit=micron
+#lab_name: Nobel
+#experimenter_name: John Doe
+#experimenter_contact: john.doe@email.com
+#description: In this experiment cells were identified by segmentation using the indicated algorithm on the basis of the background fluorescence from multiplexed FISH probes.
+#Software_Title: AlgorithmXYZ
+#Software_Type: Distance
+#Software_Authors: John Doe
+#Software_Description: A pretty clear description
+#Software_Repository: https://github.com/repo_name_goes_here
+#Software_PreferredCitationID: https://doi.org/doi_goes_here
 #^NL_distance: the Euclidean 3D distance between the centroid of the indicated DNA Spot and the Nuclear Lamina identified using the convex hull surrounding all detected chromatin loci, as described in Doe et al., 20221.
 #^H4K27me3_distance: the Euclidean 3D distance between the centroids of the indicated DNA Spot and the closest H4K27me3 signal, respectively. H4K27me3 enriched chromatin was detected using the XYZ antibody as described in Doe et al, 2021.
 #additional_tables: 4dn_FOF-CT_rna, 4dn_FOF-CT_cell

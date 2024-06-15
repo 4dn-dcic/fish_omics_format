@@ -1,18 +1,20 @@
 ##FOF-CT_version=v1.0
 ##Table_namespace=4dn_FOF-CT_quality
-##XYZ_unit=micron
-##intensity_unit=photonCount
-#lab_name: Nobel
-#experimenter_name: John Doe
-#experimenter_contact: john.doe@email.com
-#description:  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-#Software_Title: SpotQualityCheck
-#Software_Type: QualityControl
-#Software_Authors: John Doe et al.
-#Software_Description: A pretty clear description.
-#Software_Repository: https://github.com/repo_name_goes_here
-#Software_PreferredCitationID: https://doi.org/doi_goes_here
-#Intensity_Measurement_Method: Spot peak intensity
+##XYZ_unit=micron [default value; change if different]
+##intensity_unit=
+#lab_name:
+#experimenter_name:
+#experimenter_contact:
+#description:
+#Software_Title:
+#Software_Type:
+#Software_Authors:
+#Software_Description:
+#Software_Repository:
+#Software_PreferredCitationID:
+#Intensity_measurement_method:
+[Choose one or more of the following conditionally required columns]
+#^Centroid_Intensity: The signal intensity of the pixel occupying the center-of-mass within a bright Spot (i.e. centroid).
 #^Peak_Intensity: The signal intensity of the brightest pixel within a bright Spot (i.e. local maximum).
 #^Raw_X: the original fit x-position relative to the camera and objective, (prior to drift correction, chromatic correction, or conversion to stage coordinates). This is the appropriate coordinate system for correcting optical aberrations. 
 #^Raw_Y: the original fit y-position relative to the camera and objective, (prior to drift correction, chromatic correction, or conversion to stage coordinates). This is the appropriate coordinate system for correcting optical aberrations. 
@@ -26,9 +28,11 @@
 #^X_Loc_Precision: lower and upper bound of 95% confidence interval on X-position after fit
 #^Y_Loc_Precision: lower and upper bound of 95% confidence interval on Y-position after fit
 #^Z_Loc_Precision: lower and upper bound of 95% confidence interval on Z-position after fit
-#additional_tables: 4dn_FOF-CT_core, 4dn_FOF-CT_rna, 4dn_FOF-CT_trace, 4dn_FOF-CT_cell
-##columns=(Spot_ID, Channel_Name, Fluorophore_Name, Peak_Intensity, Raw_X, Raw_Y, Raw_Z, X_Drift, Y_Drift, Z_Drift, X_Chromatic_Shift, Y_Chromatic_Shift, Z_Chromatic_Shift, X_Loc_Precision, Y_Loc_Precision, Z_Loc_Precision)
-001, 510/25, AlexaFluor_488, 1.1, 1.05, 1.2, 0.1, 0.05, 0.2, 0.2, 0.2, 0.2, 0.01, 0.01, 0.01
-002, 510/25, AlexaFluor_488, 1.11, 1.055, 1.22, 0.11, 0.055, 0.22, 0.22, 0.22, 0.22, 0.012, 0.012, 0.012
-003, 510/25, AlexaFluor_488, 1.12, 1.054, 1.21, 0.12, 0.054, 0.21, 0.22, 0.22, 0.22, 0.012, 0.012, 0.012
-004, 510/25, AlexaFluor_488, 1.13, 1.15, 1.202, 0.13, 0.15, 0.202, 0.23, 0.23, 0.23, 0.013, 0.013, 0.013
+[End of conditionally required columns]
+#additional_tables: 
+##columns=(RNA_Spot_ID, Channel_Name, Fluorophore_Name, Conditionally_required_column_1, Conditionally_required_column_2, Conditionally_required_column_3, Optional_column_1, Optional_column_2, Optional_colummn_3, …)
+001, XXX/XX, XYZ, X.XX, X.XX, X.XX, X.XX, X.XX, X.XX,
+002,
+003, 
+004, 
+

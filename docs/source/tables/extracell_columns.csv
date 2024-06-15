@@ -1,5 +1,5 @@
 Name,Description,Example,Conditional requirement conditions
-**Extra_Cell_ROI_ID**,"This fields reports the unique identifier for an extracellular structure (e.g., Tissue, Organoid) Region of Interest (ROI) identified as part of this experiment. Note: this is used to connect individual Cells that are part of the same extracellular ROI.",1,
-optional_column_1,,,
-optional_column_2,,,
-optional_column_3,,,
+**Extra_Cell_ROI_ID**,"This fields reports the unique identifier for an extracellular structure (e.g., Tissue, Organoid) Region of Interest (ROI) identified as part of this experiment. Note: this is used to connect individual Cells that are part of the same extracellular ROI.",001,
+Optional_column_1,,,
+Optional_column_2,,,
+Optional_column_3,,,
