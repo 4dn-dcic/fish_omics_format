@@ -9,4 +9,4 @@ build:
     python: "3.12"
 
 sphinx:
-  configuration: docs/Makefile
+  configuration: docs/source/conf.py
