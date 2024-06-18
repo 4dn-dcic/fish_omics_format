@@ -40,7 +40,3 @@ Each row corresponds to data associated with an individual Cell.
 The first column of this table is always **Cell_ID**.
 The content and order of all other columns is at user's discretion.
 The order of the rows is at user's discretion.
-
-.. csv-table::
-  :file: tables/cell_columns.csv
-  :header-rows: 1
