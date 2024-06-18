@@ -19,6 +19,8 @@ table with data stored in one of the other tables (e.g.,
 
 Example
 -------
+.. include:: examples/cell
+  :code:
 
 File Header
 -----------
@@ -27,6 +29,10 @@ File Header
 
 The header MUST include a detailed description of each optional columns used.
 
+.. csv-table::
+  :file: tables/cell_header.csv
+  :header-rows: 1
+
 Data Columns
 ------------
 Each row corresponds to data associated with an individual Cell.
@@ -34,3 +40,7 @@ Each row corresponds to data associated with an individual Cell.
 The first column of this table is always **Cell_ID**.
 The content and order of all other columns is at user's discretion.
 The order of the rows is at user's discretion.
+
+.. csv-table::
+  :file: tables/cell_columns.csv
+  :header-rows: 1
