@@ -13,7 +13,7 @@ from the nuclear lamina (NL) or the nuclear pore complex (NPC), etc.; Su
 et al 2020 Cell and Takei et al 2021 Nature) identified as part of this
 experiment. In the absence of a consensus regarding biological
 properties to be recorded in association with individual bright Spots,
-the specific columns in this table remain at the user’s
+the specific columns in this table remain at the user's
 discretion and should be described with sufficient details to ensure
 interpretation and reproducibility.
 

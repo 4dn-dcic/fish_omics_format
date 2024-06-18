@@ -6,6 +6,11 @@
 Changelog
 ---------
 
+1.0.0
+-----
+
+* Major format and documentation updates.
+
 0.1.2
 -----
 
