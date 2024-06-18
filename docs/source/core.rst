@@ -89,4 +89,3 @@ The order of the rows is at user's discretion.
 .. csv-table::
   :file: tables/core_columns.csv
   :header-rows: 1
-
