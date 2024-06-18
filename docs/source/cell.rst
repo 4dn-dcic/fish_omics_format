@@ -19,8 +19,6 @@ table with data stored in one of the other tables (e.g.,
 
 Example
 -------
-.. include:: examples/cell
-  :code:
 
 File Header
 -----------
@@ -28,10 +26,6 @@ File Header
 - The second line in the header is always "##Table_namespace=4dn_FOF-CT_cell"
 
 The header MUST include a detailed description of each optional columns used.
-
-.. csv-table::
-  :file: tables/cell_header.csv
-  :header-rows: 1
 
 Data Columns
 ------------
