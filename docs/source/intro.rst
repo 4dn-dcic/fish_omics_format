@@ -99,22 +99,22 @@ Tables
     - :ref:`rna_bio`
     - rna_bio
     - 4dn_FOF-CT_rna_bio
-    - recommended
+    - recommended    
   * - 9
     - :ref:`cell`
     - cell
     - 4dn_FOF-CT_cell
     - conditionally required
   * - 10
-    - :ref:`subcell`
-    - subcell
-    - 4dn_FOF-CT_subcell
-    - conditionally required
-  * - 11
     - :ref:`extracell`
     - extracell
     - 4dn_FOF-CT_extracell
     - conditionally required
+  * - 11
+    - :ref:`subcell`
+    - subcell
+    - 4dn_FOF-CT_subcell
+    - conditionally required    
   * - 12
     - :ref:`mapping`
     - mapping

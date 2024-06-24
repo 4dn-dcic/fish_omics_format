@@ -1,6 +1,6 @@
 .. _rna_bio:
 
-Spot Biological Data table
+RNA Spot Biological Data table
 ==========================
 
 Requirement level: recommended

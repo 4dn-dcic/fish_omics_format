@@ -1,6 +1,6 @@
 .. _rna:
 
-RNA-Spot Data table
+RNA Spot Data table
 ===================
 
 Requirement level: conditionally required

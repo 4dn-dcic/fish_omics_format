@@ -1,5 +1,5 @@
 ##FOF-CT_version=v1.0
-##Table_namespace=4dn_FOF-CT_quality
+##Table_namespace=4dn_FOF-CT_rna_quality
 ##XYZ_unit=micron [default value; change if different]
 ##intensity_unit=
 #lab_name:

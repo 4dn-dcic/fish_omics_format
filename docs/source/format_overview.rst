@@ -74,8 +74,9 @@ Additional mandatory header lines (DNA spot/trace core and RNA tables)
 
 In addition to all of the above,
 
-**##genome_assembly=** Genome build. Note that the 4DN data portal only
-accepts GRCh38 for human and GRCm38 for mouse.
+**##genome_assembly=** Genome build. 
+
+.. note:: Note that the 4DN data portal accepts only specific genome builds like GRCh38 for human and GRCm38 for mouse. To know which organisms/genome assemblies are accepted see: https://data.4dnucleome.org/search/?type=Organism
 
 **#Software_Title:** The name of the Software(s) that were used in this
 case for localizing individual FISH-omics bright Spots and/or to produce
@@ -114,4 +115,4 @@ Data Columns
   mandatory columns. All other columns are ordered at user's discretion.
 - The order of the rows is at user's discretion.
 - If an optional column does not contain any data (i.e., it is not used), it
-  should be omitted.
+  should be omitted.  

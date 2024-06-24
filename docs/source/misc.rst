@@ -140,9 +140,6 @@ Example published / available data sets
 Example Tables
 ^^^^^^^^^^^^^^
 
-[Other publications with potentially accessible and similar data to
-aggregate]
-
 - Bintu and Ren Sox2 paper
 - Nir...Wu 2018, (localization data is published:
   https://data.4dnucleome.org/experiment-set-replicates/4DNESQN4JCAS/ -

@@ -24,3 +24,5 @@
     extracell
     mapping
     misc
+    how_to_use
+    allowable_value_lists
