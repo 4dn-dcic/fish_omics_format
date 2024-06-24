@@ -1,4 +1,4 @@
-.. _rnaquality:
+.. _rna_quality:
 
 RNA Spot Quality table
 ==================
