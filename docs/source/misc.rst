@@ -123,7 +123,7 @@ More information about how to prepare valid VCF files can be found `here <https:
   :width: 100%
   :align: center
 
-  Figure 2: Schematic representation of the use of VCF to represent a genome variant containing an Inserted DNA fragement.
+  Figure 2: Schematic representation of the use of VCF to represent a genome variant containing an Inserted DNA fragement. Image from The Variant Call Format (VCF) Version 4.2 Specification, Dec 2013, available at https://cseweb.ucsd.edu/classes/sp16/cse182-a/notes/VCFv4.2.pdf
 
 Example published / available data sets
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

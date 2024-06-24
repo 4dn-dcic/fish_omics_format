@@ -47,7 +47,7 @@ Interest (ROI; e.g., Nuclear feature or Nucleolus), or extracellular ROI
   :width: 100%
   :align: center
 
-  Figure 1: Schematic representation of 12 tables composing the Fish Omics Format for Chromatin Tracing.
+  Figure 1: Schematic representation of 12 tables composing the Fish Omics Format for Chromatin Tracing. Created by Sarah Aufmkolk
 
 Tables
 ======
