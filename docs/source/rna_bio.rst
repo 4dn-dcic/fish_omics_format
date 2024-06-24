@@ -1,4 +1,4 @@
-.. _rnabio:
+.. _rna_bio:
 
 Spot Biological Data table
 ==========================
