@@ -33,7 +33,9 @@ This Table can be indexed mandatorily by Spot_ID.
 
 The header MUST contain a mandatory set of fields that describe any algorithm that was used to produce/process data in this table. In case more than one algorithm were used, please use the same set of fields for each of them.
 
-The header MUST include a detailed description of each optional columns used.
+The header MUST include a detailed description of each optional columns used. 
+The table MUST contain at least 1 optional column. 
+
 
 .. csv-table::
   :file: tables/bio_header.csv
@@ -43,6 +45,7 @@ Data Columns
 ------------
 Each row corresponds to data associated with an individual Spot.
 The first column is always **Spot_ID**.
+If a bio table is submitted it has to contain at least 1 optional column. 
 The order of the other columns is at user's discretion.
 The order of the rows is at user's discretion.
 

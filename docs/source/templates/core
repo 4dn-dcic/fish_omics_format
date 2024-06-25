@@ -13,6 +13,7 @@
 #Software_Repository:
 #Software_PreferredCitationID:
 #additional_tables:
+#collaborating_labs:
 ##columns=(Spot_ID, Trace_ID, X, Y, Z, Chrom, Chrom_Start, Chrom_End, Cell_ID, Sub_Cell_ROI_ID, Extra_Cell_ROI_ID)
 001, 001, XX.XX, YY.YY, ZZ.ZZ, chrX, XYZ, XYZ, 001, 001, 001
 002,

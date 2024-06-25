@@ -12,7 +12,7 @@
 #Software_Repository:
 #Software_PreferredCitationID:
 #Intensity_measurement_method:
-#^Optional_column_1: [substitute with your column header]
+#^Optional_column_1: [substitute with your column header; the presence of at least 1 optional column is MANDATORY if this table is submitted]
 #^Optional_column_2: [substitute with your column header]
 #^Optional_column_3: [substitute with your column header]
 #additional_tables: 
