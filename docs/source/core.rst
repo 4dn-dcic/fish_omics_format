@@ -45,17 +45,6 @@ Additionally, in the case in which the final localization of DNA target results 
    - In the ``Chrom`` column insert the name of the inserted or deleted DNA fragment.
    - In the ``ChromStart`` and ``ChromEnd`` columns insert the Start and End coordinates of the target chromosome segment with respect to the INSERTION or DELETION.
 
-Example without genome modification
------------------------------------
-.. include:: examples/core
-  :code:
-
-Example with genome modification
---------------------------------
-.. include:: examples/core_IN-DEL
-  :code:
-
-
 File Header
 -----------
 - The first line in the header is always "##FOF-CT_version=vX.X"
@@ -89,3 +78,13 @@ The order of the rows is at user's discretion.
 .. csv-table::
   :file: tables/core_columns.csv
   :header-rows: 1
+  
+Example without genome modification
+-----------------------------------
+.. include:: examples/core
+  :code:
+
+Example with genome modification
+--------------------------------
+.. include:: examples/core_IN-DEL
+  :code:
