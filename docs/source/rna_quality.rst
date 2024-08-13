@@ -3,7 +3,8 @@
 RNA Spot Quality table
 ==================
 
-Requirement level: recommended
+Requirement level: optional
+Recommended: Yes
 
 Summary
 -------
@@ -21,13 +22,6 @@ However, in order to align with existing `4DN-BINA-OME <https://doi.org/10.1038/
 
 The table is indexed by RNA_Spot_ID and each row corresponds to a RNA bright Spot. The order of all other columns (including those conditionally required) and of the rows are at the user's discretion.
 
-Example
--------
-RNA Spot fit quality
-
-.. include:: examples/rna_quality
-  :code:
-
 File Header
 -----------
 - The first line in the header is always "##FOF-CT_version=vX.X"
@@ -39,6 +33,8 @@ In case more than one algorithm were used, please use the same set of fields for
 
 The header MUST include a detailed description of each optional columns used.
 
+The table MUST contain at least 1 optional column. 
+
 .. csv-table::
   :file: tables/rna_quality_header.csv
   :header-rows: 1
@@ -47,7 +43,7 @@ Data Columns
 ------------
 As with all other RNA Spot Data tables in this format, each row corresponds to data associated with an individual RNA Spot.
 
-The first column of this table is always RNA_Spot_ID.
+The first column of this table is always **RNA_Spot_ID**.
 The content and order of all other columns is largely at user's discretion.
 However, in order to align with existing Microscopy Metadata specifications, the use of specific column names and descriptions is **conditionally required** as indicated below. The order of all other columns (including those conditionally requried) and of the rows are at
 the user's discretion.
@@ -55,3 +51,12 @@ the user's discretion.
 .. csv-table::
   :file: tables/rna_quality_columns.csv
   :header-rows: 1
+  
+Example
+-------
+The only mandatory column in this table is ``RNA_Spot_ID``. All other columns are optional and must be defined by the user using a Header line starting with ``#^``. 
+
+.. tip:: the Optional columns in this example table are included for illustrative purposes only and describe a case in which the user is reporting the RNA Spot fit quality using metrics that align with existing `4DN-BINA-OME <https://doi.org/10.1038/s41592-021-01327-9>`_ Microscopy Metadata specifications. 
+
+.. include:: examples/rna_quality
+  :code:

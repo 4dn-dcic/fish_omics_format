@@ -14,11 +14,13 @@
 #Software_Description: A pretty clear description
 #Software_Repository: https://github.com/repo_name_goes_here
 #Software_PreferredCitationID: https://doi.org/doi_goes_here
+#^ROI_description: a free text description of this ROI (e.g., Nuclear Lamina, NPC, etc.).
+#^ROI_marker: the marker that was used to detect this ROI (e.g., anti-NL antibody, anti-NPC antibody, etc.)
 #^ROI_volume: the volume of this ROI expressed in micron^3.
 #^ROI_intensity: the integrated average signal intensity of the marker of interest as measured within the boundaries of this ROI.
 #additional_tables: 4dn_FOF-CT_core, 4dn_FOF-CT_rna, 4dn_FOF-CT_trace
-##columns=(Sub_Cell_ROI_ID, Cell_ID, ROI_volume, ROI_intensity)
-001, 001, 1345, 3500
-002, 001, 3554, 1500
-003, 002, 1001, 2500
-004, 003, 2534, 3498
+##columns=(Sub_Cell_ROI_ID, Cell_ID, ROI_description, ROI_marker, ROI_volume, ROI_intensity)
+001, 001, Lamina, Rabbit anti-NL XYZ, 1345, 3500
+002, 001, NPC, Mouse MAb414, 3554, 1500
+003, 002, NPC, Mouse MAb414, 1001, 2500
+004, 003, Lamina, Rabbit anti-NL XYZ, 2534, 3498

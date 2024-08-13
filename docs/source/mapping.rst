@@ -3,7 +3,7 @@
 Cell/ROI Mapping table
 ======================
 
-Requirement level: conditionally required
+Requirement level: *conditionally required*
 
 Summary
 -------
@@ -14,9 +14,9 @@ other ROI segmentation data were collected as part of this experiment.
 This table is mandatory in case a :ref:`subcell`, :ref:`cell`, and/or
 :ref:`extracell` tables are deposited with this submission.
 
-The table is organized on a Cell or ROI basis via a Cell or ROI ID and
-provides the Cell or ROI boundaries in global coordinates as specified by
-the `OME ROI data model <https://docs.openmicroscopy.org/ome-model/5.6.3/developers/roi.html>`_.
+The table is organized on a Cell or ROI basis via a Cell or ROI ID and is designed to provide the boundaries of each Cell and ROI boundaries in global coordinates. 
+
+This could be done as specified by the `OME ROI data model <https://docs.openmicroscopy.org/ome-model/5.6.3/developers/roi.html>`_. Alternatively, Cell or ROI boundaries could be provided using 3D MESH models (e.g., using the OBJ format).
 
 This table might be organized in one of the following manner:
 
@@ -41,11 +41,6 @@ properties such as:
 -  Lists of RNA Spot x/y/z in global coordinates
 -  Lists of barcode sequence ID
 -  Lists of channels
-
-Example
--------
-.. include:: examples/mapping
-  :code:
 
 File Header
 -----------
@@ -72,3 +67,8 @@ It is mandatory to choose one of the three types of ID.
 .. csv-table::
   :file: tables/mapping_columns.csv
   :header-rows: 1
+
+Example
+-------
+.. include:: examples/mapping
+  :code:

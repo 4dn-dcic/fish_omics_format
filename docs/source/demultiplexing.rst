@@ -4,12 +4,12 @@ Spot Demultiplexing table
 =========================
 
 Requirement level: optional
+Recommended: Yes
 
 Summary
 -------
-This table is optional and is designed to be used in the case of multiplexed
-FISH experiments (i.e., MERFISH) in which the final localization of a bright
-DNA or RNA Spot results from the combination of multiple individual localization events (e.g., by combining particles detected and localized in separate images).
+This table is optional and is designed to be used in the case of multiplexed FISH experiments (i.e., MERFISH) in which the final localization of a bright DNA or RNA Spot results from the combination of multiple individual localization events (e.g., by combining particles detected and localized in separate images).
+
 In such a case the final Spot localization data is recorded in the
 :ref:`core`, while the underlying primary localization data can be recorded by using this table, as shown for DNA Spots in the example below.
 
@@ -17,12 +17,6 @@ This table is indexed by **Loc_ID**, mandatorily reports the **X**, **Y**, **Z**
 
 Other columns are at user's discretion.
 
-Example
--------
-DNA spots detected with multiplexed barcodes
-
-.. include:: examples/demultiplexing
-  :code:
 
 File Header
 -----------
@@ -52,3 +46,12 @@ The order of the rows is at user's discretion.
 .. csv-table::
   :file: tables/demultiplexing_columns.csv
   :header-rows: 1
+  
+Example
+-------
+The only mandatory columns in this table are ``Loc_ID``, ``Spot_ID``, ``X``, ``Y``, ``Z``. All other columns are optional and must be defined by the user using a Header line starting with ``#^``. 
+
+.. tip:: the Optional columns in this example table are included for illustrative purposes only and describe a case in which DNA spots are detected with multiplexed barcodes.
+
+.. include:: examples/demultiplexing
+  :code:

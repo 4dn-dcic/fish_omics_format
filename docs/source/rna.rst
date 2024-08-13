@@ -3,13 +3,15 @@
 RNA Spot Data table
 ===================
 
-Requirement level: conditionally required
+Requirement level: optional
+Recommended: Yes
 
 Summary
 -------
-This table is used to store and share the results of RNA FISH-omics experiments
-and it is **conditionally required** in the case RNA data was collected as part of this
-experiment. Each row represents a detected RNA bright Spot
+This table is optionally used to store and share RNA Spot data that was collected as part of this
+experiment. 
+
+Each row represents a detected RNA bright Spot
 and corresponds to the location of a specific RNA transcript.
 
 At a minimum, one needs to know the **RNA_Spot_ID**, the **X**, **Y**, **Z** coordinates of each
@@ -33,19 +35,8 @@ detection events (e.g., by combining individual Localization events detected in
 separate planes or images), the underlying raw data can be recorded in the
 corresponding :ref:`demultiplexing` as described in the instructions of that table.
 
-.. tip::
+.. tip:: ``RNA_Spot_ID`` identifiers are unique across the entire dataset, thus allowing to identify unambiguously a Spot in the :ref:`quality`, :ref:`bio` and :ref:`demultiplexing`.
 
-  ``Spot_ID`` identifiers are unique across the entire dataset, thus allowing to identify unambiguously a Spot in the :ref:`quality`, :ref:`bio` and :ref:`demultiplexing`.
-  
-.. note::
-
-  Also DNA Spots have a ``Spot_ID`` (in the :ref:`core`). Thus, when assigning an identifier to each Spot, make sure that this is unique not only within the :ref:`rna`, but also in the :ref:`core`.
-
-
-Example
--------
-.. include:: examples/rna
-  :code:
 
 File Header
 -----------
@@ -76,3 +67,8 @@ The order of the rows is at user's discretion.
 .. csv-table::
   :file: tables/rna_columns.csv
   :header-rows: 1
+  
+Example
+-------
+.. include:: examples/rna
+  :code:
