@@ -43,13 +43,12 @@ The core of the format consists of a **mandatory** ``DNA-Spot/Trace Data core`` 
 Additional tables support the integration of this core with:
 
 1. Supplementary Spot properties such as: 
-
 * Quality metrics. 
 * Physical coordinates placing the Spot/Trace in the context of cellular space.
 
 2. The results of multiplexed `RNA-FISH <https://doi.org/10.1073/pnas.1912459116>`_ experiments 
 
-3. Supplementary data that is better captured at the global level of:
+3. Supplementary global data that is better captured at level of:
 
 * Trace (e.g., expression level of nascent RNA transcripts associated with a given Trace or overall localization of the Trace with respect to cellular or nuclear landmarks).
 * Cell (e.g., boundaries and volume).
