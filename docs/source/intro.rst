@@ -11,7 +11,7 @@ As a logical evolution of more traditional techniques allow the detection of mul
 
 Collectively these technologies can be called interchangeably **multiplexed FISH** or **FISH omics**, which emphasize the visualization of multiple or ideally all genomic targets, respectively. These methods provide an expanded understanding of how higher-order chromosome structure relates to transcriptional activity and cell development.
 
-A variety of protocols have been developed in the past few years, and they can be divided into two main categories called respectively **ball-and-stick** or **volumetric** chromatin tracing, depending on whether the targeted genomic segment is visualized as a **centroid** (i.e., fitting the imaged spot of a detected fluorescent signal) or a **cloud of single-molecule localizations** (i.e., often rendered as a volume; see Figure 2 in `Dekker et al<https://doi.org/10.1016/j.molcel.2023.06.018>`_).
+A variety of protocols have been developed in the past few years, and they can be divided into two main categories called respectively **ball-and-stick** or **volumetric** chromatin tracing, depending on whether the targeted genomic segment is visualized as a **centroid** (i.e., fitting the imaged spot of a detected fluorescent signal) or a **cloud of single-molecule localizations** (i.e., often rendered as a volume; see Figure 2 in `Dekker et al. <https://doi.org/10.1016/j.molcel.2023.06.018>`_).
 
 FISH Omics Format for exchanging the results of Chromatin Tracing
 -----------------------------------------------------------------
@@ -22,11 +22,11 @@ Tracing (FOF-CT)**, a community data format designed for capturing and
 exchanging the results of chromosome imaging experiments produced within
 the context of the 4D Nucleome project and beyond. 
 
-FOF-CT is directly compatible with several **ball-and-stick** FISH-omics techniques including, but not limited to, Optical Reconstruction of Chromatin Architecture (`ORCA<https://doi.org/10.1038/s41596-020-00478-x>`_), Multiplexed Imaging of
-Nucleome Architectures (`MINA<https://doi.org/10.1038/s41596-021-00518-0>`_), `Hi-M<https://doi.org/10.1016/j.molcel.2019.01.011>`_, DNA Sequential Fluorescence In Situ Hybridization (`seqFISH+<https://doi.org/10.1038/s41586-019-1049-y>`_), Oligonucleotide Fluorescent In Situ Sequencing (`OligoFISSEQ<https://doi.org/10.1038/s41592-020-0890-0>`_), DNA Multiplexed error-robust fluorescence *in situ* hybridization (`DNA-MERFISH<https://doi.org/10.1016/j.cell.2020.07.032>`_), and *In-situ* Genomic Sequencing (`IGS <https://doi.org/10.1126/science.aay3446>`_). 
+FOF-CT is directly compatible with several **ball-and-stick** FISH-omics techniques including, but not limited to, Optical Reconstruction of Chromatin Architecture (`ORCA <https://doi.org/10.1038/s41596-020-00478-x>`_), Multiplexed Imaging of
+Nucleome Architectures (`MINA <https://doi.org/10.1038/s41596-021-00518-0>`_), `Hi-M <https://doi.org/10.1016/j.molcel.2019.01.011>`_, DNA Sequential Fluorescence In Situ Hybridization (`seqFISH+ <https://doi.org/10.1038/s41586-019-1049-y>`_), Oligonucleotide Fluorescent In Situ Sequencing (`OligoFISSEQ <https://doi.org/10.1038/s41592-020-0890-0>`_), DNA Multiplexed error-robust fluorescence *in situ* hybridization (`DNA-MERFISH <https://doi.org/10.1016/j.cell.2020.07.032>`_), and *In-situ* Genomic Sequencing (`IGS <https://doi.org/10.1126/science.aay3446>`_). 
 
 In addition, the format is designed to be consistent with the ongoing development of extensions that will encompass **volumetric** chromatin tracing methods, such as OligoSTORM and OligoDNA-PAINT 
-(`Nir et al<https://doi.org/10.1371/journal.pgen.1007872>`_, `Luppino et al<https://doi.org/10.1038/s41588-020-0647-9>`_, `Belivau et al<https://doi.org/10.1007/978-1-4939-7265-4_19>`_, `Bintu et al<https://doi.org/10.1126/science.aau1783>`_).
+(`Nir et al. <https://doi.org/10.1371/journal.pgen.1007872>`_, `Luppino et al. <https://doi.org/10.1038/s41588-020-0647-9>`_, `Belivau et al. <https://doi.org/10.1007/978-1-4939-7265-4_19>`_, `Bintu et al. <https://doi.org/10.1126/science.aau1783>`_).
 
 .. note:: FOF-CT is designed to work with both unmodified genomes and genomes containing INSERTIONS or DELETIONS. For guidance on capturing genomic variants using FOF-CT, refer to the instructions in :ref:core, and include a description of the custom build using the Variant Call Format (VCF) as outlined in :ref:`_VCF_reference:`.
 
