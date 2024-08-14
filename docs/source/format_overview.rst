@@ -11,12 +11,11 @@ General Info
 - All other tables are either recommended for all experiment types, or optional depending on the experiment design and type.
 - Each file must contain a single table.
 - Accepted file formats for storing Tables are txt, csv and tsv.
-- An underscore must be used as a word separator in header field
+- An underscore ``_`` must be used as a word separator in header field
   names and column headers to improve readability while not violating
   common name restrictions in coding environments (dash ``-`` may be
   mistaken as subtraction of variables).
 - Each file has two parts: file header and data columns.
-- All optional tables 
 
 .. tip:: All additional tables, except :ref:`demultiplexing`, :ref:`rna` and :ref:`mapping`, if included **MUST** contain at least 1 **Optional Column**.
 
@@ -80,7 +79,7 @@ In addition to all of the above, the following header line is required for the :
 
 **##genome_assembly=** Genome build. 
 
-.. note:: (1) the 4DN Data Portal only accepts GRCh38 for human and GRCm38 for mouse. For other species see https://data.4dnucleome.org/search/?type=Organism; (2) in case the genome under study contains an INSERTION or a DELETION, indicate this as indicated in :ref:core.
+.. note:: /(1) the 4DN Data Portal only accepts GRCh38 for human and GRCm38 for mouse. For other species see https://data.4dnucleome.org/search/?type=Organism; (2) in case the genome under study contains an INSERTION or a DELETION, indicate this as indicated in :ref:core.
 
 :ref:`core`, :ref:`rna`, :ref:`quality` and :ref:`rna_quality`
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -110,19 +109,18 @@ preferred/primary publication describing this Software. Examples include
 Digital Object Identifier (DOI), PubMed Central Identifier (PMCID),
 ArXiv.org ID etc,.
 
-.. note:: All Software related header lines are conditionally required for all other `Tables <#Tables>`_ in case Software is used for producing the reported results.
+.. note:: All Software related header lines are also conditionally required for all other `Tables <#Tables>`_ in case Software is used for producing the reported results.
 
 Data Columns
 ------------
 
 - Tables contain **required**, *conditionally-required*, and optional columns.
 - Conditionally-required columns are columns that are required when certain
-  conditions are met (e.g., *Cell_ID* is required any time the experiment
+  conditions are met (e.g., ``Cell_ID`` is required any time the experiment
   involves the identification of Cell boundaries).
-- Column names should use the underscore as a word separator (e.g., Spot_ID).
-- The first column is always either Spot_ID or another relevant ID (i.e.,
-  Trace_ID, Cell_ID, etc.). In the :ref:`core`, there are eight
-  mandatory columns. All other columns are ordered at user's discretion.
+- Column names should use the underscore ``_`` as a word separator (e.g., ``Spot_ID``).
+- The first column is always either ``Spot_ID`` or another relevant ID (i.e., ``Trace_ID``, ``Cell_ID``, etc.). 
+- The following tables have additional mandatory columns that do need to be specified in the header, :ref:`core`, :ref:`demultiplexing`, :ref:`rna` and :ref:`mapping`
+- Unless otherwise specified, the order of all Optional Columns is at user's discretion.
+- If an optional column does not contain any data (i.e., it is not used), it should be omitted.  
 - The order of the rows is at user's discretion.
-- If an optional column does not contain any data (i.e., it is not used), it
-  should be omitted.  
