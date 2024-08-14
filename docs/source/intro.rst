@@ -40,20 +40,20 @@ In order to capture chromatin traces as well as additional metrics captured duri
 
 The root of the format consists of the **mandatory** ``DNA-Spot/Trace Data core`` table that defines Chromatin Traces as ordered lists of individual DNA-FISH bright Spots. Additional tables support the integration of this core table with:
 
-1. **Supplementary Spot properties** such as: 
+#. **Supplementary Spot properties** such as: 
 
-* Quality metrics. 
-* Physical coordinates placing the Spot/Trace in the context of cellular space.
+	* Quality metrics. 
+	* Physical coordinates placing the Spot/Trace in the context of cellular space.
 
 
-2. **The results of multiplexed `RNA-FISH <https://doi.org/10.1073/pnas.1912459116>`_ experiments** 
+#. **The results of multiplexed `RNA-FISH <https://doi.org/10.1073/pnas.1912459116>`_ experiments** 
 
-3. **Supplementary global data** that is better captured at level of:
+#. **Supplementary global data** that is better captured at level of:
 
-* **Trace** (e.g., expression level of nascent RNA transcripts associated with a given Trace or overall localization of the Trace with respect to cellular or nuclear landmarks).
-* **Cell** (e.g., boundaries and volume).
-* **Sub-cellular Region of Interest** (ROI; e.g., Nuclear feature or Nucleolus).
-* **Extracellular ROI** (e.g., Tissue).
+	* **Trace** (e.g., expression level of nascent RNA transcripts associated with a given Trace or overall localization of the Trace with respect to cellular or nuclear landmarks).
+	* **Cell** (e.g., boundaries and volume).
+	* **Sub-cellular Region of Interest** (ROI; e.g., Nuclear feature or Nucleolus).
+	* **Extracellular ROI** (e.g., Tissue).
 
 .. figure:: images/FOFbasCT_figure.png
   :class: shadow-image
