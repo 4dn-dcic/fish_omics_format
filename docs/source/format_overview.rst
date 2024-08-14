@@ -21,7 +21,7 @@ General Info
 
 File Header
 -----------
-
+- All tables have to contain a mandatory header section.
 - In the file header, each line contains only one field.
 - Header lines are denoted by ``#``. In particular:
 
@@ -37,13 +37,11 @@ File Header
     follow the following format ``#^term: free text description`` (e.g.,
     ``#^optional_column_1: optional column 1 description``).
 
-- Header names must use the underscore as a word separator (e.g., RNA_A_intensity).
-- The file header contains **required**, *conditionally-required*, and optional
-  fields.
+- Header names MUST use the underscore as a word separator (e.g., RNA_A_intensity).
+- The file header contains **required**, *conditionally-required*, and optional fields.
 - Conditionally-required fields are fields that are required when certains
-  conditions are met (e.g., *##intensity_unit=* is required any time an
+  conditions are met (e.g., ``##intensity_unit=`` is required any time an
   intensity metric is reported).
-- All tables have to contain a mandatory header section.
 
 Mandatory header lines (all tables)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -73,16 +71,16 @@ sufficient details to ensure interpretation and reproducibility.
 Additional conditionally required header lines 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-:ref:`core` and :ref:`rna`
-"""""""""""""""""""""""""
+:ref:`core` and :ref:`rna` tables
+"""""""""""""""""""""""""""""""""
 In addition to all of the above, the following header line is required for the :ref:`core` and :ref:`rna` tables.
 
 **##genome_assembly=** Genome build. 
 
 .. note:: \(1) the 4DN Data Portal only accepts GRCh38 for human and GRCm38 for mouse. For other species see https://data.4dnucleome.org/search/?type=Organism; (2) in case the genome under study contains an INSERTION or a DELETION, indicate this as indicated in :ref:`core`.
 
-:ref:`core`, :ref:`rna`, :ref:`quality` and :ref:`rna_quality`
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+:ref:`core`, :ref:`rna`, :ref:`quality` and :ref:`rna_quality` tables
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Finally, the following header lines are required for the :ref:`core`, :ref:`rna`, :ref:`quality` and :ref:`rna_quality` tables.
 
 **#Software_Title:** The name of the Software(s) that were used in this
@@ -109,7 +107,7 @@ preferred/primary publication describing this Software. Examples include
 Digital Object Identifier (DOI), PubMed Central Identifier (PMCID),
 ArXiv.org ID etc,.
 
-.. note:: All Software related header lines are also conditionally required for all other `Tables`_ in case Software is used for producing the reported results.
+.. note:: All Software related header lines are also *conditionally required* for all other `Tables`_ in case Software is used for producing the reported results.
 
 Data Columns
 ------------
@@ -122,5 +120,5 @@ Data Columns
 - The first column is always either ``Spot_ID`` or another relevant ID (i.e., ``Trace_ID``, ``Cell_ID``, etc.). 
 - The following tables have additional mandatory columns that do need to be specified in the header, :ref:`core`, :ref:`demultiplexing`, :ref:`rna` and :ref:`mapping`
 - Unless otherwise specified, the order of all Optional Columns is at user's discretion.
-- If an optional column does not contain any data (i.e., it is not used), it should be omitted.  
 - The order of the rows is at user's discretion.
+
