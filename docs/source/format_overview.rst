@@ -6,10 +6,9 @@ Format description: overview
 General Info
 ------------
 
-- The format is organized in multiple individual tables.
+- The format is organized in multiple individual `Tables <#Tables>`_.
 - The only mandatory table is the :ref:`core`.
-- All other tables are either recommended for all experiment types, or optional
-  depending on the experiment design and type.
+- All other tables are either recommended for all experiment types, or optional depending on the experiment design and type.
 - Each file must contain a single table.
 - Accepted file formats for storing Tables are txt, csv and tsv.
 - An underscore must be used as a word separator in header field
@@ -17,6 +16,9 @@ General Info
   common name restrictions in coding environments (dash ``-`` may be
   mistaken as subtraction of variables).
 - Each file has two parts: file header and data columns.
+- All optional tables 
+
+.. tip:: All additional tables, except :ref:`demultiplexing`, :ref:`rna` and :ref:`mapping`, if included **MUST** contain at least 1 **Optional Column**.
 
 File Header
 -----------
@@ -29,7 +31,7 @@ File Header
   - ``#`` denotes human readable header lines. These lines should follow the
     following format, ``#term: free text description`` (e.g.,
     ``#lab_name: name of the lab where the experiment was performed``).
-  - ``#^`` denotes lines that define optional user specified columns.
+  - ``#^`` denotes lines that define user specified **Optional Columns**.
     These lines provide the name of the column header and a description of the
     column content. Descriptions must be understandable and sufficient to ensure
     the interpretation and reproducibility of the results. These lines should
