@@ -79,7 +79,7 @@ In addition to all of the above, the following header line is required for the :
 
 **##genome_assembly=** Genome build. 
 
-.. note:: /(1) the 4DN Data Portal only accepts GRCh38 for human and GRCm38 for mouse. For other species see https://data.4dnucleome.org/search/?type=Organism; (2) in case the genome under study contains an INSERTION or a DELETION, indicate this as indicated in :ref:core.
+.. note:: (1) the 4DN Data Portal only accepts GRCh38 for human and GRCm38 for mouse. For other species see https://data.4dnucleome.org/search/?type=Organism; (2) in case the genome under study contains an INSERTION or a DELETION, indicate this as indicated in :ref:`core`.
 
 :ref:`core`, :ref:`rna`, :ref:`quality` and :ref:`rna_quality`
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
