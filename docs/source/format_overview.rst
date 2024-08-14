@@ -55,9 +55,9 @@ Mandatory header lines (all tables)
 Spots in this table. Note: use micron (instead of µm) to avoid problems
 with special, Greek symbols. Other allowed values are: nm, mm etc.
 
-#lab_name: name of the lab where the experiment was performed
+**#lab_name:** name of the lab where the experiment was performed
 
-#experimenter_name: name of the person performing the experiment
+**#experimenter_name:** name of the person performing the experiment
 
 **#experimenter_contact:** email address of the person performing the
 experiment
@@ -71,14 +71,20 @@ sufficient details to ensure interpretation and reproducibility.
 
 **##columns=**\ (C1, C2, C3, Cn)
 
-Additional mandatory header lines (DNA spot/trace core and RNA tables)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Additional conditionally required header lines 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-In addition to all of the above,
+:ref:`core` and :ref:`rna`
+"""""""""""""""""""""""""
+In addition to all of the above, the following header line is required for the :ref:`core` and :ref:`rna`
 
 **##genome_assembly=** Genome build. 
 
-.. note:: Note that the 4DN data portal accepts only specific genome builds like GRCh38 for human and GRCm38 for mouse. To know which organisms/genome assemblies are accepted see: https://data.4dnucleome.org/search/?type=Organism
+.. note:: (1) the 4DN Data Portal only accepts GRCh38 for human and GRCm38 for mouse. For other species see https://data.4dnucleome.org/search/?type=Organism; (2) in case the genome under study contains an INSERTION or a DELETION, indicate this as indicated in :ref:core.
+
+:ref:`core`, :ref:`rna`, :ref:`quality` and :ref:`rna_quality`
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+In addition to all of the above, the following header lines are required for the :ref:`core`, :ref:`rna`, :ref:`quality` and :ref:`rna_quality`
 
 **#Software_Title:** The name of the Software(s) that were used in this
 case for localizing individual FISH-omics bright Spots and/or to produce
@@ -103,6 +109,8 @@ Software executable release can be obtained.
 preferred/primary publication describing this Software. Examples include
 Digital Object Identifier (DOI), PubMed Central Identifier (PMCID),
 ArXiv.org ID etc,.
+
+.. note:: All Software related header lines are conditionally required for all other `Tables <#Tables>`_ in case Software is used for producing the reported results.
 
 Data Columns
 ------------
