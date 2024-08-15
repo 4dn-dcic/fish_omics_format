@@ -37,8 +37,9 @@ The table MUST contain at least 1 optional column.
 
 Data Columns
 ------------
-Each row corresponds to data associated with an individual RNA Spot.
-The first column is always **RNA_Spot_ID**.
+As with all other RNA Spot Data tables in this format, each row corresponds to data associated with an individual RNA_Spot.
+
+The first column is always ``RNA_Spot_ID``.
 The order of the other columns is at user's discretion.
 The order of the rows is at user's discretion.
 

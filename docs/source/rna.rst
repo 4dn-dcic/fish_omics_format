@@ -4,6 +4,7 @@ RNA Spot Data table
 ===================
 
 Requirement level: optional
+
 Recommended: Yes
 
 Summary
@@ -56,11 +57,9 @@ The header MUST include a detailed description of each optional columns used.
 
 Data Columns
 ------------
-As with all other Spot Data tables in this format, each row corresponds to data
-associated with an individual Spot.
+As with all other RNA Spot Data tables in this format, each row corresponds to data associated with an individual RNA_Spot.
 
-The first columns are always: **Spot_ID**, **X**, **Y**, **Z**, **RNA_name**, **Gene_ID**, followed by *Transcript_ID* if applicable, and by **one or more**
-of the following *Trace_ID*, *Sub-Cell_ROI_ID*, *Cell_ID* and/or *Extra_Cell_ROI_ID*.
+The first columns are always: ``Spot_ID``, ``X``, ``Y``, ``Z``, ``RNA_name``, ``Gene_ID``, ``Trace_ID``, followed by ``Transcript_ID`` if applicable, and by **one or more** of the following ``Sub-Cell_ROI_ID``, ``Cell_ID`` and/or ``Extra_Cell_ROI_ID``.
 The order of the other columns is at user's discretion.
 The order of the rows is at user's discretion.
 
