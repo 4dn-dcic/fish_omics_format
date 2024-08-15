@@ -49,7 +49,7 @@ The root of the format consists of the **mandatory** :ref:`core` table that defi
 	* Physical coordinates placing the Spot/Trace in the context of cellular space.
 
 
-#. **The results of multiplexed `RNA-FISH <https://doi.org/10.1073/pnas.1912459116>`_ experiments** 
+#. The results of multiplexed `RNA-FISH <https://doi.org/10.1073/pnas.1912459116>`_ experiments 
 
 #. **Supplementary global data** that is better captured at level of:
 
