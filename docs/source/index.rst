@@ -23,6 +23,7 @@
     subcell
     extracell
     mapping
-    misc
+    datasets
     how_to_use
     allowable_value_lists
+    misc
