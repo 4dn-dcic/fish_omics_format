@@ -34,7 +34,7 @@ In case more than one algorithm were used, please use the same set of fields for
 
 The header MUST include a detailed description of each optional columns used.
 
-The table MUST contain at least 1 optional column. 
+.. tip:: The table MUST contain at least 1 Optional or Conditionally Required Column. 
 
 .. csv-table::
   :file: tables/rna_quality_header.csv

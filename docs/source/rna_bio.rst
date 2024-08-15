@@ -29,7 +29,7 @@ The header MUST contain a mandatory set of fields that describe any algorithm th
 
 The header MUST include a detailed description of each optional columns used. 
 
-The table MUST contain at least 1 optional column. 
+.. tip:: The table MUST contain at least 1 Optional Column. 
 
 .. csv-table::
   :file: tables/bio_header.csv
@@ -40,6 +40,7 @@ Data Columns
 As with all other RNA Spot Data tables in this format, each row corresponds to data associated with an individual RNA_Spot.
 
 The first column is always ``RNA_Spot_ID``.
+This table has to contain at least 1 Optional Column. 
 The order of the other columns is at user's discretion.
 The order of the rows is at user's discretion.
 

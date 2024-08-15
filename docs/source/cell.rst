@@ -23,7 +23,7 @@ File Header
 
 The header MUST include a detailed description of each optional columns used.
 
-The table MUST contain at least 1 optional column. 
+.. tip:: The table MUST contain at least 1 Optional Column. 
 
 .. csv-table::
   :file: tables/cell_header.csv
@@ -33,8 +33,9 @@ Data Columns
 ------------
 Each row corresponds to data associated with an individual Cell.
 
-The first column of this table is always **Cell_ID**.
-The content and order of all other columns is at user's discretion.
+The first column is always `Cell_ID``.
+This table has to contain at least 1 Optional Column. 
+The order of the other columns is at user's discretion.
 The order of the rows is at user's discretion.
 
 .. csv-table::

@@ -34,7 +34,7 @@ for each of them.
 
 The header MUST include a detailed description of each optional columns used. 
 
-The table MUST contain at least 1 optional column. 
+.. tip:: The table MUST contain at least 1 Optional or Conditionally Required Column. 
 
 .. csv-table::
   :file: tables/quality_header.csv
@@ -46,6 +46,7 @@ As with all other Spot Data tables in this format, each row corresponds to
 data associated with an individual Spot.
 
 The first columns of this table are always ``Spot_ID``, ``Channel_Name``, and ``Fluorophore_Name``.
+
 The content and order of all other columns is largely at user's discretion.
 However, in order to align with existing `4DN-BINA-OME <https://doi.org/10.1038/s41592-021-01327-9>`_ Microscopy Metadata specifications, the use of specific column names and descriptions is **conditionally required** as indicated below. The order of the rows are at
 the user's discretion.

@@ -21,7 +21,7 @@ File Header
 
 The header MUST include a detailed description of each optional columns used.
 
-The table MUST contain at least 1 optional column. 
+.. tip:: The table MUST contain at least 1 Optional Column. 
 
 .. csv-table::
   :file: tables/subcell_header.csv
@@ -31,8 +31,9 @@ Data Columns
 ------------
 Each row corresponds to data associated with an individual subcellular ROI.
 
-The first column of this table is always **Sub_Cell_ROI_ID**.
-The content and order of all other columns is at user's discretion.
+The first column of this table is always ``Sub_Cell_ROI_ID``.
+This table has to contain at least 1 Optional Column. 
+The order of the other columns is at user's discretion.
 The order of the rows is at user's discretion.
 
 .. csv-table::

@@ -60,10 +60,10 @@ in the header.
 
 Data Columns
 ------------
-As with all other Spot Data tables in this format, each row corresponds to
+As with all other Spot Data tables, each row corresponds to
 data associated with an individual Spot.
 
-The first columns are always: **Spot_ID**, **Trace_ID**, **X**, **Y**, **Z**, **Chrom**, **Chrom_Start**, **Chrom_End**. Additionally in case sub-cellular structures, cells or extra cellular structures are identified as part of this experiment, the subsequent columns must mandatorily be *Sub_Cell_ROI_ID*, *Cell_ID* or *Extra_Cell_ROI_ID*, respectively.
+The first columns are always: ``Spot_ID``, ``Trace_ID``, ``X``, ``Y``, ``Z``, ``Chrom``, ``Chrom_Start``, ``Chrom_End``. Additionally in case sub-cellular structures, cells or extra cellular structures are identified as part of this experiment, the subsequent columns must mandatorily be ``Sub_Cell_ROI_ID``, ``Cell_ID`` or ``Extra_Cell_ROI_ID``, respectively.
 
 The order of the rows is at user's discretion.
 

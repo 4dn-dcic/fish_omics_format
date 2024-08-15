@@ -24,8 +24,7 @@ File Header
 
 The header MUST contain a mandatory set of fields that describe any
 algorithm that was used to produce/process data in this table.
-In case more than one algorithm were used, please use the same set of fields
-for each of them.
+In case more than one algorithm were used, please use the same set of fields for each of them.
 
 The header MUST include a detailed description of each optional columns used.
 
@@ -35,8 +34,7 @@ The header MUST include a detailed description of each optional columns used.
 
 Data Columns
 ------------
-This table is indexed by ``Loc_ID`` and therefore each row corresponds to data
-associated with an individual Localization event.
+This table is indexed by ``Loc_ID`` and therefore each row corresponds to data associated with an individual Localization event.
 
 The first columns are always: ``Loc_ID``, ``Spot_ID``, ``X``, ``Y``, ``Z``, ``Fluor``.
 The content and order of all other columns is at user's discretion.
