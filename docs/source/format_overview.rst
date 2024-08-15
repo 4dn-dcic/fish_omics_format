@@ -79,9 +79,9 @@ In addition to all of the above, the following header line is required for the :
 
 .. note:: \(1) the 4DN Data Portal only accepts GRCh38 for human and GRCm38 for mouse. For other species see https://data.4dnucleome.org/search/?type=Organism; (2) in case the genome under study contains an INSERTION or a DELETION, indicate this as indicated in :ref:`core`.
 
-:ref:`core`, :ref:`rna`, :ref:`quality` and :ref:`rna_quality` tables
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Finally, the following header lines are required for the :ref:`core`, :ref:`rna`, :ref:`quality` and :ref:`rna_quality` tables.
+:ref:`core`, :ref:`demultiplexing`, :ref:`rna`, :ref:`quality` and :ref:`rna_quality` tables
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Finally, the following header lines are required for the :ref:`core`, :ref:`demultiplexing`, :ref:`rna`, :ref:`quality` and :ref:`rna_quality` tables.
 
 **#Software_Title:** The name of the Software(s) that were used in this
 case for localizing individual FISH-omics bright Spots and/or to produce
