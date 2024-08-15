@@ -19,8 +19,8 @@ Other columns are at user's discretion.
 
 File Header
 -----------
-- The first line in the header is always "##FOF-CT_version=vX.X"
-- The second line in the header is always "##Table_namespace=4dn_FOF-CT_demultiplexing"
+- The first line in the header is always ``##FOF-CT_version=vX.X``.
+- The second line in the header is always ``##Table_namespace=4dn_FOF-CT_mapping``.
 
 The header MUST contain a mandatory set of fields that describe any
 algorithm that was used to produce/process data in this table.

@@ -22,8 +22,8 @@ This table is mandatorily indexed by RNA_Spot_ID.
 
 File Header
 -----------
-- The first line in the header is always "##FOF-CT_version=vX.X"
-- The second line in the header is always "##Table_namespace=4dn_FOF-CT_bio"
+- The first line in the header is always ``##FOF-CT_version=vX.X``.
+- The second line in the header is always ``##Table_namespace=4dn_FOF-CT_mapping``.
 
 The header MUST contain a mandatory set of fields that describe any algorithm that was used to produce/process data in this table. In case more than one algorithm were used, please use the same set of fields for each of them.
 

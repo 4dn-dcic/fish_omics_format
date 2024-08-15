@@ -43,8 +43,8 @@ Additionally, in the case in which the final localization of DNA target results 
 
 File Header
 -----------
-- The first line in the header is always "##FOF-CT_version=vX.X"
-- The second line in the header is always "##Table_namespace=4dn_FOF-CT_core"
+- The first line in the header is always ``##FOF-CT_version=vX.X``.
+- The second line in the header is always ``##Table_namespace=4dn_FOF-CT_mapping``.
 
 The header MUST contain a mandatory set of fields that describe the
 algorithm(s) that were used to identify and localize bright Spots and to

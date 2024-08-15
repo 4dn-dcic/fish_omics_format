@@ -22,8 +22,8 @@ This table is mandatorily indexed by Spot_ID.
 
 File Header
 -----------
-- The first line in the header is always "##FOF-CT_version=vX.X"
-- The second line in the header is always "##Table_namespace=4dn_FOF-CT_bio"
+- The first line in the header is always ``##FOF-CT_version=vX.X``.
+- The second line in the header is always ``##Table_namespace=4dn_FOF-CT_mapping``.
 
 This Table can be indexed mandatorily by Spot_ID.
 

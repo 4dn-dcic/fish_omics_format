@@ -16,8 +16,8 @@ experiment and is identified by a unique **Sub_Cell_ROI_ID** that links the data
 
 File Header
 -----------
-- The first line in the header is always "##FOF-CT_version=vX.X"
-- The second line in the header is always "##Table_namespace=4dn_FOF-CT_subcell"
+- The first line in the header is always ``##FOF-CT_version=vX.X``.
+- The second line in the header is always ``##Table_namespace=4dn_FOF-CT_mapping``.
 
 The header MUST include a detailed description of each optional columns used.
 

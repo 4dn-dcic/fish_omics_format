@@ -24,8 +24,8 @@ The table is mandatorily indexed by Spot_ID and each row corresponds to a DNA br
 
 File Header
 -----------
-- The first line in the header is always "##FOF-CT_version=vX.X"
-- The second line in the header is always "##Table_namespace=4dn_FOF-CT_quality"
+- The first line in the header is always ``##FOF-CT_version=vX.X``.
+- The second line in the header is always ``##Table_namespace=4dn_FOF-CT_mapping``.
 
 The header MUST contain a mandatory set of fields that describe any
 algorithm that was used to produce/process data in this table.

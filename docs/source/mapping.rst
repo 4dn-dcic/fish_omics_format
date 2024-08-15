@@ -16,7 +16,9 @@ This table is mandatory in case a :ref:`subcell`, :ref:`cell`, and/or
 
 The table is organized on a Cell or ROI basis via a Cell or ROI ID and is designed to provide the boundaries of each Cell and ROI boundaries in global coordinates. 
 
-This could be done as specified by the `OME ROI data model <https://docs.openmicroscopy.org/ome-model/5.6.3/developers/roi.html>`_. Alternatively, Cell or ROI boundaries could be provided using 3D MESH models (e.g., using the OBJ format).
+This could be done as specified by the `OME ROI data model <https://docs.openmicroscopy.org/ome-model/5.6.3/developers/roi.html>`_. Alternatively, Cell or ROI boundaries could be provided using 3D MESH models (e.g., using the `OBJ format <https://en.wikipedia.org/wiki/Wavefront_.obj_file>`_). Additional formats are also allowed.
+
+In all cases, the header of the file MUST include the ``##ROI_boundaries_format=`` field to report the format that is used to record the boundaries of the ROI in global coordinates using the .
 
 This table might be organized in one of the following manner:
 
@@ -44,8 +46,8 @@ properties such as:
 
 File Header
 -----------
-- The first line in the header is always "##FOF-CT_version=vX.X"
-- The second line in the header is always "##Table_namespace=4dn_FOF-CT_mapping"
+- The first line in the header is always ``##FOF-CT_version=vX.X``.
+- The second line in the header is always ``##Table_namespace=4dn_FOF-CT_mapping``.
 
 The header MUST include a detailed description of each optional columns used.
 

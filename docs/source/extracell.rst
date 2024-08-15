@@ -22,8 +22,8 @@ other tables (e.g., :ref:`core`, :ref:`rna`, etc.).
 
 File Header
 -----------
-- The first line in the header is always "##FOF-CT_version=vX.X"
-- The second line in the header is always "##Table_namespace=4dn_FOF-CT_extracell"
+- The first line in the header is always ``##FOF-CT_version=vX.X``.
+- The second line in the header is always ``##Table_namespace=4dn_FOF-CT_mapping``.
 
 The header MUST include a detailed description of each optional columns used. 
 
