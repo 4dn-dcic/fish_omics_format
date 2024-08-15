@@ -13,21 +13,6 @@ Rahi Navelkar,
 Caterina Strambio De Castillia,
 Steven Wang.
 
-Example published datasets
---------------------------
-
-4DN Data Portal
-^^^^^^^^^^^^^^^
-A collection of `Chromatin Tracing datasets <https://data.4dnucleome.org/resources/data-collections/chromatin-tracing-datasets>`_ presented in the 4DN standard FISH-Omics Format - Chromatin Tracing (FOF-CT) are available on the 4DN-Data Portal and were curated by the 4DN `Data Coordination and Integration Center (DCIC) team <https://data.4dnucleome.org/help/about/about-dcic>`_
-
-Open Microscopy Environment Image Data Resource (OME-IDR)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Multiplexed FISH results data sets presented in the 4DN FOF-CT format are also available on the `OME-IDR <https://idr.openmicroscopy.org/>`_
-
-* `Simultaneous visualization of DNA loci in single cells by combinatorial multi-color iFISH <http://idr.openmicroscopy.org/webclient/?show=project-2251>`_
-* `In situ genome sequencing of human PGP1 fibroblasts <https://idr.openmicroscopy.org/webclient/?show=project-2051>`_
-
-
 The Variant Call Format (VCF)
 -----------------------------
 The `Variant Call Format (VCF) <https://samtools.github.io/hts-specs/VCFv4.2.pdf>`_ is a standard tab-delimited text file format used in bioinformatics for storing gene sequence variations. The format was developed in 2010 for the 1000 Genomes Project and has since been used by other large-scale genotyping and DNA sequencing projects.
