@@ -45,7 +45,7 @@ Data Columns
 As with all other Spot Data tables in this format, each row corresponds to
 data associated with an individual Spot.
 
-The first columns of this table are always ``Spot_ID``, ``Channel_Name``, ``Fluorophore_Name``.
+The first columns of this table are always ``Spot_ID``, ``Channel_Name``, and ``Fluorophore_Name``.
 The content and order of all other columns is largely at user's discretion.
 However, in order to align with existing `4DN-BINA-OME <https://doi.org/10.1038/s41592-021-01327-9>`_ Microscopy Metadata specifications, the use of specific column names and descriptions is **conditionally required** as indicated below. The order of the rows are at
 the user's discretion.
@@ -56,7 +56,9 @@ the user's discretion.
 
 Example
 -------
-The only mandatory column in this table is ``Spot_ID``. All other columns are optional and must be defined by the user using a Header line starting with ``#^``. 
+The only mandatory column in this table are ``Spot_ID``, ``Channel_Name``, and ``Fluorophore_Name``. 
+
+All other columns are either *Conditionally required* or Optional. *Conditionally required* columns should be drawn from the list provided in the file header or MUST be defined by the user using a Header line starting with ``#^``. 
 
 .. tip:: the Optional columns in this example table are included for illustrative purposes only and describe a case in which the user is reporting the Spot fit quality using metrics that align with existing `4DN-BINA-OME <https://doi.org/10.1038/s41592-021-01327-9>`_ Microscopy Metadata specifications. 
 
