@@ -35,7 +35,7 @@ The header MUST include a detailed description of each optional columns used.
 
 Data Columns
 ------------
-This table is indexed by Loc_ID and therefore each row corresponds to data
+This table is indexed by ``Loc_ID`` and therefore each row corresponds to data
 associated with an individual Localization event.
 
 The first columns are always: ``Loc_ID``, ``Spot_ID``, ``X``, ``Y``, ``Z``, ``Fluor``.
