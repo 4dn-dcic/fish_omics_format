@@ -54,7 +54,9 @@ the user's discretion.
   
 Example
 -------
+The only mandatory column in this table are ``RNA_Spot_ID``, ``Channel_Name``, and ``Fluorophore_Name``. 
 
+All other columns are either *Conditionally required* or Optional. *Conditionally required* columns should be drawn from the list provided in the file header or MUST be defined by the user using a Header line starting with ``#^``. 
 
 .. tip:: the Optional columns in this example table are included for illustrative purposes only and describe a case in which the user is reporting the RNA Spot fit quality using metrics that align with existing `4DN-BINA-OME <https://doi.org/10.1038/s41592-021-01327-9>`_ Microscopy Metadata specifications. 
 
