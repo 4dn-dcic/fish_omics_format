@@ -45,9 +45,9 @@ Data Columns
 As with all other Spot Data tables in this format, each row corresponds to
 data associated with an individual Spot.
 
-The first column of this table is always **Spot_ID**.
+The first columns of this table are always ``Spot_ID``, ``Channel_Name``, ``Fluorophore_Name``.
 The content and order of all other columns is largely at user's discretion.
-However, in order to align with existing `4DN-BINA-OME <https://doi.org/10.1038/s41592-021-01327-9>`_ Microscopy Metadata specifications, the use of specific column names and descriptions is **conditionally required** as indicated below. The order of all other columns (including those conditionally requried) and of the rows are at
+However, in order to align with existing `4DN-BINA-OME <https://doi.org/10.1038/s41592-021-01327-9>`_ Microscopy Metadata specifications, the use of specific column names and descriptions is **conditionally required** as indicated below. The order of the rows are at
 the user's discretion.
 
 .. csv-table::

@@ -13,7 +13,7 @@
 #Software_Repository:
 #Software_PreferredCitationID:
 #Intensity_measurement_method:
-[Choose one or more of the following conditionally required columns]
+[the use of the following conditionally required columns is highly recommended; the presence of at least 1 conditionally required or optional column is MANDATORY if this table is submitted]
 #^Centroid_Intensity: The signal intensity of the pixel occupying the center-of-mass within a bright Spot (i.e. centroid).
 #^Peak_Intensity: The signal intensity of the brightest pixel within a bright Spot (i.e. local maximum).
 #^Raw_X: the original fit x-position relative to the camera and objective, (prior to drift correction, chromatic correction, or conversion to stage coordinates). This is the appropriate coordinate system for correcting optical aberrations. 
@@ -29,6 +29,9 @@
 #^Y_Loc_Precision: lower and upper bound of 95% confidence interval on Y-position after fit
 #^Z_Loc_Precision: lower and upper bound of 95% confidence interval on Z-position after fit
 [End of conditionally required columns]
+#^Optional_column_1: [substitute with your column header]
+#^Optional_column_2: [substitute with your column header]
+#^Optional_column_3: [substitute with your column header]
 #additional_tables: 
 ##columns=(RNA_Spot_ID, Channel_Name, Fluorophore_Name, Conditionally_required_column_1, Conditionally_required_column_2, Conditionally_required_column_3, Optional_column_1, Optional_column_2, Optional_colummn_3, …)
 001, XXX/XX, XYZ, X.XX, X.XX, X.XX, X.XX, X.XX, X.XX,
