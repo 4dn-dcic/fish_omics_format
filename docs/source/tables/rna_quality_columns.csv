@@ -2,9 +2,9 @@ Name,Description,Example,Conditional requirement conditions
 **RNA_Spot_ID**,A unique identifier for this bright Spot.,1,
 **Channel_Name**,The name of the Channel that was used to image this Spot.,510/25,
 **Fluorophore_Name**,The name of the Fluorophore whose Emission is utilized to detect this Spot.,AlextFluor_488,
-*Conditionally_required_column_1*,,,one of the conditionally required columns desribed in the header
-*Conditionally_required_column_2*,,,one of the conditionally required columns desribed in the header
-*Conditionally_required_column_3*,,,one of the conditionally required columns desribed in the header
-Optional_column_1,,,
-Optional_column_2,,,
-Optional_column_3,,,
+*Conditionally_Required_Column_1*,,,one of the conditionally required columns desribed in the header
+*Conditionally_Required_Column_2*,,,one of the conditionally required columns desribed in the header
+*Conditionally_Required_Column_3*,,,one of the conditionally required columns desribed in the header
+Optional_Column_1,,,
+Optional_Column_2,,,
+Optional_Column_3,,,

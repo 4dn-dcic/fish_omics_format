@@ -1,6 +1,6 @@
 Name,Description,Example,Conditional requirement conditions
-**Sub_Cell_ROI_ID**,"This fields reports the unique identifier for a Region of Interest (ROI) that represents the boundaries of a sub-cellular structure identified as part of this experiment. Note: this is used to connect all Spots, and Traces that belong to the same ROI.",001,
-*Cell_ID*,This fields reports the unique identifier for Region of Interest (ROI) that represent the boundaries of a Cell identified as part of this experiment. Note: this is used to connect individual Spots or Traces that are part of the same Cell.,001,Conditional requirement: this column is mandatory if data in this table can be associated with a Cell identified as part of this experiment.
-Optional_column_1,,,
-Optional_column_2,,,
-Optional_column_3,,,
+**Sub_Cell_ROI_ID**,"This fields reports the unique identifier for a Region of Interest (ROI) that represents the boundaries of a sub-cellular structure identified as part of this experiment. Note: this is used to connect all Spots, and Traces that belong to the same ROI.",1,
+*Cell_ID*,This fields reports the unique identifier for Region of Interest (ROI) that represent the boundaries of a Cell identified as part of this experiment. Note: this is used to connect individual Spots or Traces that are part of the same Cell.,1,Conditional requirement: this column is mandatory if data in this table can be associated with a Cell identified as part of this experiment.
+Optional_Column_1,,,
+Optional_Column_2,,,
+Optional_Column_3,,,

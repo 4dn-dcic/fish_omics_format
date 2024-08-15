@@ -1,5 +1,5 @@
 Name,Description,Example,Conditional requirement conditions
-*Spot_ID*,A unique identifier for this bright Spot.,001,
-Optional_column_1,,,
-Optional_column_2,,,
-Optional_column_3,,,
+**Spot_ID**,A unique identifier for this bright Spot.,1,
+Optional_Column_1,,,
+Optional_Column_2,,,
+Optional_Column_3,,,
