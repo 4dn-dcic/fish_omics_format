@@ -1,20 +1,47 @@
-Miscellaneous
-=============
+Additional Information
+======================
 
 .. contents::
-
 
 Contributors
 ------------
 Contributors, listed alphabetically:
 Sarah Aufmkolk,
-Bogdan Bintu,
 Alistair Boettiger,
 Andrea Cosolo,
-Adam Jussila,
 Rahi Navelkar,
 Caterina Strambio De Castillia,
 Steven Wang.
+
+Example published datasets
+--------------------------
+
+4DN Data Portal
+^^^^^^^^^^^^^^^
+A collection of `Chromatin Tracing datasets <https://data.4dnucleome.org/resources/data-collections/chromatin-tracing-datasets>`_ presented in the 4DN standard FISH-Omics Format - Chromatin Tracing (FOF-CT) are available on the 4DN-Data Portal and were curated by the 4DN `Data Coordination and Integration Center (DCIC) team <https://data.4dnucleome.org/help/about/about-dcic>`_
+
+Open Microscopy Environment Image Data Resource (OME-IDR)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Multiplexed FISH results data sets presented in the 4DN FOF-CT format are also available on the `OME-IDR <https://idr.openmicroscopy.org/>`_
+
+* `Simultaneous visualization of DNA loci in single cells by combinatorial multi-color iFISH <http://idr.openmicroscopy.org/webclient/?show=project-2251>`_
+* `In situ genome sequencing of human PGP1 fibroblasts <https://idr.openmicroscopy.org/webclient/?show=project-2051>`_
+
+
+The Variant Call Format (VCF)
+-----------------------------
+The `Variant Call Format (VCF) <https://samtools.github.io/hts-specs/VCFv4.2.pdf>`_ is a standard tab-delimited text file format used in bioinformatics for storing gene sequence variations. The format was developed in 2010 for the 1000 Genomes Project and has since been used by other large-scale genotyping and DNA sequencing projects.
+
+VCF is unambiguous, scalable and flexible, allowing extra information to be added to the info field. 
+
+More information about how to prepare valid VCF files can be found `here <https://gatk.broadinstitute.org/hc/en-us/articles/360035531692-VCF-Variant-Call-Format>`_
+
+.. figure:: images/VCF_IN_example.png
+  :class: shadow-image
+  :width: 100%
+  :align: center
+
+  Figure 2: Schematic representation of the use of VCF to represent a genome variant containing an Inserted DNA fragement. Image from The Variant Call Format (VCF) Version 4.2 Specification, Dec 2013, available at https://cseweb.ucsd.edu/classes/sp16/cse182-a/notes/VCFv4.2.pdf
 
 Older revision history
 ----------------------
@@ -59,7 +86,6 @@ tables #4 and #5 and add Table# to table header.
 
 4DN Experimental and Microscopy Metadata
 ----------------------------------------
-
 -  Project =
 -  Center =
 -  Lab =
@@ -103,47 +129,9 @@ Probe sequence, example fasta file
 
 .. code::
 
-  >FwdPrimer01__BarcodeName__SecondBarcodeName__probeTargetName_p001__RevPrimer01
+>FwdPrimer01__BarcodeName__SecondBarcodeName__probeTargetName_p001__RevPrimer01
   GCGGGACGTAAGGGCAACCGcatcaacgccacgatcagctGCTATCGTTCGTTCGAGGCCaggcaattcgagtggcgccctcgaagacgtctcgcaccttCCGTTCTGAGGGTTGCCGTG
   >FwdPrimer01__BarcodeName__SecondBarcodeName__probeTargetName_p002__RevPrimer01
   GCGGGACGTAAGGGCAACCGcatcaacgccacgatcagctGCTATCGTTCGTTCGAGGCCagactttggaagccaccctcattgattgctcgtgctccatCCGTTCTGAGGGTTGCCGTG
   ...
 
-.. _VCF_reference:
-The Variant Call Format (VCF)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-The `Variant Call Format (VCF) <https://samtools.github.io/hts-specs/VCFv4.2.pdf>`_ is a standard tab-delimited text file format used in bioinformatics for storing gene sequence variations. The format was developed in 2010 for the 1000 Genomes Project and has since been used by other large-scale genotyping and DNA sequencing projects.
-
-VCF is unambiguous, scalable and flexible, allowing extra information to be added to the info field. 
-
-More information about how to prepare valid VCF files can be found `here <https://gatk.broadinstitute.org/hc/en-us/articles/360035531692-VCF-Variant-Call-Format>`_
-
-.. figure:: images/VCF_IN_example.png
-  :class: shadow-image
-  :width: 100%
-  :align: center
-
-  Figure 2: Schematic representation of the use of VCF to represent a genome variant containing an Inserted DNA fragement. Image from The Variant Call Format (VCF) Version 4.2 Specification, Dec 2013, available at https://cseweb.ucsd.edu/classes/sp16/cse182-a/notes/VCFv4.2.pdf
-
-Example published / available data sets
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-- Wang...Zhuang 2016, *Science* (IMR90)
-- Bintu,Mateo...Boettiger,Zhuang, 2018, *Science* (IMR90, K562, A549, HCT116)
-- Mateo...Boettiger 2019, *Nature* (mESC + D. mel)
-- Liu...Wang 2020, *Nat. Com.* (mouse liver)
-- Saw...Wang,Mango 2020, *Mol Cell* (C. elegans)
-- Su...Bintu,Zhuang 2020 *Cell* (IMR90)
-- Takei...Cai 2021 *Nature* (mESC)
-- Takei...Cai 2021 *bioRxiv* (mouse brain)
-- Wiggins...Boettiger,Crabtree. 2021 *NSMB*, (mESC)
-
-Example Tables
-^^^^^^^^^^^^^^
-
-- Bintu and Ren Sox2 paper
-- Nir...Wu 2018, (localization data is published:
-  https://data.4dnucleome.org/experiment-set-replicates/4DNESQN4JCAS/ -
-  but data format discussion ongoing)
-- Wu lab FISSEQ Nat. Methods chr tracing paper,
-- Joyce lab (mostly STORM so far?)
-- Nollman lab data
