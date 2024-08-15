@@ -1,11 +1,11 @@
 Name,Description,Example,Conditional requirement conditions
 **##FOF-CT_version=**,Version of the FOF format used in this case.,v1.0,
 **##Table_namespace=**,Identifier for this type of table. Value must be as in the example.,4dn_FOF-CT_demultiplexing,
-*##XYZ_unit=*,"The unit used to represent XYZ locations or distances in this table. Note: use micron (instead of µm) to avoid problem with special, Greek symbols. Other allowed values are: nm, mm etc.",micron,Conditional requirement: this MUST be reported if any locations metrics are reported.
+**##XYZ_unit=**,"The unit used to represent XYZ locations or distances in this table. Note: use micron (instead of µm) to avoid problem with special, Greek symbols. Other allowed values are: nm, mm etc.",micron,
 *##time_unit=*,"If relevant, the unit used to represent a time interval. Note: use 'sec' for seconds, 'msec' for milliseconds, 'min' for minutes, and 'hr' for hours.",sec,Conditional requirement: this MUST be reported if any time metrics are reported.
 *##intensity_unit=*,"If relevant, the unit used to represent intensity measurements.",a.u.,Conditional requirement: this MUST be reported if any intensity metrics are reported.
-#lab_name:,name of the lab where the experiment was performed.,Nobel,
-#experimenter_name:,name of the person performing the experiment.,John Doe,
+**#lab_name:**,name of the lab where the experiment was performed.,Nobel,
+**#experimenter_name:**,name of the person performing the experiment.,John Doe,
 **#experimenter_contact:**,email address of the person performing the experiment.,john.doe@email.com,
 **#description:**,"A free-text, description of the experiment and of the data recorded in this table. This description should provide a clear understanding of the process utilized to produce the data and contain sufficient details to ensure interpretation and reproducibility.",,
 **#Software_Title:**,The name of the Software(s) that were used in this case for localizing individual FISH-omics bright Spots and/or to produce three-dimensional (3D) polymeric chromatin Traces.,AlgorithmXYZ,

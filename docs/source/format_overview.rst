@@ -48,10 +48,6 @@ Mandatory header lines (all tables)
 
 **##FOF-CT_version=** Data format version number. E.g. v0.2
 
-**##XYZ_unit=** ​​The unit used to represent the XYZ location of bright
-Spots in this table. Note: use micron (instead of µm) to avoid problems
-with special, Greek symbols. Other allowed values are: nm, mm etc.
-
 **#lab_name:** name of the lab where the experiment was performed
 
 **#experimenter_name:** name of the person performing the experiment
@@ -68,6 +64,7 @@ sufficient details to ensure interpretation and reproducibility.
 
 **##columns=**\ (C1, C2, C3, Cn)
 
+
 Additional conditionally required header lines 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -78,6 +75,16 @@ In addition to all of the above, the following header line is required for the :
 **##genome_assembly=** Genome build. 
 
 .. note:: \(1) the 4DN Data Portal only accepts GRCh38 for human and GRCm38 for mouse. For other species see https://data.4dnucleome.org/search/?type=Organism; (2) in case the genome under study contains an INSERTION or a DELETION, indicate this as indicated in :ref:`core`.
+
+:ref:`core`, :ref:`demultiplexing`, :ref:`bio`, :ref:`rna`, :ref:`rna_bio`, and :ref:`mapping` tables
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Further, the following header line is required for the :ref:`core`, :ref:`demultiplexing`, :ref:`bio`, :ref:`rna`, :ref:`rna_bio`, and :ref:`mapping` tables.
+
+**##XYZ_unit=** ​​The unit used to represent the XYZ location of bright
+Spots in this table. Note: use micron (instead of µm) to avoid problems
+with special, Greek symbols. Other allowed values are: nm, mm etc.
+
+.. note:: All units related header lines are also *conditionally required* for all other :ref:`Tables` in case relevant metrics are reported (e.g., the ``##time_unit=`` field is required if a time measure is reported).
 
 :ref:`core`, :ref:`demultiplexing`, :ref:`rna`, :ref:`quality` and :ref:`rna_quality` tables
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -107,7 +114,7 @@ preferred/primary publication describing this Software. Examples include
 Digital Object Identifier (DOI), PubMed Central Identifier (PMCID),
 ArXiv.org ID etc,.
 
-.. note:: All Software related header lines are also *conditionally required* for all other `Tables`_ in case Software is used for producing the reported results.
+.. note:: All Software related header lines are also *conditionally required* for all other :ref:`Tables` in case Software is used for producing the reported results.
 
 Data Columns
 ------------
