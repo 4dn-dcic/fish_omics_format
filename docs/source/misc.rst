@@ -3,8 +3,14 @@ Additional Information
 
 .. contents::
 
-Contributors
+Subsection1
 ------------
+
+
+Contributors
+^^^^^^^^^^^^
+
+
 Contributors, listed alphabetically:
 Sarah Aufmkolk,
 Alistair Boettiger,
@@ -14,7 +20,7 @@ Caterina Strambio De Castillia,
 Steven Wang.
 
 The Variant Call Format (VCF)
------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 The `Variant Call Format (VCF) <https://samtools.github.io/hts-specs/VCFv4.2.pdf>`_ is a standard tab-delimited text file format used in bioinformatics for storing gene sequence variations. The format was developed in 2010 for the 1000 Genomes Project and has since been used by other large-scale genotyping and DNA sequencing projects.
 
 VCF is unambiguous, scalable and flexible, allowing extra information to be added to the info field. 
@@ -29,7 +35,7 @@ More information about how to prepare valid VCF files can be found `here <https:
   Figure 2: Schematic representation of the use of VCF to represent a genome variant containing an Inserted DNA fragement. Image from The Variant Call Format (VCF) Version 4.2 Specification, Dec 2013, available at https://cseweb.ucsd.edu/classes/sp16/cse182-a/notes/VCFv4.2.pdf
 
 Older revision history
-----------------------
+^^^^^^^^^^^^^^^^^^^^^^
 
 .. note::
     Older versions of this document are available in the following Google Doc:
@@ -70,7 +76,7 @@ February 9, 2022 Caterina and Andrea: Change name and description for
 tables #4 and #5 and add Table# to table header.
 
 4DN Experimental and Microscopy Metadata
-----------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 -  Project =
 -  Center =
 -  Lab =
@@ -90,15 +96,15 @@ tables #4 and #5 and add Table# to table header.
 -  Probe sequences, (fasta file, see example)
 
 Useful information
-------------------
+^^^^^^^^^^^^^^^^^^^^^
 
 OME-NGFF and OME-Zarr
-^^^^^^^^^^^^^^^^^^^^^
+"""""""""""""""""""""
 -  https://www.biorxiv.org/content/10.1101/2021.03.31.437929v4
 -  https://zarr.readthedocs.io/en/stable/
 
 Browsable probe map, example bed file
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+"""""""""""""""""""""""""""""""""""""
 
 .. code::
 
@@ -110,7 +116,7 @@ Browsable probe map, example bed file
   ...
 
 Probe sequence, example fasta file
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+""""""""""""""""""""""""""""""""""
 
 .. code::
 

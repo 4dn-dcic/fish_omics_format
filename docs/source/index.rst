@@ -26,5 +26,4 @@
     datasets
     how_to_use
     allowable_value_lists
-    :maxdepth: 2
     misc
