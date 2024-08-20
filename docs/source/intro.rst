@@ -69,7 +69,7 @@ The root of the format consists of the **mandatory** :ref:`core` table that defi
   Figure 1: Schematic representation of 12 tables composing the Fish Omics Format for Chromatin Tracing. (Figure credit: Sarah Aufmkolk).
 
 Tables
-======
+------
 
 .. list-table::
   :header-rows: 1
