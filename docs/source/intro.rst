@@ -2,11 +2,14 @@ Introduction
 ============
 
 .. contents::
+Subsection example 1
+--------------------
+
 
 A key output of the (`4D Nucleome <https://www.4dnucleome.org/>`_) project is the open release of datasets that measure the spatial arrangement of DNA, RNA, and proteins within the human cell nucleus, thereby uncovering the functional dynamics of the genome in three dimensions and over time (referred to as 4D).
 
 FISH Omics techniques description
----------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Specific genomic sequences can be visualized by fluorescence in situ hybridization (FISH) using fluorescently labeled DNA probes, and their location in individual cells can be imaged using either traditional microscopy techniques (e.g., widefield or confocal)or super-resolution microscopy as reviewed by (`Fraser et al. <https://doi.org/10.1128/MMBR.00006-15>`_) and (`Jerkovic and Cavilli <https://doi.org/10.1038/s41580-021-00362-w>`_)
 
 As a logical evolution of more traditional techniques allow the detection of multiple and ideally all DNA locations across the genome (see recent reviews: `Jercovic and Cavalli <https://doi.org/10.1038/s41580-021-00362-w>`_, `Boettiger and Murphy <https://doi.org/10.1016/j.tig.2019.12.010>`_, `Hu and Wang <https://doi.org/10.1016/j.tcb.2020.10.006>`_, `Maslova and Krasikova <https://doi.org/10.3389/fcell.2021.753097>`_, 
@@ -17,7 +20,7 @@ Collectively these technologies can be called interchangeably **multiplexed FISH
 A variety of protocols have been developed in the past few years, and they can be divided into two main categories called respectively **ball-and-stick** or **volumetric** chromatin tracing, depending on whether the targeted genomic segment is visualized as a **centroid** (i.e., fitting the imaged spot of a detected fluorescent signal) or a **cloud of single-molecule localizations** (i.e., often rendered as a volume; see Figure 2 in `Dekker et al. <https://doi.org/10.1016/j.molcel.2023.06.018>`_).
 
 FISH Omics Format rationale
----------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Despite the advances described in the previous section, FISH-based image-data is not yet routinely made publicly available upon publication because of the sheer size of the data and the lack of community specifications for data exchange. This challenge is experienced across the bioimaging community, as a result a solution built, tested and proven in 4DN can have a wide impact all over the world.
 
 This document describes the **4DN FISH Omics Format - Chromatin
@@ -34,7 +37,7 @@ In addition, the format is designed to be consistent with the ongoing developmen
 .. note:: FOF-CT is designed to work with both unmodified genomes and genomes containing INSERTIONS or DELETIONS. For guidance on capturing genomic variants using FOF-CT, refer to the instructions in :ref:core, and include a description of the custom build using the Variant Call Format (VCF) as outlined in :ref:`_VCF_reference:`.
 
 FISH Omics Format summary
--------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^
 In chromatin tracing experiments, polymer tracing algorithms are used to
 string together the localization of individual DNA bright Spots to
 reconstruct the three-dimensional (3D) path of chromatin fibers. 
