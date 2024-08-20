@@ -7,7 +7,7 @@
 .. toctree::
     :caption: FOF-CT: Chromatin Tracing
     :hidden:
-    :maxdepth: 3
+    :maxdepth: 2
 
     intro
     format_overview
@@ -26,5 +26,6 @@
     datasets
     how_to_use
     allowable_value_lists
-    :maxdepth: 2
-    misc
+    misc/section1
+    misc/section2
+
