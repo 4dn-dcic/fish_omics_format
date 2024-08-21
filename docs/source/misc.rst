@@ -5,7 +5,7 @@ Additional Information
 
 Subsection1
 ------------
-To see all tables, see :ref: `table-reference-label`.
+To see all tables, see :ref:`table-reference-label`.
 
 Contributors
 ^^^^^^^^^^^^
