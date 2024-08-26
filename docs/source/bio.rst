@@ -23,6 +23,7 @@ This table is mandatorily indexed by Spot_ID.
 
 File Header
 -----------
+- For full instructions see :ref:`headers-reference-label`
 - The first line in the header is always ``##FOF-CT_version=vX.X``.
 - The second line in the header is always ``##Table_namespace=4dn_FOF-CT_mapping``.
 
@@ -38,6 +39,8 @@ The header MUST include a detailed description of each Optional Column used.
 
 Data Columns
 ------------
+- For full instructions see :ref:`columns-reference-label`
+
 Each row corresponds to data associated with an individual Spot.
 
 The first column is always ``Spot_ID``.

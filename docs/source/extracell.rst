@@ -22,6 +22,7 @@ other tables (e.g., :ref:`core`, :ref:`rna`, etc.).
 
 File Header
 -----------
+- For full instructions see :ref:`headers-reference-label`
 - The first line in the header is always ``##FOF-CT_version=vX.X``.
 - The second line in the header is always ``##Table_namespace=4dn_FOF-CT_mapping``.
 
@@ -35,6 +36,8 @@ The header MUST include a detailed description of each Optional Columns used.
 
 Data Columns
 ------------
+- For full instructions see :ref:`columns-reference-label`
+
 Each row corresponds to data associated with an individual extracellular ROI.
 
 The first column of this table is always ``Extra_Cell_ROI_ID``.

@@ -25,6 +25,7 @@ The table is indexed by RNA_Spot_ID and each row corresponds to a RNA bright Spo
 
 File Header
 -----------
+- For full instructions see :ref:`headers-reference-label`
 - The first line in the header is always ``##FOF-CT_version=vX.X``.
 - The second line in the header is always ``##Table_namespace=4dn_FOF-CT_mapping``.
 
@@ -42,6 +43,8 @@ The header MUST include a detailed description of each optional columns used.
 
 Data Columns
 ------------
+- For full instructions see :ref:`columns-reference-label`
+
 As with all other RNA Spot Data tables in this format, each row corresponds to data associated with an individual RNA_Spot.
 
 The first columns of this table are always ``Spot_ID``, ``Channel_Name``, ``Fluorophore_Name``.

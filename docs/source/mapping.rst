@@ -46,6 +46,7 @@ properties such as:
 
 File Header
 -----------
+- For full instructions see :ref:`headers-reference-label`
 - The first line in the header is always ``##FOF-CT_version=vX.X``.
 - The second line in the header is always ``##Table_namespace=4dn_FOF-CT_mapping``.
 
@@ -57,6 +58,8 @@ The header MUST include a detailed description of each optional columns used.
 
 Data Columns
 ------------
+- For full instructions see :ref:`columns-reference-label`
+
 Each row corresponds to data associated with an individual ``Cell_ID``, ``Sub_Cell_ROI_ID``, or ``Extra_Cell_ROI_ID``.
 
 The first column of this table is always the relevant ID.

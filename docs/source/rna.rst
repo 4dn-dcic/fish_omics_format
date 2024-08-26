@@ -41,6 +41,7 @@ corresponding :ref:`demultiplexing` as described in the instructions of that tab
 
 File Header
 -----------
+- For full instructions see :ref:`headers-reference-label`
 - The first line in the header is always ``##FOF-CT_version=vX.X``.
 - The second line in the header is always ``##Table_namespace=4dn_FOF-CT_mapping``.
 
@@ -57,6 +58,8 @@ The header MUST include a detailed description of each optional columns used.
 
 Data Columns
 ------------
+- For full instructions see :ref:`columns-reference-label`
+
 As with all other RNA Spot Data tables in this format, each row corresponds to data associated with an individual RNA_Spot.
 
 The first columns are always: ``Spot_ID``, ``X``, ``Y``, ``Z``, ``RNA_name``, ``Gene_ID``, ``Trace_ID``, followed by ``Transcript_ID`` if applicable, and by **one or more** of the following ``Sub-Cell_ROI_ID``, ``Cell_ID`` and/or ``Extra_Cell_ROI_ID``.
