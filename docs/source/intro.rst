@@ -1,11 +1,9 @@
-Overview
-========
+Introduction
+============
 
 .. contents::
-Introduction
-------------
-
-
+Summary
+-------
 A key output of the (`4D Nucleome <https://www.4dnucleome.org/>`_) project is the open release of datasets that measure the spatial arrangement of DNA, RNA, and proteins within the human cell nucleus, thereby uncovering the functional dynamics of the genome in three dimensions and over time (referred to as 4D).
 
 FISH Omics techniques description

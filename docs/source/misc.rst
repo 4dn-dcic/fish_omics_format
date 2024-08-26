@@ -3,24 +3,19 @@ Additional Information
 
 .. contents::
 
-Subsection1
-------------
-To see all tables, see :ref:`table-reference-label`.
-
 Contributors
-^^^^^^^^^^^^
-
-
+------------
 Contributors, listed alphabetically:
 Sarah Aufmkolk,
 Alistair Boettiger,
 Andrea Cosolo,
 Rahi Navelkar,
+Nuno Martins, 
 Caterina Strambio De Castillia,
 Steven Wang.
 
 The Variant Call Format (VCF)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+-----------------------------
 The `Variant Call Format (VCF) <https://samtools.github.io/hts-specs/VCFv4.2.pdf>`_ is a standard tab-delimited text file format used in bioinformatics for storing gene sequence variations. The format was developed in 2010 for the 1000 Genomes Project and has since been used by other large-scale genotyping and DNA sequencing projects.
 
 VCF is unambiguous, scalable and flexible, allowing extra information to be added to the info field. 
@@ -35,7 +30,7 @@ More information about how to prepare valid VCF files can be found `here <https:
   Figure 2: Schematic representation of the use of VCF to represent a genome variant containing an Inserted DNA fragement. Image from The Variant Call Format (VCF) Version 4.2 Specification, Dec 2013, available at https://cseweb.ucsd.edu/classes/sp16/cse182-a/notes/VCFv4.2.pdf
 
 Older revision history
-^^^^^^^^^^^^^^^^^^^^^^
+----------------------
 
 .. note::
     Older versions of this document are available in the following Google Doc:
@@ -76,7 +71,7 @@ February 9, 2022 Caterina and Andrea: Change name and description for
 tables #4 and #5 and add Table# to table header.
 
 4DN Experimental and Microscopy Metadata
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+----------------------------------------
 -  Project =
 -  Center =
 -  Lab =
@@ -96,15 +91,25 @@ tables #4 and #5 and add Table# to table header.
 -  Probe sequences, (fasta file, see example)
 
 Useful information
-^^^^^^^^^^^^^^^^^^^^^
+------------------
+REMBI: Recommended Metadata for Biological Images
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+- Sarkans, U., Chiu, W., Collinson, L. et al. REMBI: Recommended Metadata for Biological Images—enabling reuse of microscopy data in biology. `Nat Methods 18, 1418–1422 (2021) <https://doi.org/10.1038/s41592-021-01166-8>`_
+
+4DN-BINA-OME-QUQREP (NBO-Q) Microscopy Metadata Specifications
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+-  December 20221 Nature Methods FOCUS Issue on `Reporting and reproducibility in microscopy <https://www.nature.com/collections/djiciihhjh>`_
+-  Hammer, M., Huisman, M., Rigano, A. et al. Towards community-driven metadata standards for light microscopy: tiered specifications extending the OME model. `Nat Methods 18, 1427–1440 (2021) <https://doi.org/10.1038/s41592-021-01327-9>`_
 
 OME-NGFF and OME-Zarr
-"""""""""""""""""""""
--  https://www.biorxiv.org/content/10.1101/2021.03.31.437929v4
--  https://zarr.readthedocs.io/en/stable/
+^^^^^^^^^^^^^^^^^^^^^
+-  Moore, J., Allan, C., Besson, S. et al. OME-NGFF: a next-generation file format for expanding bioimaging data-access strategies. `Nat Methods 18, 1496–1498 (2021). <https://doi.org/10.1038/s41592-021-01326-w>`_
+-  Moore, J., et al. OME-Zarr: a cloud-optimized bioimaging file format with international community support. `Histochemistry and Cell Biology 160, 223-251 (2023) <https://doi.org/10.1007/s00418-023-02209-1>`_
+-  `Zarr documentation <https://zarr.readthedocs.io/en/stable/>`_
+
 
 Browsable probe map, example bed file
-"""""""""""""""""""""""""""""""""""""
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code::
 
@@ -116,7 +121,8 @@ Browsable probe map, example bed file
   ...
 
 Probe sequence, example fasta file
-""""""""""""""""""""""""""""""""""
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 
 .. code::
 

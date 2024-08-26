@@ -6,11 +6,11 @@ Format description: overview
 General Info
 ------------
 
-- The format is organized in multiple individual `Tables <#Tables>`_.
+- The format is organized in multiple individual :ref:`table-reference-label`.
 - The only mandatory table is the :ref:`core`.
 - All other tables are either recommended for all experiment types, or optional depending on the experiment design and type.
 - Each file must contain a single table.
-- Accepted file formats for storing Tables are txt, csv and tsv.
+- Accepted file formats for storing tables are txt, csv and tsv.
 - An underscore ``_`` must be used as a word separator in header field
   names and column headers to improve readability while not violating
   common name restrictions in coding environments (dash ``-`` may be
@@ -19,6 +19,7 @@ General Info
 
 .. tip:: All additional tables, except :ref:`demultiplexing`, :ref:`rna` and :ref:`mapping`, if included **MUST** contain at least 1 **Optional Column**.
 
+.. _headers-reference-label:
 File Header
 -----------
 - All tables have to contain a mandatory header section.
@@ -114,8 +115,10 @@ preferred/primary publication describing this Software. Examples include
 Digital Object Identifier (DOI), PubMed Central Identifier (PMCID),
 ArXiv.org ID etc,.
 
-.. note:: All Software related header lines are also *conditionally required* for all other :ref:`Tables` in case Software is used for producing the reported results.
+.. note:: All Software related header lines are also *conditionally required* for all other :ref:`table-reference-label` in case Software is used for producing the reported results.
 
+
+.. _columns-reference-label:
 Data Columns
 ------------
 
