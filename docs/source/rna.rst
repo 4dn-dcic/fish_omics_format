@@ -45,12 +45,12 @@ File Header
 - The first line in the header is always ``##FOF-CT_version=vX.X``.
 - The second line in the header is always ``##Table_namespace=4dn_FOF-CT_mapping``.
 
-The header MUST contain a mandatory set of fields that describe the
+The header **MUST** contain a mandatory set of fields that describe the
 algorithm(s) that were used to identify and localize bright Spots.
 In case more than one algorithm were used, please use the same set of fields
 for each of them.
 
-The header MUST include a detailed description of each optional columns used.
+The header **MUST** include a detailed description of each optional columns used.
 
 .. csv-table::
   :file: tables/rna_header.csv

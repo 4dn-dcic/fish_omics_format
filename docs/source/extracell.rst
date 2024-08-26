@@ -26,9 +26,9 @@ File Header
 - The first line in the header is always ``##FOF-CT_version=vX.X``.
 - The second line in the header is always ``##Table_namespace=4dn_FOF-CT_mapping``.
 
-The header MUST include a detailed description of each Optional Columns used. 
+The header **MUST** include a detailed description of each Optional Columns used. 
 
-.. tip:: The table MUST contain at least 1 Optional Column. 
+.. tip:: The table **MUST** contain at least 1 Optional Column. 
 
 .. csv-table::
   :file: tables/extracell_header.csv
@@ -41,7 +41,7 @@ Data Columns
 Each row corresponds to data associated with an individual extracellular ROI.
 
 The first column of this table is always ``Extra_Cell_ROI_ID``.
-This table has to contain at least 1 Optional Column. 
+This table **MUST** contain at least 1 Optional Column. 
 The order of the other columns is at user's discretion.
 The order of the rows is at user's discretion.
 

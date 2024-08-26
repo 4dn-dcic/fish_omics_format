@@ -29,13 +29,13 @@ File Header
 - The first line in the header is always ``##FOF-CT_version=vX.X``.
 - The second line in the header is always ``##Table_namespace=4dn_FOF-CT_mapping``.
 
-The header MUST contain a mandatory set of fields that describe any
+The header **MUST** contain a mandatory set of fields that describe any
 algorithm that was used to produce/process data in this table.
 In case more than one algorithm were used, please use the same set of fields for each of them.
 
-The header MUST include a detailed description of each optional columns used.
+The header **MUST** include a detailed description of each optional columns used.
 
-.. tip:: The table MUST contain at least 1 Optional or Conditionally Required Column. 
+.. tip:: The table **MUST** contain at least 1 Optional or Conditionally Required Column. 
 
 .. csv-table::
   :file: tables/rna_quality_header.csv
@@ -48,6 +48,8 @@ Data Columns
 As with all other RNA Spot Data tables in this format, each row corresponds to data associated with an individual RNA_Spot.
 
 The first columns of this table are always ``Spot_ID``, ``Channel_Name``, ``Fluorophore_Name``.
+
+This table **MUST** contain at least 1 Optional or Conditionally Required Column.
 
 The content and order of all other columns is largely at user's discretion.
 However, in order to align with existing `4DN-BINA-OME <https://doi.org/10.1038/s41592-021-01327-9>`_ Microscopy Metadata specifications, the use of specific column names and descriptions is **conditionally required** as indicated below. The order of the rows are at

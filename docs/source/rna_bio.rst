@@ -26,11 +26,11 @@ File Header
 - The first line in the header is always ``##FOF-CT_version=vX.X``.
 - The second line in the header is always ``##Table_namespace=4dn_FOF-CT_mapping``.
 
-The header MUST contain a mandatory set of fields that describe any algorithm that was used to produce/process data in this table. In case more than one algorithm were used, please use the same set of fields for each of them.
+The header **MUST** contain a mandatory set of fields that describe any algorithm that was used to produce/process data in this table. In case more than one algorithm were used, please use the same set of fields for each of them.
 
-The header MUST include a detailed description of each optional columns used. 
+The header **MUST** include a detailed description of each optional columns used. 
 
-.. tip:: The table MUST contain at least 1 Optional Column. 
+.. tip:: The table **MUST** contain at least 1 Optional Column. 
 
 .. csv-table::
   :file: tables/bio_header.csv
@@ -43,7 +43,7 @@ Data Columns
 As with all other RNA Spot Data tables in this format, each row corresponds to data associated with an individual RNA_Spot.
 
 The first column is always ``RNA_Spot_ID``.
-This table has to contain at least 1 Optional Column. 
+This table **MUST** contain at least 1 Optional Column. 
 The order of the other columns is at user's discretion.
 The order of the rows is at user's discretion.
 
