@@ -17,7 +17,7 @@ General Info
   mistaken as subtraction of variables).
 - Each file has two parts: file header and data columns.
 
-.. tip:: All additional tables, except :ref:`demultiplexing`, :ref:`rna` and :ref:`mapping`, if included **MUST** contain at least 1 **Optional Column**.
+.. tip:: If included all :ref:`table-reference-label`, except :ref:`core`, :ref:`demultiplexing`, :ref:`rna` and :ref:`mapping`, **MUST** contain at least 1 **Optional Column**.
 
 .. _headers-reference-label:
 File Header
@@ -75,7 +75,7 @@ In addition to all of the above, the following header line is required for the :
 
 **##genome_assembly=** Genome build. 
 
-.. note:: \(1) the 4DN Data Portal only accepts GRCh38 for human and GRCm38 for mouse. For other species see https://data.4dnucleome.org/search/?type=Organism; (2) in case the genome under study contains an INSERTION or a DELETION, indicate this as indicated in :ref:`core`.
+.. note:: \(1) the 4DN Data Portal only accepts GRCh38 for human and GRCm38 for mouse. For other species see the list of all 4DN allowable `genome builds <https://data.4dnucleome.org/search/?type=Organism>`_; (2) in case the genome under study contains an INSERTION or a DELETION, indicate this as indicated in :ref:`core`.
 
 :ref:`core`, :ref:`demultiplexing`, :ref:`bio`, :ref:`rna`, :ref:`rna_bio`, and :ref:`mapping` tables
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -85,7 +85,7 @@ Further, the following header line is required for the :ref:`core`, :ref:`demult
 Spots in this table. Note: use micron (instead of µm) to avoid problems
 with special, Greek symbols. Other allowed values are: nm, mm etc.
 
-.. note:: All units related header lines are also *conditionally required* for all other :ref:`Tables` in case relevant metrics are reported (e.g., the ``##time_unit=`` field is required if a time measure is reported).
+.. note:: All units related header lines are also *conditionally required* for all other :ref:`table-reference-label` in case relevant metrics are reported (e.g., the ``##time_unit=`` field is required if a time measure is reported).
 
 :ref:`core`, :ref:`demultiplexing`, :ref:`rna`, :ref:`quality` and :ref:`rna_quality` tables
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

@@ -17,7 +17,7 @@ In this table, each row reports the ``X``, ``Y``, ``Z`` localization, and the Tr
 In this table the reported ``X``, ``Y``, ``Z`` coordinates are assumed to result from post-processing and quality control procedures and therefore
 correspond to the final localization of the DNA target under study.
 
-.. tip:: The 4DN Data Portal only accepts GRCh38 for human and GRCm38 for mouse. Genome build. For other species follow these `instructions. <https://data.4dnucleome.org/search/?type=Organism>`_ In case the genome under study contains an iNSERTION or a DELETION follow the instructions below.
+.. tip:: The 4DN Data Portal only accepts GRCh38 for human and GRCm38 for mouse. For other species follow these `instructions. <https://data.4dnucleome.org/search/?type=Organism>`_ In case the genome under study contains an INSERTION/DELETION follow the instructions below.
 
 At a minimum the Table has to have 8 columns in the following order:
 **Spot_ID**, **Trace_ID**, **X**, **Y**, **Z**, **Chrom**, **Chrom_Start**,
@@ -31,7 +31,9 @@ Additionally, in the case in which the final localization of DNA target results 
 
 .. tip:: ``Spot_ID`` identifiers are unique across the entire dataset, thus allowing to identify unambiguously a Spot in the :ref:`quality`, :ref:`bio` and :ref:`demultiplexing`. 
 
-.. Important:: Instructions for reporting the location of DNA Spots and Traces in case the genome under study contains an INSERTION or DELETION.
+Special case when genome contains INSERTION/DELETIONs
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Instructions for reporting the location of DNA Spots and Traces in case the genome under study contains an INSERTION or DELETION.
 #. Add the ``custom-build`` prefix to the genome build name and introduce a descriptive name detailing the nature of the genome modification.
 #. Insert the following additional fields in the File header
 #. ``##modification`` to indicate the nature and location of the modification
@@ -43,6 +45,7 @@ Additionally, in the case in which the final localization of DNA target results 
 
 File Header
 -----------
+- For full instructions see :ref:`_headers-reference-label:`
 - The first line in the header is always ``##FOF-CT_version=vX.X``.
 - The second line in the header is always ``##Table_namespace=4dn_FOF-CT_mapping``.
 
@@ -60,6 +63,8 @@ in the header.
 
 Data Columns
 ------------
+- For full instructions see :ref:`_columns-reference-label:`
+
 As with all other Spot Data tables, each row corresponds to
 data associated with an individual Spot.
 
@@ -71,12 +76,12 @@ The order of the rows is at user's discretion.
   :file: tables/core_columns.csv
   :header-rows: 1
   
-Example without genome modification
------------------------------------
+Example without INSERTION/DELETION
+----------------------------------
 .. include:: examples/core
   :code:
 
-Example with genome modification
---------------------------------
+Example with INSERTION/DELETION
+-------------------------------
 .. include:: examples/core_IN-DEL
   :code:
