@@ -31,8 +31,8 @@ Additionally, in the case in which the final localization of DNA target results 
 
 .. tip:: ``Spot_ID`` identifiers are unique across the entire dataset, thus allowing to identify unambiguously a Spot in the :ref:`quality`, :ref:`bio` and :ref:`demultiplexing`. 
 
-Special case when genome contains INSERTION/DELETIONs
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Special case when genome under study is modified
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Instructions for reporting the location of DNA Spots and Traces in case the genome under study contains an INSERTION or DELETION.
 #. Add the ``custom-build`` prefix to the genome build name and introduce a descriptive name detailing the nature of the genome modification.
 #. Insert the following additional fields in the File header
@@ -45,7 +45,7 @@ Instructions for reporting the location of DNA Spots and Traces in case the geno
 
 File Header
 -----------
-- For full instructions see :ref:`_headers-reference-label:`
+- For full instructions see :ref:`headers-reference-label:`
 - The first line in the header is always ``##FOF-CT_version=vX.X``.
 - The second line in the header is always ``##Table_namespace=4dn_FOF-CT_mapping``.
 
@@ -63,7 +63,7 @@ in the header.
 
 Data Columns
 ------------
-- For full instructions see :ref:`_columns-reference-label:`
+- For full instructions see :ref:`columns-reference-label:`
 
 As with all other Spot Data tables, each row corresponds to
 data associated with an individual Spot.
