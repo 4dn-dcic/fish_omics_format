@@ -14,20 +14,6 @@ Nuno Martins,
 Caterina Strambio De Castillia,
 Steven Wang.
 
-The Variant Call Format (VCF)
------------------------------
-The `Variant Call Format (VCF) <https://samtools.github.io/hts-specs/VCFv4.2.pdf>`_ is a standard tab-delimited text file format used in bioinformatics for storing gene sequence variations. The format was developed in 2010 for the 1000 Genomes Project and has since been used by other large-scale genotyping and DNA sequencing projects.
-
-VCF is unambiguous, scalable and flexible, allowing extra information to be added to the info field. 
-
-More information about how to prepare valid VCF files can be found `here <https://gatk.broadinstitute.org/hc/en-us/articles/360035531692-VCF-Variant-Call-Format>`_
-
-.. figure:: images/VCF_IN_example.png
-  :class: shadow-image
-  :width: 100%
-  :align: center
-
-  Figure 2: Schematic representation of the use of VCF to represent a genome variant containing an Inserted DNA fragement. Image from The Variant Call Format (VCF) Version 4.2 Specification, Dec 2013, available at https://cseweb.ucsd.edu/classes/sp16/cse182-a/notes/VCFv4.2.pdf
 
 Older revision history
 ----------------------
@@ -56,6 +42,21 @@ Older revision history
 
 Useful information
 ------------------
+The Variant Call Format (VCF)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+The `Variant Call Format (VCF) <https://samtools.github.io/hts-specs/VCFv4.2.pdf>`_ is a standard tab-delimited text file format used in bioinformatics for storing gene sequence variations. The format was developed in 2010 for the 1000 Genomes Project and has since been used by other large-scale genotyping and DNA sequencing projects.
+
+VCF is unambiguous, scalable and flexible, allowing extra information to be added to the info field. 
+
+More information about how to prepare valid VCF files can be found `here <https://gatk.broadinstitute.org/hc/en-us/articles/360035531692-VCF-Variant-Call-Format>`_
+
+.. figure:: images/VCF_IN_example.png
+  :class: shadow-image
+  :width: 100%
+  :align: center
+
+  Figure 2: Schematic representation of the use of VCF to represent a genome variant containing an Inserted DNA fragement. Image from The Variant Call Format (VCF) Version 4.2 Specification, Dec 2013, available at https://cseweb.ucsd.edu/classes/sp16/cse182-a/notes/VCFv4.2.pdf
+
 REMBI: Recommended Metadata for Biological Images
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 - Sarkans, U., Chiu, W., Collinson, L. et al. REMBI: Recommended Metadata for Biological Images—enabling reuse of microscopy data in biology. `Nat Methods 18, 1418–1422 (2021) <https://doi.org/10.1038/s41592-021-01166-8>`_
