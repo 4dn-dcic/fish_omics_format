@@ -1,15 +1,6 @@
 Allowable value lists
 =====================
-Τhe following is a list of fields which include allowable values lists.
-
-.. code::
-
-  
-Units (##XYZ_unit, Time_unit, Intensity_unit)
-Cell_Type, 
-Sub-Cell_ROI_type, 
-Extra-Cell_ROI_type etc.
-
+Τhe following is a list of fields whose values have to be drawn from allowable values lists.
 
 .. list-table::
   :header-rows: 1
