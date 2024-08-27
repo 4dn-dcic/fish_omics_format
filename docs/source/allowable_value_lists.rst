@@ -25,19 +25,19 @@ Allowable value lists
     - s
   * - 3
     - ``Cell_Type``
-    - The type of cells reported in the :ref:`cell` table.
+    - The type of cells reported in the :ref:`cell`.
     - It is recommended to use an ontology term for example from the `EFO <http://www.ebi.ac.uk/efo/EFO_0000324>`_ ontology  
     - Primary cell line, Immortal cell line, Induced pluripotent stem (IPS) cell, Cell in tissue, Cell in organoid, Other.
     - Not Applicable
   * - 4
     - ``Sub-Cell_ROI_Type``
-    - The type of sub-cellular structure ROIs reported in the :ref:`subcell` table.
+    - The type of sub-cellular structure ROIs reported in the :ref:`subcell`.
     - It is recommended to use an ontology term such as a child of the `EFO 'cellular_component' term <http://purl.obolibrary.org/obo/GO_0005575>`_  
     - Nucleolus, Nuclear Lamina (NL), Nuclear Pore Complex (NPC) PML_body, Cajal_body, Chromosome_Domain, etc.
     - Not Applicable
   * - 5
     - ``Extra-Cell_ROI_Type``
-    - The type of extracellular structure ROIs reported in the :ref:`extracell` table.
+    - The type of extracellular structure ROIs reported in the :ref:`extracell`.
     - It is recommended to use an ontology term such as a child of the `EFO 'organism part' term <http://www.ebi.ac.uk/efo/EFO_0000635>`_  
     - Tissue, Organoid, etc.
     - Not Applicable
