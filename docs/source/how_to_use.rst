@@ -2,7 +2,7 @@ Downloadable Templates
 ======================
 To facilitate adoption of the FOF-CT format, table Templates can be dowloaded from `here <https://github.com/4dn-dcic/fish_omics_format/releases/latest>`_.
 
-These templates can be used as a starting point for filling in all the required header lines and sharing the data columns.
+These templates can be used as a starting point for filling in all the required :ref:`headers-reference-label` lines and :ref:`columns-reference-label`.
 
 The following is a short step-by-step description of how to use these templates:
 
