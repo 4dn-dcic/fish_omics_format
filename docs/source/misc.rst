@@ -6,42 +6,22 @@ Additional Information
 Contributors
 ------------
 Contributors, listed alphabetically:
-Sarah Aufmkolk,
-Alistair Boettiger,
-Andrea Cosolo,
-Rahi Navelkar,
-Nuno Martins, 
-Caterina Strambio De Castillia,
-Steven Wang.
-
+- Sarah Aufmkolk, Harvard Medical School
+- Alistair Boettiger, Stanford University
+- Andrea Cosolo
+- Rahi Navelkar, Harvard Medical School
+- Nuno Martins, Harvard Medical School
+- Caterina Strambio De Castillia, UMass Chan Medical School, caterina.strambio@umassmed.edu
+- Steven Wang, Yale University
 
 Older revision history
 ----------------------
 .. note::
     Older versions of this document are available in the following `Google Doc <https://docs.google.com/document/d/1z7rIYsQnbeS7y_SMuwoa8qsWKBD_BpV88vR79WiH_XI/edit?usp=sharing>`_ and `Google Sheet <https://docs.google.com/spreadsheets/d/1GvqokS5w8Yw2tAngsqDC8YcLdRha5cGr/edit?usp=sharing&ouid=103316056144222958298&rtpof=true&sd=true>`_
 
-4DN Experimental and Microscopy Metadata
-----------------------------------------
--  Project =
--  Center =
--  Lab =
--  Experiment protocol description =
--  Date collected =
--  Date submitted =
--  Experiment Type = FISH Omics - Chromatin Tracing
--  Experiment Set Type = Replicate
--  Organism = D. melanogaster
--  Biosource Type = tissue culture cell line
--  Biosource = IMR90
--  Modification Type = none
--  Treatment Type = none
--  Microscopy Metadata (including Provenance and Quality Control)
-   conforming to 4DN-BINA-OME data model
--  Browsable probe map, (bed file, see example)
--  Probe sequences, (fasta file, see example)
-
 Useful information
 ------------------
+.. _VCF-reference-label:
 The Variant Call Format (VCF)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 The `Variant Call Format (VCF) <https://samtools.github.io/hts-specs/VCFv4.2.pdf>`_ is a standard tab-delimited text file format used in bioinformatics for storing gene sequence variations. The format was developed in 2010 for the 1000 Genomes Project and has since been used by other large-scale genotyping and DNA sequencing projects.

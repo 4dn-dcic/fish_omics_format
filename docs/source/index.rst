@@ -9,6 +9,7 @@
 
     intro
     format_overview
+    how_to_use
     core
     demultiplexing
     trace
@@ -22,6 +23,5 @@
     extracell
     mapping
     datasets
-    how_to_use
-    allowable_value_lists
     misc
+     allowable_value_lists
