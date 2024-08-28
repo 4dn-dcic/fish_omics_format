@@ -8,6 +8,15 @@ A key output of the (`4D Nucleome <https://www.4dnucleome.org/>`_) project is th
 
 FISH Omics techniques description
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. figure:: images/FOFbasCT_figure.png
+  :class: shadow-image
+  :width: 100%
+  :align: center
+
+  Figure 1: Schematic representation of 12 tables composing the Fish Omics Format for Chromatin Tracing. (Figure credit: Sarah Aufmkolk).
+
+
 Specific genomic sequences can be visualized by fluorescence in situ hybridization (FISH) using fluorescently labeled DNA probes, and their location in individual cells can be imaged using either traditional microscopy techniques (e.g., widefield or confocal)or super-resolution microscopy as reviewed by (`Fraser et al. <https://doi.org/10.1128/MMBR.00006-15>`_) and (`Jerkovic and Cavilli <https://doi.org/10.1038/s41580-021-00362-w>`_)
 
 As a logical evolution of more traditional techniques allow the detection of multiple and ideally all DNA locations across the genome (see recent reviews: `Jercovic and Cavalli <https://doi.org/10.1038/s41580-021-00362-w>`_, `Boettiger and Murphy <https://doi.org/10.1016/j.tig.2019.12.010>`_, `Hu and Wang <https://doi.org/10.1016/j.tcb.2020.10.006>`_, `Maslova and Krasikova <https://doi.org/10.3389/fcell.2021.753097>`_, 
@@ -58,13 +67,6 @@ The root of the format consists of the **mandatory** :ref:`core` table that defi
 	* **Cell** (e.g., boundaries and volume).
 	* **Sub-cellular Region of Interest** (ROI; e.g., Nuclear feature or Nucleolus).
 	* **Extracellular ROI** (e.g., Tissue).
-
-.. figure:: images/FOFbasCT_figure.png
-  :class: shadow-image
-  :width: 100%
-  :align: center
-
-  Figure 1: Schematic representation of 12 tables composing the Fish Omics Format for Chromatin Tracing. (Figure credit: Sarah Aufmkolk).
 
 .. _table-reference-label:
 Tables
