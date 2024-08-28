@@ -47,23 +47,25 @@ File Header
 Mandatory header lines (all tables)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-**##FOF-CT_version=** Data format version number. E.g. v0.2
+**##FOF-CT_version=** Data format version number. E.g., v0.2
 
-**#lab_name:** name of the lab where the experiment was performed
+**##Table_namespace=** Identifier for this type of table. Value must be as in the example. E.g., 4dn_FOF-CT_core
 
-**#experimenter_name:** name of the person performing the experiment
+**#Lab_Name:** Name of the lab where the experiment was performed
 
-**#experimenter_contact:** email address of the person performing the
+**#Experimenter_Name:** Name of the person performing the experiment
+
+**#Experimenter_Contact:** Email address of the person performing the
 experiment
 
-**#description:** A free-text, description of the experiment and of the
+**#Description:** A free-text, description of the experiment and of the
 data recorded in this table. This description should provide a clear
 understanding of the process utilized to produce the data and contain
 sufficient details to ensure interpretation and reproducibility.
 
-**#additional_tables:** AddTable1, AddTable2, AddTableN
+**#Additional_Tables:** List of the additional tables being submitted. Note: use a comma to separate each table name from the next. E.g., AddTable1, AddTable2, AddTableN
 
-**##columns=**\ (C1, C2, C3, Cn)
+**##Columns:=** List of the data column headers used in the table. Note: enclose the column headers and use a comma to separate each header name from the next. E.g., \ (C1, C2, C3, Cn)
 
 
 Additional conditionally required header lines 
@@ -73,7 +75,7 @@ Additional conditionally required header lines
 """""""""""""""""""""""""""""""""
 In addition to all of the above, the following header line is required for the :ref:`core` and :ref:`rna` tables.
 
-**##genome_assembly=** Genome build. 
+**##Genome_Assembly=** Genome build. E.g., GRCh38 
 
 .. note:: \(1) the 4DN Data Portal only accepts GRCh38 for human and GRCm38 for mouse. For other species see the list of all 4DN allowable `genome builds <https://data.4dnucleome.org/search/?type=Organism>`_; (2) in case the genome under study contains an INSERTION or a DELETION, indicate this as indicated in :ref:`core`.
 
@@ -81,11 +83,9 @@ In addition to all of the above, the following header line is required for the :
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Further, the following header line is required for the :ref:`core`, :ref:`demultiplexing`, :ref:`bio`, :ref:`rna`, :ref:`rna_bio`, and :ref:`mapping` tables.
 
-**##XYZ_unit=** ​​The unit used to represent the XYZ location of bright
-Spots in this table. Note: use micron (instead of µm) to avoid problems
-with special, Greek symbols. Other allowed values are: nm, mm etc.
+**##XYZ_Unit=** The unit used to represent XYZ locations or distances. Note: use micron to avoid problem with special, Greek symbols. Other allowed values *should* be drawn from SI units of `Length <https://en.wikipedia.org/wiki/SI_base_unit>`_. Examples: 'nm', 'micron' 'mm' etc.
 
-.. note:: All units related header lines are also *conditionally required* for all other :ref:`table-reference-label` in case relevant metrics are reported (e.g., the ``##time_unit=`` field is required if a time measure is reported).
+.. note:: Other units related header lines are also *conditionally required* for all other :ref:`table-reference-label` in case relevant metrics are reported (e.g., the ``##Time_Unit=`` field is required if a time measure is reported).
 
 :ref:`core`, :ref:`demultiplexing`, :ref:`rna`, :ref:`quality` and :ref:`rna_quality` tables
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
