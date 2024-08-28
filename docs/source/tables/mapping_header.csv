@@ -1,6 +1,6 @@
 Name,Description,Example,Conditional requirement conditions
-**##FOF-CT_version=**,Version of the FOF format used in this case.,v1.0,
-**##Table_namespace=**,Identifier for this type of table. Value must be as in the example.,4dn_FOF-CT_mapping,
+**##FOF-CT_Version=**,Version of the FOF format used in this case.,v1.0,
+**##Table_Namespace=**,Identifier for this type of table. Value must be as in the example.,4dn_FOF-CT_mapping,
 *##Cell_Type=*,"This field records the type of extracellular structure ROIs used in this table represent. The value utilized should belong to this list: Primary cell line, Immortal cell line, Induced pluripotent stem (IPS) cell, Cell in tissue, Cell in organoid, ",Cell in tissue,Conditional requirement: this MUST be reported in any Cell is idenfied as part of this experiment.
 *##Sub_Cell_ROI_Type=*,"This field records the type of extracellular structure ROIs used in this table represent. The value utilized should belong to this list: Nucleolus, NL, PML_body, Cajal_body, Chromosome_Domain, Other",Nucleolus,Conditional requirement: this MUST be reported in any Sub_Cell ROI is idenfied as part of this experiment.
 *##Extra_Cell_ROI_Type=*,"This field records the type of extracellular structure ROIs used in this table represent. The value utilized should belong to this list: Tissue, Organoid, Other",Tissue,Conditional requirement: this MUST be reported in any Super_Cell ROI is idenfied as part of this experiment.
@@ -23,4 +23,4 @@ Name,Description,Example,Conditional requirement conditions
 #^Optional_Column_2:,Optional column 2 description. This description should provide a clear understanding of the process utilized to produce the data and contain sufficient details to ensure interpretation and reproducibility.,,
 #^Optional_Column_3:,Optional column 3 description. This description should provide a clear understanding of the process utilized to produce the data and contain sufficient details to ensure interpretation and reproducibility.,,
 **#Additional_Tables:**,list of the additional tables being submitted. Note: use a comma to separate each table name from the next.,"4dn_FOF-CT_core, 4dn_FOF-CT_rna, 4dn_FOF-CT_quality, 4dn_FOF-CT_bio, 4dn_FOF-CT_trace",
-**##Columns=**,list of the data column headers used in the table. Note: enclose the column headers and use a comma to separate each header name from the next.,"(Cell_ID, ROI_boundaries, Optional_column_1, Optional_column_2, Optional_colummn_3)",
+**##Columns=**,list of the data column headers used in the table. Note: enclose the column headers and use a comma to separate each header name from the next.,"(Cell_ID, ROI_Boundaries, Optional_Column_1, Optional_Column_2, Optional_Colummn_3)",

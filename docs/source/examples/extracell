@@ -1,11 +1,11 @@
-##FOF-CT_version=v1.0
-##Table_namespace=4dn_FOF-CT_extracell
-##Extra_Cell_ROI_type=Organoid
-##XYZ_unit=micron
-#lab_name: Nobel
-#experimenter_name: John Doe
-#experimenter_contact: john.doe@email.com
-#description: In this experiment organoids were identified by segmentation using the indicated algorithm on the basis of bright field signal.
+##FOF-CT_Version=v1.0
+##Table_Namespace=4dn_FOF-CT_extracell
+##Extra_Cell_ROI_Type=Organoid
+##XYZ_Unit=micron
+#Lab_Name: Nobel
+#Experimenter_Name: John Doe
+#Cxperimenter_Contact: john.doe@email.com
+#Description: In this experiment organoids were identified by segmentation using the indicated algorithm on the basis of bright field signal.
 #Software_Title: AlgorithmXYZ
 #Software_Type: Segmentation
 #Software_Authors: John Doe
@@ -14,9 +14,9 @@
 #Software_PreferredCitationID: https://doi.org/doi_goes_here
 #^Cell_A_nr: the number of identified Cells of type A identified to belong to this extracellular ROI.
 #^Cell_B_nr: the number of identified Cells of type B identified to belong to this extracellular ROI.
-#^ROI_volume: the volume of this extracellular ROI expressed in micron^3.
-#additional_tables: 4dn_FOF-CT_core, 4dn_FOF-CT_rna, 4dn_FOF-CT_trace
-##columns=(Extra_Cell_ROI, Cell_A_nr, Cell_B_nr, ROI_volume)
+#^ROI_Volume: the volume of this extracellular ROI expressed in micron^3.
+#Additional_Tables: 4dn_FOF-CT_core, 4dn_FOF-CT_rna, 4dn_FOF-CT_trace
+##Columns=(Extra_Cell_ROI, Cell_A_nr, Cell_B_nr, ROI_Volume)
 1, 10, 22, 13453
 2, 0, 11, 35545
 3, 10, 33, 10010

@@ -27,29 +27,29 @@ File Header
 - Header lines are denoted by ``#``. In particular:
 
   - ``##`` denotes machine readable header lines. These lines must follow the
-    following format ``##Key1=Value1`` (e.g., ``##FOF-CT_version=v0.1``).
+    following format ``##Key_A=Value_1`` (e.g., ``##FOF-CT_Version=v0.1``).
   - ``#`` denotes human readable header lines. These lines should follow the
-    following format, ``#term: free text description`` (e.g.,
-    ``#lab_name: name of the lab where the experiment was performed``).
+    following format, ``#Term_X: free text description`` (e.g.,
+    ``#Lab_Name: name of the lab where the experiment was performed``).
   - ``#^`` denotes lines that define user specified **Optional Columns**.
     These lines provide the name of the column header and a description of the
     column content. Descriptions must be understandable and sufficient to ensure
     the interpretation and reproducibility of the results. These lines should
-    follow the following format ``#^term: free text description`` (e.g.,
-    ``#^optional_column_1: optional column 1 description``).
+    follow the following format ``#^Term_X: free text description`` (e.g.,
+    ``#^Optional_Column_1: optional column 1 description``).
 
 - Header names MUST use the underscore as a word separator (e.g., RNA_A_intensity).
 - The file header contains **required**, *conditionally-required*, and optional fields.
 - Conditionally-required fields are fields that are required when certains
-  conditions are met (e.g., ``##intensity_unit=`` is required any time an
+  conditions are met (e.g., ``##Intensity_Unit=`` is required any time an
   intensity metric is reported).
 
 Mandatory header lines (all tables)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-**##FOF-CT_version=** Data format version number. E.g., v0.2
+**##FOF-CT_Version=** Data format version number. E.g., v0.2
 
-**##Table_namespace=** Identifier for this type of table. Value must be as in the example. E.g., 4dn_FOF-CT_core
+**##Table_Namespace=** Identifier for this type of table. Value must be as in the example. E.g., 4dn_FOF-CT_core
 
 **#Lab_Name:** Name of the lab where the experiment was performed
 
