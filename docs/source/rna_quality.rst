@@ -5,7 +5,7 @@ RNA Spot Quality table
 
 Requirement level: optional
 
-Recommended: Yes
+Recommended: **Yes**
 
 Summary
 -------
@@ -21,13 +21,15 @@ to ensure interpretation and reproducibility.
 
 However, in order to align with existing `4DN-BINA-OME <https://doi.org/10.1038/s41592-021-01327-9>`_ Microscopy Metadata specifications, the use of specific column names and descriptions is **conditionally required** in case the described metric is reported. As an example, the column name **X_Drift** is conditionally required in case the user intends to report a comparison between the Observed vs. Expected (i.e., based on a fiducial reference) positions of a detected Spot.
 
-The table is indexed by RNA_Spot_ID and each row corresponds to a RNA bright Spot. The order of all other columns (including those conditionally required) and of the rows are at the user's discretion.
+The table is indexed by ``RNA_Spot_ID`` and each row corresponds to a RNA bright Spot. The order of all other columns (including those conditionally required) and of the rows are at the user's discretion.
+
+.. warning:: All **MANDATORY** header fields and column names are indicated in **bold**. All *conditionally required* header fields and column names are indicated in *italics*.
 
 File Header
 -----------
 - For full instructions see :ref:`headers-reference-label`
-- The first line in the header is always ``##FOF-CT_version=vX.X``.
-- The second line in the header is always ``##Table_namespace=4dn_FOF-CT_mapping``.
+- The first line in the header is always ``##FOF-CT_Version=vX.X``.
+- The second line in the header is always ``##Table_Namespace=4dn_FOF-CT_rna_quality``.
 
 The header **MUST** contain a mandatory set of fields that describe any
 algorithm that was used to produce/process data in this table.

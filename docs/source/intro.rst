@@ -9,12 +9,12 @@ A key output of the (`4D Nucleome <https://www.4dnucleome.org/>`_) project is th
 FISH Omics techniques description
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. figure:: images/FOFbasCT_figure.png
+.. figure:: images/MolBio_Fig1_Aufmkolk_final_600dpi.jpg
   :class: shadow-image
   :width: 100%
   :align: center
 
-  Figure 1: Schematic representation of 12 tables composing the Fish Omics Format for Chromatin Tracing. (Figure credit: Sarah Aufmkolk).
+  Figure 1: FISH omics methods can be utilized to map chromatin structures across multiple genomic scales (Figure credit: Sarah Aufmkolk; `Dekker et al., 2023, Mol.Cell <https://doi.org/10.1016/j.molcel.2023.06.018>`_.
 
 
 Specific genomic sequences can be visualized by fluorescence in situ hybridization (FISH) using fluorescently labeled DNA probes, and their location in individual cells can be imaged using either traditional microscopy techniques (e.g., widefield or confocal)or super-resolution microscopy as reviewed by (`Fraser et al. <https://doi.org/10.1128/MMBR.00006-15>`_) and (`Jerkovic and Cavilli <https://doi.org/10.1038/s41580-021-00362-w>`_)
@@ -45,6 +45,15 @@ In addition, the format is designed to be consistent with the ongoing developmen
 
 FISH Omics Format summary
 ^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. figure:: images/FOFbasCT_figure.png
+  :class: shadow-image
+  :width: 100%
+  :align: center
+
+  Figure 2: Schematic representation of 12 tables composing the Fish Omics Format for Chromatin Tracing (Figure credit: Sarah Aufmkolk).
+
+
 In chromatin tracing experiments, polymer tracing algorithms are used to
 string together the localization of individual DNA bright Spots to
 reconstruct the three-dimensional (3D) path of chromatin fibers. 

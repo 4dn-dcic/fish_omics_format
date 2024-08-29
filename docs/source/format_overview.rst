@@ -5,10 +5,9 @@ Format description: overview
 
 General Info
 ------------
-
 - The format is organized in multiple individual :ref:`table-reference-label`.
 - The only mandatory table is the :ref:`core`.
-- All other tables are either recommended for all experiment types, or optional depending on the experiment design and type.
+- All other tables are either conditionally required depending on experiment design and type or optional but *recommended* for all experiment types.
 - Each file must contain a single table.
 - Accepted file formats for storing tables are txt, csv and tsv.
 - An underscore ``_`` must be used as a word separator in header field
@@ -16,6 +15,8 @@ General Info
   common name restrictions in coding environments (dash ``-`` may be
   mistaken as subtraction of variables).
 - Each file has two parts: file header and data columns.
+
+.. warning:: All **MANDATORY** header fields and column names are indicated in **bold**. All *conditionally required* header fields and column names are indicated in *italics*.
 
 .. tip:: If included all :ref:`table-reference-label`, except :ref:`core`, :ref:`demultiplexing`, :ref:`rna` and :ref:`mapping`, **MUST** contain at least 1 **Optional Column**.
 

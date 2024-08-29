@@ -4,23 +4,28 @@ Cell Data table
 ===============
 
 Requirement level: optional
-Recommended: Yes
+
+Recommended: **Yes**
 
 Summary
 -------
 This table is optionally used to document properties that are globally associated with individual Cells (e.g., cell size, cell volume, cell type) identified as part of this experiment.
+
 These are properties that are shared by all bright Spots and
-Traces that belong to an individual Cell. Each row in the table
-corresponds to a different Cell studied in the experiment and is
-identified by a unique **Cell_ID** that links the data reported in this
-table with data stored in one of the other tables (e.g.,
+Traces that belong to an individual Cell. 
+
+Each row in the table corresponds to a **different Cell** studied in the experiment and is identified by a unique ``Cell_ID`` that links the data reported in this table with data stored in one of the other tables (e.g.,
 :ref:`core`, :ref:`subcell`, :ref:`mapping`, etc.).
+
+As such, this table is mandatorily indexed by ``Cell_ID``.
+
+.. warning:: All **MANDATORY** header fields and column names are indicated in **bold**. All *conditionally required* header fields and column names are indicated in *italics*.
 
 File Header
 -----------
 - For full instructions see :ref:`headers-reference-label`
-- The first line in the header is always ``##FOF-CT_version=vX.X``.
-- The second line in the header is always ``##Table_namespace=4dn_FOF-CT_mapping``.
+- The first line in the header is always ``##FOF-CT_Version=vX.X``.
+- The second line in the header is always ``##Table_Namespace=4dn_FOF-CT_cell``.
 
 The header **MUST** include a detailed description of each optional columns used.
 

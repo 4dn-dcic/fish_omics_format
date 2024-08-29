@@ -4,7 +4,8 @@ Spot Quality table
 ==================
 
 Requirement level: optional
-Recommended: Yes
+
+Recommended: **Yes**
 
 Summary
 -------
@@ -18,9 +19,11 @@ Because the metrics used to quantify Spot detection accuracy and precision are n
 at the user's discretion and should be described with sufficient details
 to ensure interpretation and reproducibility.
 
-However, in order to align with existing `4DN-BINA-OME <https://doi.org/10.1038/s41592-021-01327-9>`_ Microscopy Metadata specifications, the use of specific column names and descriptions is **conditionally required** in case the described metric is reported. As an example, the column name **X_Drift** is conditionally required in case the user intends to report a comparison between the Observed vs. Expected (i.e., based on a fiducial reference) positions of a detected Spot.
+However, in order to align with existing `4DN-BINA-OME <https://doi.org/10.1038/s41592-021-01327-9>`_ Microscopy Metadata specifications, the use of specific column names and descriptions is *conditionally required* in case the described metric is reported. As an example, the column name ``X_Drift`` is conditionally required in case the user intends to report a comparison between the Observed vs. Expected (i.e., based on a fiducial reference) positions of a detected Spot.
 
-The table is mandatorily indexed by Spot_ID and each row corresponds to a DNA bright Spot. The order of all other columns (including those conditionally required) and of the rows are at the user's discretion.
+The table is mandatorily indexed by ``Spot_ID`` and each row corresponds to a DNA bright Spot. The order of all other columns (including those conditionally required) and of the rows are at the user's discretion.
+
+.. warning:: All **MANDATORY** header fields and column names are indicated in **bold**. All *conditionally required* header fields and column names are indicated in *italics*.
 
 File Header
 -----------
@@ -30,8 +33,7 @@ File Header
 
 The header **MUST** contain a mandatory set of fields that describe any
 algorithm that was used to produce/process data in this table.
-In case more than one algorithm were used, please use the same set of fields
-for each of them.
+In case more than one algorithm were used, please use the same set of fields for each of them.
 
 The header **MUST** include a detailed description of each optional columns used. 
 
@@ -53,7 +55,7 @@ The first columns of this table are always ``Spot_ID``, ``Channel_Name``, and ``
 This table **MUST** contain at least 1 Optional or Conditionally Required Column. 
 
 The content and order of all other columns is largely at user's discretion.
-However, in order to align with existing `4DN-BINA-OME <https://doi.org/10.1038/s41592-021-01327-9>`_ Microscopy Metadata specifications, the use of specific column names and descriptions is **conditionally required** as indicated below. The order of the rows are at
+However, in order to align with existing `4DN-BINA-OME <https://doi.org/10.1038/s41592-021-01327-9>`_ Microscopy Metadata specifications, the use of specific column names and descriptions is *conditionally required* as indicated below. The order of the rows are at
 the user's discretion.
 
 .. csv-table::

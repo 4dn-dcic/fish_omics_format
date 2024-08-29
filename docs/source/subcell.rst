@@ -4,21 +4,27 @@ Sub-Cell ROI Data table
 =======================
 
 Requirement level: optional
-Recommended: Yes
+
+Recommended: **Yes**
 
 Summary
 -------
 This table is optionally used to document properties that are globally associated with individual sub-cellular ROIs that typically correspond to sub-nuclear features (e.g., Nucleoli, Nuclear Lamina, Chromosome Domains, PML bodies, etc.) identified as part of this experiment.
+
 These are properties that are shared by all bright Spots and Traces that are associated with individual ROIs.
-Each row in the table corresponds to a different Subcell ROI studied in the
-experiment and is identified by a unique **Sub_Cell_ROI_ID** that links the data reported in this table with data stored in one of the other tables
+
+Each row in the table corresponds to a **different Subcell ROI** studied in the experiment and is identified by a unique ``Sub_Cell_ROI_ID`` that links the data reported in this table with data stored in one of the other tables
 (e.g., :ref:`core`, :ref:`cell`, etc.).
+
+As such, this table is mandatorily indexed by ``Sub_Cell_ROI_ID``.
+
+.. warning:: All **MANDATORY** header fields and column names are indicated in **bold**. All *conditionally required* header fields and column names are indicated in *italics*.
 
 File Header
 -----------
 - For full instructions see :ref:`headers-reference-label`
-- The first line in the header is always ``##FOF-CT_version=vX.X``.
-- The second line in the header is always ``##Table_namespace=4dn_FOF-CT_mapping``.
+- The first line in the header is always ``##FOF-CT_Version=vX.X``.
+- The second line in the header is always ``##Table_Namespace=4dn_FOF-CT_subcell``.
 
 The header **MUST** include a detailed description of each optional columns used.
 

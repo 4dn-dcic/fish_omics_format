@@ -4,27 +4,26 @@ Extra-Cell ROI Data table
 =========================
 
 Requirement level: optional
-Recommended: Yes
+
+Recommended: **Yes**
 
 Summary
 -------
-This table is optionally used to document properties (i.e., volume, mean fluorescence
-intensity) that are globally associated with individual extracellular
-structures (e.g., Tissue, Organoid, etc.) Regions of Interest (ROI) identified as part of this experiment.
+This table is optionally used to document properties (i.e., volume, mean fluorescence intensity) that are globally associated with individual extracellular structures (e.g., Tissue, Organoid, etc.) Regions of Interest (ROI) identified as part of this experiment.
 
 These are properties that are shared by all bright Spots, Traces and Cells
 that belong to an individual extracellular structure identified as part of
-this study.
-Each row in the table corresponds to a different extracellular structure
-studied in the experiment and is identified by a unique **Extra_Cell_ROI_ID** that
-links the data reported in this table with data stored in one of the
-other tables (e.g., :ref:`core`, :ref:`rna`, etc.).
+this study. Each row in the table corresponds to a different extracellular structure studied in the experiment and is identified by a unique ``Extra_Cell_ROI_ID`` that links the data reported in this table with data stored in one of the other tables (e.g., :ref:`core`, :ref:`rna`, etc.).
+
+As such, this table is mandatorily indexed by ``Extra_Cell_ROI_ID``.
+
+.. warning:: All **MANDATORY** header fields and column names are indicated in **bold**. All *conditionally required* header fields and column names are indicated in *italics*.
 
 File Header
 -----------
 - For full instructions see :ref:`headers-reference-label`
-- The first line in the header is always ``##FOF-CT_version=vX.X``.
-- The second line in the header is always ``##Table_namespace=4dn_FOF-CT_mapping``.
+- The first line in the header is always ``##FOF-CT_Version=vX.X``.
+- The second line in the header is always ``##Table_Namespace=4dn_FOF-CT_extracell``.
 
 The header **MUST** include a detailed description of each Optional Columns used. 
 

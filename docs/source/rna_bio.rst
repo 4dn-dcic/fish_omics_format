@@ -4,27 +4,30 @@ RNA Spot Biological Data table
 ==========================
 
 Requirement level: optional
-Recommended: Yes
+
+Recommended: **Yes**
 
 Summary
 -------
 This table is highly recommended and it is designed to store and share
-biological properties associated with individual Spots (e.g., distance
+biological properties associated with individual RNA Spots (e.g., distance
 from the nuclear lamina (NL) or the nuclear pore complex (NPC), etc.; Su
 et al 2020 Cell and Takei et al 2021 Nature) identified as part of this
 experiment. In the absence of a consensus regarding biological
-properties to be recorded in association with individual bright Spots,
+properties to be recorded in association with individual bright RNA Spots,
 the specific columns in this table remain at the user's
 discretion and should be described with sufficient details to ensure
 interpretation and reproducibility.
 
-This table is mandatorily indexed by RNA_Spot_ID.
+This table is mandatorily indexed by ``RNA_Spot_ID``.
+
+.. warning:: All **MANDATORY** header fields and column names are indicated in **bold**. All *conditionally required* header fields and column names are indicated in *italics*.
 
 File Header
 -----------
 - For full instructions see :ref:`headers-reference-label`
-- The first line in the header is always ``##FOF-CT_version=vX.X``.
-- The second line in the header is always ``##Table_namespace=4dn_FOF-CT_mapping``.
+- The first line in the header is always ``##FOF-CT_Version=vX.X``.
+- The second line in the header is always ``##Table_Namespace=4dn_FOF-CT_rna_bio``.
 
 The header **MUST** contain a mandatory set of fields that describe any algorithm that was used to produce/process data in this table. In case more than one algorithm were used, please use the same set of fields for each of them.
 

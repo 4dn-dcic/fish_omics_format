@@ -4,7 +4,8 @@ Spot Demultiplexing table
 =========================
 
 Requirement level: optional
-Recommended: Yes
+
+Recommended: **Yes**
 
 Summary
 -------
@@ -13,9 +14,11 @@ This table is optional and is designed to be used in the case of multiplexed FIS
 In such a case the final Spot localization data is recorded in the
 :ref:`core`, while the underlying primary localization data can be recorded by using this table, as shown for DNA Spots in the example below.
 
-This table is indexed by **Loc_ID**, mandatorily reports the **X**, **Y**, **Z** coordinates of the Localization event and the fluorescent channel (**Fluor**) in which this localization was detected. In addition, the table has a mandatory **Spot_ID** column that is used to link individual localization events to the resulting Spot.
+This table is indexed by ``Loc_ID``, mandatorily reports the ``X``, ``Y``, ``Z`` coordinates of the Localization event and the fluorescent channel (``Fluor``) in which this localization was detected. In addition, the table has a mandatory ``Spot_ID`` column that is used to link individual localization events to the resulting Spot.
 
 Other columns are at user's discretion.
+
+.. warning:: All **MANDATORY** header fields and column names are indicated in **bold**. All *conditionally required* header fields and column names are indicated in *italics*.
 
 File Header
 -----------

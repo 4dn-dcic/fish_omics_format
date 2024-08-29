@@ -4,19 +4,24 @@ Trace Data table
 ================
 
 Requirement level: optional
-Recommended: Yes
+
+Recommended: **Yes**
 
 Summary
 -------
 This table is optionally used to document properties that are globally associated with individual Traces rather than individual bright Spots (e.g., Physical coordinates, RNA transcription, or Allele). These are properties that are shared by all bright Spots that constitute a Trace.
 
-Each row in the table corresponds to an individual Trace and is indexed by a unique **Trace_ID** that links the data reported in this table with data stored in one of the other tables (e.g., :ref:`core`, :ref:`rna`, etc.). 
+Each row in the table corresponds to an individual Trace and is indexed by a unique ``Trace_ID`` that links the data reported in this table with data stored in one of the other tables (e.g., :ref:`core`, :ref:`rna`, etc.).
+
+As such, this table is mandatorily indexed by ``Trace_ID``.
+
+.. warning:: All **MANDATORY** header fields and column names are indicated in **bold**. All *conditionally required* header fields and column names are indicated in *italics*. 
 
 File Header
 -----------
 - For full instructions see :ref:`headers-reference-label`
-- The first line in the header is always ``##FOF-CT_version=vX.X``.
-- The second line in the header is always ``##Table_namespace=4dn_FOF-CT_mapping``.
+- The first line in the header is always ``##FOF-CT_Version=vX.X``.
+- The second line in the header is always ``##Table_Namespace=4dn_FOF-CT_trace``.
 
 The header **MUST** include a detailed description of each optional columns used.
 

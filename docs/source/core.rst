@@ -31,6 +31,8 @@ Additionally, in the case in which the final localization of DNA target results 
 
 .. tip:: ``Spot_ID`` identifiers are unique across the entire dataset, thus allowing to identify unambiguously a Spot in the :ref:`quality`, :ref:`bio` and :ref:`demultiplexing`. 
 
+.. warning:: All **MANDATORY** header fields and column names are indicated in **bold**. All *conditionally required* header fields and column names are indicated in *italics*.
+
 Special case when genome under study is modified
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Instructions for reporting the location of DNA Spots and Traces in case the genome under study contains an INSERTION or DELETION.

@@ -5,7 +5,7 @@ RNA Spot Data table
 
 Requirement level: optional
 
-Recommended: Yes
+Recommended: **Yes**
 
 Summary
 -------
@@ -32,11 +32,12 @@ localization events and therefore correspond to what is considered the best-bet 
 In the case of multiplexed FISH experiments (i.e.,
 `MERFISH <https://doi.org/10.1073/pnas.1912459116>`_) in which the
 final location of RNA molecule results from combining multiple
-detection events (e.g., by combining individual Localization events detected in
-separate planes or images), the underlying raw data can be recorded in the
+detection events (e.g., by combining individual Localization events detected in separate planes or images), the underlying raw data can be recorded in the
 corresponding :ref:`demultiplexing` as described in the instructions of that table.
 
 .. tip:: ``RNA_Spot_ID`` identifiers are unique across the entire dataset, thus allowing to identify unambiguously a Spot in the :ref:`quality`, :ref:`bio` and :ref:`demultiplexing`.
+
+.. warning:: All **MANDATORY** header fields and column names are indicated in **bold**. All *conditionally required* header fields and column names are indicated in *italics*.
 
 
 File Header
