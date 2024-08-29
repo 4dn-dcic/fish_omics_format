@@ -20,8 +20,8 @@ correspond to the final localization of the DNA target under study.
 .. tip:: The 4DN Data Portal only accepts GRCh38 for human and GRCm38 for mouse. For other species follow these `instructions. <https://data.4dnucleome.org/search/?type=Organism>`_ In case the genome under study contains an INSERTION/DELETION follow the instructions below.
 
 At a minimum the Table has to have 8 columns in the following order:
-**Spot_ID**, **Trace_ID**, **X**, **Y**, **Z**, **Chrom**, **Chrom_Start**,
-**Chrom_End**. These are required. Additionally in case sub-cellular
+``Spot_ID``, ``Trace_ID``, ``X``, ``Y``, ``Z``, ``Chrom``, ``Chrom_Start``,
+``Chrom_End``. These are required. Additionally in case sub-cellular
 structures, cells or extra cellular structures (e.g., Tissue) are identified as part of this experiment, this table has to mandatorily include the ID of the Sub_Cellular, Cell or Extra Cellular Structure Region of Interest (ROI) each Spot/Trace is associated with.
 
 All other spot properties must be kept in the two additional tables
