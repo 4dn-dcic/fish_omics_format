@@ -1,6 +1,6 @@
 Name,Description,Example,Conditional requirement conditions
-**##FOF-CT_version=**,Version of the FOF format used in this case.,v1.0,
-**##Table_namespace=**,Identifier for this type of table. Value must be as in the example.,4dn_FOF-CT_rna,
+**##FOF-CT_Version=**,Version of the FOF format used in this case.,v1.0,
+**##Table_Namespace=**,Identifier for this type of table. Value must be as in the example.,4dn_FOF-CT_rna,
 **##Genome_Assembly=**,"Genome build. Notes: **(1)**  the 4DN Data Portal only accepts GRCh38 for human and GRCm38 for mouse. For other species see https://data.4dnucleome.org/search/?type=Organism; **(2)** in case the genome under study contains an iNSERTION or a DELETION, indicate this by adding the mandatory **custom-build** prefix to the build name and using a descriptive name indicating the nature of the genome modification (e.g., GRCm38+pJT039(insertion).",GRCh38,"Conditional requirement: if the genome under study contains an INSERTION or a DELETION, this field MUST use the **custom-build** prefix and contain a descriptive name indicating the nature of the genome modification (e.g., GRCm38+pJT039(insertion)."
 **##Gene_ID_Type=**,The field used to report the type of unique ID used to identify the Gene encoding for the targeted RNA transcript.,Ensemble_V38,
 *##Transcript_ID_Type=*,The field used to report the type of unique ID used to identify the targeted RNA transcript.,Ensemble_V38,Conditional requirement: this MUST be reported if multiple transcripts are associated with the same Gene_ID and the FISH probes are capable of distinguishing them.

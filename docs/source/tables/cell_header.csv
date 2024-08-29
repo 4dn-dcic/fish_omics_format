@@ -1,6 +1,6 @@
 Name,Description,Example,Conditional requirement conditions
-**##FOF-CT_version=**,Version of the FOF format used in this case.,v1.0,
-**##Table_namespace=**,Identifier for this type of table. Value must be as in the example.,4dn_FOF-CT_cell,
+**##FOF-CT_Version=**,Version of the FOF format used in this case.,v1.0,
+**##Table_Namespace=**,Identifier for this type of table. Value must be as in the example.,4dn_FOF-CT_cell,
 **##Cell_Type=**,"This field records the type of cells reported in this table. It is recommended to use an ontology term for example from the `EFO <http://www.ebi.ac.uk/efo/EFO_0000324>`_ ontology. Examples include:  Primary cell line, Immortal cell line, Induced pluripotent stem (IPS) cell, Cell in tissue, Cell in organoid, etc.",Cell in tissue,
 *##Extra_Cell_ROI_Type=*,"This field records the type of extracellular structure ROIs reported in this table. It is recommended  to use an ontology term such as a child of the `EFO 'organism part' term <http://www.ebi.ac.uk/efo/EFO_0000635>`_. Examples include:  Tissue, Organoid, etc.",Tissue,Conditional requirement: this MUST be reported in any Extra_Cell ROI is idenfied as part of this experiment.
 *##XYZ_Unit=*,"If relevant, the unit used to represent XYZ locations or distances in this table. Note: use micron to avoid problem with special, Greek symbols. Other allowed values *should* be drawn from SI units of `Length <https://en.wikipedia.org/wiki/SI_base_unit>`_. Examples: 'nm', 'micron' 'mm' etc.",micron,Conditional requirement: this MUST be reported if any locations metrics are reported.
