@@ -5,6 +5,6 @@ This document describes the **4DN FISH Omics Format (FOF) - Chromatin Tracing (C
 The format consists of a series of ten tables with different requirement degrees.
 The full list of tables and instructions on how to use them can be found at: https://fish-omics-format.readthedocs.io/.
 
-The image below gives a schematic view of the tables and their **required** (*black*), **conditionally required** (*purple*), **recommended** (*blue*), or **optional** (*orange*) content.
+The image below gives a schematic view of the 12 FOF-CT tables indicating whether they are **required** (*triple line*), *conditionally required* (*double line), or optional/recommended content (single line).
 
 <img align="right" src="docs/source/images/FOF-CT_graph.png">
