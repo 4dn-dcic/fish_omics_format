@@ -125,7 +125,7 @@ Tables
     - rna
     - 4dn_FOF-CT_rna
     - optional
-    - not applicable
+    - **Yes** (depending on experimental design)
   * - 7
     - :ref:`rna_quality`
     - rna_quality
