@@ -15,10 +15,8 @@ experiment.
 Each row represents a detected RNA bright Spot
 and corresponds to the location of a specific RNA transcript.
 
-At a minimum, one needs to know the **RNA_Spot_ID**, the **X**, **Y**, **Z** coordinates of each
-spot, the **Gene_ID**, the **RNA_name** and an additional ID used to link this data
-with other tables in this format (i.e., *Trace_ID*, *Sub_Cell_ROI_ID*,
-*Cell_ID* and/or *Extra_Cell_ROI_ID*).
+At a minimum, one needs to know the **RNA_Spot_ID**, the **X**, **Y**, **Z** coordinates of each spot, the **Gene_ID**, the **RNA_name** and an additional ID used to link this data with other tables in this format (i.e., *Trace_ID*, *Sub_Cell_ROI_ID*, *Cell_ID* and/or *Extra_Cell_ROI_ID*).
+
 In addition, in case multiple transcripts are associated with
 the same Gene_ID and the FISH probes are capable of distinguishing them,
 *Transcript_ID* MUST also be reported. Thus, at a minimum there needs to
@@ -63,7 +61,7 @@ Data Columns
 
 As with all other RNA Spot Data tables in this format, each row corresponds to data associated with an individual RNA_Spot.
 
-The first columns are always: ``Spot_ID``, ``X``, ``Y``, ``Z``, ``RNA_name``, ``Gene_ID``, ``Trace_ID``, followed by ``Transcript_ID`` if applicable, and by **one or more** of the following ``Sub-Cell_ROI_ID``, ``Cell_ID`` and/or ``Extra_Cell_ROI_ID``.
+The first columns are always: ``RNA_Spot_ID``, ``X``, ``Y``, ``Z``, ``RNA_name``, ``Gene_ID``, ``Trace_ID``, followed by ``Transcript_ID`` if applicable, and by **one or more** of the following ``Sub-Cell_ROI_ID``, ``Cell_ID`` and/or ``Extra_Cell_ROI_ID``.
 The order of the other columns is at user's discretion.
 The order of the rows is at user's discretion.
 
