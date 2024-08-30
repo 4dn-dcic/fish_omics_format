@@ -7,4 +7,4 @@ The full list of tables and instructions on how to use them can be found at: htt
 
 The image below gives a schematic view of the tables and their **required** (*triple border*), *conditionally required* (*double border*), or optional and recommended.
 
-<img align="right" src="docs/source/images/FOFbasCT_figure.png">
+<img align="right" src="docs/source/images/FOF-CT_graph.png">
