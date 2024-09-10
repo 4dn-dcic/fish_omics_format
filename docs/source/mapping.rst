@@ -26,18 +26,8 @@ As an example, this table might be organized in one of the following manner:
 **1) Cell boundaries**
 	- ``##ROI_boundaries_format=`` Cell boundaries are reported in global coordinates following the OME Data Model for Polygon - ROI. As such Cell boundaries are defined as lists of comma separated x,y coordinates separated by spaces like "x1,y1 x2,y2 x3,y3" (e.g. "0,0 1,2 3,5").
 
-  * - Number
-    - Field Name
-    - Description
-    - Allowable Values
-    - Example Values
-    - Default Value
-  * - 1
-    - ``XYZ_unit``
-    - The unit used to represent XYZ locations or distances. 
-    - SI units of `Length <https://en.wikipedia.org/wiki/SI_base_unit>`_
-    - nm, micron, mm, etc.
-    - micron
+.. list-table::
+  :header-rows: 1
 
   * - Column 1 Name
     - Column 2 Name
@@ -47,6 +37,9 @@ As an example, this table might be organized in one of the following manner:
 **2) Sub-Cell ROI boundaries**
 	- ``##ROI_boundaries_format=`` Sub-cell ROI boundaries are reported in global coordinates following the OME Data Model for Polygon - ROI. As such the Cell boundaries are defined as lists of comma separated x,y,z coordinates separated by spaces like "x1,y1,z1 x2,y2,z2 x3,y3,z3" (e.g. "0,0 1,2 3,5").
 
+.. list-table::
+  :header-rows: 1
+
   * - Column 1 Name
     - Column 2 Name
   * - ``Sub_Cell_ROI_ID``
@@ -54,6 +47,9 @@ As an example, this table might be organized in one of the following manner:
 
 **3) Extra_Cell_ROI_ID boundaries**
 	- ``##ROI_boundaries_format=`` Extra-cell ROI boundaries are reported in global coordinates using the `OBJ format <https://en.wikipedia.org/wiki/Wavefront_.obj_file>`_ for 3D MESH models. As such boundaries are defined as lists of geometric vertices, with (x, y, z, [w]) coordinates, w is optional and defaults to 1.0.
+
+.. list-table::
+  :header-rows: 1
 
   * - Column 1 Name
     - Column 2 Name
