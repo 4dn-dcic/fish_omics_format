@@ -50,7 +50,7 @@ Example
 -------
 The only mandatory column in this table is ``Trace_ID``. All other columns are optional and must be defined by the user using a Header line starting with ``#^``. 
 
-.. tip:: the optional columns in this example table are included for illustrative purposes only and describe a case in which the user is reporting the **allele** to which each trace was mapped, the **intensity** of the nascent RNA expression signal associated with each trace and the **distance** of each trace from the nuclear lamina.
+.. tip:: The optional columns in this example table are included for illustrative purposes only and describe a case in which the user is reporting the **allele** to which each trace was mapped, the **intensity** of the nascent RNA expression signal associated with each trace and the **distance** of each trace from the nuclear lamina.
 
 .. include:: examples/trace
   :code:
