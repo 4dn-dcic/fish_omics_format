@@ -6,13 +6,13 @@ Additional Information
 Contributors
 ------------
 Contributors, listed alphabetically:
-* Sarah Aufmkolk, Harvard Medical School
-* Alistair Boettiger, Stanford University
-* Andrea Cosolo
-* Rahi Navelkar, Harvard Medical School
-* Nuno Martins, Harvard Medical School
-* Caterina Strambio De Castillia, UMass Chan Medical School, caterina.strambio@umassmed.edu
-* Steven Wang, Yale University
+- Sarah Aufmkolk, Harvard Medical School
+- Alistair Boettiger, Stanford University
+- Andrea Cosolo
+- Rahi Navelkar, Harvard Medical School
+- Nuno Martins, Harvard Medical School
+- Caterina Strambio De Castillia, UMass Chan Medical School, caterina.strambio@umassmed.edu
+- Steven Wang, Yale University
 
 Older revision history
 ----------------------
