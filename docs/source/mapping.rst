@@ -28,6 +28,7 @@ As an example, this table might be organized in one of the following manner:
 
 ``##Key_A=Value_1``
 	- ``##Key_A=Value_1``
+	- ``##Key_A=``
 
   * - Column 1 Name
     - Column 2 Name
