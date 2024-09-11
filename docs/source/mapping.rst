@@ -29,9 +29,9 @@ As an example, this table might be organized in one of the following manner:
 .. list-table::
   :header-rows: 1
 
-  * - Column 1 Name
-    - Column 2 Name
   * - ``Cell_ID``
+    - ``ROI_boundaries``
+  * - 0001
     - "0,0 1,2 3,5"
 
 **2) Sub-Cell ROI boundaries**
@@ -40,9 +40,9 @@ As an example, this table might be organized in one of the following manner:
 .. list-table::
   :header-rows: 1
 
-  * - Column 1 Name
-    - Column 2 Name
   * - ``Sub_Cell_ROI_ID``
+    - ``ROI_boundaries``
+  * - 0001
     - "0,0,0 1,2,3 4,5,6"
 
 **3) Extra_Cell_ROI_ID boundaries**
@@ -51,9 +51,9 @@ As an example, this table might be organized in one of the following manner:
 .. list-table::
   :header-rows: 1
 
-  * - Column 1 Name
-    - Column 2 Name
   * - ``Extra_Cell_ROI_ID``
+    - ``ROI_boundaries``
+  * - 0001
     - "v 0.123 0.234 0.345 1.0"
 
 .. warning:: All **MANDATORY** header fields and column names are indicated in **bold**. All *conditionally required* header fields and column names are indicated in *italics*.
