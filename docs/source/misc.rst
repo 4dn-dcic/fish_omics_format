@@ -6,6 +6,7 @@ Additional Information
 Contributors
 ------------
 Contributors, listed alphabetically:
+
 - Sarah Aufmkolk, Harvard Medical School
 - Alistair Boettiger, Stanford University
 - Andrea Cosolo
