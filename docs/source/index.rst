@@ -8,6 +8,7 @@
     :caption: FOF-CT: Chromatin Tracing
 
     intro
+    tables
     format_overview
     how_to_use
     core

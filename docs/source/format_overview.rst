@@ -18,7 +18,7 @@ General Info
 
 .. warning:: All **MANDATORY** header fields and column names are indicated in **bold**. All *conditionally required* header fields and column names are indicated in *italics*.
 
-.. tip:: If included all :ref:`table-reference-label`, except :ref:`core`, :ref:`demultiplexing`, :ref:`rna` and :ref:`mapping`, **MUST** contain at least 1 **Optional Column**.
+.. tip:: Except for :ref:`core`, :ref:`demultiplexing`, :ref:`rna` and :ref:`mapping`, all included :ref:`table-reference-label` **MUST** contain at least 1 **Optional Column**.
 
 .. _headers-reference-label:
 File Header

@@ -24,7 +24,7 @@ Evolutions of these techniques expanded the number of imaged targets to multiple
 
 Collectively these technologies can be called interchangeably **multiplexed FISH** or **FISH omics**, which emphasize the visualization of multiple or ideally all genomic targets, respectively. These methods provide an expanded understanding of how higher-order chromosome structure relates to transcriptional activity and cell development.
 
-A variety of protocols have been developed in the past few years, and they can be divided into two main categories called respectively **ball-and-stick** or **volumetric** chromatin tracing, depending on whether the targeted genomic segment is visualized as a **centroid** (i.e., fitting the imaged spot of a detected fluorescent signal) or a **cloud of single-molecule localizations** (i.e., often rendered as a volume; see Figure 2 in `Dekker et al. 2023 <https://doi.org/10.1016/j.molcel.2023.06.018>`_).
+A variety of protocols have been developed in the past few years, and they can be divided into two main categories called respectively **ball-and-stick** or **volumetric** Chromatin Tracing, depending on whether the targeted genomic segment is visualized as a **centroid** (i.e., fitting the imaged spot of a detected fluorescent signal) or a **cloud of single-molecule localizations** (i.e., often rendered as a volume; see Figure 2 in `Dekker et al. 2023 <https://doi.org/10.1016/j.molcel.2023.06.018>`_).
 
 FISH Omics Format rationale
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -54,9 +54,7 @@ FISH Omics Format summary
   Figure 2: Schematic representation of 12 tables composing the Fish Omics Format for Chromatin Tracing (Figure credit: Sarah Aufmkolk).
 
 
-In chromatin tracing experiments, polymer tracing algorithms are used to
-string together the localization of individual DNA bright Spots to
-reconstruct the three-dimensional (3D) path of chromatin fibers. 
+In **ball-and-stick Chromatin Tracing** experiments, polymer tracing algorithms are used to string together the localization of individual DNA bright Spots to reconstruct the three-dimensional (3D) path of chromatin fibers. 
 
 In order to capture chromatin traces as well as additional metrics captured during the course of the experiment, the FOF-CT format is organized around multiple tables.
 
@@ -77,88 +75,3 @@ The root of the format consists of the **mandatory** :ref:`core` table that defi
 	* **Sub-cellular Region of Interest** (ROI; e.g., Nuclear feature or Nucleolus).
 	* **Extracellular ROI** (e.g., Tissue).
 
-.. _table-reference-label:
-Tables
-------
-
-.. list-table::
-  :header-rows: 1
-
-  * - Number
-    - Extended Name
-    - Short Name
-    - Namespace
-    - Requirement Level
-    - Recommended
-  * - 1
-    - :ref:`core`
-    - core
-    - 4dn_FOF-CT_core
-    - **required**
-    - not applicable
-  * - 2
-    - :ref:`demultiplexing`
-    - demultiplexing
-    - 4dn_FOF-CT_demultiplexing
-    - optional
-    - **Yes**
-  * - 3
-    - :ref:`trace`
-    - trace
-    - 4dn_FOF-CT_trace
-    - optional
-    - not applicable
-  * - 4
-    - :ref:`quality`
-    - quality
-    - 4dn_FOF-CT_quality
-    - optional
-    - **Yes**
-  * - 5
-    - :ref:`bio`
-    - bio
-    - 4dn_FOF-CT_bio
-    - optional
-    - **Yes**
-  * - 6
-    - :ref:`rna`
-    - rna
-    - 4dn_FOF-CT_rna
-    - optional
-    - **Yes** (depending on experimental design)
-  * - 7
-    - :ref:`rna_quality`
-    - rna_quality
-    - 4dn_FOF-CT_rna_quality
-    - optional
-    - **Yes** (if rna present)
-  * - 8
-    - :ref:`rna_bio`
-    - rna_bio
-    - 4dn_FOF-CT_rna_bio
-    - optional
-    - **Yes** (if rna present)    
-  * - 9
-    - :ref:`cell`
-    - cell
-    - 4dn_FOF-CT_cell
-    - optional
-    - **Yes** (if segmentation performed)
-  * - 10
-    - :ref:`extracell`
-    - extracell
-    - 4dn_FOF-CT_extracell
-    - optional
-    - **Yes** (if segmentation performed)
-  * - 11
-    - :ref:`subcell`
-    - subcell
-    - 4dn_FOF-CT_subcell
-    - optional
-    - **Yes** (if segmentation performed)    
-  * - 12
-    - :ref:`mapping`
-    - mapping
-    - 4dn_FOF-CT_mapping
-    - *conditionally required*
-    - not applicable
