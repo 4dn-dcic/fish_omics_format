@@ -1,13 +1,12 @@
-Introduction
-============
+Background
+==========
 
 .. contents::
-Background
-----------
+
 A key output of the (`4D Nucleome <https://www.4dnucleome.org/>`_) project is the open release of datasets that measure the spatial arrangement of DNA, RNA, and proteins within the human cell nucleus, thereby uncovering the functional dynamics of the genome in three dimensions and over time (referred to as 4D).
 
 FISH Omics techniques description
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+---------------------------------
 
 .. figure:: images/MolBio_Fig1_Aufmkolk_final_600dpi.jpg
   :class: shadow-image
@@ -27,7 +26,7 @@ Collectively these technologies can be called interchangeably **multiplexed FISH
 A variety of protocols have been developed in the past few years, and they can be divided into two main categories called respectively **ball-and-stick** or **volumetric** Chromatin Tracing, depending on whether the targeted genomic segment is visualized as a **centroid** (i.e., fitting the imaged spot of a detected fluorescent signal) or a **cloud of single-molecule localizations** (i.e., often rendered as a volume; see Figure 2 in `Dekker et al. 2023 <https://doi.org/10.1016/j.molcel.2023.06.018>`_).
 
 FISH Omics Format rationale
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
+---------------------------
 Despite the advances described in the previous section, FISH-based image-data is not yet routinely made publicly available upon publication because of the sheer size of the data and the lack of community specifications for data exchange. This challenge is experienced across the bioimaging community, as a result a solution built, tested and proven in 4DN can have a wide impact all over the world.
 
 This document describes the **4DN FISH Omics Format - Chromatin
@@ -44,7 +43,7 @@ In addition, the format is designed to be consistent with the ongoing developmen
 .. note:: FOF-CT is designed to work with both unmodified genomes and genomes containing INSERTIONS or DELETIONS. For guidance on capturing genomic variants using FOF-CT, refer to the instructions in :ref:core, and include a description of the custom build using the Variant Call Format (VCF) as outlined in :ref:`VCF-reference-label`.
 
 FISH Omics Format summary
-^^^^^^^^^^^^^^^^^^^^^^^^^
+-------------------------
 
 .. figure:: images/FOFbasCT_figure.png
   :class: shadow-image
