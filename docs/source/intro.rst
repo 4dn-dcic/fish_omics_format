@@ -39,7 +39,7 @@ FOF-CT is directly compatible with several **ball-and-stick** FISH-omics techniq
 Nucleome Architectures (`MINA <https://doi.org/10.1038/s41596-021-00518-0>`_), `Hi-M <https://doi.org/10.1016/j.molcel.2019.01.011>`_, DNA Sequential Fluorescence In Situ Hybridization (`seqFISH+ <https://doi.org/10.1038/s41586-019-1049-y>`_), Oligonucleotide Fluorescent In Situ Sequencing (`OligoFISSEQ <https://doi.org/10.1038/s41592-020-0890-0>`_), DNA Multiplexed error-robust fluorescence *in situ* hybridization (`DNA-MERFISH <https://doi.org/10.1016/j.cell.2020.07.032>`_), and *In-situ* Genomic Sequencing (`IGS <https://doi.org/10.1126/science.aay3446>`_). 
 
 In addition, the format is designed to be consistent with the ongoing development of extensions that will encompass **volumetric** chromatin tracing methods, such as OligoSTORM and OligoDNA-PAINT 
-(`Belivau et al.  2017 <https://doi.org/10.1007/978-1-4939-7265-4_19>`_, `Bintu et al. 2018 <https://doi.org/10.1126/science.aau1783>`_), `Nir et al. 2018 <https://doi.org/10.1371/journal.pgen.1007872>`_, `Luppino et al. 2020 <https://doi.org/10.1038/s41588-020-0647-9>`_)
+(`Belivau et al.  2017 <https://doi.org/10.1007/978-1-4939-7265-4_19>`_, `Bintu et al. 2018 <https://doi.org/10.1126/science.aau1783>`_, `Nir et al. 2018 <https://doi.org/10.1371/journal.pgen.1007872>`_, `Luppino et al. 2020 <https://doi.org/10.1038/s41588-020-0647-9>`_)
 
 .. note:: FOF-CT is designed to work with both unmodified genomes and genomes containing INSERTIONS or DELETIONS. For guidance on capturing genomic variants using FOF-CT, refer to the instructions in :ref:core, and include a description of the custom build using the Variant Call Format (VCF) as outlined in :ref:`VCF-reference-label`.
 
