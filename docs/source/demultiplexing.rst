@@ -7,6 +7,8 @@ Requirement level: optional
 
 Recommended: **Yes**
 
+Namespace: *4dn_FOF-CT_demultiplexing*
+
 Summary
 -------
 This table is optional and is designed to be used in the case of multiplexed FISH experiments (i.e., MERFISH) in which the final localization of a bright DNA or RNA Spot results from the combination of multiple individual localization events (e.g., by combining particles detected and localized in separate images).

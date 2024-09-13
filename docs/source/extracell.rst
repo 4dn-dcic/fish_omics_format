@@ -7,6 +7,8 @@ Requirement level: optional
 
 Recommended: **Yes**
 
+Namespace: *4dn_FOF-CT_extracell*
+
 Summary
 -------
 This table is optionally used to document properties (i.e., volume, mean fluorescence intensity) that are globally associated with individual extracellular structures (e.g., Tissue, Organoid, etc.) Regions of Interest (ROI) identified as part of this experiment.

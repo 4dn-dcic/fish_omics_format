@@ -7,6 +7,8 @@ Requirement level: optional
 
 Recommended: **Yes**
 
+Namespace: *4dn_FOF-CT_cell*
+
 Summary
 -------
 This table is optionally used to document properties that are globally associated with individual Cells (e.g., cell size, cell volume, cell type) identified as part of this experiment.

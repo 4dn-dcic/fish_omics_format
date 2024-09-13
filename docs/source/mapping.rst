@@ -5,6 +5,8 @@ Cell/ROI Mapping table
 
 Requirement level: *conditionally required*
 
+Namespace: *4dn_FOF-CT_mapping*
+
 Summary
 -------
 This table is used to provide the boundaries of Cells and other ROIs

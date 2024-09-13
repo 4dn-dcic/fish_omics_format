@@ -7,6 +7,8 @@ Requirement level: optional
 
 Recommended: **Yes**
 
+Namespace: *4dn_FOF-CT_subcell**
+
 Summary
 -------
 This table is optionally used to document properties that are globally associated with individual sub-cellular ROIs that typically correspond to sub-nuclear features (e.g., Nucleoli, Nuclear Lamina, Chromosome Domains, PML bodies, etc.) identified as part of this experiment.

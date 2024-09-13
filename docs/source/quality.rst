@@ -7,6 +7,8 @@ Requirement level: optional
 
 Recommended: **Yes**
 
+Namespace: *4dn_FOF-CT_quality*
+
 Summary
 -------
 This table is highly recommended and it is designed to provide quality
