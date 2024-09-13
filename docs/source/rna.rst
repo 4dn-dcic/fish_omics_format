@@ -7,6 +7,8 @@ Requirement level: optional
 
 Recommended: **Yes**
 
+Namespace: *4dn_FOF-CT_rna*
+
 Summary
 -------
 This table is optionally used to store and share RNA Spot data that was collected as part of this
