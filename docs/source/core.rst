@@ -33,7 +33,7 @@ Additionally, in the case in which the final localization of DNA target results 
 
 .. warning:: All **MANDATORY** header fields and column names are indicated in **bold**. All *conditionally required* header fields and column names are indicated in *italics*.
 
-.. _VCF-reference-label:
+.. _IN_DEL-reference-label:
 Instructions for when the genome under study is modified
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Instructions for reporting the location of DNA Spots and Traces in case the genome under study contains an INSERTION or DELETION.
@@ -87,7 +87,7 @@ Example without INSERTION/DELETION
 Example with INSERTION/DELETION
 -------------------------------
 
-.. warning:: In case your reference genome has insertions or deletions, please remember to follow all instructions listed here :ref:`VCF-reference-label`
+.. warning:: In case your reference genome has insertions or deletions, please remember to follow all instructions listed here :ref:`IN_DEL-reference-label`
 
 .. include:: examples/core_IN-DEL
   :code:
