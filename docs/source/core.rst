@@ -87,7 +87,7 @@ Example without INSERTION/DELETION
 Example with INSERTION/DELETION
 -------------------------------
 
-.. warning:: In case your reference genome has insertions or deletions, please remember to follow all instructions listed here :ref:`cVCF-reference-label`
+.. warning:: In case your reference genome has insertions or deletions, please remember to follow all instructions listed here :ref:`VCF-reference-label`
 
 .. include:: examples/core_IN-DEL
   :code:
