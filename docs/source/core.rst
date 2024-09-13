@@ -36,7 +36,8 @@ Additionally, in the case in which the final localization of DNA target results 
 .. _IN_DEL-reference-label:
 Instructions for when the genome under study is modified
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Instructions for reporting the location of DNA Spots and Traces in case the genome under study contains an INSERTION or DELETION.
+Instructions for reporting the location of DNA Spots and Traces in case the genome under study contains insertions or deletions:
+
 #. Add the ``custom-build`` prefix to the genome build name and introduce a descriptive name detailing the nature of the genome modification.
 #. Insert the following additional fields in the File header
 #. ``##modification`` to indicate the nature and location of the modification
