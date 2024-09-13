@@ -55,7 +55,7 @@ Example
 -------
 The only mandatory column in this table is ``Sub_Cell_ROI_ID``. All other columns are optional and must be defined by the user using a Header line starting with ``#^``.
 
-.. tip:: the Optional columns in this example table are included for illustrative purposes only and describe a case in which the user is reporting a **description** of the sub-cell ROI, the **marker** that was used to detect the sub-cell ROI, as well as the **volume** and the **intensity** of each ROI. 
+.. tip:: The optional columns in this example table are included for illustrative purposes only and describe a case in which the user is reporting a **description** of the sub-cell ROI, the **marker** that was used to detect the sub-cell ROI, as well as the **volume** and the **intensity** of each ROI. 
 
 .. include:: examples/subcell
   :code:

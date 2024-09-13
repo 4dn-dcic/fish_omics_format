@@ -56,7 +56,7 @@ Example
 -------
 The only mandatory columns in this table are ``Loc_ID``, ``Spot_ID``, ``X``, ``Y``, ``Z``, ``Fluor``.  All other columns are optional and must be defined by the user using a Header line starting with ``#^``. 
 
-.. tip:: the Optional columns in this example table are included for illustrative purposes only and describe a case in which DNA spots are detected with multiplexed barcodes.
+.. tip:: The optional columns in this example table are included for illustrative purposes only and describe a case in which DNA spots are detected with multiplexed barcodes.
 
 .. include:: examples/demultiplexing
   :code:

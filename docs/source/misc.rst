@@ -44,7 +44,7 @@ REMBI: Recommended Metadata for Biological Images
 
 4DN-BINA-OME-QUAREP (NBO-Q) Microscopy Metadata Specifications
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
--  December 20221 Nature Methods FOCUS Issue on `Reporting and reproducibility in microscopy <https://www.nature.com/collections/djiciihhjh>`_
+-  December 2021 Nature Methods FOCUS Issue on `Reporting and reproducibility in microscopy <https://www.nature.com/collections/djiciihhjh>`_
 -  Hammer, M., Huisman, M., Rigano, A. et al. Towards community-driven metadata standards for light microscopy: tiered specifications extending the OME model. `Nat Methods 18, 1427–1440 (2021) <https://doi.org/10.1038/s41592-021-01327-9>`_
 
 OME-NGFF and OME-Zarr

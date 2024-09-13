@@ -54,7 +54,7 @@ Example
 -------
 The only mandatory column in this table is ``Extra_Cell_ROI_ID``. All other columns are optional and must be defined by the user using a Header line starting with ``#^``.
 
-.. tip:: the Optional columns in this example table are included for illustrative purposes only and describe a case in which the user is reporting the **number** of specific cells are detected within individual extracellular ROIs as well as the **volume** of each ROI. 
+.. tip:: The optional columns in this example table are included for illustrative purposes only and describe a case in which the user is reporting the **number** of specific cells are detected within individual extracellular ROIs as well as the **volume** of each ROI. 
 
 .. include:: examples/extracell
   :code:

@@ -56,7 +56,7 @@ Example
 -------
 The only mandatory column in this table is ``Cell_ID``. All other columns are optional and must be defined by the user using a Header line starting with ``#^``. 
 
-.. tip:: the Optional columns in this example table are included for illustrative purposes only and describe a case in which the user is reporting the **number** of RNA spots detected in individual cells as well as the **cell cycle state** and the **volume** of each cell. 
+.. tip:: The optional columns in this example table are included for illustrative purposes only and describe a case in which the user is reporting the **number** of RNA spots detected in individual cells as well as the **cell cycle state** and the **volume** of each cell. 
 
 .. include:: examples/cell
   :code:

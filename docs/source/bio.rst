@@ -60,7 +60,7 @@ Example
 -------
 The only mandatory column in this table is ``Spot_ID``. All other columns are optional and must be defined by the user using a Header line starting with ``#^``. 
 
-.. tip:: the Optional Columns in this example table are included for illustrative purposes only and describe a case in which the user is reporting the **distance** of DNA spots from two different nuclear landmarks.
+.. tip:: The optional columns in this example table are included for illustrative purposes only and describe a case in which the user is reporting the **distance** of DNA spots from two different nuclear landmarks.
 
 .. include:: examples/bio
   :code:
