@@ -17,7 +17,7 @@ In this table, each row reports the ``X``, ``Y``, ``Z`` localization, and the Tr
 In this table the reported ``X``, ``Y``, ``Z`` coordinates are assumed to result from post-processing and quality control procedures and therefore
 correspond to the final localization of the DNA target under study.
 
-.. tip:: The 4DN Data Portal only accepts GRCh38 for human and GRCm38 for mouse. For other species follow these `instructions. <https://data.4dnucleome.org/search/?type=Organism>`_ In case the genome under study contains an INSERTION/DELETION follow the instructions below.
+.. tip:: The 4DN Data Portal only accepts GRCh38 for human and GRCm38 for mouse. For other species follow these `instructions. <https://data.4dnucleome.org/search/?type=Organism>`_ In addition, in case the genome under study contains INSERTION/DELETIONs follow also these :ref:`IN_DEL-reference-label`.
 
 At a minimum the Table has to have 8 columns in the following order:
 ``Spot_ID``, ``Trace_ID``, ``X``, ``Y``, ``Z``, ``Chrom``, ``Chrom_Start``,
@@ -88,7 +88,7 @@ Example without INSERTION/DELETION
 Example with INSERTION/DELETION
 -------------------------------
 
-.. warning:: In case your reference genome has insertions or deletions, please remember to follow all instructions listed here :ref:`IN_DEL-reference-label`
+.. warning:: In case your reference genome has insertions or deletions, please remember to follow these :ref:`IN_DEL-reference-label`
 
 .. include:: examples/core_IN-DEL
   :code:
