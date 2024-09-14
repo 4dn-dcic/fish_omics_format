@@ -18,6 +18,12 @@ Allowable value lists
     - nm, micron, mm, etc.
     - micron
   * - 2
+    - ``Software_Type``
+    - The type of this Software used to produce results recorded in this table.
+    - SpotLoc, Tracing, SpotLoc+Tracing, Segmentation, QC, Other
+    - Not Applicable
+    - Not Applicable
+  * - 2
     - ``Time_unit``
     - The unit used to represent a time interval.
     - SI units of `Time <https://en.wikipedia.org/wiki/SI_base_unit>`_
