@@ -14,10 +14,10 @@
     core
     demultiplexing
     trace
-    quality
-    bio
     rna
+    quality
     rna_quality
+    bio
     rna_bio
     cell
     subcell

@@ -55,10 +55,7 @@ File Header
 - The first line in the header is always ``##FOF-CT_Version=vX.X``.
 - The second line in the header is always ``##Table_Namespace=4dn_FOF-CT_mapping``.
 
-The header **MUST** contain a mandatory set of fields that describe the
-algorithm(s) that were used to identify and localize bright Spots and to
-connect them to form Traces. In case more than one algorithm were used,
-please use the same set of fields for each of the algorithm used.
+.. tip:: The header **MUST** contain a mandatory set of fields that describe any Software tool that was used to produce/process data in this table. If more than one software tool was used, please repeat a set of Software-fields for describing each of them.
 
 All columns for this table are mandatory and do not need to be described
 in the header.

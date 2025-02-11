@@ -31,7 +31,7 @@ File Header
 - The first line in the header is always ``##FOF-CT_Version=vX.X``.
 - The second line in the header is always ``##Table_Namespace=4dn_FOF-CT_rna_bio``.
 
-The header **MUST** contain a mandatory set of fields that describe any algorithm that was used to produce/process data in this table. In case more than one algorithm were used, please use the same set of fields for each of them.
+.. tip:: If applicable, the header **MUST** contain a mandatory set of fields that describe any Software tool that was used to produce/process data in this table. If more than one software tool was used, please repeat a set of Software-fields for describing each of them.
 
 The header **MUST** include a detailed description of each optional columns used. 
 
