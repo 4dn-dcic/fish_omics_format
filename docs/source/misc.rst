@@ -1,89 +1,58 @@
-Miscellaneous
-=============
+Additional Information
+======================
 
 .. contents::
-
 
 Contributors
 ------------
 Contributors, listed alphabetically:
-Sarah Aufmkolk,
-Bogdan Bintu,
-Alistair Boettiger,
-Andrea Cosolo,
-Adam Jussila,
-Caterina Strambio De Castillia,
-Steven Wang.
+
+- Sarah Aufmkolk, Harvard Medical School
+- Alistair Boettiger, Stanford University
+- Andrea Cosolo
+- Rahi Navelkar, Harvard Medical School
+- Nuno Martins, Harvard Medical School
+- **Caterina Strambio De Castillia**, UMass Chan Medical School, (caterina.strambio@umassmed.edu)
+- Steven Wang, Yale University
 
 Older revision history
 ----------------------
-
 .. note::
-    Older versions of this document are available in the following Google Doc:
-    https://docs.google.com/document/d/1z7rIYsQnbeS7y_SMuwoa8qsWKBD_BpV88vR79WiH_XI/edit?usp=sharing
-    and Google Sheet: https://docs.google.com/spreadsheets/d/1GvqokS5w8Yw2tAngsqDC8YcLdRha5cGr/edit?usp=sharing&ouid=103316056144222958298&rtpof=true&sd=true
-
-Feb 1, 2021 Alistair Boettiger
-
-Feb 2, 2021 Bogdan Bintu, Steven Wang, Alistair Boettiger
-
-Feb 8, 2021 Bogdan Bintu, Steven Wang, Alistair Boettiger
-
-Feb 9, 2021 Steven Wang, Andrea Cosolo, Andrew Schroeder, Alistair Boettiger
-
-Feb 12, 2021 Alistair
-
-Feb 26, 2021 Caterina Strambio De Castillia
-
-July 6, 2021 Alistair, Andrea
-
-Aug, 2021, Sarah + Alistair
-
-Sept 10, 2021 Alistair
-
-Sept 16, 2021 Sarah (addition of SMLM data example #3 and #4)
-
-October 18-29, 2021 Caterina (various comments and changes)
-
-October 25, 2021 Discussion between Alistair and Caterina to address
-several comments/issues. The main clarification point was that this
-format is used specifically to define Chromatin Tracing results. This is
-a subtype of a more generic FISH Omics Format. Other subtypes will be
-defined ASAP.
-
-November, 2021 Caterina (various comments and changes)
-
-February 9, 2022 Caterina and Andrea: Change name and description for
-tables #4 and #5 and add Table# to table header.
-
-4DN Experimental and Microscopy Metadata
-----------------------------------------
-
--  Project =
--  Center =
--  Lab =
--  Experiment protocol description =
--  Date collected =
--  Date submitted =
--  Experiment Type = FISH Omics - Chromatin Tracing
--  Experiment Set Type = Replicate
--  Organism = D. melanogaster
--  Biosource Type = tissue culture cell line
--  Biosource = IMR90
--  Modification Type = none
--  Treatment Type = none
--  Microscopy Metadata (including Provenance and Quality Control)
-   conforming to 4DN-BINA-OME data model
--  Browsable probe map, (bed file, see example)
--  Probe sequences, (fasta file, see example)
+    Older versions of this document are available in the following `Google Doc <https://docs.google.com/document/d/1z7rIYsQnbeS7y_SMuwoa8qsWKBD_BpV88vR79WiH_XI/edit?usp=sharing>`_ and `Google Sheet <https://docs.google.com/spreadsheets/d/1GvqokS5w8Yw2tAngsqDC8YcLdRha5cGr/edit?usp=sharing&ouid=103316056144222958298&rtpof=true&sd=true>`_
 
 Useful information
 ------------------
+.. _VCF-reference-label:
+The Variant Call Format (VCF)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+The `Variant Call Format (VCF) <https://samtools.github.io/hts-specs/VCFv4.2.pdf>`_ is a standard tab-delimited text file format used in bioinformatics for storing gene sequence variations. The format was developed in 2010 for the 1000 Genomes Project and has since been used by other large-scale genotyping and DNA sequencing projects.
+
+VCF is unambiguous, scalable and flexible, allowing extra information to be added to the info field. 
+
+More information about how to prepare valid VCF files can be found `here <https://gatk.broadinstitute.org/hc/en-us/articles/360035531692-VCF-Variant-Call-Format>`_
+
+.. figure:: images/VCF_IN_example.png
+  :class: shadow-image
+  :width: 100%
+  :align: center
+
+  Figure 2: Schematic representation of the use of VCF to represent a genome variant containing an Inserted DNA fragement. Image from The Variant Call Format (VCF) Version 4.2 Specification, Dec 2013, available at https://cseweb.ucsd.edu/classes/sp16/cse182-a/notes/VCFv4.2.pdf
+
+REMBI: Recommended Metadata for Biological Images
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+- Sarkans, U., Chiu, W., Collinson, L. et al. REMBI: Recommended Metadata for Biological Images—enabling reuse of microscopy data in biology. `Nat Methods 18, 1418–1422 (2021) <https://doi.org/10.1038/s41592-021-01166-8>`_
+
+4DN-BINA-OME-QUAREP (NBO-Q) Microscopy Metadata Specifications
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+-  December 2021 Nature Methods FOCUS Issue on `Reporting and reproducibility in microscopy <https://www.nature.com/collections/djiciihhjh>`_
+-  Hammer, M., Huisman, M., Rigano, A. et al. Towards community-driven metadata standards for light microscopy: tiered specifications extending the OME model. `Nat Methods 18, 1427–1440 (2021) <https://doi.org/10.1038/s41592-021-01327-9>`_
 
 OME-NGFF and OME-Zarr
 ^^^^^^^^^^^^^^^^^^^^^
--  https://www.biorxiv.org/content/10.1101/2021.03.31.437929v4
--  https://zarr.readthedocs.io/en/stable/
+-  Moore, J., Allan, C., Besson, S. et al. OME-NGFF: a next-generation file format for expanding bioimaging data-access strategies. `Nat Methods 18, 1496–1498 (2021). <https://doi.org/10.1038/s41592-021-01326-w>`_
+-  Moore, J., et al. OME-Zarr: a cloud-optimized bioimaging file format with international community support. `Histochemistry and Cell Biology 160, 223-251 (2023) <https://doi.org/10.1007/s00418-023-02209-1>`_
+-  `Zarr documentation <https://zarr.readthedocs.io/en/stable/>`_
+
 
 Browsable probe map, example bed file
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -100,6 +69,7 @@ Browsable probe map, example bed file
 Probe sequence, example fasta file
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+
 .. code::
 
   >FwdPrimer01__BarcodeName__SecondBarcodeName__probeTargetName_p001__RevPrimer01
@@ -108,28 +78,3 @@ Probe sequence, example fasta file
   GCGGGACGTAAGGGCAACCGcatcaacgccacgatcagctGCTATCGTTCGTTCGAGGCCagactttggaagccaccctcattgattgctcgtgctccatCCGTTCTGAGGGTTGCCGTG
   ...
 
-Example published / available data sets
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-- Wang...Zhuang 2016, *Science* (IMR90)
-- Bintu,Mateo...Boettiger,Zhuang, 2018, *Science* (IMR90, K562, A549, HCT116)
-- Mateo...Boettiger 2019, *Nature* (mESC + D. mel)
-- Liu...Wang 2020, *Nat. Com.* (mouse liver)
-- Saw...Wang,Mango 2020, *Mol Cell* (C. elegans)
-- Su...Bintu,Zhuang 2020 *Cell* (IMR90)
-- Takei...Cai 2021 *Nature* (mESC)
-- Takei...Cai 2021 *bioRxiv* (mouse brain)
-- Wiggins...Boettiger,Crabtree. 2021 *NSMB*, (mESC)
-
-Example Tables
-^^^^^^^^^^^^^^
-
-[Other publications with potentially accessible and similar data to
-aggregate]
-
-- Bintu and Ren Sox2 paper
-- Nir...Wu 2018, (localization data is published:
-  https://data.4dnucleome.org/experiment-set-replicates/4DNESQN4JCAS/ -
-  but data format discussion ongoing)
-- Wu lab FISSEQ Nat. Methods chr tracing paper,
-- Joyce lab (mostly STORM so far?)
-- Nollman lab data

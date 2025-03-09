@@ -1,8 +1,10 @@
 Name,Description,Example,Conditional requirement conditions
 **Spot_ID**,A unique identifier for this bright Spot.,1,
-conditionally_required_column_1:,,,one of the conditionally required columns desribed in the header
-conditionally_required_column_2:,,,one of the conditionally required columns desribed in the header
-conditionally_required_column_3:,,,one of the conditionally required columns desribed in the header
-optional_column_1:,,,
-optional_column_2:,,,
-optional_column_3:,,,
+**Channel_Name**,The name of the Channel that was used to image this Spot.,510/25,
+**Fluorophore_Name**,The name of the Fluorophore whose Emission is utilized to detect this Spot.,AlextFluor_488,
+*Conditionally_Required_Column_1*,,,one of the conditionally required columns desribed in the header
+*Conditionally_Required_Column_2*,,,one of the conditionally required columns desribed in the header
+*Conditionally_Required_Column_3*,,,one of the conditionally required columns desribed in the header
+Optional_Column_1,,,
+Optional_Column_2,,,
+Optional_Column_3,,,

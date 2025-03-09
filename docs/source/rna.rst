@@ -1,21 +1,24 @@
 .. _rna:
 
-RNA-Spot Data table
+RNA Spot Data table
 ===================
 
-Requirement level: conditionally required
+Requirement level: optional
+
+Recommended: **Yes**
+
+Namespace: *4dn_FOF-CT_rna*
 
 Summary
 -------
-This table is used to store and share the results of RNA FISH-omics experiments
-and it is **conditionally required** in the case RNA data was collected as part of this
-experiment. Each row represents a detected RNA bright Spot
+This table is optionally used to store and share RNA Spot data that was collected as part of this
+experiment. 
+
+Each row represents a detected RNA bright Spot
 and corresponds to the location of a specific RNA transcript.
 
-At a minimum, one needs to know the **Spot_ID**, the **X**, **Y**, **Z** coordinates of each
-spot, the **Gene_ID** and an additional ID used to link this data
-with other tables in this format (i.e., *Trace_ID*, *Sub_Cell_ROI_ID*,
-*Cell_ID* and/or *Extra_Cell_ROI_ID*).
+At a minimum, one needs to know the **RNA_Spot_ID**, the **X**, **Y**, **Z** coordinates of each spot, the **Gene_ID**, the **RNA_name** and an additional ID used to link this data with other tables in this format (i.e., *Trace_ID*, *Sub_Cell_ROI_ID*, *Cell_ID* and/or *Extra_Cell_ROI_ID*).
+
 In addition, in case multiple transcripts are associated with
 the same Gene_ID and the FISH probes are capable of distinguishing them,
 *Transcript_ID* MUST also be reported. Thus, at a minimum there needs to
@@ -24,41 +27,28 @@ optional.
 
 In this table the reported X, Y and Z coordinates are assumed to result
 from post-processing and quality control procedures performed on primary
-localization events and therefore correspond to what is considered the best-bet
-location of the RNA molecule under study.
+localization events and therefore correspond to what is considered the best-bet location of the RNA molecule under study.
 
 In the case of multiplexed FISH experiments (i.e.,
 `MERFISH <https://doi.org/10.1073/pnas.1912459116>`_) in which the
 final location of RNA molecule results from combining multiple
-detection events (e.g., by combining individual Localization events detected in
-separate planes or images), the underlying raw data can be recorded in the
+detection events (e.g., by combining individual Localization events detected in separate planes or images), the underlying raw data can be recorded in the
 corresponding :ref:`demultiplexing` as described in the instructions of that table.
 
-``Spot_ID`` identifiers are unique across the entire dataset, thus
-allowing to identify unambiguously a Spot in the :ref:`quality`, :ref:`bio` and
-:ref:`demultiplexing`.
+.. tip:: ``RNA_Spot_ID`` identifiers are unique across the entire dataset, thus allowing to identify unambiguously a Spot in the :ref:`quality`, :ref:`bio` and :ref:`demultiplexing`.
 
-NOTE: Also DNA Spots have a ```Spot_ID`` (in the :ref:`core`). Thus, when
-assigning an identifier to each Spot, make sure that this is unique not only
-within the :ref:`rna`, but also in the :ref:`core`.
+.. warning:: All **MANDATORY** header fields and column names are indicated in **bold**. All *conditionally required* header fields and column names are indicated in *italics*.
 
-
-Example
--------
-.. include:: examples/rna
-  :code:
 
 File Header
 -----------
-- The first line in the header is always "##FOF-CT_version=vX.X"
-- The second line in the header is always "##Table_namespace=4dn_FOF-CT_rna"
+- For full instructions see :ref:`headers-reference-label`
+- The first line in the header is always ``##FOF-CT_Version=vX.X``.
+- The second line in the header is always ``##Table_Namespace=4dn_FOF-CT_mapping``.
 
-The header MUST contain a mandatory set of fields that describe the
-algorithm(s) that were used to identify and localize bright Spots.
-In case more than one algorithm were used, please use the same set of fields
-for each of them.
+.. tip:: The header **MUST** contain a mandatory set of fields that describe any Software tool that was used to produce/process data in this table. If more than one software tool was used, please repeat a set of Software-fields for describing each of them.
 
-The header MUST include a detailed description of each optional columns used.
+The header **MUST** include a detailed description of each optional columns used.
 
 .. csv-table::
   :file: tables/rna_header.csv
@@ -66,15 +56,19 @@ The header MUST include a detailed description of each optional columns used.
 
 Data Columns
 ------------
-As with all other Spot Data tables in this format, each row corresponds to data
-associated with an individual Spot.
+- For full instructions see :ref:`columns-reference-label`
 
-The first columns are always: **Spot_ID**, **X**, **Y**, **Z**, **RNA_name**,
-**Gene_ID**, followed by *Transcript_ID* if applicable, and by **one or more**
-of the following *Trace_ID*, *Sub-Cell_ROI_ID*, *Cell_ID* and/or *Extra_Cell_ROI_ID*.
+As with all other RNA Spot Data tables in this format, each row corresponds to data associated with an individual RNA_Spot.
+
+The first columns are always: ``RNA_Spot_ID``, ``X``, ``Y``, ``Z``, ``RNA_name``, ``Gene_ID``, ``Trace_ID``, followed by ``Transcript_ID`` if applicable, and by **one or more** of the following ``Sub-Cell_ROI_ID``, ``Cell_ID`` and/or ``Extra_Cell_ROI_ID``.
 The order of the other columns is at user's discretion.
 The order of the rows is at user's discretion.
 
 .. csv-table::
   :file: tables/rna_columns.csv
   :header-rows: 1
+  
+Example
+-------
+.. include:: examples/rna
+  :code:
