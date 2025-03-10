@@ -1,0 +1,22 @@
+##FOF-CT_version=v1.0
+##Table_namespace=4dn_FOF-CT_rna_bio
+##XYZ_unit=micron [default value; change if different]
+#lab_name: Nobel
+#experimenter_name:
+#experimenter_contact:
+#description:
+#Software_Title:
+#Software_Type:
+#Software_Authors:
+#Software_Description:
+#Software_Repository:
+#Software_PreferredCitationID:
+#Intensity_measurement_method:
+#^Optional_column_1: [substitute with your column header; the presence of at least 1 optional column is MANDATORY if this table is submitted]
+#^Optional_column_2: [substitute with your column header]
+#^Optional_column_3: [substitute with your column header]
+#additional_tables: 
+##columns=(RNA_Spot_ID, Optional_column_1, Optional_column_2, Optional_colummn_3, ...)
+001, XYZ, XYZ, XYZ
+002, 
+003, 

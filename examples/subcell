@@ -1,0 +1,26 @@
+##FOF-CT_Version=v1.0
+##Table_Namespace=4dn_FOF-CT_subcell
+##Sub_Cell_ROI_Type=Nucleolus
+##Cell_Type=Cell in organoid
+##XYZ_Unit=micron
+##Intensity_Unit=a.u.
+#Lab_Name: Nobel
+#Experimenter_Name: John Doe
+#Experimenter_Contact: john.doe@email.com
+#Description: In this experiment nucleoli were identified by segmentation using the indicated algorithm on the basis of anti-Fibrillarin antibodies.
+#Software_Title: AlgorithmXYZ
+#Software_Type: Segmentation
+#Software_Authors: John Doe
+#Software_Description: A pretty clear description
+#Software_Repository: https://github.com/repo_name_goes_here
+#Software_PreferredCitationID: https://doi.org/doi_goes_here
+#^ROI_Description: a free text description of this ROI (e.g., Nuclear Lamina, NPC, etc.).
+#^ROI_Marker: the marker that was used to detect this ROI (e.g., anti-NL antibody, anti-NPC antibody, etc.)
+#^ROI_Volume: the volume of this ROI expressed in micron^3.
+#^ROI_Intensity: the integrated average signal intensity of the marker of interest as measured within the boundaries of this ROI.
+#Additional_Tables: 4dn_FOF-CT_core, 4dn_FOF-CT_rna, 4dn_FOF-CT_trace
+##Columns=(Sub_Cell_ROI_ID, Cell_ID, ROI_Description, ROI_Marker, ROI_Volume, ROI_Intensity)
+001, 001, Lamina, Rabbit anti-NL XYZ, 1345, 3500
+002, 001, NPC, Mouse MAb414, 3554, 1500
+003, 002, NPC, Mouse MAb414, 1001, 2500
+004, 003, Lamina, Rabbit anti-NL XYZ, 2534, 3498

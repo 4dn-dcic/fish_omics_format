@@ -1,5 +1,0 @@
-Name,Description,Example,Conditional requirement conditions
-**Trace_ID**,"This fields reports the unique identifier for a DNA Trace identified as part of this experiment. **Note**: The purpose of this field is to link global Trace properties listed in this table with the corresponding Trace recorded in the :ref:`core`, and with corresponding RNA Spot locations recorded in the  :ref:`rna`.",1,
-Optional_Column_1,,,
-Optional_Column_2,,,
-Optional_Column_3,,,

@@ -1,0 +1,21 @@
+##FOF-CT_Version=v1.0
+##Table_Namespace=4dn_FOF-CT_mapping
+##Sub_Cell_ROI_Type=PML_body
+##ROI_Boundaries_Format=(X1,Y1 X2,Y2 ... Xn,Yn)
+##XYZ_Unit=micron
+#Lab_Name: Nobel
+#Experimenter_Name: John Doe
+#Experimenter_Contact: john.doe@email.com
+#Description: This table reports the boundaries of PML_bodies identified as part of this experiment and identified utilizing PML antibodies.
+#Software_Title: AlgorithmXYZ
+#Software_Type: Segmentation
+#Software_Authors: John Doe
+#Software_Description: A pretty clear description
+#Software_Repository: https://github.com/repo_name_goes_here
+#Software_PreferredCitationID: https://doi.org/doi_goes_here
+#Additional_Tables: 4dn_FOF-CT_core, 4dn_FOF-CT_rna, 4dn_FOF-CT_trace
+##Columns=(Sub_Cell_ROI_ID, ROI_Boundaries)
+1, (0,0 1,2 3,5)
+2, (0,0 2,3 4,6)
+3, (0,0 3,2 7,5)
+4, (0,0 9,2 9,5)
