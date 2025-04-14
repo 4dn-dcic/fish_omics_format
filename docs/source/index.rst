@@ -26,3 +26,4 @@
     datasets
     misc
     allowable_value_lists
+    contributors
