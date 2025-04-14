@@ -4,6 +4,6 @@ Contributors
 ==========================
 
 .. csv-table::
-   :file: docs/source/contributors.csv
+   :file: contributors.csv
    :widths: 30, 70
    :header-rows: 1
