@@ -2,6 +2,10 @@ Contributors
 ==========================
 
 .. contents::
+
+Contributors List
+-----------------
+
 # contributed equally to this work
 
 * Alistair Boettiger #, Department of Developmental Biology, Stanford University, Stanford, CA 94305, USA
