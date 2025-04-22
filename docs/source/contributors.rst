@@ -31,8 +31,6 @@ Contributors
     
     * William Moore, (`ORCID:0000-0002-7264-8338 <https://orcid.org/ORCID:0000-0002-7264-8338>`_) Divisions of Molecular Cell and Developmental Biology and Computational Biology, University of Dundee, Dundee, UK
     
-    * Marcelo Nollmann, (`ORCID:0000-0003-3339-2349 <https://orcid.org/ORCID:0000-0003-3339-2349>`_) Center of Structural Biology, Univ Montpellier, CNRS, INSERM, Montpellier, France
-    
     * Jason Swedlow, Divisions of Molecular Cell and Developmental Biology and Computational Biology, University of Dundee, Dundee, UK
     
     * Frances Wong, (`ORCID:0000-0001-7397-8251 <https://orcid.org/ORCID:0000-0001-7397-8251>`_) Divisions of Molecular Cell and Developmental Biology and Computational Biology, University of Dundee, Dundee, UK
