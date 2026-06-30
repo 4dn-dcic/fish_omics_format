@@ -1,4 +1,4 @@
-vol - Individual table descriptions
+VOL - Individual table descriptions
 ===================================
 
 .. toctree::

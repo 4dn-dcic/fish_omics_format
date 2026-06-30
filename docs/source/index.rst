@@ -29,9 +29,8 @@
 
 .. toctree::
     :maxdepth: 1
-    :caption: Additional Info
+    :caption: Miscellaneous
 
-    datasets
     misc
     allowable_value_lists
     contributors

@@ -1,4 +1,4 @@
-Additional Information
+Important information
 ======================
 
 .. contents::

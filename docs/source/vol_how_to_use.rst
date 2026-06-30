@@ -1,4 +1,4 @@
-Downloadable Templates
+VOL - Downloadable Templates
 ======================
 To facilitate adoption of the FOF-CT format, table Templates can be dowloaded from `here <https://github.com/4dn-dcic/fish_omics_format/releases/latest>`_.
 

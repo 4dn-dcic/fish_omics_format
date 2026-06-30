@@ -1,4 +1,4 @@
-bas - Individual table descriptions
+BAS - Individual table descriptions
 ===================================
 
 .. toctree::
