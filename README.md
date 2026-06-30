@@ -7,4 +7,6 @@ The full list of tables and instructions on how to use them can be found at: htt
 
 The image below gives a schematic view of the 12 FOF-CT tables indicating whether they are **required** (**triple line**), *conditionally required* (*double line*), or optional/recommended content (single line).
 
+
+
 <img align="right" src="docs/source/images/FOFbasCT_figure.png">
