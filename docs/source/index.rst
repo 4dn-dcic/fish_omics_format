@@ -5,24 +5,32 @@
 .. include:: intro.rst
 
 .. toctree::
-    :caption: FOF-CT: Chromatin Tracing
+    :maxdepth: 2
+    :caption: Background
 
     intro
-    tables
     format_overview
+
+.. toctree::
+    :maxdepth: 2
+    :caption: Ball and Stick
+
+    tables
+    bas_individual_tables
     how_to_use
-    core
-    demultiplexing
-    trace
-    rna
-    quality
-    rna_quality
-    bio
-    rna_bio
-    cell
-    subcell
-    extracell
-    mapping
+
+.. toctree::
+    :maxdepth: 2
+    :caption: Volumetric
+
+    vol_tables
+    vol_individual_tables
+    vol_how_to_use
+
+.. toctree::
+    :maxdepth: 1
+    :caption: Additional Info
+
     datasets
     misc
     allowable_value_lists
