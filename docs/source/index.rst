@@ -15,9 +15,9 @@
     :maxdepth: 2
     :caption: Ball and Stick
 
-    tables
+    bas_tables
     bas_individual_tables
-    how_to_use
+    bas_how_to_use
 
 .. toctree::
     :maxdepth: 2

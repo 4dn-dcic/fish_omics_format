@@ -1,4 +1,4 @@
-Format description: overview
+Format description
 ============================
 
 .. contents::
