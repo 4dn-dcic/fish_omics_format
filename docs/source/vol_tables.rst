@@ -1,4 +1,4 @@
-.. _VOL_table-reference-label:
+.. _VOL-table-reference-label:
 
 VOL - Tables
 ------
