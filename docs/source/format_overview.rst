@@ -5,16 +5,16 @@ Format description
 
 General Info
 ------------
-- The format is designed to cover both Ball-and-Stick (BAS) as well as Volumetric (VOL) Chromatin Tracing experimental modalities.
-- The format is organized in multiple individual tables. 
+- The format is designed to cover both **Ball-and-Stick (BAS)** as well as Volumetric **(VOL) Chromatin Tracing** experimental modalities.
+- The format is organized in multiple individual tables. The tables differ between the BAS and VOL modalities:
 
-  - The 12 :ref:`BAS-table-reference-label` are common to both modalities. 
-  - The additional 3 :ref:`VOL-table-reference-label` must be used for depositing VOL Chromatin Tracing data.
+  - The 12 :ref:`BAS-table-reference-label` are common to both **BAS Chromatin Tracing** and **VOL Chromatin Tracing**. 
+  - The additional 3 :ref:`VOL-table-reference-label` pertain **exclusively to VOL Chromatin Tracing**.
 
 - Each modality only has one mandatory table:
 
-  - For BAS Chromatin Tracing, the mandatory table is the :ref:`core`.
-  - For VOL Chromatin Tracing, the mandatory table is the Localization_Data_Table.
+  - For **BAS Chromatin Tracing**, the mandatory table is the :ref:`core`.
+  - For **VOL Chromatin Tracing**, the mandatory table is the **Localization Data Table**.
 
 - All other tables are either conditionally required depending on experiment design and type or optional but *recommended* for all experiment types.
 - Each file must contain a single table.
@@ -27,13 +27,13 @@ General Info
 
 .. warning:: All **MANDATORY** header fields and column names are indicated in **bold**. All *conditionally required* header fields and column names are indicated in *italics*.
 
-.. tip:: Except for :ref:`core`, :ref:`demultiplexing`, :ref:`rna` and :ref:`mapping`, all included :ref:`table-reference-label` **MUST** contain at least 1 **Optional Column**.
+.. tip:: Except for :ref:`core`, :ref:`demultiplexing`, :ref:`rna` and :ref:`mapping`, all other :ref:`BAS-table-reference-label` and :ref:`VOL-table-reference-label` that are included in the deoposition **MUST** contain at least 1 **Optional Column**.
 
 .. _headers-reference-label:
 File Header
 -----------
 - All tables have to contain a mandatory header section.
-- In the file header, each line contains only one field.
+- In the file header, each line contains only key-value pair.
 - Header lines are denoted by ``#``. In particular:
 
   - ``##`` denotes machine readable header lines. These lines must follow the
@@ -48,9 +48,9 @@ File Header
     follow the following format ``#^Term_X: free text description`` (e.g.,
     ``#^Optional_Column_1: optional column 1 description``).
 
-- Header names MUST use the underscore as a word separator (e.g., RNA_A_intensity).
+- Header names **MUST** use the underscore as a word separator (e.g., RNA_A_intensity).
 - The file header contains **required**, *conditionally-required*, and optional fields.
-- Conditionally-required fields are fields that are required when certains
+- Conditionally-required fields are fields that are required when certain
   conditions are met (e.g., ``##Intensity_Unit=`` is required any time an
   intensity metric is reported).
 
@@ -68,7 +68,7 @@ Mandatory header lines (all tables)
 **#Experimenter_Contact:** Email address of the person performing the
 experiment
 
-**#Description:** A free-text, description of the experiment and of the
+**#Description:** A free-text description of the experiment and of the
 data recorded in this table. This description should provide a clear
 understanding of the process utilized to produce the data and contain
 sufficient details to ensure interpretation and reproducibility.
@@ -95,7 +95,7 @@ Further, the following header line is required for the :ref:`core`, :ref:`demult
 
 **##XYZ_Unit=** The unit used to represent XYZ locations or distances. Note: use micron to avoid problem with special, Greek symbols. Other allowed values *should* be drawn from SI units of `Length <https://en.wikipedia.org/wiki/SI_base_unit>`_. Examples: 'nm', 'micron' 'mm' etc.
 
-.. note:: Other units related header lines are also *conditionally required* for all other :ref:`table-reference-label` in case relevant metrics are reported (e.g., the ``##Time_Unit=`` field is required if a time measure is reported).
+.. note:: Other units related header lines are also *conditionally required* for all other :ref:`BAS-table-reference-label` and :ref:`VOL-table-reference-label` that are included in the deposition in case relevant metrics are reported (e.g., the ``##Time_Unit=`` field is required if a time measure is reported).
 
 :ref:`core`, :ref:`demultiplexing`, :ref:`rna`, :ref:`quality` and :ref:`rna_quality` tables
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -125,7 +125,7 @@ preferred/primary publication describing this Software. Examples include
 Digital Object Identifier (DOI), PubMed Central Identifier (PMCID),
 ArXiv.org ID etc,.
 
-.. note:: All Software related header lines are also *conditionally required* for all other :ref:`table-reference-label` in case Software is used for producing the reported results.
+.. note:: All Software related header lines are also *conditionally required* for all other :ref:`BAS-table-reference-label` and :ref:`VOL-table-reference-label` that are included in the deposition in case Software is used for producing the reported results.
 
 
 .. _columns-reference-label:
@@ -136,9 +136,9 @@ Data Columns
 - Conditionally-required columns are columns that are required when certain
   conditions are met (e.g., ``Cell_ID`` is required any time the experiment
   involves the identification of Cell boundaries).
-- Column names should use the underscore ``_`` as a word separator (e.g., ``Spot_ID``).
+- Column names **MUST** use the underscore ``_`` as a word separator (e.g., ``Spot_ID``).
 - The first column is always either ``Spot_ID`` or another relevant ID (i.e., ``Trace_ID``, ``Cell_ID``, etc.). 
-- The following tables have additional mandatory columns that do need to be specified in the header, :ref:`core`, :ref:`demultiplexing`, :ref:`rna` and :ref:`mapping`
-- Unless otherwise specified, the order of all Optional Columns is at user's discretion.
-- The order of the rows is at user's discretion.
+- The following tables have additional mandatory columns that do need to be specified in the header: :ref:`core`, :ref:`demultiplexing`, :ref:`rna` and :ref:`mapping`
+- Unless otherwise specified, the order of all Optional Columns is at the user's discretion.
+- The order of the rows is at the user's discretion.
 
