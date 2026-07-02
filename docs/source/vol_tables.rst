@@ -13,7 +13,7 @@ VOL - Tables
     - Requirement Level
     - Recommended
   * - 1
-    - :ref:`vol_core`
+    - :ref:`vol-core`
     - core
     - 4dn_FOF-CT_vol_core
     - **required**
@@ -25,7 +25,7 @@ VOL - Tables
     - optional
     - **Yes**
   * - 3
-    - :ref:`vol_quality`
+    - :ref:`vol-quality`
     - vol_quality
     - 4dn_FOF-CT_vol_quality
     - optional
