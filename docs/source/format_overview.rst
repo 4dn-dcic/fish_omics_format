@@ -1,8 +1,6 @@
 Format description
 ============================
 
-.. contents::
-
 General Info
 ------------
 - The format is designed to cover both **Ball-and-Stick (BAS)** as well as Volumetric **(VOL) Chromatin Tracing** experimental modalities.
