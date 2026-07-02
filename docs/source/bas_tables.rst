@@ -1,4 +1,4 @@
-.. _table-reference-label:
+.. _BAS_tables-reference-label:
 BAS - Tables
 ------
 
