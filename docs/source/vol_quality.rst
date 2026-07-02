@@ -1,9 +1,9 @@
 .. _vol-quality:
 
-Spot Quality table
+Localization Quality table
 ==================
 
-Requirement level: mandatory
+Requirement level: optional
 
 Recommended: **Yes**
 
@@ -11,9 +11,8 @@ Namespace: *4dn_FOF-CT_vol_quality*
 
 Summary
 -------
-This table is **mandatory** and is designed to provide **quality metrics** for individual Single Molecule (SM) localization events. 
-All depositions **MUST** contain **Precision**, **PhotonCount**, and **Goodness_of_Fit** columns. 
-Other columns can be included at the user's discretion. 
+This table is *recommended* and is designed to provide **quality metrics** for individual Single Molecule (SM) localization events. 
+It is highly recommended that all depositions contain *X_Loc_Precision*, *Y_Loc_Precision*, *Z_Loc_Precision*, *PhotonCount*, and *Goodness_of_Fit* columns. Other columns can be included at the user's discretion. 
 In all cases, all columns **MUST** be described in the header with sufficient details to ensure interpretation and reproducibility.
 
 However, in order to align with existing `Light Microscopy Model (LiMi-Model) <https://doi.org/10.1038/s41592-021-01327-9>`_ of metadata specifications, the use of specific column names and descriptions is *conditionally required* in case the described metric is reported. As an example, the column name ``X_Drift`` is conditionally required in case the user intends to report a comparison between the Observed vs. Expected (i.e., based on a fiducial reference) positions of a detected Spot.
@@ -55,11 +54,13 @@ the user's discretion.
 
 Example
 -------
-This table has the following mandatory columns: ``Localization_ID``, ``X_Precision``, ``Y_Precision``, ``Z_Precision``, ``PhotonCount``, and ``Goodness_of_Fit``.
+This table has only one mandatory columns: ``Localization_ID``.
 
-All other columns are either *Conditionally required* or Optional. *Conditionally required* columns should be drawn from the list provided in the file header or MUST be defined by the user using a Header line starting with ``#^``. 
+The following columns are **highly recommended**: ``X_Loc_Precision``, ``Y_Loc_Precision``, ``Z_Loc_Precision``, ``PhotonCount``, and ``Goodness_of_Fit``.
 
-.. tip:: The optional columns in this example table are included for illustrative purposes only and describe a case in which the user is reporting the Spot fit quality using metrics that align with existing `4DN-BINA-OME <https://doi.org/10.1038/s41592-021-01327-9>`_ Microscopy Metadata specifications. 
+All other columns are either *Conditionally required* or Optional. *Conditionally required* columns should be drawn from the list provided in the file header. In all cases, all Columns MUST be defined and described by the user using a Header line starting with ``#^``. 
+
+.. tip:: The optional columns in this example table are included for illustrative purposes only and describe a case in which the user is reporting the Spot fit quality using metrics that align with existing `Light Microscopy Model (LiMi-Model) <https://doi.org/10.1038/s41592-021-01327-9>`_ metadata specifications. 
 
 .. include:: examples/quality
   :code:
