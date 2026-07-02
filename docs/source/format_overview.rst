@@ -3,7 +3,7 @@ Format description
 
 General Info
 ------------
-- The format is designed to cover both **Ball-and-Stick (BAS)** as well as Volumetric **(VOL) Chromatin Tracing** experimental modalities.
+- The format is designed to cover both **Ball-and-Stick (BAS)** as well as **Volumetric (VOL)** Chromatin Tracing experimental modalities.
 - The format is organized in multiple individual tables. The tables differ between the BAS and VOL modalities:
 
   - The 12 :ref:`BAS-table-reference-label` are common to both **BAS Chromatin Tracing** and **VOL Chromatin Tracing**. 
