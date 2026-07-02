@@ -5,8 +5,17 @@ Format description
 
 General Info
 ------------
-- The format is organized in multiple individual :ref:`table-reference-label`.
-- The only mandatory table is the :ref:`core`.
+- The format is designed to cover both Ball-and-Stick (BAS) as well as Volumetric (VOL) Chromatin Tracing experimental modalities.
+- The format is organized in multiple individual tables. 
+
+  - The 12 :ref:`BAS_table-reference-label` are common to both modalities. 
+  - The additional 3 :ref:`VOL_table-reference-label` must be used for VOL Chromatin Tracing.
+
+- Each modality only has one mandatory table:
+
+  - For BAS Chromating Tracing, the mandatory table is the :ref:`core`.
+  - For VOL Chromatin Tracing, the mandatory table is the Localization_Data_Table.
+
 - All other tables are either conditionally required depending on experiment design and type or optional but *recommended* for all experiment types.
 - Each file must contain a single table.
 - Accepted file formats for storing tables are txt, csv and tsv.
