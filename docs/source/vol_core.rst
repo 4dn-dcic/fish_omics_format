@@ -15,13 +15,13 @@ Chromatin Tracing experiments, both in the case in which the genome under study 
 
 The vol_core table is organized around individual Single Molecule (SM) Localization events. 
 
-In this table, each row reports the ``X``, ``Y``, ``Z`` of an individual SM Localization as well as the specific genomic DNA target sequence it corrsponds to, which is identified by chromosome ID (``Chrom``), and by start (``Chrom_Start``) and end (``Chrom_End``) chromosome coordinates.
-In addition, 
+In this table, each row reports the ``X``, ``Y``, ``Z`` of an individual SM Localization event as well as the specific genomic DNA target sequence it corresponds to, which is identified by chromosome ID (``Chrom``), and by start (``Chrom_Start``) and end (``Chrom_End``) chromosome coordinates.
+In addition, the table reports the Spot and Trace assignment of each SM Localization event.
   
   .. tip:: It is recommended to use GRCh38 for human and GRCm38 for mouse. For other species, follow these `instructions. <https://data.4dnucleome.org/search/?type=Organism>`_ In addition, in case the genome under study contains INSERTION/DELETIONs follow also these :ref:`IN_DEL-reference-label`.
 
 At a minimum, the Table has to have 9 columns in the following order:
-``Localization_ID``, ``Spot_ID`` ``Trace_ID``, ``X``, ``Y``, ``Z``, ``Chrom``, ``Chrom_Start``,
+``Loc_ID``, ``Spot_ID`` ``Trace_ID``, ``X``, ``Y``, ``Z``, ``Chrom``, ``Chrom_Start``,
 ``Chrom_End``. These are required. 
 
 Additionally, in case sub-cellular structures, cells, or extracellular structures (e.g., Tissue) are identified as part of this experiment, this table has to mandatorily include the ID of the Sub_Cellular, Cell or Extra Cellular Structure Region of Interest (ROI) each Spot/Trace is associated with.
@@ -38,7 +38,7 @@ Additionally, the underlying raw data can be recorded in the corresponding :ref:
   
 Instructions for when the genome under study is modified
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Instructions for reporting the location of DNA Spots and Traces in case the genome under study contains insertions or deletions:
+Instructions for reporting the location of SM Localization events, Spots and Traces in case the genome under study contains insertions or deletions:
 
 #. Add the ``custom-build`` prefix to the genome build name and introduce a descriptive name detailing the nature of the genome modification.
 #. Insert the following additional fields in the File header
@@ -71,9 +71,9 @@ Data Columns
 As with all other Spot Data tables, each row corresponds to
 data associated with an individual Spot.
 
-The first columns are always: ``Spot_ID``, ``Trace_ID``, ``X``, ``Y``, ``Z``, ``Chrom``, ``Chrom_Start``, ``Chrom_End``. Additionally in case sub-cellular structures, cells or extra cellular structures are identified as part of this experiment, the subsequent columns must mandatorily be ``Sub_Cell_ROI_ID``, ``Cell_ID`` or ``Extra_Cell_ROI_ID``, respectively.
+The first columns are always: ``Loc_ID``, ``Spot_ID``, ``Trace_ID``, ``X``, ``Y``, ``Z``, ``Chrom``, ``Chrom_Start``, ``Chrom_End``. Additionally, in case sub-cellular structures, cells or extracellular structures are identified as part of this experiment, the subsequent columns must mandatorily be ``Sub_Cell_ROI_ID``, ``Cell_ID`` or ``Extra_Cell_ROI_ID``, respectively.
 
-The order of the rows is at user's discretion.
+The order of the rows is at the user's discretion.
 
 .. csv-table::
   :file: tables/core_columns.csv
