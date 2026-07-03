@@ -30,7 +30,7 @@ File Header
 The header **MUST** include a detailed description of each optional column used.
 
 .. csv-table::
-  :file: tables/demultiplexing_header.csv
+  :file: tables/undecoded_header.csv
   :header-rows: 1
 
 Data Columns
@@ -43,7 +43,7 @@ The first columns are always: ``Loc_ID``, ``Frame_ID``, ``X``, ``Y``, ``Z``, ``F
 The content and order of all other columns are at the user's discretion. The order of the rows is at the user's discretion.
 
 .. csv-table::
-  :file: tables/demultiplexing_columns.csv
+  :file: tables/undecoded_columns.csv
   :header-rows: 1
   
 Example
@@ -52,5 +52,5 @@ The only mandatory columns in this table are ``Loc_ID``, ``Frame_ID``, ``X``, ``
 
 .. tip:: The optional columns in this example table are included for illustrative purposes only and describe a case in which DNA spots are detected with multiplexed barcodes.
 
-.. include:: examples/demultiplexing
+.. include:: examples/undecoded
   :code:
