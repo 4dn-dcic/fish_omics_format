@@ -1,6 +1,6 @@
 .. _vol-quality:
 
-Localization Quality table
+SM Localization Quality table
 ==================
 
 Requirement level: optional
@@ -12,10 +12,10 @@ Namespace: *4dn_FOF-CT_vol_quality*
 Summary
 -------
 This table is *recommended* and is designed to provide **quality metrics** for individual Single Molecule (SM) Localization events. 
-It is highly recommended that all depositions contain *X_Loc_Precision*, *Y_Loc_Precision*, *Z_Loc_Precision*, *PhotonCount*, and *Goodness_of_Fit* columns. Other columns can be included at the user's discretion. 
-In all cases, all columns **MUST** be described in the header with sufficient details to ensure interpretation and reproducibility.
+It is **highly recommended** that all depositions contain *X_Loc_Precision*, *Y_Loc_Precision*, *Z_Loc_Precision*, *PhotonCount*, and *Goodness_of_Fit* columns. Other columns can be included at the user's discretion. 
 
 However, to align with existing `Light Microscopy Model (LiMi-Model) <https://doi.org/10.1038/s41592-021-01327-9>`_ of metadata specifications, the use of specific column names and descriptions is *conditionally required* in case the described metric is reported. As an example, the column name ``X_Drift`` is conditionally required in case the user intends to report a comparison between the Observed vs. Expected (i.e., based on a fiducial reference) positions of a detected Spot.
+In all cases, all columns **MUST** be described in the header with sufficient details to ensure interpretation and reproducibility.
 
 The table is mandatorily indexed by ``Loc_ID`` and each row corresponds to an individual SM Localization event. The order of all other columns (including those conditionally required) and of the rows is at the user's discretion.
 
@@ -39,15 +39,9 @@ Data Columns
 ------------
 - For full instructions, see :ref:`columns-reference-label`
 
-As with all other Spot Data tables in this format, each row corresponds to
-data associated with an individual SM localization event.
+Each row corresponds to data associated with an individual SM Localization event. Accordingly, the first column of this table is always ``Loc_ID``. The content and order of all other columns are largely at the user's discretion.
 
-The first column of this table is always ``Loc_ID``.
-
-The content and order of all other columns are largely at the user's discretion.
-However, it is highly recommended that all depositions contain *X_Loc_Precision*, *Y_Loc_Precision*, *Z_Loc_Precision*, *PhotonCount*, and *Goodness_of_Fit* columns.
-
-In addition, to align with existing `Light Microscopy Model (LiMi-Model) <https://doi.org/10.1038/s41592-021-01327-9>`_ metadata specifications, the use of specific column names and descriptions is *conditionally required* as indicated below. The order of the rows is at the user's discretion.
+However, it is highly recommended that all depositions contain *X_Loc_Precision*, *Y_Loc_Precision*, *Z_Loc_Precision*, *PhotonCount*, and *Goodness_of_Fit* columns. In addition, to align with existing `Light Microscopy Model (LiMi-Model) <https://doi.org/10.1038/s41592-021-01327-9>`_ metadata specifications, the use of specific column names and descriptions is *conditionally required* as indicated below. The order of the rows is at the user's discretion.
 
 .. csv-table::
   :file: tables/quality_columns.csv
