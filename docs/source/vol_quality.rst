@@ -32,7 +32,7 @@ File Header
 The header **MUST** include a detailed description of each optional column used. 
 
 .. csv-table::
-  :file: tables/quality_header.csv
+  :file: tables/vol_quality_header.csv
   :header-rows: 1
 
 Data Columns
