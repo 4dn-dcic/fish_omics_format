@@ -76,7 +76,7 @@ The first columns are always: ``Loc_ID``, ``Spot_ID``, ``Trace_ID``, ``X``, ``Y`
 The order of the rows is at the user's discretion.
 
 .. csv-table::
-  :file: tables/core_columns.csv
+  :file: tables/vol_core_columns.csv
   :header-rows: 1
   
 Example without INSERTION/DELETION
