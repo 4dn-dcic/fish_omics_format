@@ -11,24 +11,19 @@ Summary
 -------
 This is the mandatory core table of the 4DN FISH-omics Format for Volumetric (VOL) Chromatin Tracing. It records and exchanges the primary results of VOL Chromatin Tracing experiments, whether the genome under study is unmodified or contains INSERTIONS or DELETIONS.
 
-The vol_core table is organized around individual Single Molecule (SM) Localization events. 
+The vol_core table is organized around individual single-molecule (SM) localization events. Each row reports the ``X``, ``Y``, ``Z`` coordinates of an individual SM Localization event, the genomic DNA target it corresponds to — identified by chromosome ID (``Chrom``), and by start (``Chrom_Start``) and end (``Chrom_End``) — and the Spot and Trace assignment of that event.
 
-In this table, each row reports the ``X``, ``Y``, ``Z`` of an individual SM Localization event as well as the specific genomic DNA target sequence it corresponds to, which is identified by chromosome ID (``Chrom``), and by start (``Chrom_Start``) and end (``Chrom_End``) chromosome coordinates.
-In addition, the table reports the Spot and Trace assignment of each SM Localization event.
+  .. tip:: For genomic coordinates, it is recommended to use GRCh38 for human and GRCm38 for mouse. For other species, follow these `instructions. <https://data.4dnucleome.org/search/?type=Organism>`_ In addition, in case the genome under study contains INSERTION/DELETIONs, also follow these :ref:`IN_DEL-reference-label`.
   
-  .. tip:: It is recommended to use GRCh38 for human and GRCm38 for mouse. For other species, follow these `instructions. <https://data.4dnucleome.org/search/?type=Organism>`_ In addition, in case the genome under study contains INSERTION/DELETIONs follow also these :ref:`IN_DEL-reference-label`.
+At a minimum, the table must have the **9 required columns** in the following order: ``Loc_ID``, ``Spot_ID`` ``Trace_ID``, ``X``, ``Y``, ``Z``, ``Chrom``, ``Chrom_Start``, ``Chrom_End``.
 
-At a minimum, the Table has to have 9 columns in the following order:
-``Loc_ID``, ``Spot_ID`` ``Trace_ID``, ``X``, ``Y``, ``Z``, ``Chrom``, ``Chrom_Start``,
-``Chrom_End``. These are required. 
+Additionally, in case sub-cellular structures, cells, or extracellular structures (e.g., Tissue) are identified as part of this experiment, this table has to mandatorily include the ID of the Sub_Cellular (``Sub_Cell_ROI_ID``), Cell (``Cell_ID``) or Extra Cellular (``Extra_Cell_ROI_ID``) Region of Interest (ROI) each SM Localization event is associated with.
 
-Additionally, in case sub-cellular structures, cells, or extracellular structures (e.g., Tissue) are identified as part of this experiment, this table has to mandatorily include the ID of the Sub_Cellular, Cell or Extra Cellular Structure Region of Interest (ROI) each Spot/Trace is associated with.
-
-All other SM Localization properties must be kept in the :ref:`vol_quality` as described in the instructions for this table.
+All other SM Localization properties must be kept in the corresponding :ref:`vol-quality` as described in the instructions for this table.
   
 Additionally, the underlying raw data can be recorded in the corresponding :ref:`undecoded` table as described in the instructions of that table.
 
-.. tip:: ``Localization_ID`` identifiers are unique across the entire dataset, thus allowing to identify unambiguously a Localization in the :ref:`vol_quality`, and :ref:`undecoded`. 
+.. tip:: ``Localization_ID`` identifiers are unique across the entire dataset, thus allowing the unambiguous identification of SM Localization events across this table and the :ref:`vol-quality`, and the :ref:`undecoded`. 
 
 .. warning:: All **MANDATORY** header fields and column names are indicated in **bold**. All *conditionally required* header fields and column names are indicated in *italics*.
 
@@ -64,7 +59,7 @@ in the header.
 
 Data Columns
 ------------
-- For full instructions see :ref:`columns-reference-label`
+- For full instructions, see :ref:`columns-reference-label`
 
 As with all other Spot Data tables, each row corresponds to
 data associated with an individual Spot.
