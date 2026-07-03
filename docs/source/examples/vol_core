@@ -12,7 +12,7 @@
 #Software_Description: ChrTracer3 software was developed for analysis of raw DNA labeled images. As an input, it takes an.xlsx table containing information and folder names of the DNA experiment. As an output, it returns tab delimited.txt ﬁles with drift-corrected x, y, z positions for all labeled barcodes. These can be used directly to calculate the nm scale distances between all pairs of labeled loci. The current version of the software as of this writing is ChrTracer3.
 #Software_Repository: https://github.com/BoettigerLab/ORCA-public
 #Software_PreferredCitationID: https://doi.org/10.1038/s41596-020-00478-x
-#Additional_Tables: 4dn_FOF-CT_quality, 4dn_FOF-CT_rna, 4dn_FOF-CT_trace, 4dn_FOF-CT_cell
+#Additional_Tables: FOF-CT_vol_quality, FOF-CT_undecoded, 4dn_FOF-CT_core, 4dn_FOF-CT_cell
 ##Columns=(Loc_ID, Spot_ID, Trace_ID, X, Y, Z, Chrom, Chrom_Start, Chrom_End, Cell_ID)
 1,1,1,14.43,41.43,1.23, chr1,1,1000,1
 2,1,1,14.25,40.25,1.73, chr1,1,1000,1
