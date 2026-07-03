@@ -14,7 +14,7 @@ VOL - Tables
     - Recommended
   * - 1
     - :ref:`vol-core`
-    - core
+    - vol_core
     - 4dn_FOF-CT_vol_core
     - **required**
     - not applicable
