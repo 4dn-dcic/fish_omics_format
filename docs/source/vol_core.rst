@@ -24,7 +24,7 @@ At a minimum, the Table has to have 9 columns in the following order:
 
 Additionally, in case sub-cellular structures, cells, or extracellular structures (e.g., Tissue) are identified as part of this experiment, this table has to mandatorily include the ID of the Sub_Cellular, Cell or Extra Cellular Structure Region of Interest (ROI) each Spot/Trace is associated with.
 
-All other SM localization properties must be kept in the :ref:`vol_quality` as described in the instructions for this table.
+All other SM Localization properties must be kept in the :ref:`vol_quality` as described in the instructions for this table.
   
 Additionally, the underlying raw data can be recorded in the corresponding :ref:`undecoded` table as described in the instructions of that table.
 
