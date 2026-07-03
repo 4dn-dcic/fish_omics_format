@@ -12,21 +12,21 @@ VOL - Tables
     - Namespace
     - Requirement Level
     - Recommended
-  * - 1
+  * - 1v
     - :ref:`vol-core`
     - vol_core
-    - 4dn_FOF-CT_vol_core
+    - FOF-CT_vol_core
     - **required**
     - not applicable
-  * - 2
+  * - 2v
     - :ref:`undecoded`
     - undecoded
-    - 4dn_FOF-CT_undecoded
+    - FOF-CT_undecoded
     - optional
     - **Yes**
-  * - 3
+  * - 5v
     - :ref:`vol-quality`
     - vol_quality
-    - 4dn_FOF-CT_vol_quality
+    - FOF-CT_vol_quality
     - optional
     - **Yes**
