@@ -1,1 +1,24 @@
-
+##FOF-CT_Version=v1.0
+##Table_Namespace=FOF-CT_undecoded
+##XYZ_Unit=micron
+#Lab_Name: Nobel
+#Experimenter_Name: John Doe
+#Experimenter_Contact: john.doe@email.com
+#Description: This table reports the primary SM Localization events that were detected before decoding.
+#Software_Title: BestLocalizationSoftware
+#Software_Type: Loc
+#Software_Authors: Doe, J.
+#Software_Description: A pretty clear description
+#Software_Repository: https://github.com/repo_name_goes_here
+#Software_PreferredCitationID: https://doi.org/doi_goes_here
+#^Frame_ID: the image frame in which this localization occurred
+#^Fluor: the fluorescent channel in which this localization was detected
+#Additional_Tables: FOF-CT_vol_core, FOF-CT_vol_quality
+##Columns=(Loc_ID, Spot_ID,Frame_ID, X, Y, Z, Fluor)
+1,1,1,2342,2354,545, cy3
+2,1,1,2342,2354,545, cy5
+3,1,1,2342,2354,545, cy5
+4,2,2,3345,5432,654, cy3
+5,2,2,3345,5432,654, cy5
+6, NA,2,4345,432,100, cy3
+7,2,2,3345,5432,654, cy3
