@@ -61,7 +61,7 @@ All columns for this table are mandatory and do not need to be described
 in the header.
 
 .. csv-table::
-  :file: tables/core_header.csv
+  :file: tables/vol_core_header.csv
   :header-rows: 1
 
 Data Columns
