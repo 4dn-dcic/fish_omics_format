@@ -81,7 +81,7 @@ The order of the rows is at the user's discretion.
   
 Example without INSERTION/DELETION
 ----------------------------------
-.. include:: examples/core
+.. include:: examples/vol_core
   :code:
 
 Example with INSERTION/DELETION
