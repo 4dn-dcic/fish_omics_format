@@ -44,7 +44,7 @@ Each row corresponds to data associated with an individual SM Localization event
 However, it is highly recommended that all depositions contain *X_Loc_Precision*, *Y_Loc_Precision*, *Z_Loc_Precision*, *PhotonCount*, and *Goodness_of_Fit* columns. In addition, to align with existing `Light Microscopy Model (LiMi-Model) <https://doi.org/10.1038/s41592-021-01327-9>`_ metadata specifications, the use of specific column names and descriptions is *conditionally required* as indicated below. The order of the rows is at the user's discretion.
 
 .. csv-table::
-  :file: tables/quality_columns.csv
+  :file: tables/vol_quality_columns.csv
   :header-rows: 1
 
 Example
