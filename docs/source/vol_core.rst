@@ -5,7 +5,7 @@ SM Localization Data vol_core table
 
 Requirement level: **required**
 
-Namespace: *4dn_FOF-CT_vol_core*
+Namespace: *FOF-CT_vol_core*
 
 Summary
 -------
