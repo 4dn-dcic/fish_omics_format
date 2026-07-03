@@ -7,7 +7,7 @@ Requirement level: optional
 
 Recommended: **Yes**
 
-Namespace: *4dn_FOF-CT_vol_quality*
+Namespace: *FOF-CT_vol_quality*
 
 Summary
 -------
