@@ -7,7 +7,7 @@ Requirement level: optional
 
 Recommended: **Yes**
 
-Namespace: *4dn_FOF-CT_undecoded*
+Namespace: *FOF-CT_undecoded*
 
 Summary
 -------
