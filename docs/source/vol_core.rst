@@ -9,9 +9,7 @@ Namespace: *4dn_FOF-CT_vol_core*
 
 Summary
 -------
-This is the mandatory core table of the 4DN FISH-omics Format for Volumetric (VOL) Chromatin
-Tracing. This table is used to record and exchange the primary results of VOL
-Chromatin Tracing experiments, both in the case in which the genome under study is unmodified and in the case in which it contains INSERTIONS or DELETIONS.
+This is the mandatory core table of the 4DN FISH-omics Format for Volumetric (VOL) Chromatin Tracing. It records and exchanges the primary results of VOL Chromatin Tracing experiments, whether the genome under study is unmodified or contains INSERTIONS or DELETIONS.
 
 The vol_core table is organized around individual Single Molecule (SM) Localization events. 
 
