@@ -89,5 +89,5 @@ Example with INSERTION/DELETION
 
 .. warning:: In case your reference genome has insertions or deletions, please remember to follow these :ref:`IN_DEL-reference-label`
 
-.. include:: examples/core_IN-DEL
+.. include:: examples/vol_core_IN-DEL
   :code:
