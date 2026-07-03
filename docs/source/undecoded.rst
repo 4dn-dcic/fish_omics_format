@@ -11,14 +11,11 @@ Namespace: *4dn_FOF-CT_undecoded*
 
 Summary
 -------
-This table is optional and is designed to be used to report the XYZ coordinates of individual SM Localization events before decoding.
+This table is optional and is designed to be used to report the X, Y, Z coordinates of individual SM Localization events before decoding.
 
-In such a case, the final SM Localization event is recorded in the
-:ref:`vol_core`, while the underlying primary localization data can be recorded by using this table, as shown in the example below.
+When raw, pre-decoding data are reported, the underlying primary localization data are recorded in this table, as shown in the example below, while the final, decoded SM Localization event is recorded in :ref:vol_core.
 
-This table is indexed by ``Loc_ID``, mandatorily reports the ``X``, ``Y``, ``Z`` coordinates of the Localization event and ``Frame_ID`` and the fluorescent channel (``Fluor``) in which each SM Localization event was detected.
-
-Other columns are at the user's discretion.
+This table is indexed by ``Loc_ID``, mandatorily reports the ``X``, ``Y``, ``Z`` coordinates of the primary SM Localization events, as well as the image frame (``Frame_ID``) and the fluorescent channel (``Fluor``) in which each SM Localization event was detected. All other columns are at the user's discretion.
 
 .. warning:: All **MANDATORY** header fields and column names are indicated in **bold**. All *conditionally required* header fields and column names are indicated in *italics*.
 
@@ -40,11 +37,10 @@ Data Columns
 ------------
 - For full instructions see :ref:`columns-reference-label`
 
-This table is indexed by ``Loc_ID`` and therefore each row corresponds to data associated with an individual Localization event.
+This table is indexed by ``Loc_ID`` and therefore each row corresponds to data associated with an individual SM Localization event.
 
 The first columns are always: ``Loc_ID``, ``Frame_ID``, ``X``, ``Y``, ``Z``, ``Fluor``.
-The content and order of all other columns are at the user's discretion.
-The order of the rows is at the user's discretion.
+The content and order of all other columns are at the user's discretion. The order of the rows is at the user's discretion.
 
 .. csv-table::
   :file: tables/demultiplexing_columns.csv
