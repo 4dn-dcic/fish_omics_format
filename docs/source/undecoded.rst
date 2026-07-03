@@ -11,7 +11,7 @@ Namespace: *4dn_FOF-CT_undecoded*
 
 Summary
 -------
-This table is optional and is designed to be used to report the XYZ coordinates of individual SM localization events before decoding.
+This table is optional and is designed to be used to report the XYZ coordinates of individual SM Localization events before decoding.
 
 In such a case, the final SM Localization event is recorded in the
 :ref:`vol_core`, while the underlying primary localization data can be recorded by using this table, as shown in the example below.
@@ -24,7 +24,7 @@ Other columns are at the user's discretion.
 
 File Header
 -----------
-- For full instructions see :ref:`headers-reference-label`
+- For full instructions, see :ref:`headers-reference-label`
 - The first line in the header is always ``##FOF-CT_Version=vX.X``.
 - The second line in the header is always ``##Table_Namespace=4dn_FOF-CT_mapping``.
 
