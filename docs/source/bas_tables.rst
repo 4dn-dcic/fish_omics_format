@@ -25,35 +25,35 @@ BAS - Tables
     - optional
     - **Yes**
   * - 3
-    - :ref:`trace`
-    - trace
-    - 4dn_FOF-CT_trace
-    - optional
-    - not applicable
-  * - 4
-    - :ref:`rna`
-    - rna
-    - 4dn_FOF-CT_rna
-    - optional
-    - **Yes** (depending on experimental design)
-  * - 5
     - :ref:`quality`
     - quality
     - 4dn_FOF-CT_quality
     - optional
     - **Yes**
-  * - 6
-    - :ref:`rna_quality`
-    - rna_quality
-    - 4dn_FOF-CT_rna_quality
+  * - 4
+    - :ref:`trace`
+    - trace
+    - 4dn_FOF-CT_trace
     - optional
-    - **Yes** (if rna present)
-  * - 7
+    - not applicable
+  * - 5
     - :ref:`bio`
     - bio
     - 4dn_FOF-CT_bio
     - optional
     - **Yes**
+  * - 6
+    - :ref:`rna`
+    - rna
+    - 4dn_FOF-CT_rna
+    - optional
+    - **Yes** (depending on experimental design)
+  * - 7
+    - :ref:`rna_quality`
+    - rna_quality
+    - 4dn_FOF-CT_rna_quality
+    - optional
+    - **Yes** (if rna present)
   * - 8
     - :ref:`rna_bio`
     - rna_bio
