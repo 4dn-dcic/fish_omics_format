@@ -24,7 +24,7 @@ VOL - Tables
     - FOF-CT_undecoded
     - optional
     - **Yes**
-  * - 5v
+  * - 3v
     - :ref:`vol-quality`
     - vol_quality
     - FOF-CT_vol_quality
