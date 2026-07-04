@@ -47,7 +47,7 @@ FISH Omics Format summary
   :width: 100%
   :align: center
 
-  Figure 2: Schematic representation of 12 tables composing the Fish Omics Format for Chromatin Tracing (Figure credit: Sarah Aufmkolk).
+  **Figure 2: Schematic representation of 15 tables composing the Fish Omics Format for Chromatin Tracing.** FOF-CT is a modular format designed to capture Chromatin Tracing data from two experiment modalities: Ball-and-Stick (bas) and Volumetric (vol). Tables are represented as color-coded boxes (red for basic primary tables; blue for vol-specific tables; grey for tables shared across both modalities), with each table's index number and short name in the upper-right corner. (Figure credit: Sarah Aufmkolk).
 
 
 In **ball-and-stick Chromatin Tracing** experiments, polymer tracing algorithms are used to string together the localization of individual DNA bright Spots to reconstruct the three-dimensional (3D) path of chromatin fibers. 
