@@ -42,7 +42,7 @@ Similarly, FOF-vol-CT is compatible with **volumetric** chromatin tracing method
 FISH Omics Format summary
 -------------------------
 
-.. figure:: images/FOFbasCT_figure.png
+.. figure:: images/2026-7-4_Figure_1_FOF-bas-vol-CT_Aufmkolk_Strambio_2026-5-9_CORRESPONDENCE_v1.png
   :class: shadow-image
   :width: 100%
   :align: center
