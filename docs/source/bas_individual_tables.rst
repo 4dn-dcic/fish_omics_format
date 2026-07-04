@@ -6,11 +6,11 @@ BAS - Individual table descriptions
 
    core
    demultiplexing
-   trace
-   rna
    quality
-   rna_quality
+   trace
    bio
+   rna
+   rna_quality
    rna_bio
    cell
    subcell
