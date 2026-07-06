@@ -58,7 +58,7 @@ The root of the format consists of the **mandatory** :ref:`core` table that defi
 #. **Supplementary Spot properties** such as: 
 
 	* Quality metrics. 
-	* The underlying primary localization data
+	* The underlying primary localization data.
 	* Physical coordinates placing the Spot/Trace in the context of cellular space.
 
 #. The results of multiplexed `RNA-FISH <https://doi.org/10.1073/pnas.1912459116>`_ experiments 
@@ -78,7 +78,7 @@ For FOF-vol-CT the root of the format consists of the **mandatory** :ref:`vol-co
 #. **Supplementary SM Localization properties** such as: 
 
 	* Quality metrics. 
-	* The underlying un-decoded raw localization data
+	* The underlying un-decoded raw localization data.
 
 .. Tip:: In addition to the 3 specific :ref:`VOL-table-reference-label`, all 12 :ref:`BAS-table-reference-label` are also available for use to report the results of **volumetric** Chromatin Tracing experiments.
 
