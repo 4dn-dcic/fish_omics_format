@@ -80,5 +80,5 @@ For FOF-vol-CT the root of the format consists of the **mandatory** :ref:`vol-co
 	* Quality metrics. 
 	* The underlying un-decoded raw localization data
 
-.. Tip:: In addition to the :ref:`VOL-table-reference-label` , all :ref:`BAS-table-reference-label` are also available for use to report the results of **volumetric* Chromatin Tracing experiments.
+.. Tip:: In addition to the :ref:`VOL-table-reference-label` , all :ref:`BAS-table-reference-label` are also available for use to report the results of **volumetric** Chromatin Tracing experiments.
 
