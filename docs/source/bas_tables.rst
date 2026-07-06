@@ -1,6 +1,6 @@
 .. _BAS-table-reference-label:
 
-BAS - Tables
+FOF-bas-CT tables
 ------
 
 .. list-table::
