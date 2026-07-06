@@ -44,7 +44,7 @@ Similarly, FOF-vol-CT is compatible with multiple **volumetric** chromatin traci
   :width: 100%
   :align: center
 
-  **Figure 2: Schematic representation of 15 tables composing the Fish Omics Format for Chromatin Tracing.** FOF-CT is a modular format designed to capture Chromatin Tracing data from two experiment modalities: Ball-and-Stick (bas) and Volumetric (vol). Tables are represented as color-coded boxes (**red** for bas primary tables; **blue** for vol-specific tables; **grey** for tables shared across both modalities), with each table's index number and short name in the upper-right corner. (Figure credit: Sarah Aufmkolk).
+  **Figure 2: Schematic representation of 15 tables composing the Fish Omics Format for Chromatin Tracing.** FOF-CT is a modular format designed to capture Chromatin Tracing data from two experiment modalities: Ball-and-Stick (bas) and Volumetric (vol). Tables are represented as color-coded boxes (**3 red** for bas primary tables; **3 blue** for vol-specific tables; **9 grey** for tables shared across both modalities), with each table's index number and short name in the upper-right corner. (Figure credit: Sarah Aufmkolk).
 
 Summary: FISH Omics Format for ball-and-stick Chromatin Tracing
 -------------------------
