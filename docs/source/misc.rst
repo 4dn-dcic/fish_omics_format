@@ -28,10 +28,11 @@ REMBI: Recommended Metadata for Biological Images
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 - Sarkans, U., Chiu, W., Collinson, L. et al. REMBI: Recommended Metadata for Biological Images—enabling reuse of microscopy data in biology. `Nat Methods 18, 1418–1422 (2021) <https://doi.org/10.1038/s41592-021-01166-8>`_
 
-4DN-BINA-OME-QUAREP (NBO-Q) Microscopy Metadata Specifications
+QUAREP Light-Microscopy Model (LiMi-Model) of Metadata Specifications
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 -  December 2021 Nature Methods FOCUS Issue on `Reporting and reproducibility in microscopy <https://www.nature.com/collections/djiciihhjh>`_
 -  Hammer, M., Huisman, M., Rigano, A. et al. Towards community-driven metadata standards for light microscopy: tiered specifications extending the OME model. `Nat Methods 18, 1427–1440 (2021) <https://doi.org/10.1038/s41592-021-01327-9>`_
+- `LiMi-Model home page <https://quarep.org/working-groups/wg-7-metadata/Limi-model/>` curated by Quality Assessment and Reproducibility for Instrument and Images in Light Microscopy (`QUAREP-LiMi <https://quarep.org>`).
 
 OME-NGFF and OME-Zarr
 ^^^^^^^^^^^^^^^^^^^^^
