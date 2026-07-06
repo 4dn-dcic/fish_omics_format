@@ -53,7 +53,7 @@ In **ball-and-stick** Chromatin Tracing experiments, polymer tracing algorithms 
 
 In order to capture chromatin traces as well as additional metrics captured during the course of the experiment, the FOF-CT format is organized around 12 tables.
 
-The root of the format consists of the **mandatory** :ref:`core` table that defines Chromatin Traces as ordered lists of individual DNA-FISH bright Spots. `Additional Tables <#Tables>`_ support the integration of this core table with:
+The root of the format consists of the **mandatory** :ref:`core` table that defines Chromatin Traces as ordered lists of individual DNA-FISH bright Spots. Additional :ref:`BAS-table-reference-label`support the integration of this :ref:`core` with:
 
 #. **Supplementary Spot properties** such as: 
 
@@ -73,12 +73,12 @@ The root of the format consists of the **mandatory** :ref:`core` table that defi
 Summary: FISH Omics Format for volumetric Chromatin Tracing
 -------------------------
 
-For FOF-vol-CT the root of the format consists of the **mandatory** :ref:`vol_core` that reports the location of individual SM Localization events, the localization of their target chromosome segments, as well as their associated DNA-FISH bright Spots and chromatin Traces. `Additional Tables <#Tables>`_ support the integration of this :ref:`vol_core` with:
+For FOF-vol-CT the root of the format consists of the **mandatory** :ref:`vol_core` that reports the location of individual SM Localization events, the localization of their target chromosome segments, as well as their associated DNA-FISH bright Spots and chromatin Traces. Additional :ref:`VOL-table-reference-label` support the integration of this :ref:`vol_core` with:
 
 #. **Supplementary SM Localization properties** such as: 
 
 	* Quality metrics. 
 	* The underlying un-decoded raw localization data
 
-.. Tip:: In addition to the FOF-vol-CT specific table, all FOF-bas-CT tables are also available for use to report the results of **volumetric* Chromatin Tracing experiments.
+.. Tip:: In addition to the :ref:`VOL-table-reference-label`, all :ref:`BAS-table-reference-label` are also available for use to report the results of **volumetric* Chromatin Tracing experiments.
 
