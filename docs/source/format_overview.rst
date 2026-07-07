@@ -76,10 +76,10 @@ sufficient details to ensure interpretation and reproducibility.
 **##Columns:=** List of the data column headers used in the table. Note: enclose the column headers and use a comma to separate each header name from the next. E.g., \ (C1, C2, C3, Cn)
 
 
-Additional conditionally required header lines 
+Additionally required header lines (depending on which table)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-:ref:`core` and :ref:`rna` tables
+:ref:`core`, :ref:`vol-core` and :ref:`rna` tables
 """""""""""""""""""""""""""""""""
 In addition to all of the above, the following header line is required for the :ref:`core` and :ref:`rna` tables.
 
