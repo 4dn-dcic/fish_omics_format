@@ -11,8 +11,8 @@ The following is a short step-by-step description of how to use these templates:
 #. Download the Templates package.
 #. Select the templates for the tables to be utilized:
 
-  i. For **FOF-bas-CT** download the template for the :ref:`core` and any other of the 11 supplementary :ref:`BAS-table-reference-label` you might need for your deposition.
-  ii. For **FOF-vol-CT** download the template for the :ref:`vol_core` and any other of the 2 supplementary :ref:`VOL-table-reference-label` as well as the 11 supplementary :ref:`BAS-table-reference-label` you might need for your deposition.
+  i. For **FOF-bas-CT** download the template for the :ref:`core` and any other of the **11 supplementary** :ref:`BAS-table-reference-label` you might need for your deposition.
+  ii. For **FOF-vol-CT** download the template for the :ref:`vol_core` and any other of the **2 supplementary** :ref:`VOL-table-reference-label` as well as the **11 supplementary** :ref:`BAS-table-reference-label` you might need for your deposition.
 
 3. Save the downloaded tables locally in CSV or in one of the other allowable tabular formats.
 #. Fill in all indicated values in the Header section of each template
