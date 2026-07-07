@@ -12,7 +12,7 @@ General Info
 - Each modality only has one mandatory table:
 
   - For **BAS Chromatin Tracing**, the mandatory table is the :ref:`core`.
-  - For **VOL Chromatin Tracing**, the mandatory table is the **Localization Data Table**.
+  - For **VOL Chromatin Tracing**, the mandatory table is the :ref:`vol-core`.
 
 - All other tables are either conditionally required depending on experiment design and type or optional but *recommended* for all experiment types.
 - Each file must contain a single table.
@@ -25,7 +25,7 @@ General Info
 
 .. warning:: All **MANDATORY** header fields and column names are indicated in **bold**. All *conditionally required* header fields and column names are indicated in *italics*.
 
-.. tip:: Except for :ref:`core`, :ref:`demultiplexing`, :ref:`rna` and :ref:`mapping`, all other :ref:`BAS-table-reference-label` and :ref:`VOL-table-reference-label` that are included in the deoposition **MUST** contain at least 1 **Optional Column**.
+.. tip:: Except for :ref:`core`, :ref:`demultiplexing`, ref:`vol-core`, :ref:`undecoded`, :ref:`rna` and :ref:`mapping`, all other :ref:`BAS-table-reference-label` and :ref:`VOL-table-reference-label` that are included in the deoposition **MUST** contain at least 1 **Optional Column**.
 
 .. _headers-reference-label:
 File Header
