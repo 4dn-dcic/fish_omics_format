@@ -1,5 +1,5 @@
 ##################################################
-4DN FISH Omics Format - Chromatin Tracing (FOF-CT)
+FISH Omics Format - Chromatin Tracing (FOF-CT)
 ##################################################
 
 .. include:: intro.rst
