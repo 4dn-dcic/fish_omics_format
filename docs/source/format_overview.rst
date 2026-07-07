@@ -59,6 +59,8 @@ Mandatory header lines (all tables)
 
 **##Table_Namespace=** Identifier for this type of table. Value must be as in the example. E.g., 4dn_FOF-CT_core
 
+**##XYZ_Unit=** The unit used to represent XYZ locations or distances. Note: use micron to avoid problems with special, Greek symbols. Other allowed values *should* be drawn from SI units of `Length <https://en.wikipedia.org/wiki/SI_base_unit>`_. Examples: 'nm', 'micron' 'mm' etc.
+
 **#Lab_Name:** Name of the lab where the experiment was performed
 
 **#Experimenter_Name:** Name of the person performing the experiment
@@ -70,34 +72,6 @@ experiment
 data recorded in this table. This description should provide a clear
 understanding of the process utilized to produce the data and contain
 sufficient details to ensure interpretation and reproducibility.
-
-**#Additional_Tables:** List of the additional tables being submitted. Note: use a comma to separate each table name from the next. E.g., AddTable1, AddTable2, AddTableN
-
-**##Columns:=** List of the data column headers used in the table. Note: enclose the column headers and use a comma to separate each header name from the next. E.g., \ (C1, C2, C3, Cn)
-
-
-Additional required header lines by table type
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-:ref:`core`, :ref:`vol-core` and :ref:`rna` tables
-"""""""""""""""""""""""""""""""""
-In addition to all of the above, the following header line is required for the :ref:`core` and :ref:`rna` tables.
-
-**##Genome_Assembly=** Genome build. E.g., GRCh38 
-
-.. tip:: For genomic coordinates, it is recommended to use GRCh38 for human and GRCm38 for mouse. For other species, follow these `instructions. <https://data.4dnucleome.org/search/?type=Organism>`_ In addition, in case the genome under study contains INSERTION/DELETIONs, also follow these :ref:`IN_DEL-reference-label`.
-
-:ref:`core`, :ref:`demultiplexing`, :ref:`bio`, :ref:`rna`, :ref:`rna_bio`, and :ref:`mapping` tables
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Further, the following header line is required for the :ref:`core`, :ref:`demultiplexing`, :ref:`bio`, :ref:`rna`, :ref:`rna_bio`, and :ref:`mapping` tables.
-
-**##XYZ_Unit=** The unit used to represent XYZ locations or distances. Note: use micron to avoid problem with special, Greek symbols. Other allowed values *should* be drawn from SI units of `Length <https://en.wikipedia.org/wiki/SI_base_unit>`_. Examples: 'nm', 'micron' 'mm' etc.
-
-.. note:: Other units related header lines are also *conditionally required* for all other :ref:`BAS-table-reference-label` and :ref:`VOL-table-reference-label` that are included in the deposition in case relevant metrics are reported (e.g., the ``##Time_Unit=`` field is required if a time measure is reported).
-
-:ref:`core`, :ref:`demultiplexing`, :ref:`rna`, :ref:`quality` and :ref:`rna_quality` tables
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Finally, the following header lines are required for the :ref:`core`, :ref:`demultiplexing`, :ref:`rna`, :ref:`quality` and :ref:`rna_quality` tables.
 
 **#Software_Title:** The name of the Software(s) that were used in this
 case for localizing individual FISH-omics bright Spots and/or to produce
@@ -123,7 +97,26 @@ preferred/primary publication describing this Software. Examples include
 Digital Object Identifier (DOI), PubMed Central Identifier (PMCID),
 ArXiv.org ID etc,.
 
-.. note:: All Software related header lines are also *conditionally required* for all other :ref:`BAS-table-reference-label` and :ref:`VOL-table-reference-label` that are included in the deposition in case Software is used for producing the reported results.
+**#Additional_Tables:** List of the additional tables being submitted. Note: use a comma to separate each table name from the next. E.g., AddTable1, AddTable2, AddTableN
+
+**##Columns:=** List of the data column headers used in the table. Note: enclose the column headers and use a comma to separate each header name from the next. E.g., \ (C1, C2, C3, Cn)
+
+
+Additional required header lines by table type
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Genome_Assembly
+"""""""""""""""
+In addition to all of the above, the following header line is required for the :ref:`core` and :ref:`rna` tables.
+
+**##Genome_Assembly=** Genome build. E.g., GRCh38 
+
+.. tip:: For genomic coordinates, it is recommended to use GRCh38 for human and GRCm38 for mouse. For other species, follow these `instructions. <https://data.4dnucleome.org/search/?type=Organism>`_ In addition, in case the genome under study contains INSERTION/DELETIONs, also follow these :ref:`IN_DEL-reference-label`.
+
+Metrics Units
+"""""""""""""
+
+.. note:: Other units-related header lines are also *conditionally required* for all other :ref:`BAS-table-reference-label` and :ref:`VOL-table-reference-label` that are included in the deposition in case relevant metrics are reported (e.g., the ``##Time_Unit=`` field is required if a time measure is reported).
 
 
 .. _columns-reference-label:
