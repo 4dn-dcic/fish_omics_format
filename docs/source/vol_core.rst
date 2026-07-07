@@ -13,7 +13,7 @@ This is the mandatory core table of the 4DN FISH-omics Format for Volumetric (VO
 
 The vol_core table is organized around individual single-molecule (SM) localization events. Each row reports the ``X``, ``Y``, ``Z`` coordinates of an individual SM Localization event, the genomic DNA target it corresponds to — identified by chromosome ID (``Chrom``), and by start (``Chrom_Start``) and end (``Chrom_End``) — and the Spot and Trace assignment of that event.
 
-  .. tip:: For genomic coordinates, it is recommended to use GRCh38 for human and GRCm38 for mouse. For other species, follow these `instructions'. <https://data.4dnucleome.org/search/?type=Organism>`_ In addition, in case the genome under study contains INSERTION/DELETIONs, also follow these :ref:`IN_DEL-reference-label`.
+  .. tip:: For genomic coordinates, it is recommended to use GRCh38 for human and GRCm38 for mouse. For other species, follow these `instructions. <https://data.4dnucleome.org/search/?type=Organism>`_ In addition, in case the genome under study contains INSERTION/DELETIONs, also follow these :ref:`IN_DEL-reference-label`.
   
 At a minimum, the table must have the **9 required columns** in the following order: ``Loc_ID``, ``Spot_ID`` ``Trace_ID``, ``X``, ``Y``, ``Z``, ``Chrom``, ``Chrom_Start``, ``Chrom_End``.
 
