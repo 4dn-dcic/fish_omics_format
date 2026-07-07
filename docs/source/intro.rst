@@ -2,7 +2,7 @@ Background
 ==========
 
 The FISH Omics Format for Chromatin Tracing (FOF-CT) is an open format for **reporting Chromatin Tracing datasets**. It is intended to **serve the broader community** and to promote the study of the spatial arrangement of DNA, RNA, and proteins within the human cell nucleus, uncovering the functional dynamics of the genome in three dimensions and over time (3D+t = 4D).
-FOF-CT originated within the (`4D Nucleome <https://www.4dnucleome.org/>`_) project, but many datasets released in this format have since been produced by laboratories outside the consortium.
+FOF-CT originated within the (`4D Nucleome <https://www.4dnucleome.org/>`_; **4DN**) project, but many datasets released in this format have since been produced by laboratories outside the consortium.
 
 We **encourage broad adoption** of, and contribution to, the format by the entire community.
 
