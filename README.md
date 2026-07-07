@@ -9,7 +9,7 @@ The format consists of a series of **15 tables** with different degrees of requi
 
 The full list of tables and instructions on how to use them can be found at: https://fish-omics-format.readthedocs.io/.
 
-The image below provides a schematic representation of 15 tables composing the FOF-CT. FOF-CT is a modular format designed to capture Chromatin Tracing data from two experiment modalities: **Ball-and-Stick (bas)** and **Volumetric (vol)**. Tables are represented as color-coded boxes (**3 red** bas primary tables; **3 blue** vol-specific tables; **9 grey** tables shared across both modalities). The figure indicates each table's index number and short name in the upper-right corner. In addition, depicted is whether tables are **required** (**triple line**), *conditionally required* (*double line*), recommended (thick single line) or optional (single line). (Figure credit: Sarah Aufmkolk).
+The image below provides a schematic representation of 15 tables composing the FOF-CT. FOF-CT is a modular format designed to capture Chromatin Tracing data from two experiment modalities: **Ball-and-Stick (bas)** and **Volumetric (vol)**. Tables are represented as color-coded boxes (**3 red** bas primary tables; **9 grey** tables shared across both modalities; **3 blue** vol-specific tables). The figure indicates each table's index number and short name in the upper-right corner. In addition, depicted is whether tables are **required** (**triple line**), *conditionally required* (*double line*), recommended (thick single line) or optional (single line). (Figure credit: Sarah Aufmkolk).
 
 <img align="right" src="docs/source/images/2026-7-4_Figure_1_FOF-bas-vol-CT_Aufmkolk_Strambio_2026-5-9_CORRESPONDENCE_v1.png">
 
