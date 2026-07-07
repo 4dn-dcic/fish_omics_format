@@ -85,7 +85,7 @@ In addition to all of the above, the following header line is required for the :
 
 **##Genome_Assembly=** Genome build. E.g., GRCh38 
 
-.. note:: \(1) the 4DN Data Portal only accepts GRCh38 for human and GRCm38 for mouse. For other species see the list of all 4DN allowable `genome builds <https://data.4dnucleome.org/search/?type=Organism>`_; (2) in case the genome under study contains an INSERTION or a DELETION, indicate this as indicated in :ref:`core`.
+  .. tip:: For genomic coordinates, it is recommended to use GRCh38 for human and GRCm38 for mouse. For other species, follow these `instructions. <https://data.4dnucleome.org/search/?type=Organism>`_ In addition, in case the genome under study contains INSERTION/DELETIONs, also follow these :ref:`IN_DEL-reference-label`.
 
 :ref:`core`, :ref:`demultiplexing`, :ref:`bio`, :ref:`rna`, :ref:`rna_bio`, and :ref:`mapping` tables
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
