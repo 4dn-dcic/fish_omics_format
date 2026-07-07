@@ -35,7 +35,7 @@ FOF-bas-CT tables
     - trace
     - 4dn_FOF-CT_trace
     - optional
-    - not applicable
+    - **Yes**
   * - 5
     - :ref:`bio`
     - bio
