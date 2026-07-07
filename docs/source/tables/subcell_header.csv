@@ -1,5 +1,5 @@
 Name,Description,Example,Conditional requirement conditions
-**##FOF-CT_Version=**,Version of the FOF format used in this case.,v1.0,
+**##FOF-CT_Version=**,Version of the FOF format used in this case.,v2.0,
 **##Table_Namespace=**,Identifier for this type of table. Value must be as in the example.,4dn_FOF-CT_subcell,
 **##Sub_Cell_ROI_type=**,"This field records the type of sub-cellular structure ROIs reported in this table. It is recommended to use an ontology term such as a child of the `EFO 'cellular_component' term <http://purl.obolibrary.org/obo/GO_0005575>`_. Examples include: Nucleolus, Nuclear Lamina (NL), Nuclear Pore Complex (NPC) PML_body, Cajal_body, Chromosome_Domain, etc.",Nucleolus,
 *##Cell_Type=*,"This field records the type of cells reported in this table. It is recommended to use an ontology term for example from the `EFO <http://www.ebi.ac.uk/efo/EFO_0000324>`_ ontology. Examples include:  Primary cell line, Immortal cell line, Induced pluripotent stem (IPS) cell, Cell in tissue, Cell in organoid, etc.",Cell in tissue,Conditional requirement: this MUST be reported in any Cell is idenfied as part of this experiment.

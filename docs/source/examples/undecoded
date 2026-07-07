@@ -1,10 +1,10 @@
-##FOF-CT_Version=v1.0
+##FOF-CT_Version=v2.0
 ##Table_Namespace=FOF-CT_undecoded
 ##XYZ_Unit=micron
 #Lab_Name: Nobel
 #Experimenter_Name: John Doe
 #Experimenter_Contact: john.doe@email.com
-#Description: This table reports the primary SM Localization events that were detected before decoding.
+#Description: This table reports the primary Single Molecule (SM) Localization events that were detected before decoding.
 #Software_Title: BestLocalizationSoftware
 #Software_Type: Loc
 #Software_Authors: Doe, J.

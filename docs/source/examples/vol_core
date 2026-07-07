@@ -1,11 +1,11 @@
-##FOF-CT_Version=v1.0
-##Table_Namespace=4dn_FOF-CT_vol_core
+##FOF-CT_Version=v2.0
+##Table_Namespace=FOF-CT_vol_core
 ##Genome_Assembly=GRCh38
 ##XYZ_Unit=micron
 #Lab_Name: Nobel
 #Experimenter_Name: John Doe
 #Experimenter_Contact: john.doe@email.com
-#Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sagittis est mollis, pulvinar tortor mattis, dignissim nisi. Nunc tincidunt volutpat lacus vitae bibendum.
+#Description: This table reports the X, Y, Z coordinates of individual Single Molecule (SM) Localization events, the location of their genome target segment and their Spot and Trace assignments...
 #Software_Title: ChrTracer3
 #Software_Type: SpotLoc+Tracing
 #Software_Authors: Mateo, LJ; Sinnott-Armstrong, N; Boettiger, AN

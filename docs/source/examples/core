@@ -1,12 +1,11 @@
-##FOF-CT_Version=v1.0
+##FOF-CT_Version=v2.0
 ##Table_Namespace=4dn_FOF-CT_core
 ##Genome_Assembly=GRCh38
 ##XYZ_Unit=micron
 #Lab_Name: Nobel
 #Experimenter_Name: John Doe
 #Experimenter_Contact: john.doe@email.com
-#Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sagittis est mollis, pulvinar tortor mattis, dignissim nisi. Nunc tincidunt volutpat lacus vitae bibendum.
-#Software_Title: ChrTracer3
+#Description: This table reports the X, Y, Z coordinates of identified bright DNA Spots, the location of their genome target segment and their trace assignment...
 #Software_Type: SpotLoc+Tracing
 #Software_Authors: Mateo, LJ; Sinnott-Armstrong, N; Boettiger, AN
 #Software_Description: ChrTracer3 software was developed for analysis of raw DNA labeled images. As an input, it takes an.xlsx table containing information and folder names of the DNA experiment. As an output, it returns tab delimited.txt ﬁles with drift-corrected x, y, z positions for all labeled barcodes. These can be used directly to calculate the nm scale distances between all pairs of labeled loci. The current version of the software as of this writing is ChrTracer3.

@@ -1,13 +1,14 @@
-##FOF-CT_version=v1.0
-##Table_namespace=4dn_FOF-CT_vol_core
+##FOF-CT_version=v2.0
+##Table_namespace=FOF-CT_vol_core
 ##genome_assembly=custom-build:GRCm38+pJT039(insertion) 
 ##modification=pJT039:chr3(insertion 2001-3000)
 ##VCF_File_name=pJT039:chr3.vcf
 ##VCF_version=v4.2
 ##XYZ_unit=micron
-#lab_name: Nobel
-#experimenter_name: John Doe
-#experimenter_contact: john.doe@email.com
+#Lab_Name: Nobel
+#Experimenter_Name: John Doe
+#Experimenter_Contact: john.doe@email.com
+#Description: This table reports the X, Y, Z coordinates of individual Single Molecule (SM) Localization events, the location of their genome target segment and their Spot and Trace assignments...
 #Software_Title: ChrTracer3
 #Software_Type: SpotLoc+Tracing
 #Software_Authors: Mateo, LJ; Sinnott-Armstrong, N; Boettiger, AN

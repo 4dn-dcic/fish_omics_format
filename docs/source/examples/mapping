@@ -1,4 +1,4 @@
-##FOF-CT_Version=v1.0
+##FOF-CT_Version=v2.0
 ##Table_Namespace=4dn_FOF-CT_mapping
 ##Sub_Cell_ROI_Type=PML_body
 ##ROI_Boundaries_Format=(X1,Y1 X2,Y2 ... Xn,Yn)

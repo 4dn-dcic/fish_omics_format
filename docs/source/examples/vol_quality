@@ -1,11 +1,11 @@
-##FOF-CT_Version=v1.0
+##FOF-CT_Version=v2.0
 ##Table_Namespace=FOF-CT_vol_quality
 ##XYZ_Unit=micron
 ##Intensity_Unit=photonCount
 #Lab_Name: Nobel
 #Experimenter_Name: John Doe
 #Experimenter_Contact: john.doe@email.com
-#Description:  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+#Description:  This table report the quality metrics associated with individual Single Molecule (SM) Localization events...
 #Software_Title: SpotQualityCheck
 #Software_Type: QualityControl
 #Software_Authors: John Doe et al.

@@ -1,11 +1,11 @@
-##FOF-CT_Version=v1.0
+##FOF-CT_Version=v2.0
 ##Table_Namespace=4dn_FOF-CT_trace
 ##XYZ_Unit=micron
 ##Intensity_Unit=a.u.
 #Lab_Name: Nobel
 #Experimenter_Name: John Doe
 #Experimenter_Contact: john.doe@email.com
-#Description: In this experiment cells were identified by segmentation using the indicated algorithm on the basis of the background fluorescence from multiplexed FISH probes.
+#Description: This table reports different metrics associated with identified chromatin Traces...
 #Software_Title: AlgorithmXYZ
 #Software_Type: Distance
 #Software_Authors: John Doe

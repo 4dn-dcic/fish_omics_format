@@ -1,10 +1,10 @@
-##FOF-CT_Version=v1.0
+##FOF-CT_Version=v2.0
 ##Table_Namespace=4dn_FOF-CT_demultiplexing
 ##XYZ_Unit=micron
 #Lab_Name: Nobel
 #Experimenter_Name: John Doe
 #Experimenter_Contact: john.doe@email.com
-#Description: This table reports the localization events that were associated with each identified birght DNA Spot
+#Description: This table reports the localization events that were associated with each identified bright DNA Spot...
 #Software_Title: BestLocalizationSoftware
 #Software_Type: Loc
 #Software_Authors: Doe, J.

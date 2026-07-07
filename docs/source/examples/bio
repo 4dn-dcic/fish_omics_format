@@ -1,10 +1,10 @@
-##FOF-CT_Version=v1.0
+##FOF-CT_Version=v2.0
 ##Table_Namespace=4dn_FOF-CT_bio
 ##XYZ_Unit=micron
 #Lab_Name: Nobel
 #Experimenter_Name: John Doe
 #Experimenter_Contact: john.doe@email.com
-#Description: In this experiment cells were identified by segmentation using the indicated algorithm on the basis of the background fluorescence from multiplexed FISH probes.
+#Description: In this experiment the nuclear location of DNA Bright Spots was mapped with respect to the Nuclear Lamina (NL) and the location of the nearest H4K27me3 signal.
 #Software_Title: AlgorithmXYZ
 #Software_Type: Distance
 #Software_Authors: John Doe
