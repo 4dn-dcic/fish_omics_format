@@ -55,7 +55,7 @@ File Header
 Mandatory header lines (all tables)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-**##FOF-CT_Version=** Data format version number. E.g., v0.2
+**##FOF-CT_Version=** Data format version number. E.g., v2.0
 
 **##Table_Namespace=** Identifier for this type of table. Value must be as in the example. E.g., 4dn_FOF-CT_core
 
