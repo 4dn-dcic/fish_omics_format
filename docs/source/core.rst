@@ -19,7 +19,7 @@ In this table, each row reports the ``X``, ``Y``, ``Z`` localization, and the Tr
 In this table the reported ``X``, ``Y``, ``Z`` coordinates are assumed to result from post-processing and quality control procedures and therefore
 correspond to the final localization of the DNA target under study.
 
-.. tip:: For genomic coordinates, it is recommended to use GRCh38 for human and GRCm38 for mouse. For other species, follow these `instructions'. <https://data.4dnucleome.org/search/?type=Organism>`_ In addition, in case the genome under study contains INSERTION/DELETIONs, also follow these :ref:`IN_DEL-reference-label`.
+.. tip:: For genomic coordinates, it is recommended to use GRCh38 for human and GRCm38 for mouse. For other species, follow these `instructions. <https://data.4dnucleome.org/search/?type=Organism>`_ In addition, in case the genome under study contains INSERTION/DELETIONs, also follow these :ref:`IN_DEL-reference-label`.
 
 At a minimum, the Table has to have 8 columns in the following order:
 ``Spot_ID``, ``Trace_ID``, ``X``, ``Y``, ``Z``, ``Chrom``, ``Chrom_Start``,
