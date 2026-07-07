@@ -9,29 +9,29 @@ Namespace: *4dn_FOF-CT_core*
 
 Summary
 -------
-This is the mandatory core table of the 4DN FISH-omics Format for Chromatin
-Tracing. This table is used to record and exchange the primary results of
-Chromatin Tracing experiments, both in the case in which the genome under study is un-modified and in the case in which it contains INSERTIONS or DELETIONS.
+This is the mandatory core table of the FISH-omics Format for **ball-and-stick** Chromatin
+Tracing (FOF-bas-CT). This table is used to record and exchange the primary results of
+Chromatin Tracing experiments, both in the case in which the genome under study is unmodified and in the case in which it contains INSERTIONS or DELETIONS.
 
-The core table is organized around individual DNA bright Spots that generally are spatially linked together in a three-dimensional (3D) polymeric Trace using a 3D polymeric tracing algorithm. As a result, all Spots that share the same ``Trace_ID``, by definition belong to the same Trace.
+The core table is organized around individual DNA bright Spots that are generally spatially linked in a three-dimensional (3D) polymeric Trace using a 3D polymeric tracing algorithm. As a result, all Spots that share the same ``Trace_ID``, by definition, belong to the same Trace.
 
 In this table, each row reports the ``X``, ``Y``, ``Z`` localization, and the Trace assignment (i.e., ``Trace_ID``) of a FISH-omics bright Spot and corresponds to a specific genomic DNA target sequence identified by chromosome ID (``Chrom``), and by start (``Chrom_Start``) and end (``Chrom_End``) chromosome coordinates.
 In this table the reported ``X``, ``Y``, ``Z`` coordinates are assumed to result from post-processing and quality control procedures and therefore
 correspond to the final localization of the DNA target under study.
 
-.. tip:: The 4DN Data Portal only accepts GRCh38 for human and GRCm38 for mouse. For other species follow these `instructions. <https://data.4dnucleome.org/search/?type=Organism>`_ In addition, in case the genome under study contains INSERTION/DELETIONs follow also these :ref:`IN_DEL-reference-label`.
+.. tip:: For genomic coordinates, it is recommended to use GRCh38 for human and GRCm38 for mouse. For other species, follow these `instructions'. <https://data.4dnucleome.org/search/?type=Organism>`_ In addition, in case the genome under study contains INSERTION/DELETIONs, also follow these :ref:`IN_DEL-reference-label`.
 
-At a minimum the Table has to have 8 columns in the following order:
+At a minimum, the Table has to have 8 columns in the following order:
 ``Spot_ID``, ``Trace_ID``, ``X``, ``Y``, ``Z``, ``Chrom``, ``Chrom_Start``,
-``Chrom_End``. These are required. Additionally in case sub-cellular
-structures, cells or extra cellular structures (e.g., Tissue) are identified as part of this experiment, this table has to mandatorily include the ID of the Sub_Cellular, Cell or Extra Cellular Structure Region of Interest (ROI) each Spot/Trace is associated with.
+``Chrom_End``. These are required. Additionally, in case sub-cellular
+structures, cells or extracellular structures (e.g., Tissue) are identified as part of this experiment, this table has to mandatorily include the ID of the Sub_Cellular, Cell, or Extracellular Structure Region of Interest (ROI) each Spot/Trace is associated with.
 
 All other spot properties must be kept in the two additional tables
 :ref:`quality` and :ref:`bio`, indexed by Spot_ID and as described in the
 instructions for those tables.
 Additionally, in the case in which the final localization of DNA target results from combining multiple detection events (e.g., by combining localization events from different focal planes or times), the underlying raw data can be recorded in the corresponding :ref:`demultiplexing` table as described in the instructions of that table.
 
-.. tip:: ``Spot_ID`` identifiers are unique across the entire dataset, thus allowing to identify unambiguously a Spot in the :ref:`quality`, :ref:`bio` and :ref:`demultiplexing`. 
+.. tip:: ``Spot_ID`` identifiers are unique across the entire dataset, thus allowing to identify a Spot unambiguously in the :ref:`quality`, :ref:`bio` and :ref:`demultiplexing`. 
 
 .. warning:: All **MANDATORY** header fields and column names are indicated in **bold**. All *conditionally required* header fields and column names are indicated in *italics*.
 
