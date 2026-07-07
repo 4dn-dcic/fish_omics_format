@@ -28,7 +28,7 @@ A variety of protocols have been developed in the past few years, and they can b
 FISH Omics Format rationale
 ---------------------------
 
-This document describes the **4DN FISH Omics Format - Chromatin Tracing (FOF-CT)**, a community data format designed for capturing and exchanging the results of Chromatin Tracing experiments. 
+This document describes the **FISH Omics Format - Chromatin Tracing (FOF-CT)**, a community data format designed for capturing and exchanging the results of Chromatin Tracing experiments. 
 
 FOF-CT is directly compatible with both **ball-and-stick** and **volumetric** Chromatin Tracing techniques. 
 
