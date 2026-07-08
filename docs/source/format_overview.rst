@@ -105,7 +105,7 @@ ArXiv.org ID etc,.
 Additional required header lines by table type
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. list-table:: List of required and conditionally required header fields
+.. list-table:: List of **mandatory** and *conditionally required* header fields
    :header-rows: 1
    :widths: 10 20 70
    :width: 100%
@@ -159,7 +159,7 @@ Additional required header lines by table type
      - :ref:`vol-quality`
      - *Time_Unit*, *Intensity_Measurement_Method*, *Intensity_Unit*
 
-**Legend:** Header field names indicated in **bold** are **mandatory** in the indicated table. Header fields indicated in *italics* are *conditionally required* in the indicated table depending on the experiment type.
+**Legend:** Header field names in **bold** are **mandatory** in the indicated table. Header fields in *italics* are *conditionally required* in the indicated table depending on the experiment type.
 
 Genome_Assembly
 """""""""""""""
