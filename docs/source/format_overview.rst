@@ -180,7 +180,7 @@ Data Columns
   conditions are met (e.g., ``Cell_ID`` is required any time the experiment
   involves the identification of Cell boundaries).
 - Column names **MUST** use the underscore ``_`` as a word separator (e.g., ``Spot_ID``).
-- The first column is always either ``Spot_ID``, ``Loc_ID``, ``RNA_Spot_ID``or another relevant ID (i.e., ``Trace_ID``, ``Cell_ID``, etc.). 
+- The first column is always either ``Spot_ID``, ``Loc_ID``, ``RNA_Spot_ID`` or another relevant ID (i.e., ``Trace_ID``, ``Cell_ID``, etc.). 
 - The following tables have additional mandatory columns that do need to be specified in the header: :ref:`core`, :ref:`demultiplexing`, :ref:`rna` and :ref:`mapping`
 - Unless otherwise specified, the order of all Optional Columns is at the user's discretion.
 - The order of the rows is at the user's discretion.
