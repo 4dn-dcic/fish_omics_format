@@ -105,6 +105,139 @@ ArXiv.org ID etc,.
 Additional required header lines by table type
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+.. list-table::
+   :header-rows: 1
+
+   * - Table #
+     - Table Name
+     - Genome_Assembly
+     - Gene_ID_Type
+     - Transcript_ID_Type (conditional depending on experiment type)
+     - Time_Unit (conditional depending on experiment type)
+     - Intensity_Measurement_Method (conditional depending on experiment type)
+     - Intensity_Unit (conditional depending on experiment type)
+   * - 1
+     - core
+     - Y
+     - 
+     - 
+     - 
+     - 
+     - 
+   * - 2
+     - demultiplexing
+     - 
+     - 
+     - 
+     - Y
+     - Y
+     - Y
+   * - 3
+     - quality
+     - 
+     - 
+     - 
+     - Y
+     - Y
+     - Y
+   * - 4
+     - trace
+     - 
+     - 
+     - 
+     - Y
+     - Y
+     - Y
+   * - 5
+     - bio
+     - 
+     - 
+     - 
+     - 
+     - 
+     - 
+   * - 6
+     - rna
+     - Y
+     - Y
+     - Y
+     - Y
+     - Y
+     - Y
+   * - 7
+     - rna_quality
+     - 
+     - 
+     - 
+     - Y
+     - Y
+     - Y
+   * - 8
+     - rna_bio
+     - 
+     - 
+     - 
+     - Y
+     - Y
+     - Y
+   * - 9
+     - cell
+     - 
+     - 
+     - 
+     - Y
+     - Y
+     - Y
+   * - 10
+     - subcell
+     - 
+     - 
+     - 
+     - Y
+     - Y
+     - Y
+   * - 11
+     - extracell
+     - 
+     - 
+     - 
+     - Y
+     - Y
+     - Y
+   * - 12
+     - mapping
+     - 
+     - 
+     - 
+     - Y
+     - Y
+     - Y
+   * - 1v
+     - vol_core
+     - Y
+     - 
+     - 
+     - 
+     - 
+     - 
+   * - 2v
+     - undecoded
+     - 
+     - 
+     - 
+     - Y
+     - Y
+     - Y
+   * - 3v
+     - vol_quality
+     - 
+     - 
+     - 
+     - Y
+     - Y
+     - Y
+
+
 Genome_Assembly
 """""""""""""""
 In addition to all of the above, the following header line is required for the :ref:`core` and :ref:`rna` tables.
