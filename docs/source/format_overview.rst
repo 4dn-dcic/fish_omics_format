@@ -105,7 +105,7 @@ ArXiv.org ID etc,.
 Additional required header lines by table type
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. list-table:: List of **mandatory** and *conditionally required* header fields by table type
+.. list-table:: List of required and conditionally required header fields
    :header-rows: 1
    :widths: 10 20 70
    :width: 100%
@@ -114,49 +114,49 @@ Additional required header lines by table type
      - Table Name
      - Header Fields
    * - 1
-     - core
+     - :ref:`core`
      - **Genome_Assembly**
    * - 2
-     - demultiplexing
+     - :ref:`demultiplexing`
      - *Time_Unit*, *Intensity_Measurement_Method*, *Intensity_Unit*
    * - 3
-     - quality
+     - :ref:`quality`
      - *Time_Unit*, *Intensity_Measurement_Method*, *Intensity_Unit*
    * - 4
-     - trace
+     - :ref:`trace`
      - *Time_Unit*, *Intensity_Measurement_Method*, *Intensity_Unit*
    * - 5
-     - bio
+     - :ref:`bio`
      - *Time_Unit*, *Intensity_Measurement_Method*, *Intensity_Unit*
    * - 6
-     - rna
-     - **Genome_Assembly**, **Gene_ID_Type**, *Transcript_ID_Type*
+     - :ref:`rna`
+     - **Genome_Assembly**, **Gene_ID_Type**, *Transcript_ID_Type* 
    * - 7
-     - rna_quality
+     - :ref:`rna_quality`
      - *Time_Unit*, *Intensity_Measurement_Method*, *Intensity_Unit*
    * - 8
-     - rna_bio
+     - :ref:`rna_bio`
      - *Time_Unit*, *Intensity_Measurement_Method*, *Intensity_Unit*
    * - 9
-     - cell
+     - :ref:`cell`
      - *Time_Unit*, *Intensity_Measurement_Method*, *Intensity_Unit*
    * - 10
-     - subcell
+     - :ref:`subcell`
      - *Time_Unit*, *Intensity_Measurement_Method*, *Intensity_Unit*
    * - 11
-     - extracell
+     - :ref:`extracell`
      - *Time_Unit*, *Intensity_Measurement_Method*, *Intensity_Unit*
    * - 12
-     - mapping
+     - :ref:`mapping`
      - *Time_Unit*, *Intensity_Measurement_Method*, *Intensity_Unit*
    * - 1v
-     - vol_core
+     - :ref:`vol-core`
      - **Genome_Assembly**
    * - 2v
-     - undecoded
+     - :ref:`undecoded`
      - *Time_Unit*, *Intensity_Measurement_Method*, *Intensity_Unit*
    * - 3v
-     - vol_quality
+     - :ref:`vol-quality`
      - *Time_Unit*, *Intensity_Measurement_Method*, *Intensity_Unit*
 
 **Legend:** Header field names indicated in **bold** are **mandatory** in the indicated table. Header fields indicated in *italics* are *conditionally required* in the indicated table depending on the experiment type.
