@@ -165,16 +165,13 @@ Header fields names indicated in **bold** are **mandatory** in the indicated tab
 
 Genome_Assembly
 """""""""""""""
-In addition to all of the above, the following header line is required for the :ref:`core` and :ref:`rna` tables.
-
-**##Genome_Assembly=** Genome build. E.g., GRCh38 
 
 .. tip:: For genomic coordinates, it is recommended to use GRCh38 for human and GRCm38 for mouse. For other species, follow these `instructions. <https://data.4dnucleome.org/search/?type=Organism>`_ In addition, in case the genome under study contains INSERTION/DELETIONs, also follow these :ref:`IN_DEL-reference-label`.
 
 Metrics Units
 """""""""""""
 
-.. note:: Other units-related header lines are also *conditionally required* for all other :ref:`BAS-table-reference-label` and :ref:`VOL-table-reference-label` that are included in the deposition in case relevant metrics are reported (e.g., the ``##Time_Unit=`` field is required if a time measure is reported).
+.. note:: In addition to the **##XYZ_Unit=** Other units-related header lines are also *conditionally required* for all other :ref:`BAS-table-reference-label` and :ref:`VOL-table-reference-label` that are included in the deposition in case relevant metrics are reported (e.g., the ``##Time_Unit=`` field is required if a time measure is reported).
 
 
 .. _columns-reference-label:
