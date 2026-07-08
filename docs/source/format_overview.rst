@@ -159,7 +159,7 @@ Additional required header lines by table type
      - vol_quality
      - *Time_Unit*, *Intensity_Measurement_Method*, *Intensity_Unit*
 
-Header field names indicated in **bold** are **mandatory** in the indicated table. Header fields indicated in *italics* are *conditionally required* in the indicated table depending on the experiment type.
+**Legend:** Header field names indicated in **bold** are **mandatory** in the indicated table. Header fields indicated in *italics* are *conditionally required* in the indicated table depending on the experiment type.
 
 Genome_Assembly
 """""""""""""""
