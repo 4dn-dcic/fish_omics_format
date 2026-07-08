@@ -7,7 +7,7 @@ General Info
 - The format is organized in multiple individual tables. The tables differ between the bas and vol modalities:
 
   - The 12 :ref:`BAS-table-reference-label` are common to both **bas Chromatin Tracing** and **vol Chromatin Tracing**. 
-  - The additional 3 :ref:`VOL-table-reference-label` pertain **exclusively to VOL Chromatin Tracing**.
+  - The additional 3 :ref:`VOL-table-reference-label` pertain **exclusively to vol Chromatin Tracing**.
 
 - Each modality only has one mandatory table:
 
