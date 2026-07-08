@@ -3,20 +3,20 @@ Format description
 
 General Info
 ------------
-- The format is designed to cover both **Ball-and-Stick (BAS)** as well as **Volumetric (VOL)** Chromatin Tracing experimental modalities.
-- The format is organized in multiple individual tables. The tables differ between the BAS and VOL modalities:
+- The format is designed to cover both **ball-and-stick (bas)** as well as **volumetric (vol)** Chromatin Tracing experimental modalities.
+- The format is organized in multiple individual tables. The tables differ between the bas and vol modalities:
 
-  - The 12 :ref:`BAS-table-reference-label` are common to both **BAS Chromatin Tracing** and **VOL Chromatin Tracing**. 
+  - The 12 :ref:`BAS-table-reference-label` are common to both **bas Chromatin Tracing** and **vol Chromatin Tracing**. 
   - The additional 3 :ref:`VOL-table-reference-label` pertain **exclusively to VOL Chromatin Tracing**.
 
 - Each modality only has one mandatory table:
 
-  - For **BAS Chromatin Tracing**, the mandatory table is the :ref:`core`.
-  - For **VOL Chromatin Tracing**, the mandatory table is the :ref:`vol-core`.
+  - For **bas Chromatin Tracing**, the mandatory table is the :ref:`core`.
+  - For **vol Chromatin Tracing**, the mandatory table is the :ref:`vol-core`.
 
 - All other tables are either conditionally required depending on experiment design and type or optional but *recommended* for all experiment types.
 - Each file must contain a single table.
-- Accepted file formats for storing tables are txt, csv and tsv.
+- Accepted file formats for storing tables are txt, csv, and tsv.
 - An underscore ``_`` must be used as a word separator in header field
   names and column headers to improve readability while not violating
   common name restrictions in coding environments (dash ``-`` may be
