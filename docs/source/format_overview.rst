@@ -107,6 +107,8 @@ Additional required header lines by table type
 
 .. list-table:: List of required and conditionally required header fields
    :header-rows: 1
+   :widths: 6 12 12 12 16 12 16 14
+   :width: 100%
 
    * - Table #
      - Table Name
@@ -238,6 +240,7 @@ Additional required header lines by table type
      - Conditional
 
 **Y**, indicates that the header field is **mandatory** in the indicated table. *Conditional*, indicates that the header field is *conditionally required* in the indicated table depending on the experiment type.
+
 
 Genome_Assembly
 """""""""""""""
