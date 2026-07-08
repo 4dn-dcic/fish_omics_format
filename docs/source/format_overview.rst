@@ -127,10 +127,10 @@ Additional required header lines by table type
      - *Time_Unit*, *Intensity_Measurement_Method*, *Intensity_Unit*
    * - 5
      - bio
-     - --
+     - *Time_Unit*, *Intensity_Measurement_Method*, *Intensity_Unit*
    * - 6
      - rna
-     - **Genome_Assembly**, **Gene_ID_Type**, *Transcript_ID_Type*, *Time_Unit*, *Intensity_Measurement_Method*, *Intensity_Unit*
+     - **Genome_Assembly**, **Gene_ID_Type**, *Transcript_ID_Type*
    * - 7
      - rna_quality
      - *Time_Unit*, *Intensity_Measurement_Method*, *Intensity_Unit*
