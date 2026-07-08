@@ -120,7 +120,7 @@ Additional required header lines by table type
      - Intensity_Unit
    * - 1
      - core
-     - Y
+     - **Y**
      - 
      - 
      - 
@@ -131,25 +131,25 @@ Additional required header lines by table type
      - 
      - 
      - 
-     - Conditional
-     - Conditional
-     - Conditional
+     - *Conditional*
+     - *Conditional*
+     - *Conditional*
    * - 3
      - quality
      - 
      - 
      - 
-     - Conditional
-     - Conditional
-     - Conditional
+     - *Conditional*
+     - *Conditional*
+     - *Conditional*
    * - 4
      - trace
      - 
      - 
      - 
-     - Conditional
-     - Conditional
-     - Conditional
+     - *Conditional*
+     - *Conditional*
+     - *Conditional*
    * - 5
      - bio
      - 
@@ -160,63 +160,63 @@ Additional required header lines by table type
      - 
    * - 6
      - rna
-     - Y
-     - Y
-     - Conditional
-     - Conditional
-     - Conditional
-     - Conditional
+     - **Y**
+     - **Y**
+     - *Conditional*
+     - *Conditional*
+     - *Conditional*
+     - *Conditional*
    * - 7
      - rna_quality
      - 
      - 
      - 
-     - Conditional
-     - Conditional
-     - Conditional
+     - *Conditional*
+     - *Conditional*
+     - *Conditional*
    * - 8
      - rna_bio
      - 
      - 
      - 
-     - Conditional
-     - Conditional
-     - Conditional
+     - *Conditional*
+     - *Conditional*
+     - *Conditional*
    * - 9
      - cell
      - 
      - 
      - 
-     - Conditional
-     - Conditional
-     - Conditional
+     - *Conditional*
+     - *Conditional*
+     - *Conditional*
    * - 10
      - subcell
      - 
      - 
      - 
-     - Conditional
-     - Conditional
-     - Conditional
+     - *Conditional*
+     - *Conditional*
+     - *Conditional*
    * - 11
      - extracell
      - 
      - 
      - 
-     - Conditional
-     - Conditional
-     - Conditional
+     - *Conditional*
+     - *Conditional*
+     - *Conditional*
    * - 12
      - mapping
      - 
      - 
      - 
-     - Conditional
-     - Conditional
-     - Conditional
+     - *Conditional*
+     - *Conditional*
+     - *Conditional*
    * - 1v
      - vol_core
-     - Y
+     - **Y**
      - 
      - 
      - 
@@ -227,17 +227,17 @@ Additional required header lines by table type
      - 
      - 
      - 
-     - Conditional
-     - Conditional
-     - Conditional
+     - *Conditional*
+     - *Conditional*
+     - *Conditional*
    * - 3v
      - vol_quality
      - 
      - 
      - 
-     - Conditional
-     - Conditional
-     - Conditional
+     - *Conditional*
+     - *Conditional*
+     - *Conditional*
 
 **Y**, indicates that the header field is **mandatory** in the indicated table. *Conditional*, indicates that the header field is *conditionally required* in the indicated table depending on the experiment type.
 
