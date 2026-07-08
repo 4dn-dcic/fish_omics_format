@@ -105,17 +105,17 @@ ArXiv.org ID etc,.
 Additional required header lines by table type
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. list-table::
+.. list-table:: List of required and conditionally required header fields
    :header-rows: 1
 
    * - Table #
      - Table Name
      - Genome_Assembly
      - Gene_ID_Type
-     - Transcript_ID_Type (conditional depending on experiment type)
-     - Time_Unit (conditional depending on experiment type)
-     - Intensity_Measurement_Method (conditional depending on experiment type)
-     - Intensity_Unit (conditional depending on experiment type)
+     - Transcript_ID_Type
+     - Time_Unit
+     - Intensity_Measurement_Method
+     - Intensity_Unit
    * - 1
      - core
      - Y
@@ -129,25 +129,25 @@ Additional required header lines by table type
      - 
      - 
      - 
-     - Y
-     - Y
-     - Y
+     - Conditional
+     - Conditional
+     - Conditional
    * - 3
      - quality
      - 
      - 
      - 
-     - Y
-     - Y
-     - Y
+     - Conditional
+     - Conditional
+     - Conditional
    * - 4
      - trace
      - 
      - 
      - 
-     - Y
-     - Y
-     - Y
+     - Conditional
+     - Conditional
+     - Conditional
    * - 5
      - bio
      - 
@@ -160,58 +160,58 @@ Additional required header lines by table type
      - rna
      - Y
      - Y
-     - Y
-     - Y
-     - Y
-     - Y
+     - Conditional
+     - Conditional
+     - Conditional
+     - Conditional
    * - 7
      - rna_quality
      - 
      - 
      - 
-     - Y
-     - Y
-     - Y
+     - Conditional
+     - Conditional
+     - Conditional
    * - 8
      - rna_bio
      - 
      - 
      - 
-     - Y
-     - Y
-     - Y
+     - Conditional
+     - Conditional
+     - Conditional
    * - 9
      - cell
      - 
      - 
      - 
-     - Y
-     - Y
-     - Y
+     - Conditional
+     - Conditional
+     - Conditional
    * - 10
      - subcell
      - 
      - 
      - 
-     - Y
-     - Y
-     - Y
+     - Conditional
+     - Conditional
+     - Conditional
    * - 11
      - extracell
      - 
      - 
      - 
-     - Y
-     - Y
-     - Y
+     - Conditional
+     - Conditional
+     - Conditional
    * - 12
      - mapping
      - 
      - 
      - 
-     - Y
-     - Y
-     - Y
+     - Conditional
+     - Conditional
+     - Conditional
    * - 1v
      - vol_core
      - Y
@@ -225,18 +225,19 @@ Additional required header lines by table type
      - 
      - 
      - 
-     - Y
-     - Y
-     - Y
+     - Conditional
+     - Conditional
+     - Conditional
    * - 3v
      - vol_quality
      - 
      - 
      - 
-     - Y
-     - Y
-     - Y
+     - Conditional
+     - Conditional
+     - Conditional
 
+**Y**, indicates that the header field is **mandatory** in the indicated table. *Conditional*, indicates that the header field is *conditionally required* in the indicated table depending on the experiment type.
 
 Genome_Assembly
 """""""""""""""
