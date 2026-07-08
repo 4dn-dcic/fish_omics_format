@@ -105,141 +105,62 @@ ArXiv.org ID etc,.
 Additional required header lines by table type
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. list-table:: List of required and conditionally required header fields
+.. list-table:: List of **mandatory** and *conditionally required* header fields by table type
    :header-rows: 1
-   :widths: 6 12 12 12 16 12 16 14
+   :widths: 10 20 70
    :width: 100%
 
-   * - Table #
+   * - Table Number
      - Table Name
-     - Genome_Assembly
-     - Gene_ID_Type
-     - Transcript_ID_Type
-     - Time_Unit
-     - Intensity_Measurement_Method
-     - Intensity_Unit
+     - Header Fields
    * - 1
      - core
-     - **Y**
-     - 
-     - 
-     - 
-     - 
-     - 
+     - **Genome_Assembly**
    * - 2
      - demultiplexing
-     - 
-     - 
-     - 
-     - *Conditional*
-     - *Conditional*
-     - *Conditional*
+     - *Time_Unit*, *Intensity_Measurement_Method*, *Intensity_Unit*
    * - 3
      - quality
-     - 
-     - 
-     - 
-     - *Conditional*
-     - *Conditional*
-     - *Conditional*
+     - *Time_Unit*, *Intensity_Measurement_Method*, *Intensity_Unit*
    * - 4
      - trace
-     - 
-     - 
-     - 
-     - *Conditional*
-     - *Conditional*
-     - *Conditional*
+     - *Time_Unit*, *Intensity_Measurement_Method*, *Intensity_Unit*
    * - 5
      - bio
-     - 
-     - 
-     - 
-     - 
-     - 
-     - 
+     - --
    * - 6
      - rna
-     - **Y**
-     - **Y**
-     - *Conditional*
-     - *Conditional*
-     - *Conditional*
-     - *Conditional*
+     - **Genome_Assembly**, **Gene_ID_Type**, *Transcript_ID_Type*, *Time_Unit*, *Intensity_Measurement_Method*, *Intensity_Unit*
    * - 7
      - rna_quality
-     - 
-     - 
-     - 
-     - *Conditional*
-     - *Conditional*
-     - *Conditional*
+     - *Time_Unit*, *Intensity_Measurement_Method*, *Intensity_Unit*
    * - 8
      - rna_bio
-     - 
-     - 
-     - 
-     - *Conditional*
-     - *Conditional*
-     - *Conditional*
+     - *Time_Unit*, *Intensity_Measurement_Method*, *Intensity_Unit*
    * - 9
      - cell
-     - 
-     - 
-     - 
-     - *Conditional*
-     - *Conditional*
-     - *Conditional*
+     - *Time_Unit*, *Intensity_Measurement_Method*, *Intensity_Unit*
    * - 10
      - subcell
-     - 
-     - 
-     - 
-     - *Conditional*
-     - *Conditional*
-     - *Conditional*
+     - *Time_Unit*, *Intensity_Measurement_Method*, *Intensity_Unit*
    * - 11
      - extracell
-     - 
-     - 
-     - 
-     - *Conditional*
-     - *Conditional*
-     - *Conditional*
+     - *Time_Unit*, *Intensity_Measurement_Method*, *Intensity_Unit*
    * - 12
      - mapping
-     - 
-     - 
-     - 
-     - *Conditional*
-     - *Conditional*
-     - *Conditional*
+     - *Time_Unit*, *Intensity_Measurement_Method*, *Intensity_Unit*
    * - 1v
      - vol_core
-     - **Y**
-     - 
-     - 
-     - 
-     - 
-     - 
+     - **Genome_Assembly**
    * - 2v
      - undecoded
-     - 
-     - 
-     - 
-     - *Conditional*
-     - *Conditional*
-     - *Conditional*
+     - *Time_Unit*, *Intensity_Measurement_Method*, *Intensity_Unit*
    * - 3v
      - vol_quality
-     - 
-     - 
-     - 
-     - *Conditional*
-     - *Conditional*
-     - *Conditional*
+     - *Time_Unit*, *Intensity_Measurement_Method*, *Intensity_Unit*
 
-**Y**, indicates that the header field is **mandatory** in the indicated table. *Conditional*, indicates that the header field is *conditionally required* in the indicated table depending on the experiment type.
+Header fields names indicated in **bold** are **mandatory** in the indicated table. Header fields indicated in *italics* are *conditionally required* in the indicated table depending on the experiment type.
+
 
 
 Genome_Assembly
