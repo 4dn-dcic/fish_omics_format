@@ -140,10 +140,10 @@ Additional required header lines by table type
      - :ref:`cell`
      - *Time_Unit*, *Intensity_Measurement_Method*, *Intensity_Unit*
    * - 10
-     - :ref:`subcell`
+     - :ref:`extracell`
      - *Time_Unit*, *Intensity_Measurement_Method*, *Intensity_Unit*
    * - 11
-     - :ref:`extracell`
+     - :ref:`subcell`
      - *Time_Unit*, *Intensity_Measurement_Method*, *Intensity_Unit*
    * - 12
      - :ref:`mapping`
