@@ -6,7 +6,7 @@ FISH Omics Format - Chromatin Tracing (FOF-CT)
 
 .. toctree::
     :maxdepth: 2
-    :caption: Background
+    :caption: Overview
 
     intro
     format_overview
