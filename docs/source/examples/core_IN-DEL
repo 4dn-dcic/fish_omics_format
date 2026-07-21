@@ -1,7 +1,7 @@
 ##FOF-CT_version=v2.0
 ##Table_namespace=4dn_FOF-CT_core
-##genome_assembly=custom-build:GRCm38+pJT039(insertion) 
-##modification=pJT039:chr3(insertion 2001-3000)
+**##genome_assembly=custom-build:GRCm38+pJT039(insertion)**
+**##modification=pJT039:chr3(insertion 2001-3000)**
 ##VCF_File_name=pJT039:chr3.vcf
 ##VCF_version=v4.2
 ##XYZ_unit=micron
