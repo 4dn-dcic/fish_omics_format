@@ -9,7 +9,7 @@ Namespace: *FOF-CT_vol_core*
 
 Summary
 -------
-This is the mandatory core table of the 4DN FISH-omics Format for Volumetric (VOL) Chromatin Tracing. It records and exchanges the primary results of VOL Chromatin Tracing experiments, whether the genome under study is unmodified or contains INSERTIONS or DELETIONS.
+This is the mandatory core table of the FISH-omics Format for Volumetric (vol) Chromatin Tracing (FOF-vol-CT). It records and exchanges the primary results of vol Chromatin Tracing experiments, whether the genome under study is unmodified or contains INSERTIONS or DELETIONS.
 
 The vol_core table is organized around individual single-molecule (SM) localization events. Each row reports the ``X``, ``Y``, ``Z`` coordinates of an individual SM Localization event, the genomic DNA target it corresponds to — identified by chromosome ID (``Chrom``), and by start (``Chrom_Start``) and end (``Chrom_End``) — and the Spot and Trace assignment of that event.
 
@@ -46,7 +46,7 @@ File Header
 -----------
 - For full instructions see :ref:`headers-reference-label`
 - The first line in the header is always ``##FOF-CT_Version=vX.X``.
-- The second line in the header is always ``##Table_Namespace=4dn_FOF-CT_mapping``.
+- The second line in the header is always ``##Table_Namespace=FOF-CT_vol_core``.
 
 .. tip:: The header **MUST** contain a mandatory set of fields that describe any Software tool that was used to produce/process data in this table. If more than one software tool was used, please repeat a set of Software-fields for describing each of them.
 
