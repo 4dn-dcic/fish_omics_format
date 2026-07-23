@@ -13,9 +13,11 @@ Summary
 -------
 This table is optional and is designed to be used to report the X, Y, Z coordinates of individual SM Localization events before decoding.
 
-When raw, pre-decoding data are reported, the underlying primary localization data are recorded in this table, as shown in the example below, while the final, decoded SM Localization event is recorded in :ref:vol_core.
+When raw, pre-decoding data are reported, the primary localization data collected across multiplexed hybridization rounds, image frames, and channels are recorded in this table (see example below). The final, decoded SM Localization event is recorded in :ref:vol_core."
 
-This table is indexed by ``Loc_ID``, mandatorily reports the ``X``, ``Y``, ``Z`` coordinates of the primary SM Localization events, as well as the image frame (``Frame_ID``) and the fluorescent channel (``Fluor``) in which each SM Localization event was detected. All other columns are at the user's discretion.
+This table is indexed by Loc_ID and mandatorily reports, for each primary SM Localization event, its ''X'', Y, Z coordinates and the Hyb_ID, Image_Frame_ID, Channel, and Fluorophore (Fluor) in which it was originally identified.
+
+All other columns are at the user's discretion.
 
 .. warning:: All **MANDATORY** header fields and column names are indicated in **bold**. All *conditionally required* header fields and column names are indicated in *italics*.
 
