@@ -15,7 +15,7 @@ This table is highly recommended, and it is designed to provide quality metrics 
 
 Because the metrics used to quantify RNA bright Spot detection accuracy and precision are not trivial and lacking a widely shared consensus, the specific columns in this table remain largely at the user's discretion and should be described with sufficient details to ensure interpretation and reproducibility.
 
-However, to align with existing `Light Microscopy (LiMi)-Model <https://doi.org/10.1038/s41592-021-01327-9>`_ of metadata specifications, the use of specific column names and descriptions is **conditionally required** in case the described metric is reported. As an example, the column name **X_Drift** is conditionally required in case the user intends to report a comparison between the Observed vs. Expected (i.e., based on a fiducial reference) positions of a detected Spot.
+However, to align with existing `Light Microscopy Model (LiMi-Model) <https://doi.org/10.1038/s41592-021-01327-9>`_ metadata specifications, the use of specific column names and descriptions is **conditionally required** in case the described metric is reported. As an example, the column name **X_Drift** is conditionally required in case the user intends to report a comparison between the Observed vs. Expected (i.e., based on a fiducial reference) positions of a detected Spot.
 
 The table is indexed by ``RNA_Spot_ID`` and each row corresponds to an RNA bright Spot. The order of all other columns (including those conditionally required) and of the rows are at the user's discretion.
 
@@ -48,7 +48,7 @@ The first columns of this table are always ``Spot_ID``, ``Channel``, ``Fluor``.
 This table **MUST** contain at least 1 Optional or Conditionally Required Column.
 
 The content and order of all other columns is largely at the user's discretion.
-However, to align with existing `Light Microscopy (LiMi)-Model <https://doi.org/10.1038/s41592-021-01327-9>`_ of metadata specifications, the use of specific column names and descriptions is **conditionally required** as indicated below. The order of the rows is at the user's discretion.
+However, to align with existing `LiMi-Model <https://doi.org/10.1038/s41592-021-01327-9>`_ metadata specifications, the use of specific column names and descriptions is **conditionally required** as indicated below. The order of the rows is at the user's discretion.
 
 .. csv-table::
   :file: tables/rna_quality_columns.csv
@@ -60,7 +60,7 @@ The only mandatory columns in this table are ``RNA_Spot_ID``, ``Channel``, and `
 
 All other columns are either *Conditionally required* or Optional. *Conditionally required* columns should be drawn from the list provided in the file header or MUST be defined by the user using a Header line starting with ``#^``. 
 
-.. tip:: The optional columns in this example table are included for illustrative purposes only and describe a case in which the user is reporting the RNA Spot fit quality using metrics that align with existing `Light Microscopy (LiMi)-Model <https://doi.org/10.1038/s41592-021-01327-9>`_ of metadata specifications. 
+.. tip:: The optional columns in this example table are included for illustrative purposes only and describe a case in which the user is reporting the RNA Spot fit quality using metrics that align with existing `LiMi-Model <https://doi.org/10.1038/s41592-021-01327-9>`_ of metadata specifications. 
 
 .. include:: examples/rna_quality
   :code:
