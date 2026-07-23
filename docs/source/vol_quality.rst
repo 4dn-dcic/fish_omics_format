@@ -17,7 +17,7 @@ It is **highly recommended** that all depositions contain *X_Loc_Precision*, *Y_
 However, to align with existing `Light Microscopy Model (LiMi-Model) <https://doi.org/10.1038/s41592-021-01327-9>`_ of metadata specifications, the use of specific column names and descriptions is *conditionally required* in case the described metric is reported. As an example, the column name ``X_Drift`` is conditionally required in case the user intends to report a comparison between the Observed vs. Expected (i.e., based on a fiducial reference) positions of a detected Spot.
 In all cases, all columns **MUST** be described in the header with sufficient details to ensure interpretation and reproducibility.
 
-The table is mandatorily indexed by ``Loc_ID`` and each row corresponds to an individual SM Localization event. The order of all other columns (including those conditionally required) and of the rows is at the user's discretion.
+The table is mandatorily indexed by ``Loc_ID`` and each row corresponds to an individual SM Localization event. The ``Loc_ID`` column must be immediately followed by ``Channel`` and ``Fluor``. All other columns, including conditionally required ones, may be ordered at the user's discretion, as may the rows.
 
 .. warning:: All **MANDATORY** header fields and column names are indicated in **bold**. All *conditionally required* header fields and column names are indicated in *italics*.
 
@@ -39,7 +39,9 @@ Data Columns
 ------------
 - For full instructions, see :ref:`columns-reference-label`
 
-Each row corresponds to data associated with an individual SM Localization event. Accordingly, the first column of this table is always ``Loc_ID``. The content and order of all other columns are largely at the user's discretion.
+Each row corresponds to data associated with an individual SM Localization event. Accordingly, the first columns of this table are always ``Loc_ID``, ``Channel``, and ``Fluor``.
+
+The content and order of all other columns are largely at the user's discretion.
 
 However, it is highly recommended that all depositions contain *X_Loc_Precision*, *Y_Loc_Precision*, *Z_Loc_Precision*, *PhotonCount*, and *Goodness_of_Fit* columns. In addition, to align with existing `Light Microscopy Model (LiMi-Model) <https://doi.org/10.1038/s41592-021-01327-9>`_ metadata specifications, the use of specific column names and descriptions is *conditionally required* as indicated below. The order of the rows is at the user's discretion.
 
@@ -49,7 +51,7 @@ However, it is highly recommended that all depositions contain *X_Loc_Precision*
 
 Example
 -------
-This table has only one mandatory column: ``Loc_ID``.
+The only mandatory columns in this table are ``Spot_ID``, ``Channel``, and ``Fluor``.
 
 The following columns are **highly recommended**: ``X_Loc_Precision``, ``Y_Loc_Precision``, ``Z_Loc_Precision``, ``PhotonCount``, and ``Goodness_of_Fit``.
 

@@ -13,9 +13,11 @@ Summary
 -------
 This table is optional and is designed to be used to report the X, Y, Z coordinates of individual SM Localization events before decoding.
 
-When raw, pre-decoding data are reported, the underlying primary localization data are recorded in this table, as shown in the example below, while the final, decoded SM Localization event is recorded in :ref:vol_core.
+When raw, pre-decoding data are reported, the primary localization data collected across multiplexed hybridization rounds, image frames, and channels are recorded in this table (see example below). The final, decoded SM Localization event is recorded in :ref:vol_core."
 
-This table is indexed by ``Loc_ID``, mandatorily reports the ``X``, ``Y``, ``Z`` coordinates of the primary SM Localization events, as well as the image frame (``Frame_ID``) and the fluorescent channel (``Fluor``) in which each SM Localization event was detected. All other columns are at the user's discretion.
+This table is indexed by ``Loc_ID`` and mandatorily reports, for each primary SM Localization event, its ``X``, ``Y``, ``Z`` coordinates and the ``Image_Frame_ID``, ``Hyb_ID``, ``Channel``, and Fluorophore (``Fluor``) in which it was originally identified.
+
+All other columns are at the user's discretion.
 
 .. warning:: All **MANDATORY** header fields and column names are indicated in **bold**. All *conditionally required* header fields and column names are indicated in *italics*.
 
@@ -39,8 +41,9 @@ Data Columns
 
 This table is indexed by ``Loc_ID`` and therefore each row corresponds to data associated with an individual SM Localization event.
 
-The first columns are always: ``Loc_ID``, ``Frame_ID``, ``X``, ``Y``, ``Z``, ``Fluor``.
-The content and order of all other columns are at the user's discretion. The order of the rows is at the user's discretion.
+The first columns are always: ``Loc_ID``, ``Hyb_ID``, ``Image_Frame_ID``, ``X``, ``Y``, ``Z``, ``Channel``, ``Fluor``.
+The content and order of all other columns are at the user's discretion. 
+The order of the rows is at the user's discretion.
 
 .. csv-table::
   :file: tables/undecoded_columns.csv
@@ -48,9 +51,9 @@ The content and order of all other columns are at the user's discretion. The ord
   
 Example
 -------
-The only mandatory columns in this table are ``Loc_ID``, ``Frame_ID``, ``X``, ``Y``, ``Z``, ``Fluor``.  All other columns are optional and must be defined by the user using a Header line starting with ``#^``. 
+The only mandatory columns in this table are ``Loc_ID``, ``Hyb_ID``, ``Image_Frame_ID``, ``X``, ``Y``, ``Z``, ``Channel``, ``Fluor``.  All other columns are optional and must be defined by the user using a Header line starting with ``#^``. 
 
-.. tip:: The optional columns in this example table are included for illustrative purposes only and describe a case in which DNA spots are detected with multiplexed barcodes.
+.. tip:: The Optional Columns (OC) in this example table are included for illustrative purposes only and describe a case in which DNA spots are detected with multiplexed barcodes.
 
 .. include:: examples/undecoded
   :code:
