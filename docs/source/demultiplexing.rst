@@ -51,7 +51,7 @@ The order of the rows is at the user's discretion.
   
 Example
 -------
-The only mandatory columns in this table are ``Loc_ID``, ``Spot_ID``, ``X``, ``Y``, ``Z``, ``Channel``,``Fluor``.  All other columns are optional (OC) and must be defined by the user using a Header line starting with ``#^``. 
+The only mandatory columns in this table are ``Loc_ID``, ``Spot_ID``, ``X``, ``Y``, ``Z``, ``Channel``, ``Fluor``.  All other columns are optional (OC) and must be defined by the user using a Header line starting with ``#^``. 
 
 .. tip:: The optional columns in this example table are included for illustrative purposes only and describe a case in which DNA spots are detected with multiplexed barcodes.
 
