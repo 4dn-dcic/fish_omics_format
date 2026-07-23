@@ -39,7 +39,9 @@ Data Columns
 ------------
 - For full instructions, see :ref:`columns-reference-label`
 
-Each row corresponds to data associated with an individual SM Localization event. Accordingly, the first column of this table is always ``Loc_ID``. The content and order of all other columns are largely at the user's discretion.
+Each row corresponds to data associated with an individual SM Localization event. Accordingly, the first columns of this table are always ``Loc_ID``, ``Channel``, and ``Fluor``.
+
+The content and order of all other columns are largely at the user's discretion.
 
 However, it is highly recommended that all depositions contain *X_Loc_Precision*, *Y_Loc_Precision*, *Z_Loc_Precision*, *PhotonCount*, and *Goodness_of_Fit* columns. In addition, to align with existing `Light Microscopy Model (LiMi-Model) <https://doi.org/10.1038/s41592-021-01327-9>`_ metadata specifications, the use of specific column names and descriptions is *conditionally required* as indicated below. The order of the rows is at the user's discretion.
 
@@ -49,7 +51,7 @@ However, it is highly recommended that all depositions contain *X_Loc_Precision*
 
 Example
 -------
-This table has only one mandatory column: ``Loc_ID``.
+The only mandatory columns in this table are ``Spot_ID``, ``Channel``, and ``Fluor``.
 
 The following columns are **highly recommended**: ``X_Loc_Precision``, ``Y_Loc_Precision``, ``Z_Loc_Precision``, ``PhotonCount``, and ``Goodness_of_Fit``.
 
