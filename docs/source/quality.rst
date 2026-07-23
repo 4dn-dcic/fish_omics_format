@@ -50,7 +50,7 @@ The first columns of this table are always ``Spot_ID``, ``Channel``, and ``Fluor
 This table **MUST** contain at least 1 Optional or Conditionally Required Column. 
 
 The content and order of all other columns is largely at the user's discretion.
-However, to align with existing `Light Microscopy Model (LiMi-Model) <https://doi.org/10.1038/s41592-021-01327-9>`_ metadata specifications, the use of specific column names and descriptions is *conditionally required* as indicated below. The order of the rows is at
+However, to align with existing `LiMi-Model <https://doi.org/10.1038/s41592-021-01327-9>`_ metadata specifications, the use of specific column names and descriptions is *conditionally required* as indicated below. The order of the rows is at
 the user's discretion.
 
 .. csv-table::
@@ -63,7 +63,7 @@ The only mandatory columns in this table are ``Spot_ID``, ``Channel``, and ``Flu
 
 All other columns are either *Conditionally required* or Optional. *Conditionally required* columns should be drawn from the list provided in the file header or MUST be defined by the user using a Header line starting with ``#^``. 
 
-.. tip:: The optional columns in this example table are included for illustrative purposes only and describe a case in which the user is reporting the Spot fit quality using metrics that align with existing `Light Microscopy Model (LiMi-Model) <https://doi.org/10.1038/s41592-021-01327-9>`_ metadata specifications. 
+.. tip:: The optional columns in this example table are included for illustrative purposes only and describe a case in which the user is reporting the Spot fit quality using metrics that align with existing `LiMi-Model <https://doi.org/10.1038/s41592-021-01327-9>`_ metadata specifications. 
 
 .. include:: examples/quality
   :code:
