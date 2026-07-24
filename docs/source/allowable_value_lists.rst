@@ -20,7 +20,7 @@ Allowable value lists
   * - 2
     - ``Software_Type``
     - The type of this Software used to produce results recorded in this table.
-    - SpotLoc, Tracing, SpotLoc+Tracing, Segmentation, QC, Other
+    - DriftCorrection, Precision Assessment, Segmentation, Single Molecule Localization, SpotLoc, SpotLoc+Tracing, Tracing, Other
     - Not Applicable
     - Not Applicable
   * - 2

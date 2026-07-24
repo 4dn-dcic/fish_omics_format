@@ -1,5 +1,5 @@
 Format description
-============================
+==================
 
 General Info
 ------------
@@ -77,8 +77,7 @@ sufficient details to ensure interpretation and reproducibility.
 case for localizing individual FISH-omics bright Spots and/or to produce
 three-dimensional (3D) polymeric chromatin Traces.
 
-**#Software_Type:** The type of this Software. Allowed values: SpotLoc,
-Tracing, SpotLoc+Tracing, Other
+**#Software_Type:** The type of this Software. Allowed values: DriftCorrection, Precision Assessment, Segmentation, Single Molecule Localization, SpotLoc, SpotLoc+Tracing, Tracing, Other
 
 **#Software_Authors:** The Name(s) of the individual Author(s) of this
 Software. In case there are more than one Authors, individual names
@@ -86,8 +85,11 @@ should be listed as follows: Doe, John; Smith, Jane; etc,.
 
 **#Software_Description:** A free-text description of this Software.
 This description should provide a detailed understanding of the
-algorithm and of the analysis parameters that were used, in order to
-guarantee interpretation and reproducibility.
+algorithm that was used, in order to guarantee interpretation and reproducibility.
+
+**#Software_Parameters:** A free-text description of the input parameters used for the specific analysis run performed using this Software.
+This description should provide sufficient details about the analysis parameters that were used, as to
+guarantee interpretation and reproducibility. Example include input paramenter used for assessing the precision of single molecule localization or drift correction in X, Y and Z.
 
 **#Software_Repository:** The URL of any repository or archive where the
 Software executable release can be obtained.
