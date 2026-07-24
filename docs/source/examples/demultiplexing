@@ -9,19 +9,19 @@
 #Software_Type: Loc
 #Software_Authors: Doe, J.
 #Software_Description: A pretty clear description
+#Software_Parameters: Minimum object size = 10 pixel, X-Y-Z Loc_Precision Parameter = 1.01
 #Software_Repository: https://github.com/repo_name_goes_here
 #Software_PreferredCitationID: https://doi.org/doi_goes_here
 #Intensity_Measurement_Method: Localization centroid intensity
-#^Hyb: the labeling round in which this localization occurred
-#^Fluor: the fluorescent channel in which this localization was detected
-#^Brightness: the photon count for this localization event
-#^Fit_Quality: the quality of fit for this localization, on a relative scale of 0-1
+#^Centroid_Intensity: the photon count for this localization event
+#^Goodness_of_Fit: the quality of fit for this localization, on a relative scale of 0-1
+#^Hyb_ID: the labeling round in which this Single Molecule (SM) Localization event was detected
 #Additional_Tables: 4dn_FOF-CT_core, 4dn_FOF-CT_quality
-##Columns=(Loc_ID, Spot_ID, X, Y, Z, Hyb, Fluor, Brightness, Fit_Quality)
-1, 1, 2342, 2354, 545, 2, cy3, 1003, 0.83
-2, 1, 2342, 2354, 545, 2, cy5, 2000, 0.93
-3, 1, 2342, 2354, 545, 3, cy5, 1233, 0.85
-4, 2, 3345, 5432, 654, 3, cy3, 2324, 0.95
-5, 2, 3345, 5432, 654, 3, cy5, 2324, 0.95
-6, NA, 4345, 432, 100, 4, cy3, 2324, 0.95
-7, 2, 3345, 5432, 654, 4, cy3, 2324, 0.95
+##Columns=(Loc_ID, Spot_ID, X, Y, Z,Channel,Fluor,Centroid_Intensity, Goodness_of_Fit, Hyb_ID)
+1,1,2342,2354,545,570/20,cy3,1003,0.83,2
+2,1,2342,2354,545,670/20,cy5,2000,0.93,2
+3,1,2342,2354,545,670/20,cy5,1233,0.85,3
+4,2,3345,5432,654,570/20,cy3,2324,0.95,3
+5,2,3345,5432,654,670/20,cy5,2324,0.95,3
+6, NA,4345,432,100,570/20,cy3,2324,0.95,4
+7,2,3345,5432,654,570/20,cy3,2324,0.95,4

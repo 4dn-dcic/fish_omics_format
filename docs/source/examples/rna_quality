@@ -10,6 +10,7 @@
 #Software_Type: QualityControl
 #Software_Authors: John Doe et al.
 #Software_Description: A pretty clear description.
+#Software_Parameters: Minimum object size = 10 pixel, X-Y-Z Loc_Precision Parameter = 1.01
 #Software_Repository: https://github.com/repo_name_goes_here
 #Software_PreferredCitationID: https://doi.org/doi_goes_here
 #Intensity_Measurement_Method: Spot peak intensity
@@ -27,7 +28,7 @@
 #^Y_Loc_Precision: lower and upper bound of 95% confidence interval on Y-position after fit
 #^Z_Loc_Precision: lower and upper bound of 95% confidence interval on Z-position after fit
 #Additional_Tables: 4dn_FOF-CT_core, 4dn_FOF-CT_rna, 4dn_FOF-CT_trace, 4dn_FOF-CT_cell
-##Columns=(RNA_Spot_ID, Channel_Name, Fluorophore_Name, Peak_Intensity, Raw_X, Raw_Y, Raw_Z, X_Drift, Y_Drift, Z_Drift, X_Chromatic_Shift, Y_Chromatic_Shift, Z_Chromatic_Shift, X_Loc_Precision, Y_Loc_Precision, Z_Loc_Precision)
+##Columns=(RNA_Spot_ID, Channel, Fluor, Peak_Intensity, Raw_X, Raw_Y, Raw_Z, X_Drift, Y_Drift, Z_Drift, X_Chromatic_Shift, Y_Chromatic_Shift, Z_Chromatic_Shift, X_Loc_Precision, Y_Loc_Precision, Z_Loc_Precision)
 001, 510/25, AlexaFluor_488, 1.1, 1.05, 1.2, 0.1, 0.05, 0.2, 0.2, 0.2, 0.2, 0.01, 0.01, 0.01
 002, 510/25, AlexaFluor_488, 1.11, 1.055, 1.22, 0.11, 0.055, 0.22, 0.22, 0.22, 0.22, 0.012, 0.012, 0.012
 003, 510/25, AlexaFluor_488, 1.12, 1.054, 1.21, 0.12, 0.054, 0.21, 0.22, 0.22, 0.22, 0.012, 0.012, 0.012

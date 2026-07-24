@@ -10,6 +10,7 @@
 #Software_Type: QualityControl
 #Software_Authors: John Doe et al.
 #Software_Description: A pretty clear description.
+#Software_Parameters: Minimum object size = 10 pixel, X-Y-Z Loc_Precision Parameter = 1.01
 #Software_Repository: https://github.com/repo_name_goes_here
 #Software_PreferredCitationID: https://doi.org/doi_goes_here
 #Intensity_Measurement_Method: Photon count

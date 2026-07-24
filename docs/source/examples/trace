@@ -10,6 +10,7 @@
 #Software_Type: Distance
 #Software_Authors: John Doe
 #Software_Description: A pretty clear description
+#Software_Parameters: Minimum object size = 10 pixel, X-Y-Z Loc_Precision Parameter = 1.01
 #Software_Repository: https://github.com/repo_name_goes_here
 #Software_PreferredCitationID: https://doi.org/doi_goes_heren
 #^Allele: This field records the Allele to which this Trace was mapped. This can be one of the following values: BL6, CAST.
