@@ -11,6 +11,7 @@
 #Software_Type:
 #Software_Authors:
 #Software_Description:
+#Software_Parameters:
 #Software_Repository:
 #Software_PreferredCitationID:
 #Intensity_Measurement_Method: [use if relevant]
@@ -39,8 +40,8 @@
 #^Optional_column_2: [substitute with your column header]
 #^Optional_column_3: [substitute with your column header]
 #Additional_Tables: 
-##Columns=(Spot_ID, Channel_Name, Fluorophore_Name, Conditionally_required_column_1, Conditionally_required_column_2, Conditionally_required_column_3, Optional_column_1, Optional_column_2, Optional_colummn_3, …)
-001, XXX/XX, XYZ, X.XX, X.XX, X.XX, X.XX, X.XX, X.XX,
+##Columns=(Spot_ID, Channel, Fluor, Conditionally_required_column_1, Conditionally_required_column_2, Conditionally_required_column_3, Optional_column_1, Optional_column_2, Optional_colummn_3, …)
+001, XXX/XX, XXYYZZ, X.XX, X.XX, X.XX, X.XX, X.XX, X.XX,
 002,
 003, 
 004, 

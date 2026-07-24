@@ -12,15 +12,14 @@
 #Software_Type:
 #Software_Authors:
 #Software_Description:
+#Software_Parameters:
 #Software_Repository:
 #Software_PreferredCitationID:
 #Additional_Tables: 
-##columns=(Spot_ID, X, Y, Z, RNA_name, Gene_ID, Transcript_ID [if relevant], [*MUST HAVE** one of the following: Trace_ID, Sub_Cell_ROI_ID, Cell_ID, Extra_Cell_ROI_ID])
+##columns=(RNA_Spot_ID, X, Y, Z, RNA_name, Gene_ID, Transcript_ID [if relevant], [*MUST HAVE** one of the following: Trace_ID, Sub_Cell_ROI_ID, Cell_ID, Extra_Cell_ROI_ID])
 001, XX.XX, YY.YY, ZZ.ZZ, XYZ1, XXX0001, XXX0001, 001, 001, 001, 001
 002, 
 003,
 004,
 005,
-
-
 

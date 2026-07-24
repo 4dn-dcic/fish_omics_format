@@ -11,6 +11,7 @@
 #Software_Type:
 #Software_Authors:
 #Software_Description:
+#Software_Parameters:
 #Software_Repository:
 #Software_PreferredCitationID:
 #Intensity_Measurement_Method:
@@ -18,8 +19,8 @@
 #^Optional_column_2: [substitute with your column header]
 #^Optional_column_3: [substitute with your column header]
 #Additional_Tables:
-##Columns=(Loc_ID, Spot_ID, X, Y, Z, Fluor, Optional_column_1, Optional_column_2, Optional_colummn_3, ...)
-001, 001, XX.XX, YY.YY, ZZ.ZZ, AlexaFluor488, XYZ, XYZ, XYZ
+##Columns=(Loc_ID, Spot_ID, X, Y, Z, Channel, Fluor, Optional_column_1, Optional_column_2, Optional_colummn_3, ...)
+001, 001, XX.XX, YY.YY, ZZ.ZZ, XXX/XX, XXYYZZ, XYZ, XYZ, XYZ
 002,
 003,
 004,
