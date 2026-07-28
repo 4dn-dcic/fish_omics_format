@@ -7,7 +7,7 @@
 #Experimenter_Contact: john.doe@email.com
 #Description: This table reports different metrics associated with identified chromatin Traces...
 #Software_Title: AlgorithmXYZ
-#Software_Type: Distance
+#Software_Type: Distance Calculation
 #Software_Authors: John Doe
 #Software_Description: A pretty clear description
 #Software_Parameters: Minimum object size = 10 pixel, X-Y-Z Loc_Precision Parameter = 1.01

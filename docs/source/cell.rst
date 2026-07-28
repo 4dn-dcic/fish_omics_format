@@ -45,7 +45,7 @@ Data Columns
 
 Each row corresponds to data associated with an individual Cell.
 
-The first column is always `Cell_ID``.
+The first column is always ``Cell_ID``.
 This table **MUST** contain at least 1 Optional Column. 
 The order of the other columns is at user's discretion.
 The order of the rows is at user's discretion.

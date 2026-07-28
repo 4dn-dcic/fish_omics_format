@@ -6,7 +6,7 @@
 #Experimenter_Contact: john.doe@email.com
 #Description: In this experiment the nuclear location of DNA Bright Spots was mapped with respect to the Nuclear Lamina (NL) and the location of the nearest H4K27me3 signal.
 #Software_Title: AlgorithmXYZ
-#Software_Type: Distance
+#Software_Type: Distance Calculation
 #Software_Authors: John Doe
 #Software_Description: A pretty clear description
 #Software_Parameters: Minimum object size = 10 pixel, X-Y-Z Loc_Precision Parameter = 1.01

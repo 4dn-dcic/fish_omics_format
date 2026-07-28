@@ -15,7 +15,7 @@
 #Software_Repository: https://github.com/repo_name_goes_here
 #Software_PreferredCitationID: https://doi.org/doi_goes_here
 #Additional_Tables: 4dn_FOF-CT_core, 4dn_FOF-CT_quality, 4dn_FOF-CT_cell
-##Columns=(Spot_ID, X, Y, Z, RNA_name, Gene_ID, Transcript_ID, Trace_ID)
+##Columns=(RNA_Spot_ID, X, Y, Z, RNA_name, Gene_ID, Transcript_ID, Trace_ID)
 001, 14.43, 41.43, 1.23, ACTB, ENSG00000075624, ENST00000646664.1, 001
 002, 14.83, 41.83, 1.83, GAPDH, ENSG00000111640, ENST00000229239.10, 001
 003, 15.83, 42.83, 1.33, MB, ENSG00000198125, ENST00000397326.7, 001

@@ -20,7 +20,7 @@ Allowable value lists
   * - 2
     - ``Software_Type``
     - The type of this Software used to produce results recorded in this table.
-    - DriftCorrection, Precision Assessment, Segmentation, Single Molecule Localization, SpotLoc, SpotLoc+Tracing, Tracing, Other
+    - Distance Calculation, DriftCorrection, Precision Assessment, Segmentation, Single Molecule Localization, SpotLoc, SpotLoc+Tracing, Tracing, Other
     - Not Applicable
     - Not Applicable
   * - 2
@@ -36,13 +36,13 @@ Allowable value lists
     - Primary cell line, Immortal cell line, Induced pluripotent stem (IPS) cell, Cell in tissue, Cell in organoid, Other.
     - Not Applicable
   * - 4
-    - ``Sub-Cell_ROI_Type``
+    - ``Sub_Cell_ROI_Type``
     - The type of sub-cellular structure ROIs reported in the :ref:`subcell`.
-    - It is recommended to use an ontology term such as a child of the `EFO 'cellular_component' term <http://purl.obolibrary.org/obo/GO_0005575>`_  
+    - It is recommended to use an ontology term such as a child of the `GO 'cellular_component' term <http://purl.obolibrary.org/obo/GO_0005575>`_  
     - Nucleolus, Nuclear Lamina (NL), Nuclear Pore Complex (NPC) PML_body, Cajal_body, Chromosome_Domain, etc.
     - Not Applicable
   * - 5
-    - ``Extra-Cell_ROI_Type``
+    - ``Extra_Cell_ROI_Type``
     - The type of extracellular structure ROIs reported in the :ref:`extracell`.
     - It is recommended to use an ontology term such as a child of the `EFO 'organism part' term <http://www.ebi.ac.uk/efo/EFO_0000635>`_  
     - Tissue, Organoid, etc.

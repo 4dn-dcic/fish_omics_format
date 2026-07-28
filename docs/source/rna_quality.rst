@@ -44,7 +44,7 @@ Data Columns
 
 As with all other RNA Spot Data tables in this format, each row corresponds to data associated with an individual RNA_Spot.
 
-The first columns of this table are always ``Spot_ID``, ``Channel``, ``Fluor``.
+The first columns of this table are always ``RNA_Spot_ID``, ``Channel``, ``Fluor``.
 
 This table **MUST** contain at least 1 Optional or Conditionally Required Column.
 

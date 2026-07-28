@@ -25,7 +25,7 @@ File Header
 -----------
 - For full instructions, see :ref:`headers-reference-label`
 - The first line in the header is always ``##FOF-CT_Version=vX.X``.
-- The second line in the header is always ``##Table_Namespace=4dn_FOF-CT_multiplexing``.
+- The second line in the header is always ``##Table_Namespace=4dn_FOF-CT_demultiplexing``.
 
 .. tip:: The header **MUST** contain a mandatory set of fields that describe any Software tool that was used to produce/process data in this table. If more than one software tool was used, please repeat a set of Software-fields for describing each of them.
 
