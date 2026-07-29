@@ -28,6 +28,7 @@ General Info
 .. tip:: Except for :ref:`core`, :ref:`demultiplexing`, :ref:`vol-core`, :ref:`undecoded`, :ref:`rna` and :ref:`mapping`, all other :ref:`BAS-table-reference-label` and :ref:`VOL-table-reference-label` that are included in the deoposition **MUST** contain at least 1 **Optional Column**.
 
 .. _headers-reference-label:
+
 File Header
 -----------
 - All tables have to contain a mandatory header section.
@@ -178,6 +179,19 @@ Metrics Units
 """""""""""""
 
 .. note:: In addition to the **##XYZ_Unit=** Other units-related header lines are also *conditionally required* for all other :ref:`BAS-table-reference-label` and :ref:`VOL-table-reference-label` that are included in the deposition in case relevant metrics are reported (e.g., the ``##Time_Unit=`` field is required if a time measure is reported).
+
+
+.. _conditional-requirement-types:
+
+Types of Conditional Requirement
+---------------------------------
+The requirement level "*conditionally required*" is used throughout this specification for fields whose necessity depends on context. That context falls into one of three distinct trigger types:
+
+- **Metric-triggered** — the field is required only if a specific metric or quantity is reported anywhere in the table (e.g. a unit field required only when a value using that unit appears in an optional column).
+- **Co-Deposition-triggered** — the field is required only if a related companion table is also being submitted as part of the same dataset.
+- **Content-triggered** — the field is required only if the dataset itself has a specific property that makes the field applicable (e.g. the genome under study was modified).
+
+Every conditionally required field in this specification is tagged with one of these three trigger types and its exact trigger condition in the :ref:`conditional-requirements-reference-label` table below.
 
 
 .. _columns-reference-label:

@@ -1,0 +1,14 @@
+Field,Table(s),Trigger Type,Trigger Condition
+XYZ_Unit,"rna_quality, demultiplexing, cell, subcell, extracell, mapping",Metric-triggered,Required if any spatial coordinate or distance metric is reported in an optional column of this table.
+Time_Unit,"rna_quality, demultiplexing, mapping",Metric-triggered,Required if any time metric is reported in an optional column of this table.
+Intensity_Unit,"rna_quality, demultiplexing, mapping",Metric-triggered,Required if any intensity metric is reported in an optional column of this table.
+Intensity_Measurement_Method,"rna_quality, demultiplexing, mapping",Metric-triggered,Required if any intensity metric is reported in an optional column of this table.
+Sub_Cell_ROI_ID,mapping,Co-Deposition-triggered,Required if this Cell/ROI Mapping table file is reporting subcellular ROI data (mutually exclusive with Cell_ID and Extra_Cell_ROI_ID — see mapping.rst).
+Cell_ID,mapping,Co-Deposition-triggered,Required if this Cell/ROI Mapping table file is reporting Cell data (mutually exclusive with Sub_Cell_ROI_ID and Extra_Cell_ROI_ID — see mapping.rst).
+Extra_Cell_ROI_ID,mapping,Co-Deposition-triggered,Required if this Cell/ROI Mapping table file is reporting extracellular ROI data (mutually exclusive with Sub_Cell_ROI_ID and Cell_ID — see mapping.rst).
+Cell_Type,mapping,Content-triggered,Required if any Cell ROI is identified as part of this experiment.
+Sub_Cell_ROI_Type,mapping,Content-triggered,Required if any Sub-Cell ROI is identified as part of this experiment.
+Extra_Cell_ROI_Type,mapping,Content-triggered,Required if any Extra-Cell ROI is identified as part of this experiment.
+Modification,core,Content-triggered,Required if Genome_Assembly uses the 'custom-build:' prefix.
+VCF_File_Name,core,Content-triggered,Required if Genome_Assembly uses the 'custom-build:' prefix.
+VCF_Version,core,Content-triggered,Required if Genome_Assembly uses the 'custom-build:' prefix.
