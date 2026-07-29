@@ -31,6 +31,7 @@ FISH Omics Format - Chromatin Tracing (FOF-CT)
     :maxdepth: 1
     :caption: Miscellaneous
 
+    datasets
     misc
     allowable_value_lists
     contributors

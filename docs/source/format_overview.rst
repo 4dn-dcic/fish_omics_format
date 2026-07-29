@@ -45,6 +45,13 @@ File Header
     the interpretation and reproducibility of the results. These lines should
     follow the following format ``#^Term_X: free text description`` (e.g.,
     ``#^Optional_Column_1: optional column 1 description``).
+    
+.. note:: Columns declared with ``#^`` fall into two distinct categories, both written using the same ``#^Term_X: description`` syntax:
+
+   - **Reserved, conditionally required columns** — column names that are part of a fixed, shared vocabulary (e.g., ``Raw_X``, ``X_Drift``, ``X_Loc_Precision``, ``Goodness_of_Fit``). These names are not mandatory in every deposition, but if the corresponding metric **is** reported, the reserved name **MUST** be used exactly as given, rather than a user-chosen alternative, so that the same metric can be recognized and compared across independently submitted datasets.
+   - **Free-form optional columns** — genuinely novel properties with no equivalent in the reserved vocabulary, for which the depositor chooses both the column name and its description.
+
+   Whether a given ``#^`` column is reserved-but-conditional or fully free-form is indicated, table by table, in each table's File Header list below.
 
 - Header names **MUST** use the underscore as a word separator (e.g., RNA_A_intensity).
 - The file header contains **required**, *conditionally-required*, and optional fields.

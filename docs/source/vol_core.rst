@@ -13,7 +13,9 @@ This is the mandatory core table of the FISH-omics Format for Volumetric (vol) C
 
 The vol_core table is organized around individual single-molecule (SM) localization events. Each row reports the ``X``, ``Y``, ``Z`` coordinates of an individual SM Localization event, the genomic DNA target it corresponds to — identified by chromosome ID (``Chrom``), and by start (``Chrom_Start``) and end (``Chrom_End``) — and the Spot and Trace assignment of that event.
 
-  .. tip:: For genomic coordinates, it is recommended to use GRCh38 for human and GRCm38 for mouse. For other species, follow these `instructions. <https://data.4dnucleome.org/search/?type=Organism>`_ In addition, in case the genome under study contains INSERTION/DELETIONs, also follow these :ref:`IN_DEL-reference-label`.
+.. note:: A valid FOF-vol-CT deposition **MUST** mandatorily report ``Loc_ID`` together with its associated ``Spot_ID`` and ``Trace_ID`` for every SM Localization event. In the context of FOF-vol-CT, ``Spot_ID`` identifies the centroid (center of mass) of a cluster (i.e., volume) of individual SM Localization events, while ``Trace_ID`` identifies the trace connecting individual cluster centers of mass along the chromosome.
+
+.. tip:: For genomic coordinates, it is recommended to use GRCh38 for human and GRCm38 for mouse. For other species, follow these `instructions. <https://data.4dnucleome.org/search/?type=Organism>`_ In addition, in case the genome under study contains INSERTION/DELETIONs, also follow these :ref:`IN_DEL-reference-label`.
   
 At a minimum, the table must have the **9 required columns** in the following order: ``Loc_ID``, ``Spot_ID`` ``Trace_ID``, ``X``, ``Y``, ``Z``, ``Chrom``, ``Chrom_Start``, ``Chrom_End``.
 
@@ -38,9 +40,10 @@ Instructions for reporting the location of SM Localization events, Spots and Tra
 #. ``##modification`` to indicate the nature and location of the modification
 #. ``##VCF_File_name`` to indicate the name of the mandatory `Variant Call Format (VCF) <https://samtools.github.io/hts-specs/VCFv4.2.pdf>`_ file to be included with the FOF-CT dataset to report the nature and location of the genome modification.
 #. ``##VCF_version`` to indicate the VCF version used for the VCF file describing the nature and location of the genome modification.
-#. - Attach a separate `VCF <https://samtools.github.io/hts-specs/VCFv4.2.pdf>`_ file with your FOF-CT dataset to describe the nature and location of the genome modification.
-#. - In the ``Chrom`` column insert the name of the inserted or deleted DNA fragment.
-#. - In the ``ChromStart`` and ``ChromEnd`` columns insert the Start and End coordinates of the target chromosome segment with respect to the INSERTION or DELETION.
+
+   - Attach a separate `VCF <https://samtools.github.io/hts-specs/VCFv4.2.pdf>`_ file with your FOF-CT dataset to describe the nature and location of the genome modification.
+   - In the ``Chrom`` column insert the name of the inserted or deleted DNA fragment.
+   - In the ``ChromStart`` and ``ChromEnd`` columns insert the Start and End coordinates of the target chromosome segment with respect to the INSERTION or DELETION.
 
 File Header
 -----------

@@ -17,8 +17,7 @@ Because the metrics used to quantify RNA bright Spot detection accuracy and prec
 
 However, to align with existing `Light Microscopy Model (LiMi-Model) <https://doi.org/10.1038/s41592-021-01327-9>`_ metadata specifications, the use of specific column names and descriptions is **conditionally required** in case the described metric is reported. As an example, the column name **X_Drift** is conditionally required in case the user intends to report a comparison between the Observed vs. Expected (i.e., based on a fiducial reference) positions of a detected Spot.
 
-The table is indexed by ``RNA_Spot_ID`` and each row corresponds to an RNA bright Spot. 
-The ``RNA_Spot_ID`` column must be immediately followed by ``Channel`` and ``Fluor``. All other columns, including conditionally required ones, may be ordered at the user's discretion, as may the rows.
+The table is indexed by ``RNA_Spot_ID`` and each row corresponds to an RNA bright Spot. The ``RNA_Spot_ID`` column must be immediately followed by ``Channel`` and ``Fluor``. All other columns, including conditionally required and optional (Optional Column, OC) ones, must follow the three required columns and may be ordered at the user's discretion, as may the rows.
 
 .. warning:: All **MANDATORY** header fields and column names are indicated in **bold**. All *conditionally required* header fields and column names are indicated in *italics*.
 
@@ -33,6 +32,8 @@ File Header
 The header **MUST** include a detailed description of each Optional Column (OC) used.
 
 .. tip:: The table **MUST** contain at least 1 Optional or Conditionally Required Column. 
+
+.. note:: The columns below marked *conditionally required* (e.g., ``Raw_X``, ``X_Drift``, ``X_Loc_Precision``) are reserved names: their use is optional, but if the corresponding metric is reported, this exact column name **MUST** be used. All other ``#^`` columns are free-form — see :ref:`headers-reference-label` for the full distinction.
 
 .. csv-table::
   :file: tables/rna_quality_header.csv
