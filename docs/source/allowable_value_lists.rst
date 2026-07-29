@@ -47,3 +47,9 @@ Allowable value lists
     - It is recommended to use an ontology term such as a child of the `EFO 'organism part' term <http://www.ebi.ac.uk/efo/EFO_0000635>`_  
     - Tissue, Organoid, etc.
     - Not Applicable
+ * - 6
+    - ``ROI_Boundaries_Format_Type``
+    - The type of ROI boundaries reporting format used in the :ref:`mapping`.
+    - OME_Polygon, OME_Mask, Mesh_OBJ, Mesh_STL, Mesh_PLY, GeoJSO, WKT, Label_Mask_Image, Other
+    - Not Applicable
+    - OME_Polygon

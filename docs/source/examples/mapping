@@ -1,7 +1,8 @@
 ##FOF-CT_Version=v2.0
 ##Table_Namespace=4dn_FOF-CT_mapping
 ##Sub_Cell_ROI_Type=PML_body
-##ROI_Boundaries_Format=(X1,Y1 X2,Y2 ... Xn,Yn)
+##ROI_Boundaries_Format_Type=OME_Polygon
+##ROI_Boundaries_Format_Description=Sub-cell ROI boundaries are reported in global coordinates as lists of comma-separated x,y,z coordinates separated by spaces (e.g. "0,0,0 1,2,3 4,5,6").
 ##XYZ_Unit=micron
 #Lab_Name: Nobel
 #Experimenter_Name: John Doe
