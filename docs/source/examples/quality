@@ -1,7 +1,7 @@
 ##FOF-CT_Version=v2.0
 ##Table_Namespace=4dn_FOF-CT_quality
 ##XYZ_Unit=micron
-##Intensity_Unit=photonCount
+##Intensity_Unit=photons
 #Lab_Name: Nobel
 #Experimenter_Name: John Doe
 #Experimenter_Contact: john.doe@email.com
