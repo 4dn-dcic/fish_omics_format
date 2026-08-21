@@ -1,5 +1,5 @@
 vol - Downloadable Templates
-======================
+============================
 To facilitate adoption of the FOF-CT, table Templates for **FOF-vol-CT** can be downloaded from `here <https://github.com/4dn-dcic/fish_omics_format/releases/latest>`_.
 
 These templates can be used as a starting point for filling in all the required :ref:`headers-reference-label` lines and :ref:`columns-reference-label`.

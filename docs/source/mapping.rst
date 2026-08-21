@@ -36,26 +36,22 @@ As an example, this table might be organized in one of the following manner:
   :header-rows: 1
 
   * - ``Cell_ID``
-    - ``ROI_boundaries``
+    - ``ROI_Boundaries``
   * - 0001
     - "0,0 1,2 3,5"
     
-    
-##ROI_Boundaries_Format_Type=OME_Polygon
-##ROI_Boundaries_Format_Description=Sub-cell ROI boundaries are reported in global coordinates as lists of comma-separated x,y,z coordinates separated by spaces (e.g. "0,0,0 1,2,3 4,5,6").    
-
 
 **2) Sub-Cell ROI boundaries**
 	- ``##ROI_Boundaries_Format_Type=`` OME_Polygon
-	- ``##ROI_Boundaries_Format_Description=`` Cell boundaries are reported in global coordinates as lists of comma separated x,y coordinates separated by spaces like "x1,y1 x2,y2 x3,y3" (e.g. "0,0 1,2 3,5").
+	- ``##ROI_Boundaries_Format_Description=`` Sub-Cell ROI boundaries are reported in global coordinates as lists of comma separated x,y,z coordinates separated by spaces like "x1,y1,z1 x2,y2,z2 x3,y3,z3" (e.g. "0,0,0 1,2,4 3,5,6").
 
 .. list-table::
   :header-rows: 1
 
   * - ``Sub_Cell_ROI_ID``
-    - ``ROI_boundaries``
+    - ``ROI_Boundaries``
   * - 0001
-    - "0,0,0 1,2,3 4,5,6"
+    - "0,0,0 1,2,4 3,5,6"
 
 **3) Extra_Cell_ROI_ID boundaries**
 	- ``##ROI_Boundaries_Format_Type=`` Mesh_OBJ
@@ -66,7 +62,7 @@ As an example, this table might be organized in one of the following manner:
   :header-rows: 1
 
   * - ``Extra_Cell_ROI_ID``
-    - ``ROI_boundaries``
+    - ``ROI_Boundaries``
   * - 0001
     - "v 0.123 0.234 0.345 1.0"
 

@@ -1,7 +1,7 @@
 .. _BAS-table-reference-label:
 
 FOF-bas-CT tables
-------
+------------------
 
 .. list-table::
   :header-rows: 1

@@ -16,7 +16,7 @@
 #^Centroid_Intensity: the photon count for this localization event
 #^Goodness_of_Fit: the quality of fit for this localization, on a relative scale of 0-1
 #^Hyb_ID: the labeling round in which this Single Molecule (SM) Localization event was detected
-#Additional_Tables: 4dn_FOF-CT_core, 4dn_FOF-CT_quality
+#Additional_Tables: 4dn_FOF-CT_core, 4dn_FOF-CT_quality, 4dn_FOF-CT_bio, 4dn_FOF-CT_rna, 4dn_FOF-CT_rna_quality
 ##Columns=(Loc_ID, Spot_ID, X, Y, Z,Channel,Fluor,Centroid_Intensity, Goodness_of_Fit, Hyb_ID)
 1,1,2342,2354,545,570/20,cy3,1003,0.83,2
 2,1,2342,2354,545,670/20,cy5,2000,0.93,2

@@ -16,7 +16,7 @@
 #^Cell_A_nr: the number of identified Cells of type A identified to belong to this extracellular ROI.
 #^Cell_B_nr: the number of identified Cells of type B identified to belong to this extracellular ROI.
 #^ROI_Volume: the volume of this extracellular ROI expressed in micron^3.
-#Additional_Tables: 4dn_FOF-CT_core, 4dn_FOF-CT_rna, 4dn_FOF-CT_trace
+#Additional_Tables: 4dn_FOF-CT_core, 4dn_FOF-CT_rna, 4dn_FOF-CT_trace, 4dn_FOF-CT_subcell, 4dn_FOF-CT_mapping
 ##Columns=(Extra_Cell_ROI_ID, Cell_A_nr, Cell_B_nr, ROI_Volume)
 1, 10, 22, 13453
 2, 0, 11, 35545

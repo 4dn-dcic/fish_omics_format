@@ -24,7 +24,7 @@
 #^Optional_column_2: [substitute with your column header]
 #^Optional_column_3: [substitute with your column header]
 #Additional_Tables: 
-##Columns=(Sub_Cell_ROI_ID, ROI_boundaries, Optional_column_1, Optional_column_2, Optional_colummn_3, ...)
+##Columns=(Sub_Cell_ROI_ID, ROI_Boundaries, Optional_column_1, Optional_column_2, Optional_colummn_3, ...)
 001, (X1,Y1 X2,Y2 Xn,Yn)
 002,
 003,

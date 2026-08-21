@@ -19,7 +19,7 @@
 #^X_Loc_Precision: lower and upper bound of 95% confidence interval on X-position after fit
 #^Y_Loc_Precision: lower and upper bound of 95% confidence interval on Y-position after fit
 #^Z_Loc_Precision: lower and upper bound of 95% confidence interval on Z-position after fit
-#Additional_Tables: FOF-CT_vol_core, 4dn_FOF-CT_core, FOF-CT_undecoded, 4dn_FOF-CT_cell
+#Additional_Tables: FOF-CT_vol_core, 4dn_FOF-CT_core, FOF-CT_undecoded, 4dn_FOF-CT_trace, 4dn_FOF-CT_bio, 4dn_FOF-CT_rna, 4dn_FOF-CT_cell, 4dn_FOF-CT_mapping
 ##Columns=(Loc_ID,PhotonCount,Goodness_of_Fit, X_Loc_Precision, Y_Loc_Precision, Z_Loc_Precision)
 001,1.1,0.89,0.01,0.01,0.01
 002,1.11,0.92,0.012,0.012,0.012

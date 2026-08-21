@@ -11,11 +11,11 @@ Namespace: *4dn_FOF-CT_demultiplexing*
 
 Summary
 -------
-This table is optional and is designed to be used in the case of multiplexed FISH experiments (i.e., MERFISH) in which the final localization of a bright DNA or RNA Spot results from the combination of multiple individual localization events (e.g., by combining particles detected and localized in separate images).
+This table is optional and is designed to be used in the case of multiplexed FISH experiments (i.e., MERFISH) in which the final localization of a bright DNA or RNA Spot results from the combination of multiple individual Single-Molecule (SM) Localization events (e.g., by combining particles detected and localized in separate images).
 
 In such a case, the final Spot localization data is recorded in the :ref:`core`, while the underlying primary localization data can be recorded by using this table, as shown for DNA Spots in the example below.
 
-This table is indexed by ``Loc_ID``, and has a mandatory ``Spot_ID`` column that is used to link individual localization events to the resulting Spot. In addition, it mandatorily reports the ``X``, ``Y``, ``Z`` coordinates of the SM Localization event and the emission channel (``Channel``) and fluorophore (``Fluor``) that were used to detect the SM Localization event.
+This table is indexed by ``Loc_ID``, and has a mandatory ``Spot_ID`` column that is used to link individual SM Localization events to the resulting Spot. In addition, it mandatorily reports the ``X``, ``Y``, ``Z`` coordinates of the SM Localization event and the emission channel (``Channel``) and fluorophore (``Fluor``) that were used to detect the SM Localization event.
 
 Other columns are at user's discretion.
 
@@ -39,7 +39,7 @@ Data Columns
 ------------
 - For full instructions, see :ref:`columns-reference-label`
 
-This table is indexed by ``Loc_ID`` and therefore each row corresponds to data associated with an individual Localization event.
+This table is indexed by ``Loc_ID`` and therefore each row corresponds to data associated with an individual SM Localization event.
 
 The first columns are always: ``Loc_ID``, ``Spot_ID``, ``X``, ``Y``, ``Z``, ``Channel``, ``Fluor``.
 The content and order of all other columns are at the user's discretion.

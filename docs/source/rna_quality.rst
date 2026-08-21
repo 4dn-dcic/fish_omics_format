@@ -1,7 +1,7 @@
 .. _rna_quality:
 
 RNA Spot Quality table
-==================
+======================
 
 Requirement level: optional
 

@@ -1,13 +1,15 @@
 .. _undecoded:
 
 Undecoded SM Localization Data table
-=========================
+====================================
 
 Requirement level: optional
 
 Recommended: **Yes**
 
 Namespace: *FOF-CT_undecoded*
+
+.. note:: The FOF-vol-CT namespaces (``FOF-CT_vol_core``, ``FOF-CT_undecoded``, ``FOF-CT_vol_quality``) intentionally omit the ``4dn_`` prefix to reflect the format's continued stewardship by the broader community beyond 4DN.
 
 Summary
 -------

@@ -37,7 +37,7 @@ FOF-bas-CT is compatible with several **ball-and-stick** FISH-omics techniques i
 Similarly, FOF-vol-CT is compatible with multiple **volumetric** chromatin tracing methods, such as OligoSTORM and OligoDNA-PAINT 
 (`Belivau et al.  2017 <https://doi.org/10.1007/978-1-4939-7265-4_19>`_, `Bintu et al. 2018 <https://doi.org/10.1126/science.aau1783>`_, `Nir et al. 2018 <https://doi.org/10.1371/journal.pgen.1007872>`_, `Luppino et al. 2020 <https://doi.org/10.1038/s41588-020-0647-9>`_)
 
-.. note:: FOF-CT is designed to work with both unmodified genomes and genomes containing INSERTIONS or DELETIONS. For guidance on capturing genomic variants using FOF-CT, refer to the instructions in :ref:core, and include a description of the custom build using the Variant Call Format (VCF) as outlined in :ref:`VCF-reference-label`.
+.. note:: FOF-CT is designed to work with both unmodified genomes and genomes containing INSERTIONS or DELETIONS. For guidance on capturing genomic variants using FOF-CT, refer to the instructions in :ref:`core`, and include a description of the custom build using the Variant Call Format (VCF) as outlined in :ref:`VCF-reference-label`.
 
 .. figure:: images/2026-7-4_Figure_1_FOF-bas-vol-CT_Aufmkolk_Strambio_2026-5-9_CORRESPONDENCE_v1.png
   :class: shadow-image
@@ -47,7 +47,7 @@ Similarly, FOF-vol-CT is compatible with multiple **volumetric** chromatin traci
   **Figure 2: Schematic representation of the 15 tables composing the Fish Omics Format for Chromatin Tracing. FOF-CT is a modular format designed to capture Chromatin Tracing data from two experiment modalities: Ball-and-Stick (bas) and Volumetric (vol). All 12 FOF-bas-CT tables are shared across both modalities — 3 shown in red (Table 1-core, Table 2-demultiplexing, Table 3-quality), reflecting their role as the primary tables defining ball-and-stick Spot-level data, and 9 shown in grey, providing supporting Trace-, Cell-, ROI-, and RNA-level information. FOF-vol-CT requires these same 12 shared (red + grey) tables plus 3 additional tables specific to it, shown in blue (Table 1v-vol_core, Table 2v-undecoded, Table 3v-vol_quality). Each table's index number and short name are shown in the upper-right corner. (Figure credit: Sarah Aufmkolk).Figure 2: Schematic representation of 15 tables composing the Fish Omics Format for Chromatin Tracing.** FOF-CT is a modular format designed to capture Chromatin Tracing data from two experiment modalities: Ball-and-Stick (bas) and Volumetric (vol). Tables are represented as color-coded boxes (**3 red** for bas primary tables; **9 grey** for tables shared across both modalities; **3 blue** for vol-specific tables), with each table's index number and short name in the upper-right corner. (Figure credit: Sarah Aufmkolk).
 
 Summary: FISH Omics Format for ball-and-stick Chromatin Tracing
--------------------------
+---------------------------------------------------------------
 
 In **ball-and-stick** Chromatin Tracing experiments, polymer tracing algorithms are used to string together the localization of individual DNA bright Spots to reconstruct the three-dimensional (3D) path of chromatin fibers. 
 
@@ -71,7 +71,7 @@ The root of the format consists of the **mandatory** :ref:`core` table that defi
 	* **Extracellular ROI** (e.g., Tissue).
 
 Summary: FISH Omics Format for volumetric Chromatin Tracing
--------------------------
+-----------------------------------------------------------
 
 For FOF-vol-CT the root of the format consists of the **mandatory** :ref:`vol-core` that reports the location of individual SM Localization events, the localization of their target chromosome segments, as well as their associated DNA-FISH bright Spots and chromatin Traces. In addition, two supplementary :ref:`VOL-table-reference-label` support the integration of this :ref:`vol-core` with:
 

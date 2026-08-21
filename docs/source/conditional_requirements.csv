@@ -1,5 +1,4 @@
 Field,Table(s),Trigger Type,Trigger Condition
-XYZ_Unit,"rna_quality, demultiplexing, cell, subcell, extracell, mapping",Metric-triggered,Required if any spatial coordinate or distance metric is reported in an optional column of this table.
 Time_Unit,"rna_quality, demultiplexing, mapping",Metric-triggered,Required if any time metric is reported in an optional column of this table.
 Intensity_Unit,"rna_quality, demultiplexing, mapping",Metric-triggered,Required if any intensity metric is reported in an optional column of this table.
 Intensity_Measurement_Method,"rna_quality, demultiplexing, mapping",Metric-triggered,Required if any intensity metric is reported in an optional column of this table.

@@ -1,13 +1,15 @@
 .. _vol-quality:
 
 SM Localization Quality table
-==================
+=============================
 
 Requirement level: optional
 
 Recommended: **Yes**
 
 Namespace: *FOF-CT_vol_quality*
+
+.. note:: The FOF-vol-CT namespaces (``FOF-CT_vol_core``, ``FOF-CT_undecoded``, ``FOF-CT_vol_quality``) intentionally omit the ``4dn_`` prefix to reflect the format's continued stewardship by the broader community beyond 4DN.
 
 Summary
 -------
@@ -61,6 +63,6 @@ All other columns are either *Conditionally required* or Optional. *Conditionall
 
 .. tip:: The optional columns in this example table are included for illustrative purposes only using metrics that align with existing `Light Microscopy Model (LiMi-Model) <https://doi.org/10.1038/s41592-021-01327-9>`_ metadata specifications. 
 
-.. include:: examples/quality
+.. include:: examples/vol_quality
   :code:
 

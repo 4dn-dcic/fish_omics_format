@@ -1,5 +1,5 @@
-##FOF-CT_version=v2.0
-##Table_namespace=4dn_FOF-CT_subcell
+##FOF-CT_Version=v2.0
+##Table_Namespace=4dn_FOF-CT_subcell
 ##Sub_Cell_ROI_Type=
 ##Cell_Type=
 ##XYZ_Unit=micron [default value; change if different]

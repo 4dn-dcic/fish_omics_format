@@ -8,6 +8,8 @@ General Info
 
   - The 12 :ref:`BAS-table-reference-label` are common to both **bas Chromatin Tracing** and **vol Chromatin Tracing**. 
   - The additional 3 :ref:`VOL-table-reference-label` pertain **exclusively to vol Chromatin Tracing**.
+  
+ .. note:: The FOF-vol-CT namespaces (``FOF-CT_vol_core``, ``FOF-CT_undecoded``, ``FOF-CT_vol_quality``) intentionally omit the ``4dn_`` prefix to reflect the format's continued stewardship by the broader community beyond 4DN.
 
 - Each modality only has one mandatory table:
 
@@ -85,7 +87,7 @@ sufficient details to ensure interpretation and reproducibility.
 case for localizing individual FISH-omics bright Spots and/or to produce
 three-dimensional (3D) polymeric chromatin Traces.
 
-**#Software_Type:** The type of this Software. Allowed values: DriftCorrection, Precision Assessment, Segmentation, Single Molecule Localization, SpotLoc, SpotLoc+Tracing, Tracing, Other
+**#Software_Type:** The type of this Software. Allowed values: Distance Calculation, DriftCorrection, Precision Assessment, Segmentation, Single Molecule Localization, SpotLoc, SpotLoc+Tracing, Tracing, Other
 
 **#Software_Authors:** The Name(s) of the individual Author(s) of this
 Software. In case there are more than one Authors, individual names
@@ -109,7 +111,7 @@ ArXiv.org ID etc,.
 
 **#Additional_Tables:** List of the additional tables being submitted. Note: use a comma to separate each table name from the next. E.g., AddTable1, AddTable2, AddTableN
 
-**##Columns:=** List of the data column headers used in the table. Note: enclose the column headers and use a comma to separate each header name from the next. E.g., \ (C1, C2, C3, Cn)
+**##Columns=** List of the data column headers used in the table. Note: enclose the column headers and use a comma to separate each header name from the next. E.g., \ (C1, C2, C3, Cn)
 
 
 Additional required header lines by table type

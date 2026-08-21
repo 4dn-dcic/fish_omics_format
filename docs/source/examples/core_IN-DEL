@@ -16,7 +16,7 @@
 #Software_Parameters: Minimum object size = 10 pixel, X-Y-Z Loc_Precision Parameter = 1.01
 #Software_Repository: https://github.com/BoettigerLab/ORCA-public
 #Software_PreferredCitationID: https://doi.org/10.1038/s41596-020-00478-x
-#additional_tables: 4dn_FOF-CT_quality, 4dn_FOF-CT_rna, 4dn_FOF-CT_trace, 4dn_FOF-CT_cell
+#additional_tables: 4dn_FOF-CT_quality, 4dn_FOF-CT_bio, 4dn_FOF-CT_demultiplexing, 4dn_FOF-CT_trace
 ##columns=(Spot_ID, Trace_ID, X, Y, Z, Chrom, Chrom_Start, Chrom_End, Cell_ID)
 1, 1, 14.43, 41.43, 1.23, chr3, 0001, 1000, 1
 2, 1, 14.83, 41.83, 1.83, chr3, 1001, 2000, 1
