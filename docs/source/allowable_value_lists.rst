@@ -14,8 +14,8 @@ The following is a list of fields whose values have to be drawn from allowable v
   * - 1
     - ``XYZ_unit``
     - The unit used to represent XYZ locations or distances. 
-    - SI units of `Length <https://en.wikipedia.org/wiki/SI_base_unit>`_
-    - nm, micron, mm, etc.
+    - nm, micron, mm (closed list)
+    - nm, micron, mm
     - micron
   * - 2
     - ``Software_Type``
@@ -26,9 +26,9 @@ The following is a list of fields whose values have to be drawn from allowable v
   * - 3
     - ``Time_unit``
     - The unit used to represent a time interval.
-    - SI units of `Time <https://en.wikipedia.org/wiki/SI_base_unit>`_
-    - ms, s, min, hr, etc.
-    - s
+    - ms, msec, s, sec, min, hr (closed list)
+    - ms, msec, s, sec, min, hr
+    - sec
   * - 4
     - ``Cell_Type``
     - The type of cells reported in the :ref:`cell`.

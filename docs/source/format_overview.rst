@@ -69,7 +69,7 @@ Mandatory header lines (all tables)
 
 **##Table_Namespace=** Identifier for this type of table. Value must be as in the example. E.g., 4dn_FOF-CT_core
 
-**##XYZ_Unit=** The unit used to represent XYZ locations or distances. Note: use micron to avoid problems with special, Greek symbols. Other allowed values *should* be drawn from SI units of `Length <https://en.wikipedia.org/wiki/SI_base_unit>`_. Examples: 'nm', 'micron' 'mm' etc.
+**##XYZ_Unit=** The unit used to represent XYZ locations or distances. Note: use micron to avoid problems with special, Greek symbols. Allowed values are a closed list: 'nm', 'micron', 'mm'. No other value is accepted.
 
 **#Lab_Name:** Name of the lab where the experiment was performed
 
