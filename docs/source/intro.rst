@@ -39,12 +39,14 @@ Similarly, FOF-vol-CT is compatible with multiple **volumetric** chromatin traci
 
 .. note:: FOF-CT is designed to work with both unmodified genomes and genomes containing INSERTIONS or DELETIONS. For guidance on capturing genomic variants using FOF-CT, refer to the instructions in :ref:`core`, and include a description of the custom build using the Variant Call Format (VCF) as outlined in :ref:`VCF-reference-label`.
 
-.. figure:: images/2026-7-4_Figure_1_FOF-bas-vol_CT_Aufmkolk_Strambio_2026-5-9_CORRESPONDENCE_v1.png
+
+.. figure:: images/Figure_1_FOF-bas-vol.png
   :class: shadow-image
   :width: 100%
   :align: center
 
- **Figure 2**: Schematic representation of the 15 tables composing the Fish Omics Format for Chromatin Tracing. FOF-CT is a modular format designed to capture Chromatin Tracing data from two experiment modalities: Ball-and-Stick (bas) and Volumetric (vol). All 12 FOF-bas-CT tables are shared across both modalities — **3 shown in red** (Table 1-core, Table 2-demultiplexing, Table 3-quality), reflecting their role as the primary tables defining ball-and-stick Spot-level data, and **9 shown in grey**, providing supporting Trace-, Cell-, ROI-, and RNA-level information. FOF-vol-CT requires these same 12 shared (red + grey) tables plus 3 additional tables specific to it, **shown in blue** (Table 1v-vol_core, Table 2v-undecoded, Table 3v-vol_quality). Each table's index number and short name are shown in the upper-right corner. (Figure credit: Sarah Aufmkolk).
+
+  Figure 2: Schematic representation of the 15 tables composing the Fish Omics Format for Chromatin Tracing. FOF-CT is a modular format designed to capture Chromatin Tracing data from two experiment modalities: Ball-and-Stick (bas) and Volumetric (vol). All 12 FOF-bas-CT tables are shared across both modalities — **3 shown in red** (Table 1-core, Table 2-demultiplexing, Table 3-quality), reflecting their role as the primary tables defining ball-and-stick Spot-level data, and **9 shown in grey**, providing supporting Trace-, Cell-, ROI-, and RNA-level information. FOF-vol-CT requires these same 12 shared (red + grey) tables plus 3 additional tables specific to it, **shown in blue** (Table 1v-vol_core, Table 2v-undecoded, Table 3v-vol_quality). Each table's index number and short name are shown in the upper-right corner. (Figure credit: Sarah Aufmkolk).
 
 Summary: FISH Omics Format for ball-and-stick Chromatin Tracing
 ---------------------------------------------------------------
