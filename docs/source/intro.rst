@@ -39,7 +39,7 @@ Similarly, FOF-vol-CT is compatible with multiple **volumetric** chromatin traci
 
 .. note:: FOF-CT is designed to work with both unmodified genomes and genomes containing INSERTIONS or DELETIONS. For guidance on capturing genomic variants using FOF-CT, refer to the instructions in :ref:`core`, and include a description of the custom build using the Variant Call Format (VCF) as outlined in :ref:`VCF-reference-label`.
 
-.. figure:: images/2026-7-4_Figure_1_FOF-bas-vol-CT_Aufmkolk_Strambio_2026-5-9_CORRESPONDENCE_v1.png
+.. figure:: images/2026-7-4_Figure_1_FOF-bas-vol_CT_Aufmkolk_Strambio_2026-5-9_CORRESPONDENCE_v1.png
   :class: shadow-image
   :width: 100%
   :align: center
