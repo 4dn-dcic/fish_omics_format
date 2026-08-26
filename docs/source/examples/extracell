@@ -1,6 +1,6 @@
 ##FOF-CT_Version=v2.0
 ##Table_Namespace=4dn_FOF-CT_extracell
-##Extra_Cell_ROI_Type=Organoid
+##Extra_Cell_ROI_Type=EFO:XXXXXXX (Organoid)
 ##XYZ_Unit=micron
 #Lab_Name: Nobel
 #Experimenter_Name: John Doe

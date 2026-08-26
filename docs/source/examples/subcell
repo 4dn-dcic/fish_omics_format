@@ -1,7 +1,7 @@
 ##FOF-CT_Version=v1.0
 ##Table_Namespace=4dn_FOF-CT_subcell
-##Sub_Cell_ROI_Type=Nucleolus
-##Cell_Type=Cell in organoid
+##Sub_Cell_ROI_Type=GO:0005730 (Nucleolus)
+##Cell_Type=EFO:XXXXXXX (Cell in organoid)
 ##XYZ_Unit=micron
 ##Intensity_Unit=a.u.
 #Lab_Name: Nobel
