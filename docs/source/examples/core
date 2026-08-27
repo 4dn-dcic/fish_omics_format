@@ -6,6 +6,7 @@
 #Experimenter_Name: John Doe
 #Experimenter_Contact: john.doe@email.com
 #Description: This table reports the X, Y, Z coordinates of identified bright DNA Spots, the location of their genome target segment and their trace assignment...
+#Software_Title: ChrTracer3
 #Software_Type: SpotLoc+Tracing
 #Software_Authors: Mateo, LJ; Sinnott-Armstrong, N; Boettiger, AN
 #Software_Description: ChrTracer3 software was developed for analysis of raw DNA labeled images. As an input, it takes an.xlsx table containing information and folder names of the DNA experiment. As an output, it returns tab delimited.txt ﬁles with drift-corrected x, y, z positions for all labeled barcodes. These can be used directly to calculate the nm scale distances between all pairs of labeled loci. The current version of the software as of this writing is ChrTracer3.

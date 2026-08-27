@@ -2,7 +2,7 @@
 ##Table_Namespace=4dn_FOF-CT_rna
 ##Genome_Assembly=GRCh38
 ##XYZ_Unit=micron
-##Gene_ID_type=Ensemble_V38
+##Gene_ID_type=Ensembl_V38
 #Lab_Name: Nobel
 #Experimenter_Name: John Doe
 #Experimenter_Contact: john.doe@email.com

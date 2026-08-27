@@ -20,7 +20,7 @@
 #^Cell_Volume: the volume of this Cell expressed in micron^3.
 #Additional_Tables: 4dn_FOF-CT_core, 4dn_FOF-CT_rna, 4dn_FOF-CT_trace, 4dn_FOF-CT_subcell, 4dn_FOF-CT_cell, 4dn_FOF-CT_mapping
 ##Columns=(Cell_ID, Extra_Cell_ROI_ID, RNA_A_nr, RNA_B_nr, Cell_Cycle_State, Cell_Volume)
-1, 1, 10, 22, 1041.5, 12354.24, G1, 13453
-2, 1, 0, 11, 2041.3, 32234.24, G2, 35545
-3, 2, 10, 33, 101.5, 12354.24, S, 10010
-4, 3, 0, 44, 201.1, 32234.24, M, 25340
+1, 1, 10, 22, G1, 13453
+2, 1, 0, 11, G2, 35545
+3, 2, 10, 33, S, 10010
+4, 3, 0, 44, M, 25340
