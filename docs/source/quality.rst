@@ -28,7 +28,7 @@ File Header
 - The first line in the header is always ``##FOF-CT_Version=vX.X``.
 - The second line in the header is always ``##Table_Namespace=4dn_FOF-CT_quality``.
 
-.. tip:: The header **MUST** contain a mandatory set of fields that describe any Software tool that was used to produce/process data in this table. If more than one software tool was used, please repeat the Software fields to describe each one.
+.. tip:: If applicable, the header **MUST** contain a mandatory set of fields that describe any Software tool that was used to produce/process data in this table. If more than one software tool was used, please repeat the Software fields to describe each one.
 
 The header **MUST** include a detailed description of each optional column used. 
 

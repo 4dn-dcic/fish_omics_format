@@ -1,10 +1,15 @@
 Field,Table(s),Trigger Type,Trigger Condition
-Time_Unit,"rna_quality, demultiplexing, mapping",Metric-triggered,Required if any time metric is reported in an optional column of this table.
-Intensity_Unit,"rna_quality, demultiplexing, mapping",Metric-triggered,Required if any intensity metric is reported in an optional column of this table.
-Intensity_Measurement_Method,"rna_quality, demultiplexing, mapping",Metric-triggered,Required if any intensity metric is reported in an optional column of this table.
+Time_Unit,"bio, cell, demultiplexing, extracell, mapping, quality, rna_bio, rna_quality, subcell, trace, undecoded, vol_quality",Metric-triggered,Required if any time metric is reported in an optional column of this table.
+Intensity_Unit,"bio, cell, demultiplexing, extracell, mapping, quality, rna_bio, rna_quality, subcell, trace, undecoded, vol_quality",Metric-triggered,Required if any intensity metric is reported in an optional column of this table.
+Intensity_Measurement_Method,"bio, cell, demultiplexing, extracell, mapping, quality, rna_bio, rna_quality, subcell, trace, undecoded, vol_quality",Metric-triggered,Required if any intensity metric is reported in an optional column of this table.
 Sub_Cell_ROI_ID,mapping,Co-Deposition-triggered,Required if this Cell/ROI Mapping table file is reporting subcellular ROI data (mutually exclusive with Cell_ID and Extra_Cell_ROI_ID — see mapping.rst).
 Cell_ID,mapping,Co-Deposition-triggered,Required if this Cell/ROI Mapping table file is reporting Cell data (mutually exclusive with Sub_Cell_ROI_ID and Extra_Cell_ROI_ID — see mapping.rst).
 Extra_Cell_ROI_ID,mapping,Co-Deposition-triggered,Required if this Cell/ROI Mapping table file is reporting extracellular ROI data (mutually exclusive with Sub_Cell_ROI_ID and Cell_ID — see mapping.rst).
+Sub_Cell_ROI_ID,"core, rna, vol_core",Co-Deposition-triggered,Required if Sub-cellular structures (e.g. Nucleus, Nucleolus) were identified and reported in a companion Sub-Cell ROI Data table, and data in this table can be associated with individual Sub_Cell_ROIs.
+Cell_ID,"core, rna, vol_core",Co-Deposition-triggered,Required if Cells were identified and reported in a companion Cell Data table, and data in this table can be associated with individual Cells.
+Extra_Cell_ROI_ID,"core, rna, vol_core",Co-Deposition-triggered,Required if Extracellular structures (e.g. Tissue) were identified and reported in a companion Extra-Cell ROI Data table, and data in this table can be associated with individual Extra_Cell_ROIs.
+Extra_Cell_ROI_ID,cell,Co-Deposition-triggered,Required if data in this table can be associated with an Extra-Cell ROI identified as part of this experiment.
+Cell_ID,subcell,Co-Deposition-triggered,Required if data in this table can be associated with a Cell identified as part of this experiment.
 Cell_Type,mapping,Content-triggered,Required if any Cell ROI is identified as part of this experiment.
 Sub_Cell_ROI_Type,mapping,Content-triggered,Required if any Sub-Cell ROI is identified as part of this experiment.
 Extra_Cell_ROI_Type,mapping,Content-triggered,Required if any Extra-Cell ROI is identified as part of this experiment.
