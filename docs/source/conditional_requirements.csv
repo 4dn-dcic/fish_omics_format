@@ -13,6 +13,6 @@ Cell_ID,subcell,Co-Deposition-triggered,Required if data in this table can be as
 Cell_Type,mapping,Content-triggered,Required if any Cell ROI is identified as part of this experiment.
 Sub_Cell_ROI_Type,mapping,Content-triggered,Required if any Sub-Cell ROI is identified as part of this experiment.
 Extra_Cell_ROI_Type,mapping,Content-triggered,Required if any Extra-Cell ROI is identified as part of this experiment.
-Modification,core,Content-triggered,Required if Genome_Assembly uses the 'custom-build:' prefix.
-VCF_File_Name,core,Content-triggered,Required if Genome_Assembly uses the 'custom-build:' prefix.
-VCF_Version,core,Content-triggered,Required if Genome_Assembly uses the 'custom-build:' prefix.
+Modification,"core, vol_core",Content-triggered,Required if Genome_Assembly uses the 'custom-build:' prefix.
+VCF_File_Name,"core, vol_core",Content-triggered,Required if Genome_Assembly uses the 'custom-build:' prefix.
+VCF_Version,"core, vol_core",Content-triggered,Required if Genome_Assembly uses the 'custom-build:' prefix.
