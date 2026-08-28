@@ -1,26 +1,27 @@
-##FOF-CT_version=v1.0
-##Table_namespace=4dn_FOF-CT_subcell
-##Sub_Cell_ROI_type=
-##Cell_type=
-##XYZ_unit=micron [default value; change if different]
-##time_unit=sec [default value; change if different]
-##intensity_unit=
-#lab_name: Nobel
-#experimenter_name:
-#experimenter_contact:
-#description:
+##FOF-CT_Version=v2.0
+##Table_Namespace=4dn_FOF-CT_subcell
+##Sub_Cell_ROI_Type=
+##Cell_Type=
+##XYZ_Unit=micron [default value; change if different]
+##Time_Unit=sec [default value; change if different]
+##Intensity_Unit=
+#Lab_Name: 
+#Experimenter_Name:
+#Experimenter_Contact:
+#Description:
 #Software_Title:
 #Software_Type:
 #Software_Authors:
 #Software_Description:
+#Software_Parameters:
 #Software_Repository:
 #Software_PreferredCitationID:
-#Intensity_measurement_method:
+#Intensity_Measurement_Method:
 #^Optional_column_1: [substitute with your column header]
 #^Optional_column_2: [substitute with your column header]
 #^Optional_column_3: [substitute with your column header]
-#additional_tables: 4dn_FOF-CT_core, 4dn_FOF-CT_rna, 4dn_FOF-CT_trace
-##columns=(Sub_Cell_ROI_ID, Cell_ID, Optional_column_1, Optional_column_2, Optional_colummn_3, …)
+#Additional_Tables: 4dn_FOF-CT_core, 4dn_FOF-CT_rna, 4dn_FOF-CT_trace
+##Columns=(Sub_Cell_ROI_ID, Cell_ID, Optional_column_1, Optional_column_2, Optional_colummn_3, …)
 001, 001, XYZ, XYZ, XYZ
 002, 
 003, 

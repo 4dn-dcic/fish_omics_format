@@ -1,7 +1,7 @@
 .. _rna_bio:
 
 RNA Spot Biological Data table
-==========================
+==============================
 
 Requirement level: optional
 
@@ -62,6 +62,6 @@ The only mandatory column in this table is ``RNA_Spot_ID``. All other columns ar
 
 .. tip:: The optional columns in this example table are included for illustrative purposes only and describe a case in which the user is reporting the **distance** of RNA spots from two different nuclear landmarks.
 
-.. include:: examples/bio
+.. include:: examples/rna_bio
   :code:
 

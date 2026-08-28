@@ -17,44 +17,52 @@ This table is *conditionally required* in case a :ref:`subcell`, :ref:`cell`, an
 
 The table is organized on a Cell or ROI basis via a Cell or ROI ID and is designed to provide the boundaries of each Cell and ROI boundaries in global coordinates. 
 
-This could be done as specified by the `OME ROI data model <https://docs.openmicroscopy.org/ome-model/5.6.3/developers/roi.html>`_. Alternatively, Cell or ROI boundaries could be provided using 3D MESH models (e.g., using the `OBJ format <https://en.wikipedia.org/wiki/Wavefront_.obj_file>`_). Additional formats are also allowed.
+This could be done as specified by the `OME ROI data model <https://docs.openmicroscopy.org/ome-model/5.6.3/developers/roi.html>`_. Alternatively, Cell or ROI boundaries could be provided using 3D MESH models (e.g., using the `OBJ format <https://en.wikipedia.org/wiki/Wavefront_.obj_file>`_). Additional formats are also allowed as indicated below..
 
-As such, this table is mandatorily indexed by one of the following ``Cell_ID``, ``Sub_Cell_ROI_ID`` or ``Extra_Cell_ROI_ID``.
+As such, this table is mandatorily indexed by exactly one of the following: ``Cell_ID``, ``Sub_Cell_ROI_ID``, or ``Extra_Cell_ROI_ID``. A single Cell/ROI Mapping table file **MUST NOT** contain more than one of these three ID columns — each file reports boundaries for one ROI type only. Datasets with more than one ROI type (e.g. both Cell and Sub-Cell ROIs) **MUST** be submitted as separate Cell/ROI Mapping table files, one per ID type.
 
-In addition, the header of the file **MUST** include the ``##ROI_boundaries_format=`` field to report the format that is used to record the boundaries of the ROI in global coordinates.
+.. note::
+  Exactly one of ``Cell_ID``, ``Sub_Cell_ROI_ID``, or ``Extra_Cell_ROI_ID`` must be present as the indexing column of this table — never more than one, and never zero. If boundaries for more than one ROI type were collected (e.g. both Cell and Sub-Cell ROIs), submit one Cell/ROI Mapping table file per ROI type rather than combining ID columns in a single file.
+
+In addition, the header of the file **MUST** include the ``##ROI_Boundaries_Format_Type=`` field to identify, from a controlled vocabulary, the standard used to encode ROI boundaries in global coordinates (e.g. the OME ROI data model, or a 3D MESH format such as OBJ). The header **MUST** also include the ``##ROI_Boundaries_Format_Description=`` field whenever ``##ROI_Boundaries_Format_Type=`` is set to ``Other``, and it is otherwise recommended, to describe in free text how boundaries are encoded beyond what the format name alone conveys (e.g. coordinate order, dimensionality, or an external file reference).
 
 As an example, this table might be organized in one of the following manner:
 
 **1) Cell boundaries**
-	- ``##ROI_boundaries_format=`` Cell boundaries are reported in global coordinates following the OME Data Model for Polygon - ROI. As such Cell boundaries are defined as lists of comma separated x,y coordinates separated by spaces like "x1,y1 x2,y2 x3,y3" (e.g. "0,0 1,2 3,5").
+	- ``##ROI_Boundaries_Format_Type=`` OME_Polygon
+	- ``##ROI_Boundaries_Format_Description=`` Cell boundaries are reported in global coordinates as lists of comma separated x,y coordinates separated by spaces like "x1,y1 x2,y2 x3,y3" (e.g. "0,0 1,2 3,5").
 
 .. list-table::
   :header-rows: 1
 
   * - ``Cell_ID``
-    - ``ROI_boundaries``
+    - ``ROI_Boundaries``
   * - 0001
     - "0,0 1,2 3,5"
+    
 
 **2) Sub-Cell ROI boundaries**
-	- ``##ROI_boundaries_format=`` Sub-cell ROI boundaries are reported in global coordinates following the OME Data Model for Polygon - ROI. As such the Cell boundaries are defined as lists of comma separated x,y,z coordinates separated by spaces like "x1,y1,z1 x2,y2,z2 x3,y3,z3" (e.g. "0,0 1,2 3,5").
+	- ``##ROI_Boundaries_Format_Type=`` OME_Polygon
+	- ``##ROI_Boundaries_Format_Description=`` Sub-Cell ROI boundaries are reported in global coordinates as lists of comma separated x,y,z coordinates separated by spaces like "x1,y1,z1 x2,y2,z2 x3,y3,z3" (e.g. "0,0,0 1,2,4 3,5,6").
 
 .. list-table::
   :header-rows: 1
 
   * - ``Sub_Cell_ROI_ID``
-    - ``ROI_boundaries``
+    - ``ROI_Boundaries``
   * - 0001
-    - "0,0,0 1,2,3 4,5,6"
+    - "0,0,0 1,2,4 3,5,6"
 
 **3) Extra_Cell_ROI_ID boundaries**
-	- ``##ROI_boundaries_format=`` Extra-cell ROI boundaries are reported in global coordinates using the `OBJ format <https://en.wikipedia.org/wiki/Wavefront_.obj_file>`_ for 3D MESH models. As such boundaries are defined as lists of geometric vertices, with (x, y, z, [w]) coordinates, w is optional and defaults to 1.0.
+	- ``##ROI_Boundaries_Format_Type=`` Mesh_OBJ
+	- ``##ROI_Boundaries_Format_Description=`` Extra-cell ROI boundaries are reported in global coordinates using the OBJ format's geometric-vertex lines (v x y z [w]).
+
 
 .. list-table::
   :header-rows: 1
 
   * - ``Extra_Cell_ROI_ID``
-    - ``ROI_boundaries``
+    - ``ROI_Boundaries``
   * - 0001
     - "v 0.123 0.234 0.345 1.0"
 

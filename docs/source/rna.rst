@@ -21,13 +21,11 @@ At a minimum, one needs to know the **RNA_Spot_ID**, the **X**, **Y**, **Z** coo
 
 In addition, in case multiple transcripts are associated with
 the same Gene_ID and the FISH probes are capable of distinguishing them,
-*Transcript_ID* MUST also be reported. Thus, at a minimum there needs to
+*Transcript_ID* **MUST also be reported**. Thus, at a minimum there needs to
 be 6 (or 7) data columns. These are required. All other data columns are
 optional.
 
-In this table the reported X, Y and Z coordinates are assumed to result
-from post-processing and quality control procedures performed on primary
-localization events and therefore correspond to what is considered the best-bet location of the RNA molecule under study.
+In this table, the reported X, Y and Z coordinates are assumed to result from post-processing and quality control procedures performed on primary Single Molecule (SM) Localization events and therefore correspond to what is considered the best-bet location of the RNA molecule under study.
 
 In the case of multiplexed FISH experiments (i.e.,
 `MERFISH <https://doi.org/10.1073/pnas.1912459116>`_) in which the
@@ -35,7 +33,7 @@ final location of RNA molecule results from combining multiple
 detection events (e.g., by combining individual Localization events detected in separate planes or images), the underlying raw data can be recorded in the
 corresponding :ref:`demultiplexing` as described in the instructions of that table.
 
-.. tip:: ``RNA_Spot_ID`` identifiers are unique across the entire dataset, thus allowing to identify unambiguously a Spot in the :ref:`quality`, :ref:`bio` and :ref:`demultiplexing`.
+.. tip:: ``RNA_Spot_ID`` identifiers are unique across the entire dataset, thus allowing to identify a Spot unambigously in the :ref:`quality`, :ref:`bio` and :ref:`demultiplexing`.
 
 .. warning:: All **MANDATORY** header fields and column names are indicated in **bold**. All *conditionally required* header fields and column names are indicated in *italics*.
 
@@ -44,7 +42,7 @@ File Header
 -----------
 - For full instructions see :ref:`headers-reference-label`
 - The first line in the header is always ``##FOF-CT_Version=vX.X``.
-- The second line in the header is always ``##Table_Namespace=4dn_FOF-CT_mapping``.
+- The second line in the header is always ``##Table_Namespace=4dn_FOF-CT_rna``.
 
 .. tip:: The header **MUST** contain a mandatory set of fields that describe any Software tool that was used to produce/process data in this table. If more than one software tool was used, please repeat a set of Software-fields for describing each of them.
 
@@ -60,7 +58,7 @@ Data Columns
 
 As with all other RNA Spot Data tables in this format, each row corresponds to data associated with an individual RNA_Spot.
 
-The first columns are always: ``RNA_Spot_ID``, ``X``, ``Y``, ``Z``, ``RNA_name``, ``Gene_ID``, ``Trace_ID``, followed by ``Transcript_ID`` if applicable, and by **one or more** of the following ``Sub-Cell_ROI_ID``, ``Cell_ID`` and/or ``Extra_Cell_ROI_ID``.
+The first columns are always: ``RNA_Spot_ID``, ``X``, ``Y``, ``Z``, ``RNA_name``, ``Gene_ID``, ``Trace_ID``, followed by ``Transcript_ID`` if applicable. Additionally in case sub-cellular structures, cells or extra cellular structures are identified as part of this experiment, the subsequent columns must mandatorily be ``Sub_Cell_ROI_ID``, ``Cell_ID`` or ``Extra_Cell_ROI_ID``, respectively.
 The order of the other columns is at user's discretion.
 The order of the rows is at user's discretion.
 
