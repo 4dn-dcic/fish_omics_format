@@ -1,21 +1,22 @@
-##FOF-CT_Version=v1.0
+##FOF-CT_Version=v2.0
 ##Table_Namespace=4dn_FOF-CT_trace
 ##XYZ_Unit=micron
 ##Intensity_Unit=a.u.
 #Lab_Name: Nobel
 #Experimenter_Name: John Doe
 #Experimenter_Contact: john.doe@email.com
-#Description: In this experiment cells were identified by segmentation using the indicated algorithm on the basis of the background fluorescence from multiplexed FISH probes.
+#Description: This table reports different metrics associated with identified chromatin Traces...
 #Software_Title: AlgorithmXYZ
-#Software_Type: Distance
+#Software_Type: Distance Calculation
 #Software_Authors: John Doe
 #Software_Description: A pretty clear description
+#Software_Parameters: Minimum object size = 10 pixel, X-Y-Z Loc_Precision Parameter = 1.01
 #Software_Repository: https://github.com/repo_name_goes_here
-#Software_PreferredCitationID: https://doi.org/doi_goes_heren
+#Software_PreferredCitationID: https://doi.org/doi_goes_here
 #^Allele: This field records the Allele to which this Trace was mapped. This can be one of the following values: BL6, CAST.
 #^RNA_A_Intensity: This records the intensity of the nascent RNA A expression signal associated with this Trace.
 #^NL_Distance: This field records the distance of this Trace to the Nuclear Lamina.
-#Additional_Tables: 4dn_FOF-CT_core, 4dn_FOF-CT_cell
+#Additional_Tables: 4dn_FOF-CT_core, 4dn_FOF-CT_quality, 4dn_FOF-CT_cell, 4dn_FOF-CT_demultiplexing, 4dn_FOF-CT_rna, 4dn_FOF-CT_mapping
 ##Columns=(Trace_ID, Allele, RNA_A_Int, NL_Distance)
 1, BL6, 43253, 0.235
 2, CAST, 40001, 0.563

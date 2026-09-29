@@ -1,0 +1,10 @@
+Name,Description,Example,Conditional requirement conditions
+**Loc_ID**,A unique identifier for this SM Localization event.,1,
+**Channel**,The wavelength characteristics of the emission channel that was used to image this SM Localization event.,695/81,
+**Fluor**,The name of the Fluorophore whose Emission was utilized to detect this SM Localization event.,Alexa Fluor-647,
+*Conditionally_Required_Column_1*,,,"Conditional requirement (Metric-triggered, see :ref:`conditional-requirements-reference-label`): placeholder for one of the reserved metric columns listed in the header; required only if that metric is reported."
+*Conditionally_Required_Column_2*,,,"Conditional requirement (Metric-triggered, see :ref:`conditional-requirements-reference-label`): placeholder for one of the reserved metric columns listed in the header; required only if that metric is reported."
+*Conditionally_Required_Column_3*,,,"Conditional requirement (Metric-triggered, see :ref:`conditional-requirements-reference-label`): placeholder for one of the reserved metric columns listed in the header; required only if that metric is reported."
+Optional_Column_1,,,
+Optional_Column_2,,,
+Optional_Column_3,,,

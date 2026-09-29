@@ -1,0 +1,24 @@
+##FOF-CT_Version=v2.0
+##Table_Namespace=FOF-CT_undecoded
+##XYZ_Unit=micron
+#Lab_Name: Nobel
+#Experimenter_Name: John Doe
+#Experimenter_Contact: john.doe@email.com
+#Description: This table reports the primary Single Molecule (SM) Localization events that were detected before decoding.
+#Software_Title: BestLocalizationSoftware
+#Software_Type: Loc
+#Software_Authors: Doe, J.
+#Software_Description: A pretty clear description
+#Software_Parameters: Minimum object size = 10 pixel, X-Y-Z Loc_Precision Parameter = 1.01
+#Software_Repository: https://github.com/repo_name_goes_here
+#Software_PreferredCitationID: https://doi.org/doi_goes_here
+#^TheZ: A unique identifier for the focal Z-Plane in which this SM Localization event was identfied.
+#Additional_Tables: FOF-CT_vol_core, FOF-CT_vol_quality, 4dn_FOF-CT_core, 4dn_FOF-CT_trace, 4dn_FOF-CT_rna
+##Columns=(Loc_ID, Hyb_ID,Image_Frame_ID, X, Y, Z, Channel, Fluor, TheZ)
+1,1,1,2342,2354,545,570/20, cy3,1
+2,1,1,2342,2354,545,670/20, cy5,2
+3,1,1,2342,2354,545,670/20, cy5,2
+4,2,2,3345,5432,654,570/20, cy3,3
+5,2,2,3345,5432,654,670/20, cy5,3
+6, 2,2,4345,432,100,570/20, cy3,7
+7,2,2,3345,5432,654,570/20, cy3,7

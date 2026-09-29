@@ -1,0 +1,13 @@
+Name,Description,Example,Conditional requirement conditions
+**Loc_ID**,A unique identifier for this individual SM Localization event.,1,
+**Hyb_ID**,A unique identifier for the Hybridization round in which this SM Localization event was identified.,001,
+**Image_Frame_ID**,A unique identifier for the Image Frame in which this SM Localization event was identified.,001,
+**X**,The sub-pixel X coordinate of this SM Localization event.,14.43,
+**Y**,The sub-pixel Y coordinate of this SM Localization event.,41.43,
+**Z**,The sub-pixel Z coordinate of this SM Localization event.,1.23,
+**Channel**,The wavelength characteristics of the emission channel that was used to image this SM Localization event.,695/81,
+**Fluor**,The name of the Fluorophore whose Emission was utilized to detect this SM Localization event.,Alexa Fluor-647,
+*TheZ*,A unique identifier for the focal Z-Plane in which this SM Localization event was identified.,010,"Conditional requirement (Metric-triggered, see :ref:`conditional-requirements-reference-label`): required only if this specific highly recommended item is reported for this table; when reported, this exact reserved column name MUST be used."
+Optional_Column_1,,,
+Optional_Column_2,,,
+Optional_Column_3,,,
